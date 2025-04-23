@@ -1,0 +1,147 @@
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--light-color);
+    position: relative;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+}
+  
+.logo a {
+    text-decoration: none;
+}
+  
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Contenedor para los botones */
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.language-selector span {
+    font-size: 0.9rem;
+    transition: font-weight 0.3s;
+}
+
+.language-selector .active {
+    font-weight: 700;
+}
+
+.language-selector .divider {
+    color: var(--dark-color);
+}
+
+.hamburger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1001;
+}
+
+.hamburger-line {
+    width: 18px;
+    height: 1px;
+    background-color: var(--dark-color);
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-line.top {
+    transform: translateY(-6px);
+}
+
+.hamburger-line.bottom {
+    transform: translateY(6px);
+}
+
+.hamburger-button.active .hamburger-line.top {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-button.active .hamburger-line.bottom {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-button.active .hamburger-line.top,
+.hamburger-button.active .hamburger-line.middle,
+.hamburger-button.active .hamburger-line.bottom {
+    transition: transform 0.2s ease-in-out 0.2s;
+}
+
+.hamburger-button.active .hamburger-line.top,
+.hamburger-button.active .hamburger-line.middle {
+    transform: rotate(45deg);
+}
+
+.hamburger-button.active .hamburger-line.bottom {
+    transform: rotate(-45deg);
+}
+  
+/* Menú de navegación siempre oculto por defecto */
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--light-color);
+    z-index: 999;
+}
+  
+.nav-menu.show {
+    display: block;
+}
+  
+.nav-menu ul {
+    flex-direction: column;
+    padding: 1rem 0;
+    list-style: none;
+    margin: 0;
+}
+  
+.nav-menu li {
+    margin: 0;
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+  
+.nav-menu li:last-child {
+    border-bottom: none;
+}
+  
+.nav-menu a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: color 0.3s;
+    display: block;
+}
+  
