@@ -1,55 +1,58 @@
-  .header {
+   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background-color: var(--light-color);
     position: relative;
-}
+    z-index: 1200;
+  }
   
-.logo {
+  .logo {
     display: flex;
     align-items: center;
-}
+  }
   
-.logo a {
+  .logo a {
     text-decoration: none;
-}
+  }
   
-.logo img {
+  .logo img {
     height: 50px;
     width: auto;
-}
-
-/* Contenedor para los botones */
-.header-controls {
+  }
+  
+  .header-controls {
     display: flex;
     align-items: center;
     gap: 2rem;
-}
-
-.language-selector {
+  }
+  
+  /* Selector de idioma */
+  .language-selector {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
     user-select: none;
-}
+    z-index: 1100;
 
-.language-selector span {
+  }
+  
+  .language-selector span {
     font-size: 0.9rem;
     transition: font-weight 0.3s;
-}
-
-.language-selector .active {
+  }
+  
+  .language-selector .active {
     font-weight: 700;
-}
-
-.language-selector .divider {
+  }
+  
+  .language-selector .divider {
     color: var(--dark-color);
-}
-
-.hamburger-button {
+  }
+  
+  .hamburger-button {
     background: none;
     border: none;
     cursor: pointer;
@@ -61,87 +64,113 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1001;
-}
-
-.hamburger-line {
+    z-index: 1100;
+  }
+  
+  .hamburger-line {
     width: 18px;
     height: 1px;
     background-color: var(--dark-color);
     position: absolute;
     transition: transform 0.3s ease-in-out;
-}
-
-.hamburger-line.top {
+  }
+  
+  .hamburger-line.top {
     transform: translateY(-6px);
-}
-
-.hamburger-line.bottom {
+  }
+  
+  .hamburger-line.bottom {
     transform: translateY(6px);
-}
-
-.hamburger-button.active .hamburger-line.top {
+  }
+  
+  .hamburger-button.active .hamburger-line.top {
     transform: translateY(0);
     transition: transform 0.3s ease-in-out;
-}
-
-.hamburger-button.active .hamburger-line.bottom {
+  }
+  
+  .hamburger-button.active .hamburger-line.bottom {
     transform: translateY(0);
     transition: transform 0.3s ease-in-out;
-}
-
-.hamburger-button.active .hamburger-line.top,
-.hamburger-button.active .hamburger-line.middle,
-.hamburger-button.active .hamburger-line.bottom {
+  }
+  
+  .hamburger-button.active .hamburger-line.top,
+  .hamburger-button.active .hamburger-line.middle,
+  .hamburger-button.active .hamburger-line.bottom {
     transition: transform 0.2s ease-in-out 0.2s;
-}
-
-.hamburger-button.active .hamburger-line.top,
-.hamburger-button.active .hamburger-line.middle {
+  }
+  
+  .hamburger-button.active .hamburger-line.top,
+  .hamburger-button.active .hamburger-line.middle {
     transform: rotate(45deg);
-}
-
-.hamburger-button.active .hamburger-line.bottom {
+  }
+  
+  .hamburger-button.active .hamburger-line.bottom {
     transform: rotate(-45deg);
-}
+  }
   
-/* Menú de navegación siempre oculto por defecto */
-.nav-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
+  .nav-menu {
+    position: fixed;
+    top: 0;
     right: 0;
+    bottom: 0;
+    width: 350px;
     background-color: var(--light-color);
-    z-index: 999;
-}
+    padding-top: 100px; 
+    z-index: 1050;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    opacity: 0;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  transform: translateX(100%);
+  }
+
+  .nav-menu.show {
+    transform: translateX(0); 
+    opacity: 1;
+  }
   
-.nav-menu.show {
-    display: block;
-}
-  
-.nav-menu ul {
-    flex-direction: column;
-    padding: 1rem 0;
+  .nav-menu ul {
     list-style: none;
     margin: 0;
-}
+    padding: 0 3rem;
+  }
   
-.nav-menu li {
-    margin: 0;
-    padding: 0.75rem 2rem;
-    border-bottom: 1px solid #f0f0f0;
-}
-  
-.nav-menu li:last-child {
+  .nav-menu li {
+    margin: 3.5rem 0;
     border-bottom: none;
-}
+  }
   
-.nav-menu a {
+  .nav-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .nav-menu a {
     text-decoration: none;
     color: var(--dark-color);
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
     transition: color 0.3s;
     display: block;
-}
+  }
   
+  .nav-menu a:hover {
+    color: var(--taupe-color);
+  }
+  
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(243, 241, 233, 0.8);
+    z-index: 1040;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  .menu-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }

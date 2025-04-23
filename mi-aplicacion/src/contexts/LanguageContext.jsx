@@ -1,4 +1,4 @@
-import { createContext, useState, useContext } from 'react';
+import { createContext, useState, useContext, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 // Definimos las traducciones
@@ -61,6 +61,28 @@ const routeMap = {
   "/contact": "/contacto"
 };
 
+// Función para detectar el idioma desde la URL
+const detectLanguageFromPath = (path) => {
+  // Extraer primer segmento de la ruta
+  const firstSegment = '/' + path.split('/')[1];
+  
+  // Verificar si es una ruta en español
+  const isSpanishRoute = Object.values(routes.es).some(route => 
+    firstSegment === route || firstSegment.startsWith(route + '/')
+  );
+  
+  // Verificar si es una ruta en inglés
+  const isEnglishRoute = Object.values(routes.en).some(route => 
+    firstSegment === route || firstSegment.startsWith(route + '/')
+  );
+  
+  if (isSpanishRoute && !isEnglishRoute) return 'es';
+  if (isEnglishRoute && !isSpanishRoute) return 'en';
+  
+  // Por defecto devolvemos español
+  return 'es';
+};
+
 // Creamos el contexto
 const LanguageContext = createContext();
 
@@ -68,7 +90,11 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [language, setLanguage] = useState('es'); // Español por defecto
+  
+  // Inicializar el idioma basado en la URL actual
+  const [language, setLanguage] = useState(() => {
+    return detectLanguageFromPath(location.pathname);
+  });
   
   // Función para cambiar el idioma y redirigir
   const toggleLanguage = () => {
@@ -93,11 +119,11 @@ export const LanguageProvider = ({ children }) => {
     // Reconstruir la ruta completa con los parámetros
     const redirectPath = params ? `${newPath}/${params}` : newPath;
     
-    // Actualizar el estado del idioma
-    setLanguage(newLanguage);
-    
-    // Redirigir a la nueva ruta
+    // Primero navegar a la nueva ruta
     navigate(redirectPath);
+    
+    // Después actualizar el estado del idioma
+    setLanguage(newLanguage);
   };
   
   // Función para obtener una traducción
@@ -122,6 +148,14 @@ export const LanguageProvider = ({ children }) => {
     
     return baseRoute;
   };
+  
+  // Efecto para mantener sincronizado el idioma con la URL
+  useEffect(() => {
+    const detectedLanguage = detectLanguageFromPath(location.pathname);
+    if (detectedLanguage !== language) {
+      setLanguage(detectedLanguage);
+    }
+  }, [location.pathname, language]);
   
   return (
     <LanguageContext.Provider value={{ 
