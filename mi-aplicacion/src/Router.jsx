@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         children: [
             // Rutas en español
             {
-                path: "/home",
+                path: "/inicio",
                 element: <Landing />
             },
             {
@@ -39,6 +39,10 @@ const router = createBrowserRouter([
             },
             
             // Rutas en inglés (mismos componentes, diferentes URLs)
+            {
+                path: "/home",
+                element: <Landing />
+            },
             {
                 path: "/properties",
                 element: <Properties />

@@ -9,7 +9,9 @@ function Root () {
         <LanguageProvider>
             <div>
                 <Header />
-                <Outlet />
+                <div className="outlet-container">
+                    <Outlet />
+                </div>
                 <Footer />
             </div>
         </ LanguageProvider>

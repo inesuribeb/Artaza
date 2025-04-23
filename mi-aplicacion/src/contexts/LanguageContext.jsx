@@ -1,5 +1,7 @@
 import { createContext, useState, useContext, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { translations as footerTranslations } from './FooterContent'
+import { homeTranslations } from './HomeContent';
 
 // Definimos las traducciones
 const translations = {
@@ -10,6 +12,8 @@ const translations = {
     buy: "Buy",
     sell: "Sell", 
     contact: "Contact",
+    ...footerTranslations.en,
+    ...homeTranslations.en,
     // Añade más traducciones según necesites
   },
   es: {
@@ -19,6 +23,8 @@ const translations = {
     buy: "Comprar",
     sell: "Vender",
     contact: "Contacto",
+    ...footerTranslations.es,
+    ...homeTranslations.es,
     // Añade más traducciones según necesites
   }
 };
@@ -34,7 +40,7 @@ const routes = {
     contact: "/contact"
   },
   es: {
-    home: "/home",
+    home: "/inicio",
     properties: "/propiedades",
     property: "/propiedad", // Base para /propiedad/:id
     buy: "/comprar",
@@ -46,7 +52,7 @@ const routes = {
 // Mapa de rutas para conversión entre idiomas
 const routeMap = {
   // Español a inglés
-  "/home": "/home",
+  "/inicio": "/home",
   "/propiedades": "/properties",
   "/propiedad": "/property",
   "/comprar": "/buy", 
@@ -54,6 +60,7 @@ const routeMap = {
   "/contacto": "/contact",
   
   // Inglés a español
+  "/home": "/inicio", 
   "/properties": "/propiedades",
   "/property": "/propiedad",
   "/buy": "/comprar",

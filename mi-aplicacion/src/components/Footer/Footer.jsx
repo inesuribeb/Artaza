@@ -42,7 +42,8 @@ function Footer () {
             </div> */}
 
             <div className='cuarta-fila-footer'>
-                <h5>De Lunes a Viernes</h5>
+                {/* <h5>De Lunes a Viernes</h5> */}
+                <h5>{t('delunesaviernes')}</h5>
                 <div className="horarios">
                     <div className="columna-izquierda">
                         <p>10:30 - 13:30</p>
