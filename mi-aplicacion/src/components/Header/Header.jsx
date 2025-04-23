@@ -165,9 +165,9 @@ function Header () {
                 {/* Menú de navegación vertical a la derecha */}
                 <nav className={`nav-menu ${isMenuOpen ? 'show' : ''}`}>
                     <ul>
-                        <li>
+                        {/* <li>
                             <Link to={getRoute('home')} onClick={toggleMenu}>{t('home')}</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link to={getRoute('properties')} onClick={toggleMenu}>{t('properties')}</Link>
                         </li>

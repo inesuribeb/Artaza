@@ -46,6 +46,7 @@
   
   .language-selector .active {
     font-weight: 700;
+    /* color: var(--corporate-color); */
   }
   
   .language-selector .divider {
