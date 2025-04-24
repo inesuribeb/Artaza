@@ -8,8 +8,13 @@
 }
 
 .inmolocation-inner {
-    padding: 2.5rem 3rem;
-    /* margin-top: 6rem; */
+    /* padding: 2.5rem 3rem; */
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -43,6 +48,26 @@
     line-height: 1.5rem;
 }
 
+.inmolocation-left button {
+    margin-top: 3rem;
+    padding: 1rem 2rem; /* más padding a los lados */
+    width: max-content; 
+    background-color: transparent;
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    font: inherit; 
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease; /* animación suave */
+}
+
+.inmolocation-left button:hover {
+    cursor: pointer;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
+}
+
 .inmolocation-right {
     flex: 1;
     align-items: flex-end;
@@ -71,5 +96,8 @@
     color: var(--dark-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 1.4rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--dark-color);
+
 }
 
