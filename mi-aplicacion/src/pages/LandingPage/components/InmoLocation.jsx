@@ -16,9 +16,9 @@ function InmoLocation() {
                     <img src="/images/elipse.jpg" alt="artaza-inmo" />
                 </div>
             </div>
-            <div className="carousel-location">
-
-            </div>
+            {/* <div className="carousel-location">
+                <CarouselLocation />
+            </div> */}
         </div>
     )
 }
