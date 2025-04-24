@@ -13,12 +13,12 @@ function InmoLocation() {
                 </div>
 
                 <div className="inmolocation-right">
-                    <img src="/images/elipse.jpg" alt="artaza-inmo" />
+                    <img src="/images/capturaPrueba.png" alt="artaza-inmo" />
                 </div>
             </div>
-            {/* <div className="carousel-location">
-                <CarouselLocation />
-            </div> */}
+            <div className="carousel-location">
+                <h3>{t('artaza')}</h3>
+            </div>
         </div>
     )
 }

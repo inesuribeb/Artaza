@@ -5,6 +5,9 @@
     position: relative;
     /* padding: 0 40px;  */
     overflow: hidden; 
+    background-color: var(--light-color);
+    border-top: 2px solid var(--dark-color);
+
 }
 
 .carousel-wrapper {
