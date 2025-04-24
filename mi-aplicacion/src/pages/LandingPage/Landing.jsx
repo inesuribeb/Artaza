@@ -1,15 +1,14 @@
-import { useLanguage } from "../../contexts/LanguageContext";
+import Welcome from "./components/Welcome";
+import InmoLocation from "./components/InmoLocation";
 import './Landing.css'
 
-function Landing () {
-    const { t, getRoute } = useLanguage();
+function Landing() {
 
     return (
-        <div className='landing-container'>
-            <h1 dangerouslySetInnerHTML={{ __html: t('tituloprincipal') }}></h1>
-            <h3>{t('subtitulo')}</h3>
-
-        </div>
+        <>           
+            <Welcome />
+            <InmoLocation />
+        </>
     );
 }
 

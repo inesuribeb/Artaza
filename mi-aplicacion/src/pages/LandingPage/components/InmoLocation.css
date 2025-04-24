@@ -1,0 +1,57 @@
+.section-inmolocation {
+    width: 100%;
+    height: auto;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inmolocation-inner {
+    padding: 2.5rem 3rem;
+    /* margin-top: 6rem; */
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    border-top: 2px solid var(--dark-color);
+}
+
+
+
+.inmolocation-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inmolocation-left h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    color: var(--dark-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.inmolocation-left h3 {
+    font-size: 1rem;
+    font-weight: 100;
+    width: 80%;
+    line-height: 1.5rem;
+}
+
+.inmolocation-right {
+    flex: 1;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inmolocation-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 500px; 
+}
+
+
