@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from "../../../contexts/LanguageContext";
+import Button from '../../../components/Button/Button';
 import './InmoLocation.css'
 
 function InmoLocation() {
@@ -12,11 +13,15 @@ function InmoLocation() {
                 <div className="inmolocation-left">
                     <h1 dangerouslySetInnerHTML={{ __html: t('subtitulo2') }}></h1>
                     <h3 dangerouslySetInnerHTML={{ __html: t('textosubtitulo2') }}></h3>
-                    <button
+                    {/* <button
                         className="button-link"
                         onClick={() => navigate(getRoute('contact'))}
                         dangerouslySetInnerHTML={{ __html: t('botonquienessomos') }}
-                    ></button>
+                    ></button> */}
+                    <Button 
+                        translationKey="botonquienessomos" 
+                        routeName="contact" 
+                    />
                 </div>
 
                 <div className="inmolocation-right">

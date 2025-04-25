@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from "../../../contexts/LanguageContext";
+import Button from '../../../components/Button/Button';
 import './PropertiesLand.css'
 
 // function PropertiesLand() {
@@ -43,16 +44,16 @@ function PropertiesLand() {
                 <div className="propertiesland-right">
                     <h1 dangerouslySetInnerHTML={{ __html: t('propiedadesLand') }}></h1>
                     <h3 dangerouslySetInnerHTML={{ __html: t('textopropiedadesLand') }}></h3>
+                    
                     {/* <button
-                        className="button-link"
-                        onClick={() => navigate(getRoute('properties'))}
-                        dangerouslySetInnerHTML={{ __html: t('botonproperties') }}
-                    ></button> */}
-                    <button
                         className="button-link"
                         onClick={() => navigate(getRoute('buy'))}
                         dangerouslySetInnerHTML={{ __html: t('botonproperties2') }}
-                    ></button>
+                    ></button> */}
+                    <Button 
+                        translationKey="botonproperties2" 
+                        routeName="buy" 
+                    />
                 </div>
             </div>
         </div>

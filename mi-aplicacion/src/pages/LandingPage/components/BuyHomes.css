@@ -36,19 +36,16 @@
     font-size: 1.2rem;
 } */
 
-.buyhomes-container button {
+/* .buyhomes-container button {
     margin-top: 3rem;
     padding: 1rem 2rem;
-    /* más padding a los lados */
     width: max-content;
     background-color: var(--nude-color);
     color: var(--dark-color);
     border: 1px solid var(--light-color);
-    /* font: inherit;  */
     font-size: 0.8rem;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    /* animación suave */
 }
 
 .buyhomes-container button:hover {
@@ -56,4 +53,4 @@
     background-color: var(--dark-color);
     color: var(--light-color);
     border: 1px solid var(--dark-color);
-}
+} */

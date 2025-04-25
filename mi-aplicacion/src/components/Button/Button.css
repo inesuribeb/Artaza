@@ -1,0 +1,42 @@
+.custom-button {
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    width: max-content; 
+    background-color: var(--nude-color);
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    font: inherit; 
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.custom-button:hover {
+    cursor: pointer;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
+}
+
+/* .button-separator {
+    margin: 0 0.3rem;
+} */
+
+.button-separator {
+    margin: 0 0.6rem;
+    display: inline-block;
+    width: 1px; /* Ancho de la línea vertical */
+    height: 1.2rem; /* Altura de la línea vertical */
+    background-color: currentColor; /* Usa el color del texto actual */
+    vertical-align: middle;
+}
+
+.button-icon {
+    /* font-size: 1rem; */
+    font-size: 16px !important;
+       width: 16px !important;
+       height: 16px !important;
+}

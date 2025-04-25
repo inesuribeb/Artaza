@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from "../../contexts/LanguageContext";
+import Button from '../Button/Button';
 import './Footer.css';
 
 function Footer() {
@@ -15,23 +16,21 @@ function Footer() {
                     <p>{t('localidad')}</p>
                     <p>{t('telefono')}</p>
                     <p>{t('email')}</p>
-                    {/* <div className="whatsapp-icon">
-                    <img src="/images/ISOTIPO BLANCO.png" alt="WhatsApp" />
-                </div> */}
                 </div>
 
                 <div className="footer-center">
                     <h2>{t('tasaciontitulo')}</h2>
                     <p>{t('tasaciontexto')}</p>
-                    {/* <button className="register-button">{t('registrate')}</button> */}
-                    <button
+                    {/* <button
                         className="register-button"
                         onClick={() => navigate(getRoute('sell'))}
                         dangerouslySetInnerHTML={{ __html: t('registrate') }}
-                    ></button>
-                    {/* <div className="whatsapp-icon">
-                    <img src="/images/ISOTIPO BLANCO.png" alt="WhatsApp" />
-                </div> */}
+                    ></button> */}
+                    <Button 
+                        translationKey="registrate" 
+                        routeName="sell" 
+                    />
+                    
                 </div>
 
                 <div className="footer-right">
