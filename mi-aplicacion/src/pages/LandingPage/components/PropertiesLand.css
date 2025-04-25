@@ -53,6 +53,7 @@
     text-transform: uppercase;
     text-align: right;
     align-self: flex-end !important;
+    /* margin-top: 0; */
 }
 
 .propertiesland-right h3 {

@@ -1,7 +1,7 @@
 export const homeTranslations = {
     en: {
       tituloprincipal: "Turning <em>local knowledge</em><br/>into magic",
-      subtitulo: "Helping you find your perfect space for over a decade",
+      subtitulo: "Helping you find your <em>perfect space</em> for over a <em>decade</em>",
       subtitulo2: "Artaza Real Estate",
       textosubtitulo2: "Artaza <em>Real Estate</em> is an agency specialized in the <em>property market</em> of <em>Artaza</em> and <em>Getxo</em>. With over 10 years of experience and a local office, we have deep knowledge of the <em>community</em>.<br/><br/>This allows us to help <em>sellers</em> close deals quickly and efficiently, while giving <em>buyers</em> access to some of the area’s finest <em>properties</em>.",
       artaza: "A Stroll Through Artaza",
@@ -10,12 +10,12 @@ export const homeTranslations = {
       textopropiedadesLand: "From <em>elegant apartments</em> to <em>family homes full of charm</em> — discover <em>unique properties</em> that reflect the spirit of this vibrant neighborhood.<br/><br/>We’ll help you carefully find the <em>space</em> that best fits your <em>lifestyle</em>, <em>needs</em>, and <em>personality</em> — a place that truly feels like <em>home</em>.",
       botonproperties: "Properties",
       botonproperties2: "Tell us what you're looking for",
-      compratitulo: "Your dream home<br/>is just a step away",
+      compratitulo: "Your <em>dream home</em><br/>is just a step away",
       textocompra: "",
     },
     es: {
       tituloprincipal: "Convirtiendo el <em>saber local</em><br/>en magia",
-      subtitulo: "Más de una década ayudándote a encontrar tu espacio ideal",
+      subtitulo: "Más de una <em>década</em> ayudándote a encontrar tu <em>espacio ideal</em>",
       subtitulo2: "Artaza Inmobiliaria",
       textosubtitulo2: "Artaza <em>Inmobiliaria</em> es una agencia especializada en el <em>mercado inmobiliario</em> de <em>Artaza</em> y <em>Getxo</em>. Con más de 10 años de experiencia y sede en la zona, contamos con un profundo conocimiento de la <em>comunidad local</em>.<br/><br/>Esto nos permite ayudar a los <em>vendedores</em> a cerrar operaciones de forma rápida y eficaz, y ofrecer a los <em>compradores</em> acceso a algunas de las mejores <em>propiedades</em> de la zona.",
       artaza: "Un paseo por Artaza",
@@ -24,7 +24,7 @@ export const homeTranslations = {
       textopropiedadesLand: "Desde <em>elegantes apartamentos</em> hasta <em>casas familiares con encanto</em> — descubre <em>propiedades únicas</em> que capturan la esencia de Artaza y Getxo.<br/><br/>Te acompañamos en la búsqueda del <em>espacio</em> que mejor encaje contigo, con tu <em>estilo de vida</em> y lo que estás buscando. Un lugar que realmente puedas llamar <em>hogar</em>.",
       botonproperties: "Propiedades",
       botonproperties2: "Define tus criterios de compra",
-      compratitulo: "Tu hogar soñado<br/>está a un solo paso",
+      compratitulo: "Tu <em>hogar soñado</em><br/>está a un solo paso",
       textocompra: "",
     }
   };

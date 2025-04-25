@@ -1,8 +1,7 @@
 
-* {
+/* * {
   box-sizing: border-box;
   font-family: 'Scto Grotesk A', Helvetica, Arial, sans-serif;
-  /* background-color: var(--light-color); */
 }
 
 html, body {
@@ -12,6 +11,41 @@ html, body {
   overflow-x: hidden;
   overflow-y: auto;
   background-color: var(--light-color);
+}
+
+:root {
+  --corporative-color: #1C4A69;
+  --light-color: #F3F1E9;
+  --nude-color: #E1D6C8;
+  --taupe-color: #A68F6D;
+  --dark-color: #2A2325;
+} */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Scto Grotesk A', Helvetica, Arial, sans-serif;
+  /* background-color: var(--light-color); */
+}
+
+html {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  /* Prevenir el efecto overscroll/pull-to-refresh */
+  overscroll-behavior-y: none;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--light-color);
+  /* Prevenir el efecto overscroll/pull-to-refresh */
+  overscroll-behavior-y: none;
 }
 
 :root {

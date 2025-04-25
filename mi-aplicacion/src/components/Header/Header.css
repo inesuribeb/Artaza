@@ -7,7 +7,6 @@
        justify-content: space-between;
        align-items: center;
        padding: 2.5rem 3rem;
-       /* background-color: var(--light-color); */
        background-color: transparent;
        position: fixed;
        top: 0;
@@ -18,12 +17,10 @@
        transition: background-color 0.5s ease;
    }
 
-   /* Cambiar el fondo al hacer hover */
    .header:hover {
        background-color: var(--light-color);
    }
 
-   /* Cambiar el fondo cuando el menú está activo */
    .header.menu-open {
        background-color: var(--light-color);
    }
@@ -50,7 +47,6 @@
        gap: 2rem;
    }
 
-   /* Selector de idioma */
    .language-selector {
        display: flex;
        align-items: center;
@@ -65,15 +61,12 @@
        font-size: 0.9rem;
        transition: font-weight 0.3s;
        transition: color 0.3;
-       /* color: var(--dark-color); */
    }
 
-   /* Selector de idioma - color claro por defecto cuando el header es transparente */
    .header:not(:hover):not(.menu-open) .language-selector span {
        color: var(--light-color);
    }
 
-   /* Selector de idioma - color oscuro cuando el header tiene fondo */
    .header:hover .language-selector span,
    .header.menu-open .language-selector span {
        color: var(--dark-color);
@@ -105,17 +98,14 @@
    .hamburger-line {
        width: 18px;
        height: 1px;
-       /* background-color: var(--dark-color); */
        position: absolute;
        transition: transform 0.3s ease-in-out;
    }
 
-   /* Líneas de hamburguesa - color claro por defecto cuando el header es transparente */
    .header:not(:hover):not(.menu-open) .hamburger-line {
        background-color: var(--light-color);
    }
 
-   /* Líneas de hamburguesa - color oscuro cuando el header tiene fondo */
    .header:hover .hamburger-line,
    .header.menu-open .hamburger-line {
        background-color: var(--dark-color);
@@ -163,7 +153,6 @@
        background-color: var(--light-color);
        padding-top: 100px;
        z-index: 1050;
-       /* border-left: 1px solid rgba(0, 0, 0, 0.1); */
        overflow-y: auto;
        opacity: 0;
        transition: transform 0.5s ease, opacity 0.3s ease;
@@ -185,10 +174,35 @@
    .nav-menu li {
        margin: 3.5rem 0;
        border-bottom: none;
+
+       opacity: 0;
+       transform: translateY(-20px);
+       transition: opacity 0.5s ease, transform 0.5s ease;
+   }
+
+   .nav-menu.show li:nth-child(1) {
+       transition-delay: 0.1s;
+   }
+
+   .nav-menu.show li:nth-child(2) {
+       transition-delay: 0.2s;
+   }
+
+   .nav-menu.show li:nth-child(3) {
+       transition-delay: 0.3s;
+   }
+
+   .nav-menu.show li:nth-child(4) {
+       transition-delay: 0.4s;
    }
 
    .nav-menu li:last-child {
        border-bottom: none;
+   }
+
+   .nav-menu.show li {
+       opacity: 1;
+       transform: translateY(0);
    }
 
    .nav-menu a {
@@ -225,9 +239,7 @@
    }
 
    .nav-menu a:hover {
-       /* background-color: var(--taupe-color); */
-       color: var(--corporative-color);
-       /* text-decoration: underline; */
+       color: var(--taupe-color);
    }
 
    .menu-overlay {
@@ -236,7 +248,6 @@
        left: 0;
        right: 0;
        bottom: 0;
-       /* background-color: rgba(243, 241, 233, 0.8); */
        background-color: rgba(0, 0, 0, 0.5);
        z-index: 1040;
        opacity: 0;
@@ -252,15 +263,34 @@
    }
 
    .mini-logo {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1051;
-    padding-right: 1rem;
-  }
-  
-  .mini-logo img {
-    width: 40px; 
-    height: auto;
-    opacity: 1;
-  }
+       position: absolute;
+       bottom: 20px;
+       right: 20px;
+       z-index: 1051;
+       padding-right: 1rem;
+   }
+
+   .mini-logo img {
+       width: 40px;
+       height: auto;
+       opacity: 1;
+   }
+
+
+   .mini-logo {
+       position: absolute;
+       bottom: 20px;
+       right: 20px;
+       z-index: 1051;
+       padding-right: 1rem;
+       opacity: 0;
+       transform: translateY(20px);
+       transition: opacity 0.5s ease, transform 0.5s ease;
+       transition-delay: 0.5s;
+   }
+
+   .nav-menu.show .mini-logo {
+       opacity: 1;
+       transform: translateY(0);
+   }
+
