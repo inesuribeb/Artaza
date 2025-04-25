@@ -23,7 +23,7 @@ function Root() {
         <LanguageProvider>
             <div>
                 <Header />
-                <div className="outlet-container">
+                <div className="outlet-container" key={location.pathname}>
                     <Outlet />
                 </div>
                 <Footer />
