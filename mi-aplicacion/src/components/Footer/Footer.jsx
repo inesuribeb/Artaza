@@ -41,7 +41,7 @@ function Footer() {
                     <p>{t('tardes')}</p>
                     <p>{t('viernes')}</p>
                     <p>{t('mananas')}</p>
-                    <p>{t('tardes')}</p>
+                    {/* <p>{t('tardes')}</p> */}
                 </div>
             </div>
             <div>

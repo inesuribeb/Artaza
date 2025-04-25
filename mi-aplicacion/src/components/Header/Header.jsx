@@ -1,8 +1,115 @@
+// import { useState } from "react";
+// import { Link } from "react-router-dom";
+// import { useLanguage } from "../../contexts/LanguageContext";
+// import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+// import './Header.css'
+
+// function Header() {
+//     const { language, toggleLanguage, t, getRoute } = useLanguage();
+//     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+//     const toggleMenu = () => {
+//         setIsMenuOpen(!isMenuOpen);
+//     };
+
+//     return (
+//         <>
+//             <div className="header-container">
+
+//                 <header className={`header ${isMenuOpen ? 'menu-open' : ''}`}>
+//                     <div className="logo">
+//                         <Link to={getRoute('home')}>
+//                             <img src="/images/LOGO1 BLANCO.png" alt="InmoArtaza Logo" />
+//                         </Link>
+//                     </div>
+
+//                     <div className="header-controls">
+//                         <div className="language-selector">
+//                             <span
+//                                 className={language === 'es' ? 'active' : ''}
+//                                 onClick={() => language !== 'es' && toggleLanguage()}
+//                             >
+//                                 ES
+//                             </span>
+//                             <span className="divider">|</span>
+//                             <span
+//                                 className={language === 'en' ? 'active' : ''}
+//                                 onClick={() => language !== 'en' && toggleLanguage()}
+//                             >
+//                                 EN
+//                             </span>
+//                         </div>
+
+//                         <button
+//                             onClick={toggleMenu}
+//                             className={`hamburger-button ${isMenuOpen ? 'active' : ''}`}
+//                             aria-label="Toggle menu"
+//                         >
+//                             <span className="hamburger-line top"></span>
+//                             <span className="hamburger-line middle"></span>
+//                             <span className="hamburger-line bottom"></span>
+//                         </button>
+//                     </div>
+//                 </header>
+//             </div>
+
+//             {/* Overlay y menú fuera del header */}
+//             <div className={`menu-overlay ${isMenuOpen ? 'show' : ''}`} onClick={toggleMenu}></div>
+
+//             <nav className={`nav-menu ${isMenuOpen ? 'show' : ''}`}>
+//                 <ul>
+//                     <li>
+//                         <Link to={getRoute('properties')} onClick={toggleMenu}>
+//                             <div className="nav-link-container">
+//                                 <KeyboardArrowLeftIcon className="nav-arrow" />
+//                                 <span className="nav-text">{t('properties')}</span>
+//                             </div>
+//                         </Link>
+//                     </li>
+//                     <li>
+//                         <Link to={getRoute('buy')} onClick={toggleMenu}>
+//                             <div className="nav-link-container">
+//                                 <KeyboardArrowLeftIcon className="nav-arrow" />
+//                                 <span className="nav-text">{t('buy')}</span>
+//                             </div>
+//                         </Link>
+//                     </li>
+//                     <li>
+//                         <Link to={getRoute('sell')} onClick={toggleMenu}>
+//                             <div className="nav-link-container">
+//                                 <KeyboardArrowLeftIcon className="nav-arrow" />
+//                                 <span className="nav-text">{t('sell')}</span>
+//                             </div>
+//                         </Link>
+//                     </li>
+//                     <li>
+//                         <Link to={getRoute('contact')} onClick={toggleMenu}>
+//                             <div className="nav-link-container">
+//                                 <KeyboardArrowLeftIcon className="nav-arrow" />
+//                                 <span className="nav-text">{t('contact')}</span>
+//                             </div>
+//                         </Link>
+//                     </li>
+//                 </ul>
+
+//                 <div className="mini-logo">
+//                     <img src="/images/ISOTIPO.png" alt="mini-logo-artaza-inmo" />
+//                 </div>
+//             </nav>
+//         </>
+//     )
+// }
+
+// export default Header;
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../../contexts/LanguageContext";
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import './Header.css'
+
+// Clave para almacenar y recuperar la posición de scroll
+const SCROLL_POSITION_KEY = 'artaza_scroll_position';
 
 function Header() {
     const { language, toggleLanguage, t, getRoute } = useLanguage();
@@ -10,6 +117,19 @@ function Header() {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    // Función mejorada para cambiar idioma sin parpadeo
+    const handleLanguageChange = () => {
+        // Guardar la posición actual del scroll en localStorage
+        const scrollPosition = window.scrollY;
+        localStorage.setItem(SCROLL_POSITION_KEY, scrollPosition.toString());
+        
+        // Indicar que este es un cambio de idioma y no un cambio de página
+        localStorage.setItem('is_language_change', 'true');
+        
+        // Cambiar el idioma (esto causará navegación)
+        toggleLanguage();
     };
 
     return (
@@ -27,14 +147,14 @@ function Header() {
                         <div className="language-selector">
                             <span
                                 className={language === 'es' ? 'active' : ''}
-                                onClick={() => language !== 'es' && toggleLanguage()}
+                                onClick={() => language !== 'es' && handleLanguageChange()}
                             >
                                 ES
                             </span>
                             <span className="divider">|</span>
                             <span
                                 className={language === 'en' ? 'active' : ''}
-                                onClick={() => language !== 'en' && toggleLanguage()}
+                                onClick={() => language !== 'en' && handleLanguageChange()}
                             >
                                 EN
                             </span>
@@ -53,7 +173,7 @@ function Header() {
                 </header>
             </div>
 
-            {/* Overlay y menú fuera del header */}
+            {/* Resto del código igual que antes */}
             <div className={`menu-overlay ${isMenuOpen ? 'show' : ''}`} onClick={toggleMenu}></div>
 
             <nav className={`nav-menu ${isMenuOpen ? 'show' : ''}`}>
