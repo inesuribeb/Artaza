@@ -1,68 +1,57 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from "../../contexts/LanguageContext";
-import './Footer.css'
+import './Footer.css';
 
-function Footer () {
-    const { language, toggleLanguage, t, getRoute } = useLanguage();
+function Footer() {
+    const { t, getRoute } = useLanguage();
+    const navigate = useNavigate();
 
     return (
-        <div className='footer-content'>
-            <div className='primera-fila-footer'>
-                <nav className={`nav-menu-footer`}>
-                    <ul>                        
-                        <li>
-                            <Link to={getRoute('properties')} >{t('properties')}</Link>
-                        </li>
-                        <li>
-                            <Link to={getRoute('buy')} >{t('buy')}</Link>
-                        </li>
-                        <li>
-                            <Link to={getRoute('sell')} >{t('sell')}</Link>
-                        </li>
-                        <li>
-                            <Link to={getRoute('contact')} >{t('contact')}</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div className='segunda-fila-footer'>
-                <div className="columna-izquierda">
-                    <p>(+34) 944 33 17 36</p>
-                    <p>650 56 77 12</p>
+        <div className="footer-wrapper">
+            <div className='footer-content'>
+                <div className="footer-left">
+                    <h3>{t('nombreempresa')}</h3>
+                    <p>{t('direccion')}</p>
+                    <p>{t('localidad')}</p>
+                    <p>{t('telefono')}</p>
+                    <p>{t('email')}</p>
+                    {/* <div className="whatsapp-icon">
+                    <img src="/images/ISOTIPO BLANCO.png" alt="WhatsApp" />
+                </div> */}
                 </div>
-                <div className="columna-derecha">
-                    <p>Paseo Landabarri, 48</p>
-                    <p>48940 Leioa</p>
+
+                <div className="footer-center">
+                    <h2>{t('tasaciontitulo')}</h2>
+                    <p>{t('tasaciontexto')}</p>
+                    {/* <button className="register-button">{t('registrate')}</button> */}
+                    <button
+                        className="register-button"
+                        onClick={() => navigate(getRoute('sell'))}
+                        dangerouslySetInnerHTML={{ __html: t('registrate') }}
+                    ></button>
+                    {/* <div className="whatsapp-icon">
+                    <img src="/images/ISOTIPO BLANCO.png" alt="WhatsApp" />
+                </div> */}
                 </div>
-            </div>
 
-            {/* <div className='tercera-fila-footer'>
-                <p>info@inmoartaza.es</p>
-            </div> */}
-
-            <div className='cuarta-fila-footer'>
-                {/* <h5>De Lunes a Viernes</h5> */}
-                <h5>{t('delunesaviernes')}</h5>
-                <div className="horarios">
-                    <div className="columna-izquierda">
-                        <p>10:30 - 13:30</p>
-                        <p>Maru Pineda</p>
-                    </div>
-                    <div className="columna-derecha">
-                        <p>17:00 - 20:00</p>
-                        <p>info@inmoartaza.es</p>
-                    </div>
+                <div className="footer-right">
+                    <h3>{t('horario')}</h3>
+                    <p>{t('lunesajueves')}</p>
+                    <p>{t('mananas')}</p>
+                    <p>{t('tardes')}</p>
+                    <p>{t('viernes')}</p>
+                    <p>{t('mananas')}</p>
+                    <p>{t('tardes')}</p>
                 </div>
             </div>
-
-            <div className='quinta-fila-footer'>
-                <Link to="/home">
-                    <img src="/images/ISOTIPO BLANCO.png" alt="InmoArtaza Logo" />
-                </Link> 
+            <div>
+                <div className="whatsapp-icon">
+                    <img src="/images/ISOTIPO BLANCO.png" alt="WhatsApp" />
+                </div>
             </div>
         </div>
-    )
+    );
 }
+
 
 export default Footer;

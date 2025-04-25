@@ -15,80 +15,12 @@ function Header() {
     return (
         <>
             <div className="header-container">
-                {/* <header className={`header ${isMenuOpen ? 'menu-open' : ''}`}>
-                <div className="logo">
-                    <Link to="/home">
-                        <img src="/images/LOGO 1.png" alt="InmoArtaza Logo" />
-                    </Link>
-                </div>
-
-                <div className="header-controls">
-                    <div className="language-selector">
-                        <span
-                            className={language === 'es' ? 'active' : ''}
-                            onClick={() => language !== 'es' && toggleLanguage()}
-                        >
-                            ES
-                        </span>
-                        <span className="divider">|</span>
-                        <span
-                            className={language === 'en' ? 'active' : ''}
-                            onClick={() => language !== 'en' && toggleLanguage()}
-                        >
-                            EN
-                        </span>
-                    </div>
-
-                    <button
-                        onClick={toggleMenu}
-                        className={`hamburger-button ${isMenuOpen ? 'active' : ''}`}
-                        aria-label="Toggle menu"
-                    >
-                        <span className="hamburger-line top"></span>
-                        <span className="hamburger-line middle"></span>
-                        <span className="hamburger-line bottom"></span>
-                    </button>
-                </div>
-
-                <div className={`menu-overlay ${isMenuOpen ? 'show' : ''}`} onClick={toggleMenu}></div>
-
-                <nav className={`nav-menu ${isMenuOpen ? 'show' : ''}`}>
-                    <ul>                        
-                        <li>
-                            <Link to={getRoute('properties')} onClick={toggleMenu}>{t('properties')}</Link>
-                        </li>
-                        <li>
-                            <Link to={getRoute('buy')} onClick={toggleMenu}>{t('buy')}</Link>
-                        </li>
-                        <li>
-                            <Link to={getRoute('sell')} onClick={toggleMenu}>{t('sell')}</Link>
-                        </li>
-                        <li>
-                            <Link to={getRoute('contact')} onClick={toggleMenu}>{t('contact')}</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </header> 
-            </div>*/}
-
 
                 <header className={`header ${isMenuOpen ? 'menu-open' : ''}`}>
                     <div className="logo">
-                        <Link to="/home">
+                        <Link to={getRoute('home')}>
                             <img src="/images/LOGO1 BLANCO.png" alt="InmoArtaza Logo" />
                         </Link>
-                        {/* <Link to="/home">
-                            <img
-                                src="/images/LOGO 1.png"
-                                alt="InmoArtaza Logo"
-                                className="logo-dark"
-                            />
-                            <img
-                                src="/images/LOGO1 BLANCO.png"
-                                alt="InmoArtaza Logo"
-                                className="logo-light"
-                            />
-                        </Link> */}
                     </div>
 
                     <div className="header-controls">
@@ -126,18 +58,6 @@ function Header() {
 
             <nav className={`nav-menu ${isMenuOpen ? 'show' : ''}`}>
                 <ul>
-                    {/* <li>
-                        <Link to={getRoute('properties')} onClick={toggleMenu}>{t('properties')}</Link>
-                    </li>
-                    <li>
-                        <Link to={getRoute('buy')} onClick={toggleMenu}>{t('buy')}</Link>
-                    </li>
-                    <li>
-                        <Link to={getRoute('sell')} onClick={toggleMenu}>{t('sell')}</Link>
-                    </li>
-                    <li>
-                        <Link to={getRoute('contact')} onClick={toggleMenu}>{t('contact')}</Link>
-                    </li> */}
                     <li>
                         <Link to={getRoute('properties')} onClick={toggleMenu}>
                             <div className="nav-link-container">

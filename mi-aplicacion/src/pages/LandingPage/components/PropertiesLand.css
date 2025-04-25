@@ -1,13 +1,12 @@
-.section-inmolocation {
+.section-propertiesland {
     width: 100%;
     height: auto;
     padding-top: 10rem;
     display: flex;
     flex-direction: column;
-    /* padding-bottom: 8rem; */
 }
 
-.inmolocation-inner {
+.propertiesland-inner {
     /* padding: 2.5rem 3rem; */
     margin-left: 3rem;
     margin-right: 3rem;
@@ -21,34 +20,50 @@
     border-top: 2px solid var(--dark-color);
     padding-bottom: 5rem;
     /* border-bottom: 2px solid var(--dark-color); */
-
 }
 
+.propertiesland-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
+.propertiesland-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 580px;
+}
 
-.inmolocation-left {
+.propertiesland-right {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-end;
 }
 
-.inmolocation-left h1 {
+.propertiesland-right h1 {
     font-size: 4rem;
     font-weight: 100;
     color: var(--dark-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
+    text-align: right;
+    align-self: flex-end !important;
 }
 
-.inmolocation-left h3 {
+.propertiesland-right h3 {
     font-size: 1.1rem;
     font-weight: 100;
     width: 80%;
     line-height: 1.5rem;
+    text-align: right;
 }
 
-.inmolocation-left button {
+.propertiesland-right button {
     margin-top: 3rem;
     padding: 1rem 2rem; /* más padding a los lados */
     width: max-content; 
@@ -61,42 +76,9 @@
     transition: all 0.3s ease; /* animación suave */
 }
 
-.inmolocation-left button:hover {
+.propertiesland-right button:hover {
     cursor: pointer;
     background-color: var(--dark-color);
     color: var(--light-color);
     border: 1px solid var(--light-color);
 }
-
-.inmolocation-right {
-    flex: 1;
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.inmolocation-right img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    max-width: 580px; 
-}
-
-.carousel-location {
-    /* width: 100%;
-    height: auto; */
-    padding: 0rem 3rem;
-    
-}
-
-.carousel-location h3 {
-    font-size: 2rem;
-    font-weight: 100;
-    color: var(--dark-color);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 1.4rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 2px solid var(--dark-color);
-}
-
