@@ -12,7 +12,6 @@ function InmoLocation() {
                 <div className="inmolocation-left">
                     <h1 dangerouslySetInnerHTML={{ __html: t('subtitulo2') }}></h1>
                     <h3 dangerouslySetInnerHTML={{ __html: t('textosubtitulo2') }}></h3>
-                    {/* <button dangerouslySetInnerHTML={{ __html: t('botonquienessomos') }}></button> */}
                     <button
                         className="button-link"
                         onClick={() => navigate(getRoute('contact'))}
