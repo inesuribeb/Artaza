@@ -1,4 +1,4 @@
-const homes = [
+export const homes = [
     {
         id: "001",
         price: "870.000 €",
@@ -613,7 +613,7 @@ const homes = [
         "laundry": false,
         "attic": false,
         "elevator": true,
-        "year_built": 0,
+        "year_built": null,
         "exact_location": {
             "es": "Calle Jaime Morera Kalea 6, Zona Usategui - Trinitarios, Algorta, Getxo",
             "en": "Calle Jaime Morera Kalea 6, Zona Usategui - Trinitarios, Algorta, Getxo"
@@ -654,7 +654,7 @@ const homes = [
         "laundry": false,
         "attic": true,
         "elevator": true,
-        "year_built": 0,
+        "year_built": null,
         "exact_location": {
             "es": "Calle Negurigane s/n, Negurigane-Peruri, Leioa",
             "en": "Calle Negurigane s/n, Negurigane-Peruri, Leioa"
@@ -695,7 +695,7 @@ const homes = [
         "laundry": false,
         "attic": false,
         "elevator": true,
-        "year_built": 0,
+        "year_built": null,
         "exact_location": {
             "es": "Calle Estartetxe Kalea s/n, Centro Urbano-Hirigunea, Leioa",
             "en": "Calle Estartetxe Kalea s/n, Centro Urbano-Hirigunea, Leioa"
@@ -736,7 +736,7 @@ const homes = [
         "laundry": false,
         "attic": false,
         "elevator": true,
-        "year_built": 0,
+        "year_built": null,
         "exact_location": {
             "es": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa",
             "en": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa"

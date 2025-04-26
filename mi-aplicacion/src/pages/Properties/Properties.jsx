@@ -1,3 +1,4 @@
+import PropertyCart from './components/PropertyCart';
 import './Properties.css'
 
 function Properties () {
