@@ -2,6 +2,7 @@ import { createContext, useState, useContext, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { translations as footerTranslations } from './FooterContent'
 import { homeTranslations } from './HomeContent';
+import { PropertyCartContent } from './PropertyCartContent'
 
 // Definimos las traducciones
 const translations = {
@@ -14,6 +15,7 @@ const translations = {
     contact: "Contact",
     ...footerTranslations.en,
     ...homeTranslations.en,
+    ...PropertyCartContent.en
     // Añade más traducciones según necesites
   },
   es: {
@@ -25,6 +27,7 @@ const translations = {
     contact: "Contacto",
     ...footerTranslations.es,
     ...homeTranslations.es,
+    ...PropertyCartContent.es
     // Añade más traducciones según necesites
   }
 };

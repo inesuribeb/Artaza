@@ -1,0 +1,68 @@
+/* Properties.css */
+.properties-container {
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    /* padding: 2.5rem 3rem; */
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+}
+
+.properties-grid {
+    /* padding: 2.5rem 3rem; */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 1rem; */
+    margin-bottom: 40px;
+    /* border: 1px solid var(--dark-color); */
+}
+
+/* Paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.pagination-button {
+    padding: 8px 16px;
+    border: 1px solid #e2e8f0;
+    background-color: white;
+    color: #4a5568;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.pagination-button:hover {
+    background-color: #f7fafc;
+    border-color: #cbd5e0;
+}
+
+.pagination-button.active {
+    background-color: #3182ce;
+    color: white;
+    border-color: #3182ce;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .properties-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .properties-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .properties-container {
+        padding: 20px 16px;
+    }
+}

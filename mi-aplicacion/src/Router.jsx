@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import Root from "./Root";
 import Landing from "./pages/LandingPage/Landing";
 import Properties from "./pages/Properties/Properties";
@@ -12,6 +12,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Root />,
         children: [
+            {
+                path: "/", // Redirigir directamente
+                element: <Navigate to="/inicio" replace />
+            },
             // Rutas en español
             {
                 path: "/inicio",
@@ -37,7 +41,7 @@ const router = createBrowserRouter([
                 path: "/contacto",
                 element: <Contact />
             },
-            
+
             // Rutas en inglés (mismos componentes, diferentes URLs)
             {
                 path: "/home",
