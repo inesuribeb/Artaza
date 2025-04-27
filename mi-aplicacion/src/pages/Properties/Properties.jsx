@@ -9,14 +9,19 @@ function Properties() {
     const [currentPage, setCurrentPage] = useState(1);
     const propertiesPerPage = 9;
 
-    // Cálculos para la paginación
     const indexOfLastProperty = currentPage * propertiesPerPage;
     const indexOfFirstProperty = indexOfLastProperty - propertiesPerPage;
     const currentProperties = homes.slice(indexOfFirstProperty, indexOfLastProperty);
     const totalPages = Math.ceil(homes.length / propertiesPerPage);
 
-    // Cambiar página
-    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+        });
+    };
 
     return (
         <div className="properties-container">
@@ -26,7 +31,6 @@ function Properties() {
                 ))}
             </div>
             
-            {/* Paginación */}
             {totalPages > 1 && (
                 <div className="pagination">
                     {Array.from({ length: totalPages }, (_, i) => i + 1).map((number) => (

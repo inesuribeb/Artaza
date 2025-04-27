@@ -28,7 +28,7 @@ function PropertyCart({ property }) {
 
     return (
         <div className="property-card">
-            <div className="property-card__image-container">
+            {/* <div className="property-card__image-container">
                 {main_image ? (
                     <img
                         src={main_image}
@@ -46,16 +46,38 @@ function PropertyCart({ property }) {
                         {t('sold')}
                     </div>
                 )}
+            </div> */}
+
+            <div className="property-card__image-container">
+                <div className="property-card__image-frame">
+                    {main_image ? (
+                        <img
+                            src={main_image}
+                            alt={type[language]}
+                            className="property-card__image"
+                        />
+                    ) : (
+                        <div className="property-card__image-placeholder">
+                            <span>{t('noImageAvailable')}</span>
+                        </div>
+                    )}
+                </div>
+                {sold && (
+                    <div className="property-card__sold-badge">
+                        {t('sold')}
+                    </div>
+                )}
             </div>
 
             <div className="property-card__info" onClick={handleViewDetails}>
                 <p className="property-card__location">{location}</p>
 
-                <h2 className="property-card__title">{title[language]}</h2>
+                {/* <h2 className="property-card__title">{title[language]}</h2> */}
+                <h2
+                    className="property-card__title"
+                    dangerouslySetInnerHTML={{ __html: title[language] }}
+                ></h2>
 
-                {/* <h3 className="property-card__price">{price}</h3> */}
-
-                {/* <p className="property-card__location">{location}</p> */}
 
                 <div className="property-card__features">
                     <span>{price}</span>
