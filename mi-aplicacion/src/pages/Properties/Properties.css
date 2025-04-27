@@ -1,21 +1,16 @@
 /* Properties.css */
 .properties-container {
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
-    /* padding: 2.5rem 3rem; */
     margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 
 }
 
 .properties-grid {
-    /* padding: 2.5rem 3rem; */
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* gap: 1rem; */
     margin-bottom: 40px;
-    /* border: 1px solid var(--dark-color); */
+
+    grid-auto-rows: 1fr; /* Esto hace que todas las filas tengan la misma altura */
 }
 
 /* Paginación */
@@ -23,29 +18,33 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 .pagination-button {
-    padding: 8px 16px;
-    border: 1px solid #e2e8f0;
-    background-color: white;
-    color: #4a5568;
-    border-radius: 8px;
+    /* padding: 0.5rem; */
+    width: 2rem;  /* o el tamaño que prefieras */
+    height: 2rem;
+    padding: 0;
+    border: 1px solid var(--corporative-color);
+    background-color: transparent;
+    color: var(--corporative-color);
+    border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
 }
 
 .pagination-button:hover {
-    background-color: #f7fafc;
-    border-color: #cbd5e0;
+    /* background-color: var(--nude-color); */
+    /* border-color: #cbd5e0; */
+    scale: 1.1;
 }
 
 .pagination-button.active {
-    background-color: #3182ce;
-    color: white;
-    border-color: #3182ce;
+    background-color: var(--corporative-color);
+    color: var(--light-color);
+    border-color: var(--corporative-color);
 }
 
 /* Responsive design */

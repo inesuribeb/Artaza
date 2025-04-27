@@ -294,3 +294,27 @@
        transform: translateY(0);
    }
 
+
+
+
+
+/*Header siempre con fondo claro si no estamos en landing page*/
+   .header.force-light {
+       background-color: var(--light-color);
+       color: var(--dark-color);
+
+   }
+
+   .header.force-light .logo img {
+       filter: brightness(0);
+   }
+
+   .header.force-light .language-selector span,
+   .header.force-light:hover .language-selector span {
+       color: var(--dark-color) !important;
+   }
+
+   .header.force-light .hamburger-line,
+   .header.force-light:hover .hamburger-line {
+       background-color: var(--dark-color) !important;
+   }

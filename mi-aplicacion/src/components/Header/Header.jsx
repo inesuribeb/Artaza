@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useLanguage } from "../../contexts/LanguageContext";
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import './Header.css'
@@ -10,6 +10,9 @@ const SCROLL_POSITION_KEY = 'artaza_scroll_position';
 function Header() {
     const { language, toggleLanguage, t, getRoute } = useLanguage();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
+
+    const isHomePage = location.pathname === '/inicio' || location.pathname === '/home' || location.pathname === '/';
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -32,7 +35,9 @@ function Header() {
         <>
             <div className="header-container">
 
-                <header className={`header ${isMenuOpen ? 'menu-open' : ''}`}>
+                {/* <header className={`header ${isMenuOpen ? 'menu-open' : ''}`}> */}
+                <header className={`header ${isMenuOpen ? 'menu-open' : ''} ${!isHomePage ? 'force-light' : ''}`}>
+
                     <div className="logo">
                         <Link to={getRoute('home')}>
                             <img src="/images/LOGO1 BLANCO.png" alt="InmoArtaza Logo" />

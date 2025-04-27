@@ -49,21 +49,23 @@ function PropertyCart({ property }) {
             </div>
 
             <div className="property-card__info" onClick={handleViewDetails}>
+                <p className="property-card__location">{location}</p>
+
                 <h2 className="property-card__title">{title[language]}</h2>
 
                 {/* <h3 className="property-card__price">{price}</h3> */}
 
-                <p className="property-card__location">{location}</p>
+                {/* <p className="property-card__location">{location}</p> */}
 
                 <div className="property-card__features">
                     <span>{price}</span>
-                    <span>|</span>
+                    <span className='separator-features'>|</span>
                     <span>{type[language]}</span>
-                    <span>|</span>
+                    <span className='separator-features'>|</span>
                     <span>{built_m2} m²</span>
-                    <span>|</span>
+                    <span className='separator-features'>|</span>
                     <span>{bedrooms} {t('bedrooms')}</span>
-                    <span>|</span>
+                    <span className='separator-features'>|</span>
                     <span>{bathrooms} {t('bathrooms')}</span>
                 </div>
 
