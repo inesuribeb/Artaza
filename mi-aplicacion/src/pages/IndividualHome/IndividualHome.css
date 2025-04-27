@@ -15,8 +15,7 @@
     flex-direction: column;
     align-items: center;}
 
-/* IndividualHome.css */
-/* IndividualHome.css */
+/* Carousel.css */
 .individual-home-carousel {
     max-width: 1200px;
     margin: 2rem auto;
@@ -46,11 +45,11 @@
 }
 
 .carousel-thumbnails::-webkit-scrollbar {
-    height: 6px;
+    height: 4px;
 }
 
 .carousel-thumbnails::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f1f1f141;
 }
 
 .carousel-thumbnails::-webkit-scrollbar-thumb {
@@ -96,8 +95,81 @@
     display: none;
 }
 
+
+
+/*3era fila*/
+
+
+.individual-home-totalinfo {
+    display: flex;
+    flex-direction: row;
+    /* padding: 2.5rem 3rem; */
+    /* gap: 4rem; */
+    color: var(--dark-color);
+    border-bottom: 1px solid var(--dark-color);
+    border-top: 1px solid var(--dark-color);
+}
+
+.column-description {
+    flex: 1;
+    padding: 1.5rem 3rem;
+    background-color: var(--nude-color);
+    border-right: 1px solid var(--dark-color);
+}
+
+.individual-home-totalinfo h3 {
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    /* border-bottom: 1px solid var(--dark-color); */
+    /* margin-bottom: 1rem; */
+}
+
+.column-description p:first-of-type {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.column-description p:last-of-type {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 2rem;
+    width: 80%;
+}
+
+
+.column-extras {
+    flex: 1;
+    padding: 1.5rem 3rem;
+
+}
+
+.extras-list {
+    list-style: circle;
+    padding: 0;
+    padding-top: 2rem;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.5rem;
+}
+
+.extras-list li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    background-color: transparent;
+    /* border: 0.5px solid var(--corporative-color); */
+    border-radius: 4px;
+    text-align: left;
+}
+
+
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .thumbnail-wrapper {
         width: 120px;
         height: 75px;
@@ -109,4 +181,4 @@
         width: 80px;
         height: 50px;
     }
-}
+} */

@@ -45,8 +45,8 @@ function IndividualHome() {
             <div className='individual-home-carousel'>
                 {/* Imagen principal */}
                 <div className="carousel-main-image">
-                    <img 
-                        src={propertyImages[selectedImage]} 
+                    <img
+                        src={propertyImages[selectedImage]}
                         alt={`${property.title[language]} - ${selectedImage + 1}`}
                     />
                 </div>
@@ -54,13 +54,13 @@ function IndividualHome() {
                 {/* Miniaturas de navegación */}
                 <div className="carousel-thumbnails">
                     {propertyImages.map((image, index) => (
-                        <div 
+                        <div
                             key={index}
                             className={`thumbnail-wrapper ${selectedImage === index ? 'active' : ''}`}
                             onClick={() => setSelectedImage(index)}
                         >
-                            <img 
-                                src={image} 
+                            <img
+                                src={image}
                                 alt={`Thumbnail ${index + 1}`}
                             />
                             {selectedImage !== index && <div className="thumbnail-overlay" />}
@@ -71,6 +71,38 @@ function IndividualHome() {
 
             <div className='individual-home-totalinfo'>
                 {/* Aquí irá el resto de la información */}
+                <div className='column-description'>
+                    <h3>{t('description')}</h3>
+                    <p>{property.exact_location[language]}</p>
+
+                    {/* <p>{property.description[language]}</p> */}
+                    <p dangerouslySetInnerHTML={{ __html: property.description[language] }}></p>
+
+                </div>
+
+                <div className='column-extras'>
+                    {/* <span>{property.description[language]}</span> */}
+                    <h3>{t('extras')}</h3>
+                    <ul className="extras-list">
+                        {property.terrace && <li>{t('terrace')}</li>}
+                        {property.balcony && <li>{t('balcony')}</li>}
+                        {property.built_in_wardrobes && <li>{t('builtInWardrobes')}</li>}
+                        {property.storage_room && <li>{t('storageRoom')}</li>}
+                        {property.garage && <li>{t('garage')}</li>}
+                        {property.pool && <li>{t('pool')}</li>}
+                        {property.garden && <li>{t('garden')}</li>}
+                        {property.private_urbanization && <li>{t('privateUrbanization')}</li>}
+                        {property.chimney && <li>{t('chimney')}</li>}
+                        {property.txoko && <li>{t('txoko')}</li>}
+                        {property.laundry && <li>{t('laundry')}</li>}
+                        {property.attic && <li>{t('attic')}</li>}
+                        {property.elevator && <li>{t('elevator')}</li>}
+                        {property.year_built && <li>{t('yearBuilt')}: {property.year_built}</li>}
+                        {property.parcel_m2 && <li>{t('parcelM2')}: {property.parcel_m2} m²</li>}
+                    </ul>
+
+                </div>
+
             </div>
 
             <div className='contact-suggestion'></div>
