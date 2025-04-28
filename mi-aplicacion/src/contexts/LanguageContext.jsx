@@ -4,6 +4,7 @@ import { translations as footerTranslations } from './FooterContent'
 import { homeTranslations } from './HomeContent';
 import { PropertyCartContent } from './PropertyCartContent'
 import { IndividualHome } from './IndividualHome';
+import { filterContent } from './FilterContent';
 
 // Definimos las traducciones
 const translations = {
@@ -18,6 +19,7 @@ const translations = {
     ...homeTranslations.en,
     ...PropertyCartContent.en,
     ...IndividualHome.en,
+    ...filterContent.en,
     // Añade más traducciones según necesites
   },
   es: {
@@ -31,6 +33,7 @@ const translations = {
     ...homeTranslations.es,
     ...PropertyCartContent.es,
     ...IndividualHome.es,
+    ...filterContent.es,
     // Añade más traducciones según necesites
   }
 };

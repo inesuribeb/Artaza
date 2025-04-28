@@ -168,7 +168,7 @@ export const homes = [
     {
         id: "004",
         price: "690.000 €",
-        location: "Artaza",
+        location: "Artaza, Leioa",
         type: {
             es: "Ático",
             en: "Penthouse"
@@ -222,7 +222,7 @@ export const homes = [
     {
         id: "005",
         price: "- €",
-        location: "Negurigane",
+        location: "Negurigane, Leioa",
         type: {
             es: "Chalet",
             en: "Detached House"
@@ -276,7 +276,7 @@ export const homes = [
     {
         id: "006",
         price: "- €",
-        location: "Artaza",
+        location: "Artaza, Leioa",
         type: {
             es: "Piso",
             en: "Apartment"
@@ -330,7 +330,7 @@ export const homes = [
     {
         id: "007",
         price: "460.000 €",
-        location: "Artaza",
+        location: "Artaza, Leioa",
         type: {
             es: "Dúplex",
             en: "Duplex Penthouse"
@@ -438,7 +438,7 @@ export const homes = [
     {
         id: "009",
         price: "625.000 €",
-        location: "Negurigane",
+        location: "Negurigane, Leioa",
         type: {
             es: "Bajo",
             en: "Ground Floor"
@@ -492,7 +492,7 @@ export const homes = [
     {
         id: "010",
         price: "1.250.000 €",
-        location: "Sarriena",
+        location: "Sarriena, Leioa",
         type: {
             es: "Chalet",
             en: "Detached House"
@@ -546,7 +546,7 @@ export const homes = [
     {
         id: "011",
         price: "- €",
-        location: "Negurigane",
+        location: "Negurigane, Leioa",
         type: {
             es: "Adosado",
             en: "Terraced House"
@@ -600,7 +600,7 @@ export const homes = [
     {
         id: "012",
         price: "- €",
-        location: "Las Arenas",
+        location: "Las Arenas, Getxo",
         type: {
             es: "Piso",
             en: "Flat"
@@ -654,7 +654,7 @@ export const homes = [
     {
         id: "013",
         price: "510.000 €",
-        location: "Negurigane",
+        location: "Negurigane, Leioa",
         type: {
             es: "Bajo",
             en: "Ground Floor"
@@ -762,7 +762,7 @@ export const homes = [
     {
         id: "015",
         price: "- €",
-        location: "Algorta",
+        location: "Algorta, Getxo",
         type: {
             "es": "Piso",
             "en": "Apartment"
@@ -815,7 +815,7 @@ export const homes = [
     {
         id: "016",
         price: "770.000 €",
-        location: "Negurigane",
+        location: "Negurigane, Leioa",
         type: {
             "es": "Adosado",
             "en": "Semi-Detached House"
@@ -921,7 +921,7 @@ export const homes = [
     {
         id: "018",
         price: "440.000 €",
-        location: "Artaza",
+        location: "Artaza, Leioa",
         type: {
             "es": "Piso",
             "en": "Apartment"

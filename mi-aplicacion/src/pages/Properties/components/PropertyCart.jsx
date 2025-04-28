@@ -69,13 +69,14 @@ function PropertyCart({ property }) {
                 )}
             </div>
 
-            <div className="property-card__info" onClick={handleViewDetails}>
+            <div className="property-card__info" >
                 <p className="property-card__location">{location}</p>
 
                 {/* <h2 className="property-card__title">{title[language]}</h2> */}
                 <h2
                     className="property-card__title"
                     dangerouslySetInnerHTML={{ __html: title[language] }}
+                    onClick={handleViewDetails}
                 ></h2>
 
 

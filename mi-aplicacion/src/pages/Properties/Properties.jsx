@@ -1,68 +1,13 @@
-// import { useState } from 'react';
-// import { useLanguage } from '../../contexts/LanguageContext';
-// import PropertyCart from './components/PropertyCart';
-// import { homes } from '../../utils/Homes';
-// import './Properties.css'
-
-// function Properties() {
-//     const { t } = useLanguage();
-//     const [currentPage, setCurrentPage] = useState(1);
-//     const propertiesPerPage = 9;
-
-//     const indexOfLastProperty = currentPage * propertiesPerPage;
-//     const indexOfFirstProperty = indexOfLastProperty - propertiesPerPage;
-//     const currentProperties = homes.slice(indexOfFirstProperty, indexOfLastProperty);
-//     const totalPages = Math.ceil(homes.length / propertiesPerPage);
-
-
-//     const paginate = (pageNumber) => {
-//         setCurrentPage(pageNumber);
-//         window.scrollTo({
-//             top: 0,
-//             behavior: 'smooth' 
-//         });
-//     };
-
-//     return (
-//         <div className="properties-container">
-
-//             <div className='filter-properties'>
-                
-//             </div>
-//             <div className="properties-grid">
-//                 {currentProperties.map((home) => (
-//                     <PropertyCart key={home.id} property={home} />
-//                 ))}
-//             </div>
-            
-//             {totalPages > 1 && (
-//                 <div className="pagination">
-//                     {Array.from({ length: totalPages }, (_, i) => i + 1).map((number) => (
-//                         <button
-//                             key={number}
-//                             onClick={() => paginate(number)}
-//                             className={`pagination-button ${currentPage === number ? 'active' : ''}`}
-//                         >
-//                             {number}
-//                         </button>
-//                     ))}
-//                 </div>
-//             )}
-//         </div>
-//     );
-// }
-
-// export default Properties;
-
 import { useState, useEffect } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import PropertyCart from './components/PropertyCart';
-import SearchForm from './components/FilterProperty'; // Importamos el componente de búsqueda
+import SearchForm from './components/FilterProperty'; 
 import { homes } from '../../utils/Homes';
 import './Properties.css';
 
 function Properties() {
     const { t } = useLanguage();
+    
     const [currentPage, setCurrentPage] = useState(1);
     const propertiesPerPage = 9;
     
@@ -76,41 +21,51 @@ function Properties() {
 
     // Aplicar filtros cuando cambien los criterios de búsqueda
     useEffect(() => {
+        if (!propertyCount && !neighborhood && !budget) {
+            setFilteredProperties(homes);
+            return;
+        }
+        
         let filtered = [...homes];
         
-        // Filtrar por número de propiedades (si es diferente de "any number")
-        if (propertyCount && propertyCount !== 'any number') {
-            if (propertyCount === '5+') {
-                filtered = filtered.filter(home => home.bedrooms >= 5);
-            } else {
-                filtered = filtered.filter(home => home.bedrooms === parseInt(propertyCount));
+        // Filtrar por número de propiedades
+        if (propertyCount && propertyCount !== t('anyNumber')) {
+            // Extraer el número de la cadena (por ejemplo "3+ bedrooms" -> 3)
+            const bedroomMatch = propertyCount.match(/(\d+)/);
+            if (bedroomMatch && bedroomMatch[1]) {
+                const bedroomCount = parseInt(bedroomMatch[1]);
+                if (!isNaN(bedroomCount)) {
+                    filtered = filtered.filter(home => home.bedrooms >= bedroomCount);
+                }
             }
         }
         
-        // Filtrar por vecindario (si es diferente de "any neighbourhood")
-        if (neighborhood && neighborhood !== 'any neighbourhood') {
+        // Filtrar por vecindario
+        if (neighborhood && neighborhood !== t('anyNeighbourhood')) {
             filtered = filtered.filter(home => 
                 home.neighborhood.toLowerCase() === neighborhood.toLowerCase());
         }
         
-        // Filtrar por presupuesto (si es diferente de "any")
-        if (budget && budget !== 'any') {
-            const budgetValue = parseInt(budget.replace(/[^0-9]/g, ''));
-            
-            if (budget.includes('+')) {
-                filtered = filtered.filter(home => home.price >= budgetValue);
-            } else {
-                // Permitir un margen del 10% alrededor del presupuesto
-                const minPrice = budgetValue * 0.9;
-                const maxPrice = budgetValue * 1.1;
+        // Filtrar por presupuesto
+        if (budget && budget !== t('anyBudget')) {
+            // Manejar diferentes rangos de presupuesto
+            if (budget === t('budget400to600')) {
                 filtered = filtered.filter(home => 
-                    home.price >= minPrice && home.price <= maxPrice);
+                    home.price >= 400000 && home.price <= 600000);
+            } else if (budget === t('budget600to800')) {
+                filtered = filtered.filter(home => 
+                    home.price >= 600000 && home.price <= 800000);
+            } else if (budget === t('budget800to1M')) {
+                filtered = filtered.filter(home => 
+                    home.price >= 800000 && home.price <= 1000000);
+            } else if (budget === t('budget1MPlus')) {
+                filtered = filtered.filter(home => home.price > 1000000);
             }
         }
         
         setFilteredProperties(filtered);
         setCurrentPage(1); // Resetear a la primera página cuando cambian los filtros
-    }, [propertyCount, neighborhood, budget]);
+    }, [propertyCount, neighborhood, budget, t]);
 
     const indexOfLastProperty = currentPage * propertiesPerPage;
     const indexOfFirstProperty = indexOfLastProperty - propertiesPerPage;
@@ -141,7 +96,7 @@ function Properties() {
             {filteredProperties.length > 0 ? (
                 <>
                     <div className="properties-count">
-                        <p>{filteredProperties.length} properties found</p>
+                        <p>{filteredProperties.length} {t('propertiesFound')}</p>
                     </div>
                     
                     <div className="properties-grid">
@@ -166,7 +121,7 @@ function Properties() {
                 </>
             ) : (
                 <div className="no-results">
-                    <p>No properties match your criteria. Try adjusting your search filters.</p>
+                    <p>{t('noResults')}</p>
                 </div>
             )}
         </div>
