@@ -95,9 +95,9 @@ function Properties() {
             
             {filteredProperties.length > 0 ? (
                 <>
-                    <div className="properties-count">
+                    {/* <div className="properties-count">
                         <p>{filteredProperties.length} {t('propertiesFound')}</p>
-                    </div>
+                    </div> */}
                     
                     <div className="properties-grid">
                         {currentProperties.map((home) => (
