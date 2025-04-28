@@ -3,10 +3,9 @@
 }
 
 .individual-home-wrapper {
-    /* margin-top: 10rem; */
     display: flex;
     flex-direction: column;
-    background-color: var(--light-color);
+    background-color: var(--nude-color);
 }
 
 .individual-home-maininfo {
@@ -15,10 +14,12 @@
     flex-direction: column;
     align-items: center;}
 
+
+
 /* Carousel.css */
 .individual-home-carousel {
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 4rem auto;
     padding: 0 1rem;
 }
 
@@ -98,46 +99,96 @@
 
 
 /*3era fila*/
+.total-info-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
+.individual-home-totalinfo h3 {
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
 
-.individual-home-totalinfo {
+.intro {
     display: flex;
     flex-direction: row;
-    /* padding: 2.5rem 3rem; */
-    /* gap: 4rem; */
-    color: var(--dark-color);
-    border-bottom: 1px solid var(--dark-color);
     border-top: 1px solid var(--dark-color);
+}
+
+.general-info {
+    flex: 1;
+    padding: 1.5rem 3rem;
+    border-right: 1px solid var(--dark-color);
+
+}
+
+.general-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.general-list h5{
+    text-transform: uppercase;
+    font-weight: 100;
+    opacity: 0.7;
+    color: var(--dark-color);
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+}
+
+.list-1 {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.239);
+}
+.list-1:first-child {
+    border-top: 1px solid rgba(128, 128, 128, 0.239);
+}
+.list-1 p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--dark-color);
 }
 
 .column-description {
     flex: 1;
     padding: 1.5rem 3rem;
-    background-color: var(--nude-color);
-    border-right: 1px solid var(--dark-color);
+    /* background-color: var(--nude-color); */
 }
 
-.individual-home-totalinfo h3 {
-    padding-bottom: 1.5rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 100;
-    margin: 0;
-    /* border-bottom: 1px solid var(--dark-color); */
-    /* margin-bottom: 1rem; */
-}
-
-.column-description p:first-of-type {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.2rem;
+.column-description h1 {
+    margin-bottom: 10rem;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 80%;
+    line-height: 2.75rem;
+    font-style: italic;
 }
 
 .column-description p:last-of-type {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 100;
     line-height: 2rem;
     width: 80%;
+    margin-bottom: 5rem;
+}
+
+
+
+
+
+/*4a fila*/
+
+.individual-home-totalinfo {
+    display: flex;
+    flex-direction: row;
+    color: var(--dark-color);
+    border-bottom: 1px solid var(--dark-color);
+    border-top: 1px solid var(--dark-color);
 }
 
 
@@ -150,21 +201,24 @@
 .extras-list {
     list-style: circle;
     padding: 0;
-    padding-top: 2rem;
+    padding-top: 0rem;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
+    color: var(--dark-color);
 }
 
 .extras-list li {
     padding-top: 1rem;
     padding-bottom: 1rem;
-
     background-color: transparent;
-    /* border: 0.5px solid var(--corporative-color); */
     border-radius: 4px;
     text-align: left;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--dark-color);
 }
 
 
