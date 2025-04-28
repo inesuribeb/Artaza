@@ -1,177 +1,34 @@
-// import React, { useState, useRef, useEffect } from 'react';
-// import { useLanguage } from '../../../contexts/LanguageContext';
-// import './FilterProperty.css';
-
-// const SearchForm = ({ onSearch }) => {
-//     const [propertyCount, setPropertyCount] = useState('any number');
-//     const [neighborhood, setNeighborhood] = useState('any neighbourhood');
-//     const [budget, setBudget] = useState('any');
-
-//     const [openDropdown, setOpenDropdown] = useState(null);
-
-//     const propertyCountRef = useRef(null);
-//     const neighborhoodRef = useRef(null);
-//     const budgetRef = useRef(null);
-
-//     const propertyOptions = ['any number', '1+ bedroom', '2+ bedrooms', '3+ bedrooms', '4+ bedrooms', '5+ bedrooms'];
-//     const neighborhoodOptions = ['any neighbourhood', 'Getxo', 'Leioa', 'Berango', 'Mungia'];
-//     const budgetOptions = [
-//         'any',
-//         '€400,000–€600,000',
-//         '€600,000–€800,000',
-//         '€800,000–€1,000,000',
-//         '€1,000,000+'
-//       ];
-
-//     useEffect(() => {
-//         const handleClickOutside = (event) => {
-//             if (
-//                 openDropdown === 'property' &&
-//                 propertyCountRef.current &&
-//                 !propertyCountRef.current.contains(event.target)
-//             ) {
-//                 setOpenDropdown(null);
-//             } else if (
-//                 openDropdown === 'neighborhood' &&
-//                 neighborhoodRef.current &&
-//                 !neighborhoodRef.current.contains(event.target)
-//             ) {
-//                 setOpenDropdown(null);
-//             } else if (
-//                 openDropdown === 'budget' &&
-//                 budgetRef.current &&
-//                 !budgetRef.current.contains(event.target)
-//             ) {
-//                 setOpenDropdown(null);
-//             }
-//         };
-
-//         document.addEventListener('mousedown', handleClickOutside);
-//         return () => {
-//             document.removeEventListener('mousedown', handleClickOutside);
-//         };
-//     }, [openDropdown]);
-
-//     const toggleDropdown = (dropdown) => {
-//         if (openDropdown === dropdown) {
-//             setOpenDropdown(null);
-//         } else {
-//             setOpenDropdown(dropdown);
-//         }
-//     };
-
-//     const handleSelect = (option, type) => {
-//         if (type === 'property') {
-//             setPropertyCount(option);
-//         } else if (type === 'neighborhood') {
-//             setNeighborhood(option);
-//         } else if (type === 'budget') {
-//             setBudget(option);
-//         }
-//         setOpenDropdown(null);
-//     };
-
-//     const handleViewResults = () => {
-//         if (onSearch) {
-//             onSearch(propertyCount, neighborhood, budget);
-//         }
-//     };
-
-//     return (
-//         <div className="search-form">
-//             <h1>
-//                 I am looking for a{' '}
-//                 <span className="dropdown-container" ref={propertyCountRef}>
-//                     <i onClick={() => toggleDropdown('property')}>
-//                         {propertyCount}
-//                         <span className="circle-button">
-//                             {openDropdown === 'property' ? '−' : '+'}
-//                         </span>
-//                     </i>
-
-//                     {openDropdown === 'property' && (
-//                         <div className="dropdown-menu">
-//                             {propertyOptions.map((option) => (
-//                                 <div
-//                                     key={option}
-//                                     className="dropdown-item"
-//                                     onClick={() => handleSelect(option, 'property')}
-//                                 >
-//                                     {option}
-//                                 </div>
-//                             ))}
-//                         </div>
-//                     )}
-//                 </span>{' '}
-//                 property in{' '}
-//                 <span className="dropdown-container" ref={neighborhoodRef}>
-//                     <i onClick={() => toggleDropdown('neighborhood')}>
-//                         {neighborhood}
-//                         <span className="circle-button">
-//                             {openDropdown === 'neighborhood' ? '−' : '+'}
-//                         </span>
-//                     </i>
-
-//                     {openDropdown === 'neighborhood' && (
-//                         <div className="dropdown-menu">
-//                             {neighborhoodOptions.map((option) => (
-//                                 <div
-//                                     key={option}
-//                                     className="dropdown-item"
-//                                     onClick={() => handleSelect(option, 'neighborhood')}
-//                                 >
-//                                     {option}
-//                                 </div>
-//                             ))}
-//                         </div>
-//                     )}
-//                 </span>{' '}
-//                 and my budget is approximately{' '}
-//                 <span className="dropdown-container" ref={budgetRef}>
-//                     <i onClick={() => toggleDropdown('budget')}>
-//                         {budget}
-//                         <span className="circle-button">
-//                             {openDropdown === 'budget' ? '−' : '+'}
-//                         </span>
-//                     </i>
-
-//                     {openDropdown === 'budget' && (
-//                         <div className="dropdown-menu">
-//                             {budgetOptions.map((option) => (
-//                                 <div
-//                                     key={option}
-//                                     className="dropdown-item"
-//                                     onClick={() => handleSelect(option, 'budget')}
-//                                 >
-//                                     {option}
-//                                 </div>
-//                             ))}
-//                         </div>
-//                     )}
-//                 </span>
-//             </h1>
-
-//             <button onClick={handleViewResults} className="view-results-button">
-//                 View results
-//             </button>
-//         </div>
-
-//     );
-// };
-
-// export default SearchForm;
-
 import React, { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import './FilterProperty.css';
 
 const SearchForm = ({ onSearch }) => {
-    const { t } = useLanguage();
-    
+    const { t, currentLanguage } = useLanguage();
+
     // Estados para los valores seleccionados
     const [propertyCount, setPropertyCount] = useState(t('anyNumber'));
     const [neighborhood, setNeighborhood] = useState(t('anyNeighbourhood'));
     const [budget, setBudget] = useState(t('anyBudget'));
+    
+    // Estado para determinar si hay filtros activos
+    const [hasActiveFilters, setHasActiveFilters] = useState(false);
+    
+    // Actualizar los estados cuando cambie el idioma
+    useEffect(() => {
+        setPropertyCount(t('anyNumber'));
+        setNeighborhood(t('anyNeighbourhood'));
+        setBudget(t('anyBudget'));
+    }, [currentLanguage, t]);
+    
+    // Verificar si hay filtros activos
+    useEffect(() => {
+        const isFiltered = 
+            propertyCount !== t('anyNumber') || 
+            neighborhood !== t('anyNeighbourhood') || 
+            budget !== t('anyBudget');
+        
+        setHasActiveFilters(isFiltered);
+    }, [propertyCount, neighborhood, budget, t]);
 
     // Estado para controlar qué dropdown está abierto
     const [openDropdown, setOpenDropdown] = useState(null);
@@ -190,7 +47,7 @@ const SearchForm = ({ onSearch }) => {
         t('fourPlusBedrooms'),
         t('fivePlusBedrooms')
     ];
-    
+
     const neighborhoodOptions = [
         t('anyNeighbourhood'),
         t('getxo'),
@@ -198,7 +55,7 @@ const SearchForm = ({ onSearch }) => {
         t('berango'),
         t('mungia')
     ];
-    
+
     const budgetOptions = [
         t('anyBudget'),
         t('budget400to600'),
@@ -264,84 +121,188 @@ const SearchForm = ({ onSearch }) => {
             onSearch(propertyCount, neighborhood, budget);
         }
     };
+    
+    // Resetear filtros
+    const handleReset = () => {
+        setPropertyCount(t('anyNumber'));
+        setNeighborhood(t('anyNeighbourhood'));
+        setBudget(t('anyBudget'));
+        
+        if (onSearch) {
+            onSearch(t('anyNumber'), t('anyNeighbourhood'), t('anyBudget'));
+        }
+    };
+
+    // Renderizado condicional según el idioma
+    const renderSearchText = () => {
+        if (currentLanguage === 'es') {
+            return (
+                <h1>
+                    {t('lookingFor')}{' '}
+                    <span className="dropdown-container" ref={propertyCountRef}>
+                        <i onClick={() => toggleDropdown('property')}>
+                            {propertyCount}
+                            <span className="circle-button">
+                                {openDropdown === 'property' ? '−' : '+'}
+                            </span>
+                        </i>
+
+                        {openDropdown === 'property' && (
+                            <div className="dropdown-menu">
+                                {propertyOptions.map((option) => (
+                                    <div
+                                        key={option}
+                                        className="dropdown-item"
+                                        onClick={() => handleSelect(option, 'property')}
+                                    >
+                                        {option}
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </span>{' '}
+                    {t('propertyIn')}{' '}
+                    <span className="dropdown-container" ref={neighborhoodRef}>
+                        <i onClick={() => toggleDropdown('neighborhood')}>
+                            {neighborhood}
+                            <span className="circle-button">
+                                {openDropdown === 'neighborhood' ? '−' : '+'}
+                            </span>
+                        </i>
+
+                        {openDropdown === 'neighborhood' && (
+                            <div className="dropdown-menu">
+                                {neighborhoodOptions.map((option) => (
+                                    <div
+                                        key={option}
+                                        className="dropdown-item"
+                                        onClick={() => handleSelect(option, 'neighborhood')}
+                                    >
+                                        {option}
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </span>{' '}
+                    {t('andMyBudgetIs')}{' '}
+                    <span className="dropdown-container" ref={budgetRef}>
+                        <i onClick={() => toggleDropdown('budget')}>
+                            {budget}
+                            <span className="circle-button">
+                                {openDropdown === 'budget' ? '−' : '+'}
+                            </span>
+                        </i>
+
+                        {openDropdown === 'budget' && (
+                            <div className="dropdown-menu">
+                                {budgetOptions.map((option) => (
+                                    <div
+                                        key={option}
+                                        className="dropdown-item"
+                                        onClick={() => handleSelect(option, 'budget')}
+                                    >
+                                        {option}
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </span>
+                </h1>
+            );
+        } else {
+            return (
+                <h1>
+                    {t('lookingFor')}{' '}
+                    <span className="dropdown-container" ref={propertyCountRef}>
+                        <i onClick={() => toggleDropdown('property')}>
+                            {propertyCount}
+                            <span className="circle-button">
+                                {openDropdown === 'property' ? '−' : '+'}
+                            </span>
+                        </i>
+
+                        {openDropdown === 'property' && (
+                            <div className="dropdown-menu">
+                                {propertyOptions.map((option) => (
+                                    <div
+                                        key={option}
+                                        className="dropdown-item"
+                                        onClick={() => handleSelect(option, 'property')}
+                                    >
+                                        {option}
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </span>{' '}
+                    {t('propertyIn')}{' '}
+                    <span className="dropdown-container" ref={neighborhoodRef}>
+                        <i onClick={() => toggleDropdown('neighborhood')}>
+                            {neighborhood}
+                            <span className="circle-button">
+                                {openDropdown === 'neighborhood' ? '−' : '+'}
+                            </span>
+                        </i>
+
+                        {openDropdown === 'neighborhood' && (
+                            <div className="dropdown-menu">
+                                {neighborhoodOptions.map((option) => (
+                                    <div
+                                        key={option}
+                                        className="dropdown-item"
+                                        onClick={() => handleSelect(option, 'neighborhood')}
+                                    >
+                                        {option}
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </span>{' '}
+                    {t('andMyBudgetIs')}{' '}
+                    <span className="dropdown-container" ref={budgetRef}>
+                        <i onClick={() => toggleDropdown('budget')}>
+                            {budget}
+                            <span className="circle-button">
+                                {openDropdown === 'budget' ? '−' : '+'}
+                            </span>
+                        </i>
+
+                        {openDropdown === 'budget' && (
+                            <div className="dropdown-menu">
+                                {budgetOptions.map((option) => (
+                                    <div
+                                        key={option}
+                                        className="dropdown-item"
+                                        onClick={() => handleSelect(option, 'budget')}
+                                    >
+                                        {option}
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </span>
+                </h1>
+            );
+        }
+    };
 
     return (
         <div className="search-form">
-            <h1>
-                {t('lookingFor')}{' '}
-                <span className="dropdown-container" ref={propertyCountRef}>
-                    <i onClick={() => toggleDropdown('property')}>
-                        {propertyCount}
-                        <span className="circle-button">
-                            {openDropdown === 'property' ? '−' : '+'}
-                        </span>
-                    </i>
-
-                    {openDropdown === 'property' && (
-                        <div className="dropdown-menu">
-                            {propertyOptions.map((option) => (
-                                <div
-                                    key={option}
-                                    className="dropdown-item"
-                                    onClick={() => handleSelect(option, 'property')}
-                                >
-                                    {option}
-                                </div>
-                            ))}
-                        </div>
+            {renderSearchText()}
+            <div className="button-container">
+                <button onClick={handleViewResults} className="view-results-button">
+                    {t('viewResults')}
+                </button>
+                <div className="reset-button-container">
+                    {hasActiveFilters ? (
+                        <button onClick={handleReset} className="reset-button">
+                            {t('clear')}
+                        </button>
+                    ) : (
+                        <div className="reset-button-placeholder"></div>
                     )}
-                </span>{' '}
-                {t('propertyIn')}{' '}
-                <span className="dropdown-container" ref={neighborhoodRef}>
-                    <i onClick={() => toggleDropdown('neighborhood')}>
-                        {neighborhood}
-                        <span className="circle-button">
-                            {openDropdown === 'neighborhood' ? '−' : '+'}
-                        </span>
-                    </i>
-
-                    {openDropdown === 'neighborhood' && (
-                        <div className="dropdown-menu">
-                            {neighborhoodOptions.map((option) => (
-                                <div
-                                    key={option}
-                                    className="dropdown-item"
-                                    onClick={() => handleSelect(option, 'neighborhood')}
-                                >
-                                    {option}
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </span>{' '}
-                {t('andMyBudgetIs')}{' '}
-                <span className="dropdown-container" ref={budgetRef}>
-                    <i onClick={() => toggleDropdown('budget')}>
-                        {budget}
-                        <span className="circle-button">
-                            {openDropdown === 'budget' ? '−' : '+'}
-                        </span>
-                    </i>
-
-                    {openDropdown === 'budget' && (
-                        <div className="dropdown-menu">
-                            {budgetOptions.map((option) => (
-                                <div
-                                    key={option}
-                                    className="dropdown-item"
-                                    onClick={() => handleSelect(option, 'budget')}
-                                >
-                                    {option}
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </span>
-            </h1>
-
-            <button onClick={handleViewResults} className="view-results-button">
-                {t('viewResults')}
-            </button>
+                </div>
+            </div>
         </div>
     );
 };

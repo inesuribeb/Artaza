@@ -55,4 +55,8 @@ body {
   --nude-color: #E1D6C8;
   --taupe-color: #A68F6D;
   --dark-color: #2A2325;
+
+  --main-font: 'Scto Grotesk A', Helvetica, Arial, sans-serif;
+  --serif-one-font: 'Artaza-regular', serif;
+  --serif-second-font: Georgia, 'Times New Roman', Times, serif;
 }

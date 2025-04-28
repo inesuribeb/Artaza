@@ -40,6 +40,8 @@
     font-weight: 100;
     color: var(--dark-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Artaza-regular;
+    line-height: 4.5rem; */
     text-transform: uppercase;
     /* margin-top: 0; */
 }

@@ -5,7 +5,7 @@
 .individual-home-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: var(--nude-color);
+    background-color: var(--light-color);
 }
 
 .individual-home-maininfo {
@@ -116,13 +116,13 @@
 .intro {
     display: flex;
     flex-direction: row;
-    border-top: 1px solid var(--dark-color);
+    /* border-top: 1px solid var(--dark-color); */
 }
 
 .general-info {
     flex: 1;
     padding: 1.5rem 3rem;
-    border-right: 1px solid var(--dark-color);
+    /* border-right: 1px solid var(--dark-color); */
 
 }
 
@@ -162,6 +162,7 @@
 
 .column-description h1 {
     margin-bottom: 10rem;
+    margin-top: 0;
     font-size: 2rem;
     font-weight: 400;
     width: 80%;
@@ -186,6 +187,7 @@
 .individual-home-totalinfo {
     display: flex;
     flex-direction: row;
+    background-color: var(--nude-color);
     color: var(--dark-color);
     border-bottom: 1px solid var(--dark-color);
     border-top: 1px solid var(--dark-color);

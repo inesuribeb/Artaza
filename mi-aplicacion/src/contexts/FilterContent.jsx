@@ -1,3 +1,66 @@
+// export const filterContent = {
+//     en: {
+//         lookingFor: "I am looking for a",
+//         propertyIn: "property in",
+//         andMyBudgetIs: "and my budget is approximately",
+
+//         anyNumber: "any number",
+//         anyNeighbourhood: "any neighbourhood",
+//         anyBudget: "any",
+
+//         onePlusBedroom: "1+ bedroom",
+//         twoPlusBedrooms: "2+ bedrooms",
+//         threePlusBedrooms: "3+ bedrooms",
+//         fourPlusBedrooms: "4+ bedrooms",
+//         fivePlusBedrooms: "5+ bedrooms",
+
+//         getxo: "Getxo",
+//         leioa: "Leioa",
+//         berango: "Berango",
+//         mungia: "Mungia",
+
+//         budget400to600: "€400,000–€600,000",
+//         budget600to800: "€600,000–€800,000",
+//         budget800to1M: "€800,000–€1,000,000",
+//         budget1MPlus: "€1,000,000+",
+
+//         viewResults: "View results",
+
+//         propertiesFound: "properties found",
+//         noResults: "No properties match your criteria. Try adjusting your search filters.",
+//     },
+//     es: {
+//         lookingFor: "Estoy buscando una",
+//         propertyIn: "propiedad en",
+//         andMyBudgetIs: "y mi presupuesto es aproximadamente",
+
+//         anyNumber: "x habitaciones",
+//         anyNeighbourhood: "cualquier barrio",
+//         anyBudget: "cualquiera",
+
+//         onePlusBedroom: "1+ habitación",
+//         twoPlusBedrooms: "2+ habitaciones",
+//         threePlusBedrooms: "3+ habitaciones",
+//         fourPlusBedrooms: "4+ habitaciones",
+//         fivePlusBedrooms: "5+ habitaciones",
+
+//         getxo: "Getxo",
+//         leioa: "Leioa",
+//         berango: "Berango",
+//         mungia: "Mungia",
+
+//         budget400to600: "€400.000–€600.000",
+//         budget600to800: "€600.000–€800.000",
+//         budget800to1M: "€800.000–€1.000.000",
+//         budget1MPlus: "€1.000.000+",
+
+//         viewResults: "Ver resultados",
+
+//         propertiesFound: "propiedades encontradas",
+//         noResults: "No hay propiedades que coincidan con tus criterios. Intenta ajustar tus filtros de búsqueda.",
+//     }
+// };
+
 export const filterContent = {
     en: {
         // Texto principal
@@ -34,12 +97,13 @@ export const filterContent = {
         
         // Resultados
         propertiesFound: "properties found",
-        noResults: "No properties match your criteria. Try adjusting your search filters."
+        noResults: "No properties match your criteria. Try adjusting your search filters.",
+        clear: "X",
     },
     es: {
         // Texto principal
-        lookingFor: "Estoy buscando una",
-        propertyIn: "propiedad en",
+        lookingFor: "Estoy buscando una propiedad con",
+        propertyIn: "en",
         andMyBudgetIs: "y mi presupuesto es aproximadamente",
         
         // Opciones por defecto
@@ -71,6 +135,7 @@ export const filterContent = {
         
         // Resultados
         propertiesFound: "propiedades encontradas",
-        noResults: "No hay propiedades que coincidan con tus criterios. Intenta ajustar tus filtros de búsqueda."
+        noResults: "No hay propiedades que coincidan con tus criterios. Intenta ajustar tus filtros de búsqueda.",
+        clear: "X",
     }
 };

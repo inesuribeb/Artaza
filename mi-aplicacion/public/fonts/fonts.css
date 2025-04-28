@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Artaza-regular';
+    src: url('/fonts/SortsMillGoudy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Artaza-italic';
+    src: url('/fonts/SortsMillGoudy-Italic.ttf') format('truetype');
+}
