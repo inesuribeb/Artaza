@@ -5,6 +5,10 @@
 
 }
 
+.filter-properties {
+    margin-bottom: 2rem;
+  }
+
 .properties-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

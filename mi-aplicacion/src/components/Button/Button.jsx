@@ -25,13 +25,10 @@ function Button({
     const navigate = useNavigate();
     const { t, getRoute } = useLanguage();
     
-    // Manejar el evento de clic
     const handleClick = () => {
         if (onClick) {
-            // Si se proporcionó una función onClick personalizada, la usamos
             onClick();
         } else if (routeName) {
-            // Si se proporcionó un nombre de ruta, navegamos a esa ruta
             navigate(getRoute(routeName, routeParams || {}));
         }
     };
