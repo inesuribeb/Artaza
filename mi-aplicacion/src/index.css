@@ -46,6 +46,7 @@ body {
   background-color: var(--light-color);
   /* Prevenir el efecto overscroll/pull-to-refresh */
   overscroll-behavior-y: none;
+  scroll-behavior: smooth; 
 }
 
 :root {

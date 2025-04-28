@@ -1,5 +1,7 @@
 .buyhomes-wrapper {
     padding: 0 1.5rem;
+    background-color: var(--light-color);
+
   }
 
 .buyhomes-container {

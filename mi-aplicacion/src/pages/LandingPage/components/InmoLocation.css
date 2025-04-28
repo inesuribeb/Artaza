@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: column;
     /* padding-bottom: 8rem; */
+    background-color: var(--light-color);
+
 }
 
 .inmolocation-inner {
