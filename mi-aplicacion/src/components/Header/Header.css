@@ -302,13 +302,13 @@
 
 
 /*Header siempre con fondo claro si no estamos en landing page*/
-   /* .header.force-light {
-       background-color: var(--light-transparent-color);
+   .header.force-light {
+       background-color: var(--light-color);
        color: var(--dark-color);
-       border-bottom: 1px solid var(--light-transparent-color);
-   } */
+       /* border-bottom: 1px solid var(--light-transparent-color); */
+   }
 
-   /* .header.force-light .logo img {
+   .header.force-light .logo img {
        filter: brightness(0);
    }
 
@@ -320,4 +320,4 @@
    .header.force-light .hamburger-line,
    .header.force-light:hover .hamburger-line {
        background-color: var(--dark-color) !important;
-   } */
+   }

@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    horario: "Opening hours",
+    horario: "Hours",
     delunesaviernes: "From Monday to Friday",
     direccion: "Paseo Landabarri, 48",
     localidad: "Leioa | Biscay, 48940",
@@ -20,7 +20,7 @@ export const translations = {
     delunesaviernes: "De Lunes a Viernes",
     direccion: "Paseo Landabarri, 48",
     localidad: "Leioa | Vizcaya, 48940",
-    telefono: "+34 944 33 17 36",
+    telefono: "944 33 17 36",
     email: "info@inmoartaza.es",
     tasaciontitulo: "¿Cuánto vale tu casa?",
     tasaciontexto: "Si estás pensando en vender, te hacemos una tasación gratuita.",

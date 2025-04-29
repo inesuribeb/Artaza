@@ -5,6 +5,7 @@ import { homeTranslations } from './HomeContent';
 import { PropertyCartContent } from './PropertyCartContent'
 import { IndividualHome } from './IndividualHome';
 import { filterContent } from './FilterContent';
+import { contactContent } from './ContactContent';
 
 // Definimos las traducciones
 const translations = {
@@ -20,6 +21,7 @@ const translations = {
     ...PropertyCartContent.en,
     ...IndividualHome.en,
     ...filterContent.en,
+    ...contactContent.en,
     // Añade más traducciones según necesites
   },
   es: {
@@ -34,6 +36,7 @@ const translations = {
     ...PropertyCartContent.es,
     ...IndividualHome.es,
     ...filterContent.es,
+    ...contactContent.es,
     // Añade más traducciones según necesites
   }
 };

@@ -50,13 +50,13 @@ body {
 }
 
 :root {
-  --corporative-color: #1C4A69;
-  --light-color: #F3F1E9;
-  --light-transparent-color: #f3f1e9cb;
+  --corporative-color: #0D6785;
+  --light-color: #F1F1ED;
+  --light-transparent-color: #f1f1edc7;
   --light-transparent-gradient: linear-gradient(to top, rgba(243, 241, 233, 0.8), rgba(243, 241, 233, 0));
-  --nude-color: #E1D6C8;
-  --taupe-color: #A68F6D;
-  --dark-color: #2A2325;
+  --nude-color: #E1D7D0;
+  --taupe-color: #AD9C87;
+  --dark-color: #3B3B3C;
 
   --main-font: 'Scto Grotesk A', Helvetica, Arial, sans-serif;
   --serif-one-font: 'Artaza-regular', serif;

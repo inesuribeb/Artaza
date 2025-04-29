@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { useLanguage } from "../../contexts/LanguageContext";
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
@@ -13,10 +13,38 @@ function Header() {
     const location = useLocation();
 
     const isHomePage = location.pathname === '/inicio' || location.pathname === '/home' || location.pathname === '/';
+    const isPropertiesPage = location.pathname === '/properties' || location.pathname === '/propiedades';
+
+        // Añade este useEffect para controlar el scroll
+        useEffect(() => {
+            if (isMenuOpen) {
+                // Deshabilitar scroll cuando el menú está abierto
+                document.body.style.overflow = 'hidden';
+                document.body.style.height = '100%';
+                document.body.style.position = 'fixed';
+                document.body.style.width = '100%';
+            } else {
+                // Restaurar scroll cuando el menú está cerrado
+                document.body.style.overflow = '';
+                document.body.style.height = '';
+                document.body.style.position = '';
+                document.body.style.width = '';
+            }
+            // Limpiar al desmontar
+            return () => {
+                document.body.style.overflow = '';
+                document.body.style.height = '';
+                document.body.style.position = '';
+                document.body.style.width = '';
+            }
+        }, [isMenuOpen]);
+
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+
 
     // Función mejorada para cambiar idioma sin parpadeo
     const handleLanguageChange = () => {
@@ -36,7 +64,7 @@ function Header() {
             <div className="header-container">
 
                 {/* <header className={`header ${isMenuOpen ? 'menu-open' : ''}`}> */}
-                <header className={`header ${isMenuOpen ? 'menu-open' : ''} ${!isHomePage ? 'force-light' : ''}`}>
+                <header className={`header ${isMenuOpen ? 'menu-open' : ''} ${!isHomePage && !isPropertiesPage ? 'force-light' : ''}`}>
 
                     <div className="logo">
                         <Link to={getRoute('home')}>
