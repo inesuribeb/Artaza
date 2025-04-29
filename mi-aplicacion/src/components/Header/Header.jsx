@@ -15,29 +15,8 @@ function Header() {
     const isHomePage = location.pathname === '/inicio' || location.pathname === '/home' || location.pathname === '/';
     const isPropertiesPage = location.pathname === '/properties' || location.pathname === '/propiedades';
 
-        // Añade este useEffect para controlar el scroll
-        useEffect(() => {
-            if (isMenuOpen) {
-                // Deshabilitar scroll cuando el menú está abierto
-                document.body.style.overflow = 'hidden';
-                document.body.style.height = '100%';
-                document.body.style.position = 'fixed';
-                document.body.style.width = '100%';
-            } else {
-                // Restaurar scroll cuando el menú está cerrado
-                document.body.style.overflow = '';
-                document.body.style.height = '';
-                document.body.style.position = '';
-                document.body.style.width = '';
-            }
-            // Limpiar al desmontar
-            return () => {
-                document.body.style.overflow = '';
-                document.body.style.height = '';
-                document.body.style.position = '';
-                document.body.style.width = '';
-            }
-        }, [isMenuOpen]);
+    // Añade este useEffect para controlar el scroll
+
 
 
     const toggleMenu = () => {
@@ -51,10 +30,10 @@ function Header() {
         // Guardar la posición actual del scroll en localStorage
         const scrollPosition = window.scrollY;
         localStorage.setItem(SCROLL_POSITION_KEY, scrollPosition.toString());
-        
+
         // Indicar que este es un cambio de idioma y no un cambio de página
         localStorage.setItem('is_language_change', 'true');
-        
+
         // Cambiar el idioma (esto causará navegación)
         toggleLanguage();
     };

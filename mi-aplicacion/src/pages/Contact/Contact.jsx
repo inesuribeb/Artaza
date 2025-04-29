@@ -6,37 +6,49 @@ function Contact() {
 
     return (
         <div className='contact-wrapper'>
+            <div className='welcome-contact'>
+                <h1
+                    dangerouslySetInnerHTML={{
+                        __html: t('welcomeTitle'),
+                    }}
+                />
+            </div>
             <div className='picture-and-text'>
                 <div className='contact-picture'>
                     <img src="/images/elipse.jpg" alt="inmobiliaria-artaza-por-dentro" />
                 </div>
                 <div className='contact-info'>
-                    <h1>{t('contactus')}</h1>
-                    <div>
+
+                    {/* <h1>{t('contactus')}</h1> */}
+                    {/* <div className='contact-location'>
                         <p>{t('direccion')}</p>
                         <p>{t('localidad')}</p>
-                    </div>
+                    </div> */}
 
                     <div>
-                        <h5>{t('horario')}</h5>
-                        <p>{t('lunesajueves')}</p>
+                        <h4>{t('horario')}</h4>
+                        <h5>{t('lunesajueves')}</h5>
                         <p>{t('mananas')} | {t('tardes')}</p>
-                        <p>{t('viernes')}</p>
+                        <h5>{t('viernes')}</h5>
                         <p>{t('mananas')}</p>
                     </div>
 
                     <div>
-                        <h5>{t('emailText')}</h5>
+                        <h4>{t('emailText')}</h4>
                         <p>{t('email')}</p>
                     </div>
 
                     <div>
-                        <h5>{t('telephoneText')}</h5>
+                        <h4>{t('telephoneText')}</h4>
                         <p>{t('telefono')}</p>
                     </div>
 
                 </div>
-                
+
+                <div className='contact-picture'>
+                    <img src="/images/detalle.jpg" alt="inmobiliaria-artaza-por-dentro" />
+                </div>
+
 
             </div>
         </div>
