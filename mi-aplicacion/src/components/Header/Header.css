@@ -18,7 +18,9 @@
    }
 
    .header:hover {
-       background-color: var(--light-color);
+       /* background-color: var(--light-color); */
+       background-color: var(--light-transparent-color);
+
    }
 
    .header.menu-open {
@@ -151,6 +153,7 @@
        bottom: 0;
        width: 350px;
        background-color: var(--light-color);
+       /* background-color: var(--light-transparent-color); */
        padding-top: 100px;
        z-index: 1050;
        overflow-y: auto;
@@ -299,13 +302,13 @@
 
 
 /*Header siempre con fondo claro si no estamos en landing page*/
-   .header.force-light {
-       background-color: var(--light-color);
+   /* .header.force-light {
+       background-color: var(--light-transparent-color);
        color: var(--dark-color);
+       border-bottom: 1px solid var(--light-transparent-color);
+   } */
 
-   }
-
-   .header.force-light .logo img {
+   /* .header.force-light .logo img {
        filter: brightness(0);
    }
 
@@ -317,4 +320,4 @@
    .header.force-light .hamburger-line,
    .header.force-light:hover .hamburger-line {
        background-color: var(--dark-color) !important;
-   }
+   } */

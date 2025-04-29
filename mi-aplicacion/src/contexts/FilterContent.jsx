@@ -64,6 +64,7 @@
 export const filterContent = {
     en: {
         // Texto principal
+        search: "Search<br/>:",
         lookingFor: "I am looking for a",
         propertyIn: "property in",
         andMyBudgetIs: "and my budget is approximately",
@@ -102,6 +103,7 @@ export const filterContent = {
     },
     es: {
         // Texto principal
+        search: "Filtra<br/>:",
         lookingFor: "Estoy buscando una propiedad con",
         propertyIn: "en",
         andMyBudgetIs: "y mi presupuesto es aproximadamente",

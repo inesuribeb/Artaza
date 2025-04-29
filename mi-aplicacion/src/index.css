@@ -52,6 +52,8 @@ body {
 :root {
   --corporative-color: #1C4A69;
   --light-color: #F3F1E9;
+  --light-transparent-color: #f3f1e9cb;
+  --light-transparent-gradient: linear-gradient(to top, rgba(243, 241, 233, 0.8), rgba(243, 241, 233, 0));
   --nude-color: #E1D6C8;
   --taupe-color: #A68F6D;
   --dark-color: #2A2325;
