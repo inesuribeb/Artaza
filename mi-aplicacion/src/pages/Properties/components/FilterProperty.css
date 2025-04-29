@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 1rem;
-    padding-top: 4.5rem; */
     margin-bottom: 0rem;
     text-align: center;
     background-color: transparent;
@@ -24,7 +22,6 @@
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
-
     transition: transform 0.3s ease, opacity 0.3s ease;
     will-change: transform, opacity;
     opacity: 0;
@@ -40,7 +37,6 @@
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     min-height: 139px;
-
     transition: transform 0.3s ease, opacity 0.3s ease;
     will-change: transform, opacity;
     opacity: 0;
@@ -67,8 +63,6 @@
 
 .search-form i {
     font-style: italic;
-    /* transform: skewX(-9deg) !important;
-    display: inline-block;  */
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--light-color);
     cursor: pointer;
@@ -147,7 +141,6 @@
     align-items: center;
     gap: 15px;
     margin-top: 20px;
-
     transition: transform 0.3s ease, opacity 0.3s ease;
     will-change: transform, opacity;
     opacity: 0;
@@ -164,7 +157,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.4rem;
     font-weight: 500;
-    cursor: pointer;
     cursor: pointer;
     position: relative;
     transition: background-color 0.3s ease, transform 0.2s ease;
