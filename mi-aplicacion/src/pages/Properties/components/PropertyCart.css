@@ -20,6 +20,7 @@
     width: 100%;
     aspect-ratio: 16/9;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .property-card__image {

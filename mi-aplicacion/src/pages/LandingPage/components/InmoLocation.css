@@ -4,13 +4,10 @@
     padding-top: 10rem;
     display: flex;
     flex-direction: column;
-    /* padding-bottom: 8rem; */
     background-color: var(--light-color);
-
 }
 
 .inmolocation-inner {
-    /* padding: 2.5rem 3rem; */
     margin-left: 3rem;
     margin-right: 3rem;
     margin-top: 0rem;
@@ -22,8 +19,6 @@
     gap: 2rem;
     border-top: 2px solid var(--dark-color);
     padding-bottom: 5rem;
-    /* border-bottom: 2px solid var(--dark-color); */
-
 }
 
 
@@ -40,10 +35,7 @@
     font-weight: 100;
     color: var(--dark-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* font-family: Artaza-regular;
-    line-height: 4.5rem; */
     text-transform: uppercase;
-    /* margin-top: 0; */
 }
 
 .inmolocation-left h3 {
@@ -62,18 +54,38 @@
     justify-content: center;
 }
 
+/* .inmolocation-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 580px;
+} */
+
 .inmolocation-right img {
     width: 100%;
     height: auto;
     object-fit: cover;
     max-width: 580px;
+    opacity: 0; 
+}
+
+.section-inmolocation.visible .inmolocation-right img {
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(40px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 .carousel-location {
-    /* width: 100%;
-    height: auto; */
     padding: 0rem 3rem;
-
 }
 
 .carousel-location h3 {

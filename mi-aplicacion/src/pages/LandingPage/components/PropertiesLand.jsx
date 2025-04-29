@@ -3,12 +3,13 @@ import { useLanguage } from "../../../contexts/LanguageContext";
 import Button from '../../../components/Button/Button';
 import './PropertiesLand.css'
 
-function PropertiesLand() {
+function PropertiesLand({ visibleSections }) {
     const { t, getRoute } = useLanguage();
     const navigate = useNavigate();
 
     return (
-        <div className='section-propertiesland'>
+        <div className={`section-propertiesland ${visibleSections.propertiesLand ? 'visible' : ''}`}>
+        {/* <div className='section-propertiesland'> */}
             <div className="propertiesland-inner">
                 <div className="propertiesland-left">
                     <img src="/images/elipse.jpg" alt="artaza-inmo" />
