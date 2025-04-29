@@ -3,7 +3,7 @@ export const PropertyCartContent = {
         bedrooms: 'Bedrooms',
         bathrooms: 'Bathrooms',
         sold: 'SOLD',
-        viewDetails: 'View details',
+        viewDetails: 'Further details',
         noImageAvailable: 'No image Available',
     },
     es: {
