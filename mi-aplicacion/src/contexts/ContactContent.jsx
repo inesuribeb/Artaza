@@ -14,7 +14,7 @@ export const contactContent = {
         telephoneText: "Teléfono",
         welcomeTitle: `
         <div class="line-1">Nos encontramos en Paseo Landabarri 48, Leioa.</div><br/>
-        <div class="line-2">Damos la bienvenida tanto a nuevos como antiguos clientes para un café, asesoramiento o charla sobre vivienda — cuando quieran.</div><br/>
+        <div class="line-2">Damos la bienvenida tanto a nuevos como a antiguos clientes para un café, asesoramiento o charla sobre vivienda — cuando quieran.</div><br/>
         <div class="line-3">Bienvenidos</div>`,
     }
 }
