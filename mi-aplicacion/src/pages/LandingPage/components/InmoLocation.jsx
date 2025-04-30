@@ -25,9 +25,9 @@ function InmoLocation({ visibleSections }) {
                     <img src="/images/capturaPrueba.png" alt="artaza-inmo" />
                 </div>
             </div>
-            <div className="carousel-location">
+            {/* <div className="carousel-location">
                 <h3>{t('artaza')}</h3>
-            </div>
+            </div> */}
         {/* </div> */}
         </div>
     )

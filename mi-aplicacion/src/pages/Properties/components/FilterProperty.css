@@ -37,7 +37,7 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
     will-change: transform, opacity;
     opacity: 0;
-    animation: fadeIn 1.2s ease-out forwards;
+    animation: fadeIn 1s ease-out forwards;
     animation-delay: 0.4s;
 }
 /* .search-form h1 {
@@ -62,7 +62,7 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
     will-change: transform, opacity;
     opacity: 0;
-    animation: fadeIn 1.2s ease-out forwards;
+    animation: fadeIn 1s ease-out forwards;
     animation-delay: 0.6s;
 }
 
@@ -174,7 +174,7 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
     will-change: transform, opacity;
     opacity: 0;
-    animation: fadeIn 1.2s ease-out forwards;
+    animation: fadeIn 1s ease-out forwards;
     animation-delay: 0.8s;
 }
 

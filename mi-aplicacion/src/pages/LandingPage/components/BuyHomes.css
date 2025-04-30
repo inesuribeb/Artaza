@@ -1,8 +1,14 @@
 .buyhomes-wrapper {
     padding: 0 1.5rem;
     background-color: var(--light-color);
-
-  }
+    /* padding-top: 5rem;
+    padding-bottom: 5rem; */
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 .buyhomes-container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('/images/cocina2.jpg');
@@ -19,13 +25,41 @@
     color: var(--light-color);
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.buyhomes-wrapper.visible .buyhomes-container h1 {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.buyhomes-wrapper.visible .buyhomes-container button {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
 .buyhomes-container h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
     font-size: 3.5rem;
     text-align: center;
+
+    opacity: 0;
 }
 
 .buyhomes-container h1 em {
     font-family: inherit;
+}
+
+.buyhomes-container button {
+    opacity: 0;
 }

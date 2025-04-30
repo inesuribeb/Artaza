@@ -121,7 +121,9 @@ function Header() {
                 </ul>
 
                 <div className="mini-logo">
-                    <img src="/images/ISOTIPO.png" alt="mini-logo-artaza-inmo" />
+                    <Link to={getRoute('home')}>
+                        <img src="/images/ISOTIPO.png" alt="mini-logo-artaza-inmo" />
+                    </Link>
                 </div>
             </nav>
         </>

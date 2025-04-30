@@ -1,7 +1,7 @@
 .section-propertiesland {
     width: 100%;
     height: auto;
-    padding-top: 10rem;
+    padding-top: 8rem;
     display: flex;
     flex-direction: column;
     background-color: var(--light-color);
@@ -21,12 +21,17 @@
     padding-bottom: 5rem;
 }
 
+/*left*/
 .propertiesland-left {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; */
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .propertiesland-left img {
@@ -38,26 +43,60 @@
 }
 
 .section-propertiesland.visible .propertiesland-left img {
-    animation: fadeIn 2s ease forwards;
+    animation: revealFromTop 1s ease forwards;
 }
 
-@keyframes fadeIn {
+@keyframes revealFromTop {
     0% {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(-5px);
+        filter: blur(2px);
+    }
+    30% {
+        opacity: 0.3;
+        transform: translateY(-3px);
+        filter: blur(1px);
     }
     100% {
         opacity: 1;
         transform: translateY(0);
+        filter: blur(0);
     }
-  }
+}
 
+
+/*right*/
 .propertiesland-right {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
+    /* justify-content: flex-start;
+    align-items: flex-end; 
+    text-align: right;*/
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.propertiesland-right h1, 
+.propertiesland-right h3, 
+.propertiesland-right button {
+    opacity: 0;
+}
+.section-propertiesland.visible .propertiesland-right h1 {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.section-propertiesland.visible .propertiesland-right h3 {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.section-propertiesland.visible .propertiesland-right button {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .propertiesland-right h1 {
@@ -66,8 +105,8 @@
     color: var(--dark-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    text-align: right;
-    align-self: flex-end !important;
+
+    /* align-self: flex-end !important; */
 }
 
 .propertiesland-right h3 {
@@ -75,6 +114,4 @@
     font-weight: 100;
     width: 80%;
     line-height: 1.5rem;
-    text-align: right;
 }
-

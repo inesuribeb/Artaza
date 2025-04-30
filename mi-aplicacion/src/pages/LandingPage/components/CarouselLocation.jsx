@@ -126,9 +126,11 @@
 import { useState, useRef, useEffect } from 'react';
 import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
+import { useLanguage } from '../../../contexts/LanguageContext';
 import './CarouselLocation.css';
 
 function CarouselLocation() {
+    const { t, getRoute } = useLanguage();
     const carouselRef = useRef(null);
     const [isAtStart, setIsAtStart] = useState(true);
     const [isAtEnd, setIsAtEnd] = useState(false);
@@ -209,6 +211,10 @@ function CarouselLocation() {
 
     return (
         <div className="carousel-container">
+            <div className="carousel-location">
+                <h3>{t('artaza')}</h3>
+            </div>
+
             <div 
                 className="carousel-wrapper" 
                 ref={carouselRef}

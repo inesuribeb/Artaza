@@ -129,7 +129,7 @@ function Landing() {
     useEffect(() => {
         // Configurar el observer
         const observerOptions = {
-            threshold: 0.5,  // Se activa cuando el 60% del elemento es visible
+            threshold: 0.3,  // Se activa cuando el 30% del elemento es visible
             rootMargin: '0px'
         };
         

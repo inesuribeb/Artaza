@@ -10,15 +10,15 @@
 // function Root() {
 //     const location = useLocation();
 //     const [showCurtain, setShowCurtain] = useState(true);
-    
+
 //     useEffect(() => {
 //         window.scrollTo(0, 0);
 //     }, [location]);
-    
+
 //     if (showCurtain) {
 //         return <Curtain onDone={() => setShowCurtain(false)} />;
 //     }
-    
+
 //     return (
 //         <LanguageProvider>
 //             <div>
@@ -50,18 +50,18 @@ const SCROLL_POSITION_KEY = 'artaza_scroll_position';
 function Root() {
     const location = useLocation();
     const [showCurtain, setShowCurtain] = useState(true);
-    
+
     useEffect(() => {
         // Comprobar si es un cambio de idioma
         const isLanguageChange = localStorage.getItem('is_language_change') === 'true';
-        
+
         if (isLanguageChange) {
             // Si es un cambio de idioma, restaurar la posición de scroll guardada
             const savedScrollPosition = localStorage.getItem(SCROLL_POSITION_KEY);
             if (savedScrollPosition) {
                 window.scrollTo(0, parseInt(savedScrollPosition, 10));
             }
-            
+
             // Limpiar las banderas
             localStorage.removeItem('is_language_change');
             localStorage.removeItem(SCROLL_POSITION_KEY);
@@ -70,20 +70,20 @@ function Root() {
             window.scrollTo(0, 0);
         }
     }, [location.pathname]);
-    
+
     if (showCurtain) {
         return <Curtain onDone={() => setShowCurtain(false)} />;
     }
-    
+
     return (
         <LanguageProvider>
             <div className="outlet-container" key={location.pathname}>
                 <Header />
                 {/* <div className="outlet-container" key={location.pathname}> */}
-                <div>
-                    <Outlet />
+                <Outlet />
+                <div className="footer-root">
+                    <Footer />
                 </div>
-                <Footer />
             </div>
         </LanguageProvider>
     );

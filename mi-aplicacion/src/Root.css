@@ -11,3 +11,17 @@
     }
   }
 
+  .footer-root {
+    opacity: 0; 
+    animation: fadeInDesktop 0.5s ease-in forwards;
+    animation-delay: 3s;
+}
+
+@keyframes fadeInDesktop {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
