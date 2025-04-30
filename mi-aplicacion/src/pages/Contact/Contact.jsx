@@ -35,7 +35,7 @@ function Contact() {
 
                     <div>
                         <h4>{t('emailText')}</h4>
-                        <p>{t('email')}</p>
+                        <p>{t('emailaddress')}</p>
                     </div>
 
                     <div>
