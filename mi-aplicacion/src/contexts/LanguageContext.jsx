@@ -6,6 +6,8 @@ import { PropertyCartContent } from './PropertyCartContent'
 import { IndividualHome } from './IndividualHome';
 import { filterContent } from './FilterContent';
 import { contactContent } from './ContactContent';
+import { buyFormContent } from './BuyFormContent';
+import { sellFormContent } from './SellFormContent';
 
 // Definimos las traducciones
 const translations = {
@@ -22,6 +24,8 @@ const translations = {
     ...IndividualHome.en,
     ...filterContent.en,
     ...contactContent.en,
+    ...buyFormContent.en,
+    ...sellFormContent.en,
     // Añade más traducciones según necesites
   },
   es: {
@@ -37,6 +41,8 @@ const translations = {
     ...IndividualHome.es,
     ...filterContent.es,
     ...contactContent.es,
+    ...buyFormContent.es,
+    ...sellFormContent.es,
     // Añade más traducciones según necesites
   }
 };

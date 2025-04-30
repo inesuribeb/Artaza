@@ -5,6 +5,8 @@ export const PropertyCartContent = {
         sold: 'SOLD',
         viewDetails: 'Further details',
         noImageAvailable: 'No image Available',
+        next: "Next",
+        previous: "Previous",
     },
     es: {
         bedrooms: 'Habitaciones',
@@ -12,6 +14,8 @@ export const PropertyCartContent = {
         sold: 'VENDIDO',
         viewDetails: 'Ver detalles',
         noImageAvailable: 'Imagen no disponible',
+        next: "Siguiente",
+        previous: "Anterior",
     }
 }
 

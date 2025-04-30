@@ -30,10 +30,12 @@
     width: 2rem;  /* o el tamaño que prefieras */
     height: 2rem;
     padding: 0;
-    border: 1px solid var(--corporative-color);
+    /* border: 1px solid var(--corporative-color); */
+    border: none;
     background-color: transparent;
-    color: var(--corporative-color);
-    border-radius: 50%;
+    /* color: var(--corporative-color); */
+    color: rgb(186, 186, 186);
+    /* border-radius: 50%; */
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
@@ -46,9 +48,11 @@
 }
 
 .pagination-button.active {
-    background-color: var(--corporative-color);
-    color: var(--light-color);
-    border-color: var(--corporative-color);
+    /* background-color: var(--corporative-color); */
+    color: var(--dark-color);
+    border: none;
+    /* text-decoration: underline; */
+    /* border-color: var(--corporative-color); */
 }
 
 /* Responsive design */

@@ -104,33 +104,16 @@
     flex-direction: column;
 }
 
-.individual-home-totalinfo h3 {
-    padding-top: 1.5rem;
-    padding-bottom: 3.5rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 0;
-}
-
 .intro {
     display: flex;
     flex-direction: row;
-    /* border-top: 1px solid var(--dark-color); */
+    padding: 1rem 8.5rem;
 }
 
 .general-info {
-    flex: 1;
-    padding: 1.5rem 3rem;
-    /* border-right: 1px solid var(--dark-color); */
-
-}
-
-.general-list {
-    padding: 0;
+    flex: 0.3;
     display: flex;
     flex-direction: column;
-    width: 40%;
 }
 
 .general-list h5{
@@ -155,27 +138,23 @@
 }
 
 .column-description {
-    flex: 1;
-    padding: 1.5rem 3rem;
-    /* background-color: var(--nude-color); */
+    flex:0.7;
+    display: flex;
 }
 
 .column-description h1 {
-    margin-bottom: 10rem;
+    /* margin-bottom: 10rem; */
+    padding-left: 4rem;
     margin-top: 0;
-    font-size: 2rem;
-    font-weight: 400;
-    width: 80%;
+    font-size: 1.7rem;
+    font-weight: 300;
+    width: 100%;
     line-height: 2.75rem;
     font-style: italic;
-}
-
-.column-description p:last-of-type {
-    font-size: 1.2rem;
-    font-weight: 100;
-    line-height: 2rem;
-    width: 80%;
-    margin-bottom: 5rem;
+    color: var(--dark-color);
+    text-align: justify; /* Justifica el texto */
+    hyphens: auto; /* Permite la división de palabras con guiones */
+    text-justify: inter-word; /* Distribuye el espacio entre palabras */
 }
 
 
@@ -184,7 +163,8 @@
 
 /*4a fila*/
 
-.individual-home-totalinfo {
+/* .individual-home-totalinfo {
+    flex:1;
     display: flex;
     flex-direction: row;
     background-color: var(--nude-color);
@@ -197,7 +177,6 @@
 .column-extras {
     flex: 1;
     padding: 1.5rem 3rem;
-
 }
 
 .extras-list {
@@ -206,7 +185,6 @@
     padding-top: 0rem;
     margin: 0;
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
     color: var(--dark-color);
@@ -221,6 +199,69 @@
     font-size: 1.2rem;
     font-weight: 300;
     color: var(--dark-color);
+} */
+
+.individual-home-totalinfo {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 8.5rem;
+
+}
+
+.caracteristicas-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.caracteristicas-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no caben */
+    justify-content: space-between; /* Distribuye los elementos con espacio uniforme */
+    gap: 1rem; 
+}
+
+.column-extras {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 8.5rem;
+    gap: 2rem
+}
+
+.extras-list {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas de igual tamaño */
+    gap: 4rem; 
+    row-gap: 3rem;
+    padding: 0; /* Elimina el padding predeterminado de las listas */
+    list-style-type: none; /* Elimina las viñetas */
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.extras-list li {
+    min-width: 0; /* Evita desbordamiento */
+    /* Estilos adicionales para los elementos de la lista */
+    padding: 0px;
+    /* background-color: #f7f7f7; */
+    /* border-radius: 4px; */
+    text-align: left;
+    color: var(--dark-color);
+    opacity: 0.7;
+
+    padding-left: 1.5em; /* Espacio para el icono */
+    position: relative;
+}
+
+.extras-list li::before {
+    content: "✓"; /* Símbolo de check */
+    position: absolute;
+    left: 0;
+    color: var(--corporative-color); /* Color verde para el check */
+    font-weight: bold;
 }
 
 

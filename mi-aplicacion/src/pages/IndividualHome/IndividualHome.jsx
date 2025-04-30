@@ -58,7 +58,7 @@ function IndividualHome() {
 
             <div className='animated-background'></div>
 
-
+            {/* AQUIIIIIIIIIIIIII */}
 
             <div className='total-info-wrapper'>
 
@@ -90,10 +90,11 @@ function IndividualHome() {
 
                     </div>
 
+
                     <div className='column-description'>
-                        <h1 dangerouslySetInnerHTML={{ __html: `" ${property.title[language]} "` }}></h1>
+                        <h1 dangerouslySetInnerHTML={{ __html: `${property.description[language]}` }}></h1>
                         {/* <h3>{t('description')}</h3> */}
-                        <p dangerouslySetInnerHTML={{ __html: property.description[language] }}></p>
+                        {/* <p dangerouslySetInnerHTML={{ __html: property.description[language] }}></p> */}
                     </div>
                 </div>
 
@@ -102,9 +103,9 @@ function IndividualHome() {
 
 
                 <div className='individual-home-totalinfo'>
-                    <div className='general-info'>
+                    <div className='caracteristicas-info'>
                         <h3>{t('features')}</h3>
-                        <div className="general-list">
+                        <div className="caracteristicas-list">
                             {property.type?.[language] && (
                                 <div className='list-1'>
                                     <h5>{t('homeType')}</h5>
@@ -157,6 +158,10 @@ function IndividualHome() {
                         </div>
 
                     </div>
+                </div>
+
+
+                <div>
 
                     <div className='column-extras'>
                         <h3>{t('extras')}</h3>

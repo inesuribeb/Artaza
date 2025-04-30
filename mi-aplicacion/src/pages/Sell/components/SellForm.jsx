@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 import './SellForm.css';
 
 function SellForm() {
+    const { t, getRoute, language } = useLanguage();
+
     // Estado para manejar los valores del formulario
     const [formData, setFormData] = useState({
         firstName: '',
@@ -34,17 +37,17 @@ function SellForm() {
     // Validar el formulario
     const validateForm = () => {
         let tempErrors = {};
-        if (!formData.firstName.trim()) tempErrors.firstName = "First name is required";
-        if (!formData.lastName.trim()) tempErrors.lastName = "Last name is required";
-        if (!formData.email.trim()) tempErrors.email = "Email is required";
-        else if (!/\S+@\S+\.\S+/.test(formData.email)) tempErrors.email = "Email is invalid";
-        if (!formData.telephone.trim()) tempErrors.telephone = "Telephone is required";
-        if (!formData.addressLine1.trim()) tempErrors.addressLine1 = "Address line 1 is required";
-        if (!formData.city.trim()) tempErrors.city = "City/Town is required";
-        if (!formData.postcode.trim()) tempErrors.postcode = "Postcode is required";
-        if (!formData.lookingToBuy) tempErrors.lookingToBuy = "Please select an option";
-        if (!formData.hearAboutUs.trim()) tempErrors.hearAboutUs = "This field is required";
-        if (!formData.acceptTerms) tempErrors.acceptTerms = "You must accept the terms";
+        if (!formData.firstName.trim()) tempErrors.firstName = t('firstNameRequired');
+        if (!formData.lastName.trim()) tempErrors.lastName = t('lastNameRequired');
+        if (!formData.email.trim()) tempErrors.email = t('emailRequired');
+        else if (!/\S+@\S+\.\S+/.test(formData.email)) tempErrors.email = t('emailInvalid');
+        if (!formData.telephone.trim()) tempErrors.telephone = t('telephoneRequired');
+        if (!formData.addressLine1.trim()) tempErrors.addressLine1 = t('addressLine1Required');
+        if (!formData.city.trim()) tempErrors.city = t('cityRequired');
+        if (!formData.postcode.trim()) tempErrors.postcode = t('postcodeRequired');
+        if (!formData.lookingToBuy) tempErrors.lookingToBuy = t('lookingToBuyRequired');
+        if (!formData.hearAboutUs.trim()) tempErrors.hearAboutUs = t('hearAboutUsRequired');
+        if (!formData.acceptTerms) tempErrors.acceptTerms = t('termsRequired');
         
         setErrors(tempErrors);
         return Object.keys(tempErrors).length === 0;
@@ -63,15 +66,15 @@ function SellForm() {
 
     return (
         <div className="sell-form-container">
-            <h2 className="form-title">Sell with us.</h2>
-            <p className="form-description">
-                The first step to moving home is a free-market appraisal. Fill in the form below and if your home meets our criteria we will contact you about organising one.
+            <h2 className="form-title-sell">{t('formTitle')}.</h2>
+            <p className="form-description-sell">
+                {t('formDescription')}
             </p>
 
-            <form onSubmit={handleSubmit} className="sell-form">
+            <form onSubmit={handleSubmit} className="sell-form-sell">
                 {/* Nombre */}
                 <div className="form-section">
-                    <h3>Name<span className="required">*</span></h3>
+                    <h3>{t('name')}<span className="required">*</span></h3>
                     <div className="name-fields">
                         <div className="form-group">
                             <input
@@ -80,7 +83,7 @@ function SellForm() {
                                 value={formData.firstName}
                                 onChange={handleChange}
                                 className={errors.firstName ? "error" : ""}
-                                placeholder="First Name"
+                                placeholder={t('firstName')}
                             />
                             {errors.firstName && <span className="error-message">{errors.firstName}</span>}
                         </div>
@@ -91,7 +94,7 @@ function SellForm() {
                                 value={formData.lastName}
                                 onChange={handleChange}
                                 className={errors.lastName ? "error" : ""}
-                                placeholder="Last Name"
+                                placeholder={t('lastName')}
                             />
                             {errors.lastName && <span className="error-message">{errors.lastName}</span>}
                         </div>
@@ -100,7 +103,7 @@ function SellForm() {
 
                 {/* Email */}
                 <div className="form-section">
-                    <h3>Email<span className="required">*</span></h3>
+                    <h3>{t('email')}<span className="required">*</span></h3>
                     <div className="form-group">
                         <input
                             type="email"
@@ -115,7 +118,7 @@ function SellForm() {
 
                 {/* Teléfono */}
                 <div className="form-section">
-                    <h3>Telephone<span className="required">*</span></h3>
+                    <h3>{t('telephone')}<span className="required">*</span></h3>
                     <div className="form-group">
                         <input
                             type="tel"
@@ -130,10 +133,10 @@ function SellForm() {
 
                 {/* Dirección */}
                 <div className="form-section">
-                    <h3>Address</h3>
+                    <h3>{t('address')}</h3>
                     
                     <div className="form-group">
-                        <label>Address Line 1<span className="required">*</span></label>
+                        <label>{t('addressLine1')}<span className="required">*</span></label>
                         <input
                             type="text"
                             name="addressLine1"
@@ -145,7 +148,7 @@ function SellForm() {
                     </div>
                     
                     <div className="form-group">
-                        <label>Address Line 2</label>
+                        <label>{t('addressLine2')}</label>
                         <input
                             type="text"
                             name="addressLine2"
@@ -155,7 +158,7 @@ function SellForm() {
                     </div>
                     
                     <div className="form-group">
-                        <label>City / Town<span className="required">*</span></label>
+                        <label>{t('cityTown')}<span className="required">*</span></label>
                         <input
                             type="text"
                             name="city"
@@ -167,7 +170,7 @@ function SellForm() {
                     </div>
                     
                     <div className="form-group">
-                        <label>Postcode<span className="required">*</span></label>
+                        <label>{t('postcode')}<span className="required">*</span></label>
                         <input
                             type="text"
                             name="postcode"
@@ -181,7 +184,7 @@ function SellForm() {
 
                 {/* Tamaño aproximado */}
                 <div className="form-section">
-                    <h3>Approximate Size (sq. ft)</h3>
+                    <h3>{t('approximateSize')}</h3>
                     <div className="form-group">
                         <input
                             type="number"
@@ -194,10 +197,10 @@ function SellForm() {
 
                 {/* Precio esperado */}
                 <div className="form-section">
-                    <h3>Do you have a price you hope to sell for?</h3>
+                    <h3>{t('hopePrice')}</h3>
                     <div className="form-group">
                         <div className="price-input">
-                            <span className="currency">$</span>
+                            <span className="currency">{language === 'es' ? '€' : '£'}</span>
                             <input
                                 type="number"
                                 name="price"
@@ -210,7 +213,7 @@ function SellForm() {
 
                 {/* ¿Buscando comprar también? */}
                 <div className="form-section">
-                    <h3>Are you also looking to buy in the area?<span className="required">*</span></h3>
+                    <h3>{t('lookingToBuy')}<span className="required">*</span></h3>
                     <div className="radio-group">
                         <label className="radio-label">
                             <input
@@ -220,7 +223,7 @@ function SellForm() {
                                 checked={formData.lookingToBuy === 'yes'}
                                 onChange={handleChange}
                             />
-                            Yes
+                            {t('yes')}
                         </label>
                         <label className="radio-label">
                             <input
@@ -230,7 +233,7 @@ function SellForm() {
                                 checked={formData.lookingToBuy === 'no'}
                                 onChange={handleChange}
                             />
-                            No
+                            {t('no')}
                         </label>
                         <label className="radio-label">
                             <input
@@ -240,7 +243,7 @@ function SellForm() {
                                 checked={formData.lookingToBuy === 'maybe'}
                                 onChange={handleChange}
                             />
-                            Maybe
+                            {t('maybe')}
                         </label>
                     </div>
                     {errors.lookingToBuy && <span className="error-message">{errors.lookingToBuy}</span>}
@@ -248,7 +251,7 @@ function SellForm() {
 
                 {/* ¿Cómo supo de nosotros? */}
                 <div className="form-section">
-                    <h3>How did you hear about us?<span className="required">*</span></h3>
+                    <h3>{t('hearAboutUs')}<span className="required">*</span></h3>
                     <div className="form-group">
                         <textarea
                             name="hearAboutUs"
@@ -271,14 +274,14 @@ function SellForm() {
                             onChange={handleChange}
                             className={errors.acceptTerms ? "error" : ""}
                         />
-                        <span>I accept the Privacy & Cookies Policy and Terms & Conditions</span>
+                        <span>{t('acceptTerms')}</span>
                     </label>
                     {errors.acceptTerms && <span className="error-message">{errors.acceptTerms}</span>}
                 </div>
 
                 {/* Botón de Envío */}
                 <div className="form-section submit-section">
-                    <button type="submit" className="submit-button">Send</button>
+                    <button type="submit" className="submit-button">{t('send')}</button>
                 </div>
             </form>
         </div>

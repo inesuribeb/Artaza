@@ -3,7 +3,7 @@
     max-width: 100%;
     position: relative;
     overflow: visible; /* Cambiado de hidden a visible para permitir que los botones estén fuera */
-    background-color: var(--taupe-color);
+    background-color: var(--light-color);
     padding-bottom: 5rem; /* Espacio para los botones de navegación */
     padding-top: 1rem; 
     /* height: 90vh; */
@@ -85,7 +85,7 @@
     height: 40px;
     background-color: transparent;
     /* border: 1px solid var(--dark-color); */
-    border: 1px solid var(--light-color);
+    border: 1px solid var(--dark-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -94,9 +94,9 @@
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 .carousel-button svg {
-    fill: var(--light-color); /* Cambia el color de relleno del SVG */
+    fill: var(--dark-color); /* Cambia el color de relleno del SVG */
     /* o */
-    color: var(--light-color); /* Para iconos que usan currentColor */
+    color: var(--dark-color); /* Para iconos que usan currentColor */
 }
 
 /* .carousel-button:hover {
@@ -128,6 +128,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 1.4rem;
     padding-bottom: 1.5rem;
-    border-bottom: 2px solid var(--light-color);
-    color: var(--light-color);
+    border-bottom: 2px solid var(--dark-color);
+    color: var(--dark-color);
 }
