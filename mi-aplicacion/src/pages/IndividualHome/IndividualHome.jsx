@@ -26,6 +26,7 @@ function IndividualHome() {
         <div className="individual-home-wrapper">
             <div className='individual-home-maininfo'>
                 <h1 dangerouslySetInnerHTML={{ __html: property.title[language] }}></h1>
+                <h3>{property.price}</h3>
                 <p>{property.location}</p>
             </div>
 
@@ -107,42 +108,42 @@ function IndividualHome() {
                         <h3>{t('features')}</h3>
                         <div className="caracteristicas-list">
                             {property.type?.[language] && (
-                                <div className='list-1'>
+                                <div className='list-1-c'>
                                     <h5>{t('homeType')}</h5>
                                     <p>{property.type[language]}</p>
                                 </div>
                             )}
 
                             {property.built_m2 && (
-                                <div className='list-1'>
+                                <div className='list-1-c'>
                                     <h5>{t('builtM2')}</h5>
                                     <p>{property.built_m2}</p>
                                 </div>
                             )}
 
                             {property.usable_m2 && (
-                                <div className='list-1'>
+                                <div className='list-1-c'>
                                     <h5>{t('usableM2')}</h5>
                                     <p>{property.usable_m2}</p>
                                 </div>
                             )}
 
                             {property.bedrooms && (
-                                <div className='list-1'>
+                                <div className='list-1-c'>
                                     <h5>{t('bedrooms')}</h5>
                                     <p>{property.bedrooms}</p>
                                 </div>
                             )}
 
                             {property.bathrooms && (
-                                <div className='list-1'>
+                                <div className='list-1-c'>
                                     <h5>{t('bathrooms')}</h5>
                                     <p>{property.bathrooms}</p>
                                 </div>
                             )}
 
                             {property.orientation && (
-                                <div className='list-1'>
+                                <div className='list-1-c'>
                                     <h5>{t('orientation')}</h5>
                                     <p>{property.orientation[language]}</p>
                                 </div>

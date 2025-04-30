@@ -63,6 +63,7 @@
        font-size: 0.9rem;
        transition: font-weight 0.3s;
        transition: color 0.3;
+       font-weight: 300;
    }
 
    .header:not(:hover):not(.menu-open) .language-selector span {

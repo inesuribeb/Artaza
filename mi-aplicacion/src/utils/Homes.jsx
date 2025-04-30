@@ -36,8 +36,8 @@ export const homes = [
             en: "Basañese 2, Negurigane-Peruri, Leioa"
         },
         title: {
-            es: "Chalet adosado en urbanización privada con piscina",
-            en: "Terraced house in private urbanization with pool"
+            es: "Chalet adosado<br/>en urbanización privada con piscina",
+            en: "Terraced house<br/>in private urbanization with pool"
         },
         description: {
             es: "Chalet de 300 m² en urbanización cerrada, ideal para familias. <br/>5 habitaciones, 4 baños, amplio salón con chimenea, cocina con zona de comedor y acogedor ático. <br/>Garaje cerrado para dos coches, trastero, txoko, terraza, balcón y jardín privado. <br/>Seguridad, comodidad y amplitud en un entorno excepcional.",
