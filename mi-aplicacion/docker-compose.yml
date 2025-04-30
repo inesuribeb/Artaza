@@ -1,0 +1,20 @@
+services:
+  nginx:
+    image: nginx:latest
+    expose:
+      - "80"
+    environment:
+      - VIRTUAL_HOST=artaza.inesuribe.es
+      - LETSENCRYPT_HOST=artaza.inesuribe.es
+      - LETSENCRYPT_EMAIL=email@inesuribe.es.es
+    volumes:
+      - ./web:/usr/share/nginx/html:ro
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro  # Solo si usas React Router
+    networks:
+      - proxy
+    restart: unless-stopped
+
+networks:
+  proxy:
+    name: nginx-proxy
+    external: true
