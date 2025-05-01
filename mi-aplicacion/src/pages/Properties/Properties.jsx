@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
 import { useLanguage } from '../../contexts/LanguageContext';
@@ -9,6 +9,7 @@ import './Properties.css';
 
 function Properties() {
     const { t } = useLanguage();
+    const gridRef = useRef(null); // Referencia al grid de propiedades
     
     const [currentPage, setCurrentPage] = useState(1);
     const propertiesPerPage = 9;
@@ -93,10 +94,18 @@ function Properties() {
 
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber);
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' 
-        });
+        
+        // Desplazarse al grid en lugar de al inicio de la página
+        if (gridRef.current) {
+            const offsetTop = gridRef.current.offsetTop;
+            // Opcionalmente puedes restar un margen para tener en cuenta headers fijos
+            const scrollPosition = offsetTop - 20; // 20px de margen superior
+            
+            window.scrollTo({
+                top: scrollPosition,
+                behavior: 'smooth'
+            });
+        }
     };
 
     // Manejar los resultados de búsqueda
@@ -118,7 +127,7 @@ function Properties() {
                         <p>{filteredProperties.length} {t('propertiesFound')}</p>
                     </div> */}
                     
-                    <div className="properties-grid">
+                    <div className="properties-grid" ref={gridRef}>
                         {currentProperties.map((home) => (
                             <PropertyCart key={home.id} property={home} />
                         ))}
