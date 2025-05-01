@@ -189,7 +189,7 @@ textarea:focus {
     margin-top: 1rem;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .name-fields {
         flex-direction: column;
         gap: 0.5rem;
@@ -198,4 +198,111 @@ textarea:focus {
     .buy-form-container {
         padding: 1rem;
     }
-}
+} */
+
+/* Media queries para tablets medianas y pequeñas */
+@media screen and (max-width: 768px) {
+    .buy-form-wrapper {
+      flex-direction: column;
+    }
+    
+    .picture-form {
+      flex: 1;
+      padding: 0 1.5rem 2rem 1.5rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .picture-form img {
+      width: 100%;
+      aspect-ratio: 5/3; /* Establece la proporción 4:3 */
+      object-fit: cover;
+      border-radius: 35% 35% 35% 35% / 25% 25% 25% 25%; /* Bordes más suaves */
+    }
+    
+    .buy-form-container {
+      flex: 1;
+      width: 100%;
+      padding: 0 1.5rem;
+      box-sizing: border-box;
+      margin-bottom: 3rem;
+    }
+    
+    .form-title {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    
+    .form-description {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-section h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Para teléfonos móviles */
+  @media screen and (max-width: 480px) {
+    .picture-form {
+      padding: 0 1rem 1.5rem 1rem;
+    }
+    
+    .picture-form img {
+      border-radius: 30% 30% 30% 30% / 50% 50% 50% 50%; /* Bordes aún más suaves */
+    }
+    
+    .buy-form-container {
+      padding: 0 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .form-title {
+      font-size: 1.8rem;
+    }
+    
+    .form-description {
+      font-size: 0.9rem;
+    }
+    
+    .name-fields {
+      flex-direction: column;
+      gap: 0;
+    }
+    
+    .form-section h3 {
+      font-size: 1.1rem;
+    }
+    
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      padding: 0.7rem;
+      font-size: 0.9rem;
+    }
+    
+    .submit-button {
+      width: 100%;
+      padding: 0.9rem;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Para teléfonos muy pequeños */
+  @media screen and (max-width: 360px) {
+    .form-title {
+      font-size: 1.6rem;
+    }
+    
+    .form-section h3 {
+      font-size: 1rem;
+    }
+    
+    .picture-form img {
+      border-radius: 20% 20% 20% 20% / 10% 10% 10% 10%; /* Bordes mínimos */
+    }
+  }
