@@ -192,49 +192,7 @@
     text-justify: inter-word; /* Distribuye el espacio entre palabras */
 }
 
-
-
-
-
 /*4a fila*/
-
-/* .individual-home-totalinfo {
-    flex:1;
-    display: flex;
-    flex-direction: row;
-    background-color: var(--nude-color);
-    color: var(--dark-color);
-    border-bottom: 1px solid var(--dark-color);
-    border-top: 1px solid var(--dark-color);
-}
-
-
-.column-extras {
-    flex: 1;
-    padding: 1.5rem 3rem;
-}
-
-.extras-list {
-    list-style: circle;
-    padding: 0;
-    padding-top: 0rem;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-    color: var(--dark-color);
-}
-
-.extras-list li {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: transparent;
-    border-radius: 4px;
-    text-align: left;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: var(--dark-color);
-} */
 
 .individual-home-totalinfo {
     display: flex;
@@ -329,18 +287,178 @@
     font-weight: bold;
 }
 
-
-/* Responsive */
-/* @media (max-width: 768px) {
-    .thumbnail-wrapper {
-        width: 120px;
-        height: 75px;
+/* Media queries para tablets */
+@media screen and (max-width: 768px) {
+    .error-container {
+      margin-top: 6rem;
     }
-}
-
-@media (max-width: 480px) {
-    .thumbnail-wrapper {
-        width: 80px;
-        height: 50px;
+    
+    .individual-home-wrapper {
+      margin-bottom: 3rem;
     }
-} */
+    
+    .individual-home-maininfo {
+      margin-top: 8rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+    
+    .individual-home-maininfo h1 {
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+    }
+    
+    .individual-home-maininfo h3 {
+      font-size: 1.2rem;
+    }
+    
+    .individual-home-carousel {
+      margin: 2rem auto;
+      max-width: 700px;
+    }
+
+    /* .individual-home-carousel {
+        max-width: 1200px;
+        margin: 4rem auto;
+        padding: 0 1rem;
+    } */
+    
+    .thumbnail-wrapper {
+      width: 120px;
+      height: 80px;
+    }
+    
+    .intro {
+      flex-direction: column;
+      padding: 1rem 1.5rem;
+    }
+    
+    .general-info {
+      flex: 1;
+      margin-bottom: 1.5rem;
+    }
+    
+    .column-description {
+      flex: 1;
+    }
+    
+    .column-description h1 {
+      padding-left: 0;
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+    }
+    
+    .individual-home-totalinfo {
+      padding: 1rem 1.5rem;
+    }
+    
+    .caracteristicas-list {
+      gap: 0.5rem;
+    }
+    
+    .column-extras {
+      padding: 1rem 1.5rem;
+    }
+    
+    .extras-list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      row-gap: 1.5rem;
+    }
+  }
+  
+  /* Para teléfonos móviles */
+  @media screen and (max-width: 480px) {
+    .error-container {
+      margin-top: 4.5rem;
+    }
+    
+    .individual-home-maininfo {
+      margin-top: 6rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    
+    .individual-home-maininfo h1 {
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+    }
+    
+    .individual-home-maininfo h3 {
+      font-size: 1.1rem;
+    }
+    
+    .individual-home-carousel {
+      margin: 1.5rem auto;
+      max-width: 400px;
+    }
+
+    
+    .thumbnail-wrapper {
+      width: 90px;
+      height: 60px;
+    }
+    
+    .intro {
+      padding: 1rem;
+    }
+    
+    .list-1 p {
+      font-size: 1rem;
+    }
+    
+    .column-description h1 {
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
+    
+    .individual-home-totalinfo {
+      padding: 1rem;
+    }
+    
+    .list-1-c p {
+      font-size: 1rem;
+    }
+    
+    .column-extras {
+      padding: 1rem;
+      gap: 1rem;
+    }
+    
+    .extras-list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      row-gap: 1rem;
+    }
+    
+    .extras-list li {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Para teléfonos muy pequeños */
+  @media screen and (max-width: 360px) {
+    .individual-home-maininfo h1 {
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+    }
+    
+    .individual-home-maininfo h3 {
+      font-size: 1rem;
+    }
+
+    .individual-home-carousel {
+        margin: 1.5rem auto;
+        max-width: 300px;
+      }
+    
+    .thumbnail-wrapper {
+      width: 80px;
+      height: 50px;
+    }
+    
+    .extras-list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+    }
+  }

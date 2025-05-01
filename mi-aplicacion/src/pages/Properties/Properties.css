@@ -1,6 +1,5 @@
 /* Properties.css */
 .properties-container {
-    /* margin-top: 8rem; */
     margin-top: 0rem;
     margin-bottom: 5rem;
 }
@@ -13,8 +12,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 40px;
-
-    grid-auto-rows: 1fr; /* Esto hace que todas las filas tengan la misma altura */
+    grid-auto-rows: 1fr;
 }
 
 /* Paginación */
@@ -26,50 +24,44 @@
 }
 
 .pagination-button {
-    /* padding: 0.5rem; */
-    width: 2rem;  /* o el tamaño que prefieras */
+    width: 2rem;
     height: 2rem;
     padding: 0;
-    /* border: 1px solid var(--corporative-color); */
     border: none;
     background-color: transparent;
-    /* color: var(--corporative-color); */
     color: rgb(186, 186, 186);
-    /* border-radius: 50%; */
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
 }
 
 .pagination-button:hover {
-    /* background-color: var(--nude-color); */
-    /* border-color: #cbd5e0; */
     scale: 1.1;
 }
 
 .pagination-button.active {
-    /* background-color: var(--corporative-color); */
     color: var(--dark-color);
     border: none;
-    /* text-decoration: underline; */
-    /* border-color: var(--corporative-color); */
+
 }
 
 /* Responsive design */
 @media (max-width: 1024px) {
     .properties-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 1rem;
+        padding: 1rem;
     }
 }
 
 @media (max-width: 640px) {
     .properties-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 1rem;
+        padding: 1rem;
     }
     
     .properties-container {
-        padding: 20px 16px;
+        padding: 0rem;
     }
 }

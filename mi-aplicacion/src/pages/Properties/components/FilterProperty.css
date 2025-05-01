@@ -257,7 +257,7 @@
     color: #666;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .search-form h1 {
         font-size: 1.1rem;
         line-height: 1.5;
@@ -281,4 +281,114 @@
         padding: 8px 16px;
         font-size: 0.9rem;
     }
-}
+} */
+
+/* Media queries para tablets */
+@media screen and (max-width: 768px) {
+    .search-form {
+      height: 70vh;
+      background-position: center;
+    }
+    
+    .search-form h2 {
+      padding-top: 6rem;
+      width: 80%;
+      font-size: 1.5rem;
+    }
+    
+    .search-form h1 {
+      width: 80%;
+      font-size: 1.5rem;
+      min-height: 100px;
+    }
+    
+    .view-results-button {
+      font-size: 1.2rem;
+      padding: 8px 20px;
+    }
+    
+    .reset-button {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Para teléfonos móviles */
+  @media screen and (max-width: 480px) {
+    .search-form {
+      height: 80vh;
+    }
+    
+    .search-form h2 {
+      padding-top: 4rem;
+      width: 90%;
+      font-size: 1.3rem;
+      line-height: 1.4;
+    }
+    
+    .search-form h1 {
+      width: 85%;
+      font-size: 1rem;
+      min-height: 80px;
+      line-height: 1.4;
+    }
+    
+    .view-results-button {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+    
+    .circle-button {
+      width: 16px;
+      height: 16px;
+      font-size: 1rem;
+    }
+    
+    .dropdown-menu {
+      min-width: 180px;
+      max-height: 200px;
+    }
+    
+    .dropdown-item {
+      padding: 4px 8px;
+      font-size: 0.9rem;
+    }
+    
+    .reset-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+    
+    .reset-button-container {
+      min-width: 70px;
+      height: 35px;
+    }
+  }
+  
+  /* Para teléfonos muy pequeños */
+  @media screen and (max-width: 360px) {
+    .search-form {
+      height: 70vh;
+    }
+    
+    .search-form h2 {
+      padding-top: 3rem;
+      width: 95%;
+      font-size: 1.1rem;
+    }
+    
+    .search-form h1 {
+      width: 95%;
+      font-size: 1.1rem;
+      min-height: 70px;
+    }
+    
+    .view-results-button {
+      font-size: 1rem;
+    }
+    
+    .circle-button {
+      width: 18px;
+      height: 18px;
+      font-size: 1rem;
+    }
+  }

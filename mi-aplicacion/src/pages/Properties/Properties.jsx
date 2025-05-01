@@ -9,32 +9,24 @@ import './Properties.css';
 
 function Properties() {
     const { t } = useLanguage();
-    const gridRef = useRef(null); // Referencia al grid de propiedades
+    const gridRef = useRef(null); 
     
     const [currentPage, setCurrentPage] = useState(1);
     const propertiesPerPage = 9;
     
-    // Estados para los filtros de búsqueda
     const [propertyCount, setPropertyCount] = useState(null);
     const [neighborhood, setNeighborhood] = useState(null);
     const [budget, setBudget] = useState(null);
     
-    // Estado para las propiedades filtradas
     const [filteredProperties, setFilteredProperties] = useState(homes);
 
-    // Función para convertir cadenas de precio a números
     const extractPriceValue = (priceString) => {
-        // Elimina el símbolo de euro y cualquier espacio
         const cleanedPrice = priceString.replace(/€/g, '').trim();
-        // Reemplaza los puntos de miles con nada (asumiendo formato europeo)
         const withoutDots = cleanedPrice.replace(/\./g, '');
-        // Reemplaza comas con puntos para decimales si existen
         const withDecimal = withoutDots.replace(/,/g, '.');
-        // Convierte a número
         return parseFloat(withDecimal);
     };
 
-    // Aplicar filtros cuando cambien los criterios de búsqueda
     useEffect(() => {
         if (!propertyCount && !neighborhood && !budget) {
             setFilteredProperties(homes);
@@ -43,9 +35,7 @@ function Properties() {
         
         let filtered = [...homes];
         
-        // Filtrar por número de propiedades
         if (propertyCount && propertyCount !== t('anyNumber')) {
-            // Extraer el número de la cadena (por ejemplo "3+ bedrooms" -> 3)
             const bedroomMatch = propertyCount.match(/(\d+)/);
             if (bedroomMatch && bedroomMatch[1]) {
                 const bedroomCount = parseInt(bedroomMatch[1]);
@@ -55,21 +45,16 @@ function Properties() {
             }
         }
         
-        // Filtrar por vecindario - ahora busca en la propiedad "location"
         if (neighborhood && neighborhood !== t('anyNeighbourhood')) {
             filtered = filtered.filter(home => {
-                // Comprueba si home.location existe y luego si contiene el barrio buscado
                 return home.location && home.location.toLowerCase().includes(neighborhood.toLowerCase());
             });
         }
         
-        // Filtrar por presupuesto
         if (budget && budget !== t('anyBudget')) {
             filtered = filtered.filter(home => {
-                // Primero convertimos el precio a número
                 const priceValue = extractPriceValue(home.price);
                 
-                // Luego aplicamos el filtro según el rango seleccionado
                 if (budget === t('budget400to600')) {
                     return priceValue >= 400000 && priceValue <= 600000;
                 } else if (budget === t('budget600to800')) {
@@ -84,7 +69,7 @@ function Properties() {
         }
         
         setFilteredProperties(filtered);
-        setCurrentPage(1); // Resetear a la primera página cuando cambian los filtros
+        setCurrentPage(1); 
     }, [propertyCount, neighborhood, budget, t]);
 
     const indexOfLastProperty = currentPage * propertiesPerPage;
@@ -95,11 +80,9 @@ function Properties() {
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber);
         
-        // Desplazarse al grid en lugar de al inicio de la página
         if (gridRef.current) {
             const offsetTop = gridRef.current.offsetTop;
-            // Opcionalmente puedes restar un margen para tener en cuenta headers fijos
-            const scrollPosition = offsetTop - 20; // 20px de margen superior
+            const scrollPosition = offsetTop - 20; 
             
             window.scrollTo({
                 top: scrollPosition,
@@ -108,7 +91,6 @@ function Properties() {
         }
     };
 
-    // Manejar los resultados de búsqueda
     const handleSearchResults = (count, hood, budgetValue) => {
         setPropertyCount(count);
         setNeighborhood(hood);
@@ -122,11 +104,7 @@ function Properties() {
             </div>
             
             {filteredProperties.length > 0 ? (
-                <>
-                    {/* <div className="properties-count">
-                        <p>{filteredProperties.length} {t('propertiesFound')}</p>
-                    </div> */}
-                    
+                <>  
                     <div className="properties-grid" ref={gridRef}>
                         {currentProperties.map((home) => (
                             <PropertyCart key={home.id} property={home} />
