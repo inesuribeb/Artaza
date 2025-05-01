@@ -1,88 +1,10 @@
-// import Welcome from "./components/Welcome";
-// import InmoLocation from "./components/InmoLocation";
-// import CarouselLocation from "./components/CarouselLocation";
-// import PropertiesLand from "./components/PropertiesLand";
-// import BuyHomes from "./components/BuyHomes";
-// import './Landing.css'
-
-// function Landing() {
-
-//     return (
-//         <div className="main-landing-container"> 
-//             <section className="welcome-section">         
-//                 <Welcome />
-//             </section>
-//             <section className="content-container">
-//                 <InmoLocation />
-//                 <CarouselLocation />
-//                 <BuyHomes />
-//                 <PropertiesLand />
-//             </section>
-//         </div>
-//     );
-// }
-
-// export default Landing;
-
-
-
-// import React, { useEffect, useRef, useState } from 'react';
-// import Welcome from "./components/Welcome";
-// import InmoLocation from "./components/InmoLocation";
-// import CarouselLocation from "./components/CarouselLocation";
-// import PropertiesLand from "./components/PropertiesLand";
-// import BuyHomes from "./components/BuyHomes";
-// import './Landing.css';
-
-// function Landing() {
-//     const [scrollProgress, setScrollProgress] = useState(0);
-//     const contentRef = useRef(null);
-
-//     useEffect(() => {
-//         let rafId = null;
-        
-//         const handleScroll = () => {
-//             if (rafId) cancelAnimationFrame(rafId);
-            
-//             rafId = requestAnimationFrame(() => {
-//                 const windowHeight = window.innerHeight;
-//                 const scrollY = window.scrollY;
-//                 const progress = Math.min(scrollY / windowHeight, 1);
-//                 setScrollProgress(progress);
-//             });
-//         };
-    
-//         window.addEventListener('scroll', handleScroll);
-//         return () => {
-//             window.removeEventListener('scroll', handleScroll);
-//             if (rafId) cancelAnimationFrame(rafId);
-//         };
-//     }, []);
-
-//     return (
-//         <div className="main-landing-container">
-//             <section className="welcome-section">
-//                 <Welcome scrollProgress={scrollProgress} />
-//             </section>
-//             <section ref={contentRef} className="content-container">
-//                 <InmoLocation />
-//                 <CarouselLocation />
-//                 <BuyHomes />
-//                 <PropertiesLand />
-//             </section>
-//         </div>
-//     );
-// }
-
-// export default Landing;
-
-
 import React, { useEffect, useRef, useState } from 'react';
 import Welcome from "./components/Welcome";
 import InmoLocation from "./components/InmoLocation";
 import CarouselLocation from "./components/CarouselLocation";
 import PropertiesLand from "./components/PropertiesLand";
 import BuyHomes from "./components/BuyHomes";
+import Valuation from '../../components/Valuation/Valuation';
 import './Landing.css';
 
 function Landing() {
@@ -94,6 +16,7 @@ function Landing() {
     const carouselLocationRef = useRef(null);
     const buyHomesRef = useRef(null);
     const propertiesLandRef = useRef(null);
+    const valuationRef = useRef(null);
     
     // Estados para controlar la visibilidad de cada sección
     const [visibleSections, setVisibleSections] = useState({
@@ -158,7 +81,8 @@ function Landing() {
             { ref: inmoLocationRef.current, id: 'inmoLocation' },
             { ref: carouselLocationRef.current, id: 'carouselLocation' },
             { ref: buyHomesRef.current, id: 'buyHomes' },
-            { ref: propertiesLandRef.current, id: 'propertiesLand' }
+            { ref: propertiesLandRef.current, id: 'propertiesLand' },
+            { ref: valuationRef.current, id: 'valuation' }
         ];
         
         sections.forEach(section => {
@@ -196,6 +120,9 @@ function Landing() {
                 </div>
                 <div ref={propertiesLandRef} data-section-id="propertiesLand">
                     <PropertiesLand visibleSections={visibleSections} />
+                </div>
+                <div ref={valuationRef} data-section-id="valuation">
+                    <Valuation visibleSections={visibleSections} />
                 </div>
             </section>
         </div>

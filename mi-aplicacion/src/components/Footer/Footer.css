@@ -1,127 +1,79 @@
 .footer-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 3rem;
+  color: var(--light-color);
   background-color: var(--corporative-color);
-  position: relative;
-  z-index: 1000;
+  z-index: 3;
 }
 
 .footer-content {
-  background-color: var(--corporative-color);
   display: flex;
-  justify-content: space-between;
-  padding: 2.5rem 3rem;
-  color: var(--light-color);
+  flex-direction: row;
+  flex: 0.7;
 }
 
-
-.footer-left {
-  flex: 1;
-  /* padding-right: 20px; */
-  position: relative;
+.footer-image {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  /* Espacio entre elementos */
-  justify-content: flex-start;
-  font-weight: 100;
+  flex: 0.3;
+  text-align: flex-end;
+  /* justify-content: flex-end; */
 }
 
-.footer-left h3 {
+.footer-one,
+.footer-two,
+.footer-three,
+.footer-four {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* gap: 3rem; */
+}
+
+.footer-wrapper h3 {
+  font-family: var(--serif-one-font);
   font-size: 1rem;
-  text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 0.1rem;
   font-weight: 100;
-  margin-top: 1rem;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
-  letter-spacing: 1.2px;
+  /* opacity: 0.7; */
 }
 
-.footer-left p {
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
-  margin: 0.5rem 0;
-  color: var(--light-color);
-  font-weight: 100;
+.footer-content p {
   font-size: 0.9rem;
-  opacity: 0.7;
+  font-weight: 100;
+  /* opacity: 0.7; */
+  /* margin-bottom: 0.4rem;
+  margin-top: 0.4rem; */
+
 }
 
-
-
-
-
-
-
-
-.footer-center {
-  flex: 2;
+.footer-image h3 {
   text-align: center;
-  padding: 0 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-center h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-  font-weight: 100;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.footer-center p {
-  margin-bottom: 0.8rem;
-  font-size: 1rem;
-  font-weight: 100;
-}
-
-
-
-
-
-
-
-.footer-right {
-  flex: 1;
-  padding-left: 20px;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  justify-content: flex-start;
-  gap: 1.5rem;
-}
-
-.footer-right h3 {
-  font-size: 1rem;
-  text-transform: uppercase;
   margin-bottom: 2rem;
-  font-weight: 100;
-  margin-top: 1rem;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
-  letter-spacing: 1.2px;
+  align-items: right;
 }
-
-.footer-right p {
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
-  margin: 5px 0;
-  font-weight: 100;
-  font-size: 0.9rem;
-  color: var(--light-color);
-  opacity: 0.7;
-}
-
-
-
-
-
 
 .whatsapp-icon {
-  text-align: center;
-  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: right;
+  justify-content: center;
 }
 
+
 .whatsapp-icon img {
-  width: 60px;
+  width: 180px;
   height: auto;
+}
+
+.footer-four a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.footer-four a:hover {
+  opacity: 0.7;
 }

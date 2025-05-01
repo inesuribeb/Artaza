@@ -13,7 +13,14 @@ export const translations = {
     viernes: "Friday",
     mananas: "10:30 AM – 1:30 PM",
     tardes: "5:00 PM – 8:00 PM",
-    nombreempresa: "Artaza Real Estate"
+    nombreempresa: "Artaza Real Estate",
+
+    visit: "Visit",
+    cookies: "Cookies",
+    privacy: "Privacy",
+    terms: "Terms",
+    legal: "Legal",
+    c: "© 2025 Artaza Real Estate.",
   },
   es: {
     horario: "Horario",
@@ -29,6 +36,13 @@ export const translations = {
     viernes: "Viernes",
     mananas: "10:30 – 13:30",
     tardes: "17:00 – 20:00",
-    nombreempresa: "Artaza Inmobiliaria"
+    nombreempresa: "Artaza Inmobiliaria",
+
+    visit: "Visita",
+    cookies: "Cookies",
+    privacy: "Privacidad",
+    terms: "Términos",
+    legal: "Legal",
+    c: "© 2025 Inmobiliaria Artaza.",
   }
 };

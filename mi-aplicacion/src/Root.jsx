@@ -77,10 +77,12 @@ function Root() {
 
     return (
         <LanguageProvider>
-            <div className="outlet-container" key={location.pathname}>
+            {/* <div className="outlet-container" key={location.pathname}> */}
+            <div>
                 <Header />
-                {/* <div className="outlet-container" key={location.pathname}> */}
-                <Outlet />
+                <div className="outlet-container" key={location.pathname}>
+                    <Outlet />
+                </div>
                 <div className="footer-root">
                     <Footer />
                 </div>

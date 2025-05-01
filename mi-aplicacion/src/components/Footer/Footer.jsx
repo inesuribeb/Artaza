@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useLanguage } from "../../contexts/LanguageContext";
 import Button from '../Button/Button';
 import './Footer.css';
@@ -6,49 +6,69 @@ import './Footer.css';
 function Footer() {
     const { t, getRoute } = useLanguage();
     const navigate = useNavigate();
+    const location = useLocation();
 
     return (
         <div className="footer-wrapper">
             <div className='footer-content'>
-                <div className="footer-left">
+
+                <div className="footer-one">
+                    <h3>{t('visit')}</h3>
                     <div>
-                        <h3>{t('nombreempresa')}</h3>
                         <p>{t('direccion')}</p>
+                        <p>{t('localidad')}</p>
                     </div>
-                    <div>
+                    {/* <div>
                         <p>{t('localidad')}</p>
                         <p>{t('telefono')}</p>
                     </div>
                     <div>
                         <p>{t('emailaddress')}</p>
-                    </div>
+                    </div> */}
                 </div>
 
-                <div className="footer-center">
-                    <h2>{t('tasaciontitulo')}</h2>
-                    <p>{t('tasaciontexto')}</p>
-                    <Button
-                        translationKey="registrate"
-                        routeName="sell"
-                    />
-                </div>
 
-                <div className="footer-right">
+                <div className="footer-two">
                     <h3>{t('horario')}</h3>
                     <div>
                         <p>{t('lunesajueves')}</p>
                         <p>{t('mananas')}</p>
                         <p>{t('tardes')}</p>
-                    </div>
-                    <div>
                         <p>{t('viernes')}</p>
                         <p>{t('mananas')}</p>
                     </div>
                 </div>
+
+                <div className="footer-three">
+                    <h3>{t('contactus')}</h3>
+                    <div>
+                        <p>{t('telefono')}</p>
+                        <p>{t('emailaddress')}</p>
+                    </div>
+                </div>
+
+                <div className="footer-four">
+                    <Link to={getRoute('')}>
+                        <h3>{t('cookies')}</h3>
+                    </Link>
+                    <Link to={getRoute('')}>
+                        <h3>{t('privacy')}</h3>
+                    </Link>
+                    <Link to={getRoute('')}>
+                        <h3>{t('terms')}</h3>
+                    </Link>
+                    <Link to={getRoute('')}>
+                        <h3>{t('legal')}</h3>
+                    </Link>
+                </div>
             </div>
-            <div>
+
+
+
+            <div className='footer-image'>
+                <h3>{t('c')}</h3>
                 <div className="whatsapp-icon">
-                    <img src="/images/ISOTIPO BLANCO.png" alt="WhatsApp" />
+                    <img src="/images/LOGO1 BLANCO.png" alt="WhatsApp" />
                 </div>
             </div>
         </div>
