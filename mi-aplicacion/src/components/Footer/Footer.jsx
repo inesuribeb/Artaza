@@ -14,7 +14,7 @@ function Footer() {
 
                 <div className="footer-one">
                     <h3>{t('visit')}</h3>
-                    <div>
+                    <div className='interior-divs'>
                         <p>{t('direccion')}</p>
                         <p>{t('localidad')}</p>
                     </div>
@@ -22,7 +22,7 @@ function Footer() {
 
                 <div className="footer-two">
                     <h3>{t('horario')}</h3>
-                    <div>
+                    <div className='interior-divs'>
                         <p>{t('lunesajueves')}</p>
                         <p>{t('mananas')}</p>
                         <p>{t('tardes')}</p>
@@ -33,7 +33,7 @@ function Footer() {
 
                 <div className="footer-three">
                     <h3>{t('contactus')}</h3>
-                    <div>
+                    <div className='interior-divs'>
                         <p>{t('telefono')}</p>
                         <p>{t('emailaddress')}</p>
                     </div>

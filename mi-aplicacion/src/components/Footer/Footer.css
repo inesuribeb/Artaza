@@ -69,3 +69,98 @@
 .footer-four a:hover {
   opacity: 0.7;
 }
+
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .footer-wrapper {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  
+  .footer-image {
+    flex: 1;
+    margin-top: 0rem;
+    text-align: center;
+  }
+  
+  .footer-one,
+  .footer-two,
+  .footer-three {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-image h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .footer-content p {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
+  }
+  
+  .whatsapp-icon {
+    justify-content: center;
+  }
+  
+  .whatsapp-icon img {
+    width: 150px;
+  }
+  
+  /* Nuevo estilo para footer-four */
+  .footer-four {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .footer-four a {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+  }
+}
+
+/* Para teléfonos muy pequeños */
+@media screen and (max-width: 480px) {
+  .footer-wrapper {
+    padding: 1.5rem 1rem;
+  }
+  
+  .footer-wrapper h3 {
+    font-size: 0.9rem;
+  }
+  
+  .footer-content p {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
+  }
+  
+  .whatsapp-icon img {
+    width: 120px;
+  }
+  
+  .footer-content {
+    gap: 1rem;
+  }
+
+  /* Ajustes para el footer-four en móviles muy pequeños */
+  .footer-four a {
+    margin-right: 0.7rem;
+    margin-bottom: 0.4rem;
+  }
+}

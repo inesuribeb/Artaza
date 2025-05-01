@@ -39,7 +39,7 @@
     height: auto;
     object-fit: cover;
     max-width: 580px;
-    opacity: 0; 
+    opacity: 0;
 }
 
 .section-propertiesland.visible .propertiesland-left img {
@@ -52,11 +52,13 @@
         transform: translateY(-5px);
         filter: blur(2px);
     }
+
     30% {
         opacity: 0.3;
         transform: translateY(-3px);
         filter: blur(1px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -79,11 +81,12 @@
     text-align: center;
 }
 
-.propertiesland-right h1, 
-.propertiesland-right h3, 
+.propertiesland-right h1,
+.propertiesland-right h3,
 .propertiesland-right button {
     opacity: 0;
 }
+
 .section-propertiesland.visible .propertiesland-right h1 {
     animation: fadeIn 1s ease forwards;
     animation-delay: 0.2s;
@@ -115,4 +118,76 @@
     width: 80%;
     line-height: 1.5rem;
     margin-bottom: 3rem;
+}
+
+
+/**/
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 820px) {
+    .section-propertiesland {
+        padding-top: 4rem;
+    }
+
+    .propertiesland-inner {
+        flex-direction: column;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        gap: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .propertiesland-right {
+        order: -1;
+        /* Mueve el texto arriba */
+    }
+
+    .propertiesland-right h1 {
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+
+    .propertiesland-right h3 {
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .propertiesland-left img {
+        max-width: 100%;
+        aspect-ratio: 4/3;
+        /* Proporción 4:3 para la imagen */
+        object-fit: cover;
+        margin-top: 1rem;
+    }
+}
+
+/* Para teléfonos muy pequeños */
+@media screen and (max-width: 480px) {
+    .propertiesland-inner {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 4rem;
+        gap: 1rem;
+    }
+
+    .propertiesland-right h1 {
+        font-size: 2.5rem;
+        width: 70%;
+    }
+
+    .propertiesland-right h3 {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        border-top: 1px solid var(--dark-color);
+        padding-top: 3rem;
+    }
+
+    .propertiesland-left img {
+        max-width: 100%;
+        aspect-ratio: 4/3;
+        /* Proporción 4:3 para la imagen */
+        object-fit: cover;
+        margin-top: 3rem;
+    }
 }
