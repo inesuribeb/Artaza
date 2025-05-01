@@ -1,3 +1,141 @@
+/* .property-card {
+    background-color: transparent;
+    overflow: hidden;
+    border: 0.5px solid var(--dark-color);
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.property-card__image-container {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+}
+
+.property-card__image-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.property-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.property-card:hover .property-card__image {
+    transform: scale(1.1);
+}
+
+.property-card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-transparent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.property-card__view-details {
+    color: var(--dark-color);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+}
+
+.property-card:hover .property-card__overlay {
+    opacity: 1;
+}
+
+.property-card__image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 0.8rem;
+} */
+
+/* .property-card__sold-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #AD4B3E;
+    color: white;
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+} */
+
+/* .property-card__info {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.property-card__location {
+    color: var(--corporative-color);
+    font-size: 0.9rem;
+    font-weight: 100;
+    letter-spacing: 0.8px;
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+}
+
+.property-card__title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: var(--dark-color);
+    margin: 0 0 2rem 0;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+
+}
+.property-card__title:hover {
+    opacity: 0.7;
+}
+
+.property-card__features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--taupe-color);
+    font-size: 0.8rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.property-card__features .separator-features {
+    color: var(--nude-color);
+} */
+
+
+/*nuevo*/
 .property-card {
     background-color: transparent;
     overflow: hidden;
@@ -35,8 +173,6 @@
     transform: scale(1.1);
 }
 
-/* Añade estos estilos a tu CSS existente */
-
 /* Overlay blanquecino que aparece en hover */
 .property-card__overlay {
     position: absolute;
@@ -44,9 +180,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-color: rgba(243, 241, 233, 0.5); */
     background-color: var(--light-transparent-color);
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,8 +202,6 @@
     opacity: 1;
 }
 
-
-
 .property-card__image-placeholder {
     width: 100%;
     height: 100%;
@@ -81,25 +213,43 @@
     font-size: 0.8rem;
 }
 
-.property-card__sold-badge {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    background-color: #AD4B3E;
-    color: white;
-    padding: 6px 16px;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
 .property-card__info {
     padding: 1rem;
-    /* cursor: pointer; */
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+/* Estilos para el indicador de sold */
+.property-card__location-container {
+    display: flex;
+    justify-content: space-between; /* Esto empuja los elementos a los extremos */
+    /* align-items: center; */
+    align-items: baseline;
+    margin: 0 0 1.5rem 0;
+    width: 100%;
+}
+
+/* Estilos para el indicador de sold */
+.property-card__sold-indicator {
+    background-color: transparent;
+    color: #AD4B3E;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    /* line-height: 1; */
+}
+.property-card__sold-indicator::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #AD4B3E;
+    border-radius: 50%;
+    margin-right: 6px;
 }
 
 .property-card__location {
@@ -107,27 +257,13 @@
     font-size: 0.9rem;
     font-weight: 100;
     letter-spacing: 0.8px;
-    margin: 0 0 1.5rem 0;
     text-transform: uppercase;
-}
-
-.property-card__title {
-    font-size: 1.5rem;
-    font-weight: 400;
-    cursor: pointer;
-    /* letter-spacing: 1px; */
-    /* font-style: italic; */
-    color: var(--dark-color);
-    margin: 0 0 2rem 0;
-    line-height: 1.4;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    margin: 0;
+    white-space: nowrap;
     overflow: hidden;
-    transition: opacity 0.3s ease;
-
-}
-.property-card__title:hover {
-    opacity: 0.7;
+    text-overflow: ellipsis;
+    max-width: 80%; /* Limita el ancho para evitar que empuje "Sold" fuera de la línea */
+    /* line-height: 1; */
 }
 
 .property-card__features {

@@ -1,6 +1,6 @@
 export const PropertyCartContent = {
     en: {
-        bedrooms: 'Bedrooms',
+        bedroomspc: 'Bedrooms',
         bathrooms: 'Bathrooms',
         sold: 'SOLD',
         viewDetails: 'Further details',
@@ -9,7 +9,7 @@ export const PropertyCartContent = {
         previous: "Previous",
     },
     es: {
-        bedrooms: 'Habitaciones',
+        bedroomspc: 'Habitaciones',
         bathrooms: 'Baños',
         sold: 'VENDIDO',
         viewDetails: 'Ver detalles',

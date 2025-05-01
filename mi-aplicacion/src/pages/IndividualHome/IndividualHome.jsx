@@ -73,12 +73,12 @@ function IndividualHome() {
                                 </div>
                             )}
 
-                            {property.exact_location?.[language] && (
+                            {/* {property.exact_location?.[language] && (
                                 <div className='list-1'>
                                     <h5>{t('address')}</h5>
                                     <p>{property.exact_location[language]}</p>
                                 </div>
-                            )}
+                            )} */}
 
                             {property.location && (
                                 <div className='list-1'>
