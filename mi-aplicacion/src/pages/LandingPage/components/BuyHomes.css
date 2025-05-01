@@ -1,8 +1,6 @@
 .buyhomes-wrapper {
     padding: 0 1.5rem;
     background-color: var(--light-color);
-    /* padding-top: 5rem;
-    padding-bottom: 5rem; */
     display: flex;
     height: 100vh;
     flex-direction: row;
@@ -12,9 +10,7 @@
 
 .buyhomes-container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('/images/cocina2.jpg');
-    /* border-radius: 10rem; */
     border-radius: 20% 20% 20% 20% / 50% 50% 50% 50%;
-
     overflow: hidden;
     background-size: cover;
     background-position: center 70%;

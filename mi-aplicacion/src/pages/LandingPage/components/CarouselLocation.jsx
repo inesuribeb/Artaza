@@ -4,14 +4,13 @@ import EastIcon from '@mui/icons-material/East';
 import { useLanguage } from '../../../contexts/LanguageContext';
 import './CarouselLocation.css';
 
-function CarouselLocation() {
+function CarouselLocation({ visibleSections }) {
     const { t, getRoute } = useLanguage();
     const carouselRef = useRef(null);
     const [isAtStart, setIsAtStart] = useState(true);
     const [isAtEnd, setIsAtEnd] = useState(false);
     const [hasScrolledOnce, setHasScrolledOnce] = useState(false);
     
-    // Array de imágenes para el carrusel
     const images = [
         '/images/carousel/Carousel1.png',
         '/images/carousel/Carousel2.png',
@@ -26,7 +25,6 @@ function CarouselLocation() {
         '/images/elipse.jpg',
     ];
     
-    // Verificar posición del scroll
     const checkScrollPosition = () => {
         if (carouselRef.current) {
             const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
@@ -35,48 +33,38 @@ function CarouselLocation() {
         }
     };
     
-    // Efecto para comprobar la posición inicial
     useEffect(() => {
         checkScrollPosition();
-        // Agregar listener para actualizar al redimensionar
         window.addEventListener('resize', checkScrollPosition);
         return () => window.removeEventListener('resize', checkScrollPosition);
     }, []);
     
-    // Función para desplazar a la derecha (solo una imagen)
     const scrollRight = () => {
         if (carouselRef.current) {
-            // Ancho aproximado de un item + gap
             const itemWidth = carouselRef.current.querySelector('.carousel-item').offsetWidth + 50; // 50px es el gap
             carouselRef.current.scrollBy({
                 left: itemWidth,
                 behavior: 'smooth'
             });
             
-            // Marcar que se ha desplazado al menos una vez
             setHasScrolledOnce(true);
             
-            // Actualizar estado después del scroll
             setTimeout(checkScrollPosition, 500); // Esperar a que termine la animación
         }
     };
     
-    // Función para desplazar a la izquierda (solo una imagen)
     const scrollLeft = () => {
         if (carouselRef.current) {
-            // Ancho aproximado de un item + gap
             const itemWidth = carouselRef.current.querySelector('.carousel-item').offsetWidth + 50; // 50px es el gap
             carouselRef.current.scrollBy({
                 left: -itemWidth,
                 behavior: 'smooth'
             });
             
-            // Actualizar estado después del scroll
-            setTimeout(checkScrollPosition, 500); // Esperar a que termine la animación
+            setTimeout(checkScrollPosition, 500); 
         }
     };
     
-    // Función para detectar eventos de scroll manuales
     const handleScroll = () => {
         if (carouselRef.current && carouselRef.current.scrollLeft > 0) {
             setHasScrolledOnce(true);
@@ -85,7 +73,9 @@ function CarouselLocation() {
     };
 
     return (
-        <div className="carousel-container">
+        // <div className="carousel-container">
+        <div className={`carousel-container ${visibleSections.carouselLocation ? 'visible' : ''}`}>
+
             <div className="carousel-location">
                 <h3>{t('artaza')}</h3>
             </div>

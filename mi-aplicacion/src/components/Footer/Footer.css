@@ -18,7 +18,6 @@
   flex-direction: column;
   flex: 0.3;
   text-align: flex-end;
-  /* justify-content: flex-end; */
 }
 
 .footer-one,
@@ -28,7 +27,6 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  /* gap: 3rem; */
 }
 
 .footer-wrapper h3 {
@@ -36,16 +34,11 @@
   font-size: 1rem;
   margin-bottom: 0.1rem;
   font-weight: 100;
-  /* opacity: 0.7; */
 }
 
 .footer-content p {
   font-size: 0.9rem;
   font-weight: 100;
-  /* opacity: 0.7; */
-  /* margin-bottom: 0.4rem;
-  margin-top: 0.4rem; */
-
 }
 
 .footer-image h3 {
@@ -59,7 +52,6 @@
   align-items: right;
   justify-content: center;
 }
-
 
 .whatsapp-icon img {
   width: 180px;

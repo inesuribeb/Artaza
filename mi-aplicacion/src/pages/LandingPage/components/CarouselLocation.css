@@ -2,11 +2,10 @@
     width: 100%;
     max-width: 100%;
     position: relative;
-    overflow: visible; /* Cambiado de hidden a visible para permitir que los botones estén fuera */
+    overflow: visible; 
     background-color: var(--light-color);
-    padding-bottom: 5rem; /* Espacio para los botones de navegación */
+    padding-bottom: 5rem; 
     padding-top: 1rem; 
-    /* height: 90vh; */
 }
 
 .carousel-wrapper {
@@ -17,7 +16,7 @@
     margin: 60px 0;
     margin-left: 3rem;
     margin-top: 0rem;
-    margin-bottom: 0rem; /* Reducido para que no haya demasiado espacio entre el carousel y los botones */
+    margin-bottom: 0rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
@@ -53,20 +52,6 @@
     object-position: center;
 }
 
-/* Nuevos estilos para los botones de navegación */
-/* .carousel-navigation {
-    display: flex;
-    justify-content: right;
-    margin-right: 3rem;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    right: 0;
-} */
-
 .carousel-navigation {
     display: flex;
     justify-content: right;
@@ -75,7 +60,7 @@
     margin-top: 20px;
     position: absolute;
     margin-right: 3rem;
-    top: 2rem; /* Ajustado para situar los botones más arriba */
+    top: 2rem; 
     left: 0;
     right: 0;
 }
@@ -84,7 +69,6 @@
     width: 40px;
     height: 40px;
     background-color: transparent;
-    /* border: 1px solid var(--dark-color); */
     border: 1px solid var(--dark-color);
     border-radius: 50%;
     display: flex;
@@ -94,16 +78,10 @@
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 .carousel-button svg {
-    fill: var(--dark-color); /* Cambia el color de relleno del SVG */
-    /* o */
-    color: var(--dark-color); /* Para iconos que usan currentColor */
+    fill: var(--dark-color); 
+    color: var(--dark-color);
 }
 
-/* .carousel-button:hover {
-    background-color: var(--nude-color);
-} */
-
-/* Clase para hacer invisible el botón pero manteniendo su espacio */
 .carousel-button.invisible {
     opacity: 0;
     visibility: hidden;
@@ -124,10 +102,112 @@
 .carousel-location h3 {
     font-size: 2rem;
     font-weight: 100;
-    /* color: var(--dark-color); */
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 1.4rem;
     padding-bottom: 1.5rem;
     border-bottom: 2px solid var(--dark-color);
     color: var(--dark-color);
 }
+
+
+/*animations*/
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-color); /* Color corporativo */
+    opacity: 1; /* Intensidad del efecto - ajusta según necesites */
+    mix-blend-mode: soft-light; /* Modo de mezcla que preserva detalles */
+    z-index: 1;
+    transition: opacity 2s ease-out;
+    pointer-events: none;
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.7s ease-out, filter 1.2s ease-out;
+    filter: brightness(0.9); /* Ligero ajuste de brillo */
+  }
+  
+  /* Cuando el carrusel es visible, el efecto desaparece */
+  .carousel-container.visible .image-container::after {
+    opacity: 0;
+  }
+  
+  .carousel-container.visible .image-container img {
+    filter: brightness(1);
+    transform: scale(1.02); /* Pequeño efecto de zoom para dar vida */
+  }
+  
+  /* Efecto secuencial para cada imagen */
+  .carousel-container.visible .carousel-item:nth-child(1) .image-container::after {
+    transition-delay: 0.1s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(2) .image-container::after {
+    transition-delay: 0.2s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(3) .image-container::after {
+    transition-delay: 0.3s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(4) .image-container::after {
+    transition-delay: 0.4s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(5) .image-container::after {
+    transition-delay: 0.5s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(6) .image-container::after {
+    transition-delay: 0.6s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(7) .image-container::after {
+    transition-delay: 0.7s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(8) .image-container::after {
+    transition-delay: 0.8s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(9) .image-container::after {
+    transition-delay: 0.9s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(10) .image-container::after {
+    transition-delay: 1s;
+  }
+  
+  /* El mismo retraso para las imágenes */
+  .carousel-container.visible .carousel-item:nth-child(1) .image-container img {
+    transition-delay: 0.1s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(2) .image-container img {
+    transition-delay: 0.2s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(3) .image-container img {
+    transition-delay: 0.3s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(4) .image-container img {
+    transition-delay: 0.4s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(5) .image-container img {
+    transition-delay: 0.5s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(6) .image-container img {
+    transition-delay: 0.6s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(7) .image-container img {
+    transition-delay: 0.7s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(8) .image-container img {
+    transition-delay: 0.8s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(9) .image-container img {
+    transition-delay: 0.9s;
+  }
+  .carousel-container.visible .carousel-item:nth-child(10) .image-container img {
+    transition-delay: 1s;
+  }

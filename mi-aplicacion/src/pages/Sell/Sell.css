@@ -1,3 +1,32 @@
 .sell-wrapper {
-    padding-top: 14rem;
+    padding-top: 0rem;
+}
+
+.sell-page-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0rem;
+    text-align: center;
+    background-color: transparent;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/edificio.jpg');
+    background-size: cover;
+    background-position: center 65%;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+}
+
+.sell-page-background h1 {
+font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  color: var(--light-color);
+  /* will-change: transform, opacity;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.4s; */
 }

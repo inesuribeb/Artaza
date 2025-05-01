@@ -1,25 +1,114 @@
-.footer-center {
-    /* flex: 2; */
-    text-align: center;
-    padding: 3rem 3rem;
-    padding-bottom: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #CFD7D7;
+/* .valuation-wrapper {
+  text-align: center;
+  padding: 3rem 3rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #CFD7D7;
+}
+
+.valuation-wrapper h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2.2rem;
+  font-weight: 100;
+  color: var(--dark-color);
+}
+
+.valuation-wrapper p {
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--dark-color);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .footer-center h2 {
-    font-size: 2.2rem;
-    margin-bottom: 2.2rem;
-    font-weight: 100;
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
-    color: var(--dark-color);
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .footer-center p {
-    margin-bottom: 2.5rem;
-    font-size: 1rem;
-    font-weight: 100;
-    color: var(--dark-color);
+}
+
+.valuation-wrapper.visible h2 {
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.valuation-wrapper.visible p {
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.valuation-wrapper.visible button {
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.8s;
+} */
+
+.valuation-wrapper {
+  text-align: center;
+  padding: 3rem 3rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #CFD7D7;
+}
+
+.valuation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.valuation-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2.2rem;
+  font-weight: 100;
+  color: var(--dark-color);
+  opacity: 0;
+}
+
+.valuation-container p {
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--dark-color);
+  opacity: 0;
+}
+
+.valuation-container button {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.valuation-wrapper.visible .valuation-container h2 {
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.valuation-wrapper.visible .valuation-container p {
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.valuation-wrapper.visible .valuation-container button {
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.8s;
+}

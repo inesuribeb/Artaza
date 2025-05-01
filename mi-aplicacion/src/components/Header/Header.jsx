@@ -14,6 +14,7 @@ function Header() {
 
     const isHomePage = location.pathname === '/inicio' || location.pathname === '/home' || location.pathname === '/';
     const isPropertiesPage = location.pathname === '/properties' || location.pathname === '/propiedades';
+    const isSellPage = location.pathname === '/sell' || location.pathname === '/vender';
 
     // Añade este useEffect para controlar el scroll
 
@@ -43,7 +44,7 @@ function Header() {
             <div className="header-container">
 
                 {/* <header className={`header ${isMenuOpen ? 'menu-open' : ''}`}> */}
-                <header className={`header ${isMenuOpen ? 'menu-open' : ''} ${!isHomePage && !isPropertiesPage ? 'force-light' : ''}`}>
+                <header className={`header ${isMenuOpen ? 'menu-open' : ''} ${!isHomePage && !isPropertiesPage && !isSellPage ? 'force-light' : ''}`}>
 
                     <div className="logo">
                         <Link to={getRoute('home')}>

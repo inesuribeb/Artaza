@@ -18,15 +18,7 @@ function Footer() {
                         <p>{t('direccion')}</p>
                         <p>{t('localidad')}</p>
                     </div>
-                    {/* <div>
-                        <p>{t('localidad')}</p>
-                        <p>{t('telefono')}</p>
-                    </div>
-                    <div>
-                        <p>{t('emailaddress')}</p>
-                    </div> */}
                 </div>
-
 
                 <div className="footer-two">
                     <h3>{t('horario')}</h3>
