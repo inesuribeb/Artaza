@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { useLanguage } from "../../contexts/LanguageContext";
-import './HeaderPhone.css'
+import { useHeaderStyle } from "./HeaderStyleContext";
+import './HeaderPhone2.css'
 
 const SCROLL_POSITION_KEY = 'artaza_scroll_position';
 
@@ -9,6 +10,7 @@ function HeaderPhone() {
     const { language, toggleLanguage, t, getRoute } = useLanguage();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const location = useLocation();
+    const { headerClassName } = useHeaderStyle();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -26,10 +28,16 @@ function HeaderPhone() {
     return (
         <>
             <div className="header-phone-container">
-                <header className="header-phone">
+                <header className={`header-phone ${headerClassName}`}>
                     <div className="logo-phone">
                         <Link to={getRoute('home')} onClick={isMenuOpen ? toggleMenu : undefined}>
-                            <img src="/images/LOGO1 BLANCO.png" alt="InmoArtaza Logo" />
+                            {isMenuOpen ? (
+                                <img src="/images/LOGO1 BLANCO.png" alt="InmoArtaza Logo" />
+                            ) : headerClassName === 'white-section-active' ? (
+                                <img src="/images/LOGO1 BLANCO.png" alt="InmoArtaza Logo" />
+                            ) : (
+                                <img src="/images/LOGO 1.png" alt="InmoArtaza Logo" />
+                            )}
                         </Link>
                     </div>
 

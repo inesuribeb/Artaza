@@ -1,9 +1,14 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '../../../contexts/LanguageContext';
+import { useHeaderStyle } from '../../../components/Header/HeaderStyleContext';
+import useMediaQuery from '../../../hooks/useMediaQuery';
 import './BuyForm.css';
 
 function BuyForm() {
     const { t, getRoute, language } = useLanguage();
+    const { setHeaderClassName } = useHeaderStyle();
+    const pictureFormRef = useRef(null);
+    const isMobile = useMediaQuery('(max-width: 768px)');
 
     const [formData, setFormData] = useState({
         firstName: '',
@@ -20,6 +25,44 @@ function BuyForm() {
     });
 
     const [errors, setErrors] = useState({});
+
+    // Efecto para controlar la clase del header
+    useEffect(() => {
+        // Solo activamos la detección de intersección si estamos en móvil
+        if (!isMobile) {
+            // Si no es móvil, nos aseguramos de no tener la clase white-section-active
+            setHeaderClassName('');
+            return;
+        }
+
+        const handleScroll = () => {
+            if (pictureFormRef.current) {
+                const pictureRect = pictureFormRef.current.getBoundingClientRect();
+                const headerHeight = 80; // Ajusta según la altura de tu header en móvil
+
+                // Si la parte inferior del header está por encima de la parte inferior de la imagen
+                if (headerHeight < pictureRect.bottom) {
+                    setHeaderClassName('white-section-active');
+                } else {
+                    setHeaderClassName('');
+                }
+            }
+        };
+
+        // Establecer el estilo inicial
+        handleScroll();
+
+        // Añadir listeners
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleScroll);
+
+        // Limpiar
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleScroll);
+            setHeaderClassName('');
+        };
+    }, [setHeaderClassName, isMobile]);
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -48,16 +91,14 @@ function BuyForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            // Aquí puedes enviar el formulario a tu backend
             console.log("Form submitted:", formData);
-            // Reset form or show success message
             alert("Form submitted successfully!");
         }
     };
 
     return (
         <div className='buy-form-wrapper'>
-            <div className='picture-form'>
+            <div className='picture-form' ref={pictureFormRef}>
                 <img src="/images/pruebaform.png" alt="" />
             </div>
             <div className="buy-form-container">
