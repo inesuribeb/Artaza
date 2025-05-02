@@ -36,10 +36,11 @@
     transition: filter 0.3s ease;
 }
 
-.header:hover .logo img,
+/*ESTO*/
+/* .header:hover .logo img,
 .header.menu-open .logo img {
     filter: brightness(0);
-}
+} */
 
 .header-controls {
     display: flex;
@@ -295,10 +296,10 @@
     background-color: var(--light-color);
     color: var(--dark-color);
 }
-
-.header.force-light .logo img {
+/*force light deberia ser logo azul*/
+/* .header.force-light .logo img {
     filter: brightness(0);
-}
+} */
 
 .header.force-light .language-selector span,
 .header.force-light:hover .language-selector span {

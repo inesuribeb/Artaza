@@ -12,6 +12,8 @@ function Header({ className }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const location = useLocation();
     const { headerClassName } = useHeaderStyle();
+    const [isHovering, setIsHovering] = useState(false); // Estado para controlar el hover
+
 
     const isHomePage = location.pathname === '/inicio' || location.pathname === '/home' || location.pathname === '/';
     const isPropertiesPage = location.pathname === '/properties' || location.pathname === '/propiedades';
@@ -35,13 +37,37 @@ function Header({ className }) {
         toggleLanguage();
     };
 
+    const handleMouseEnter = () => {
+        setIsHovering(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovering(false);
+    };
+
     return (
         <>
             <div className="header-container">
-                <header className={`header ${isMenuOpen ? 'menu-open' : ''} ${!isHomePage && !isPropertiesPage && !isSellPage ? 'force-light' : ''} ${headerClassName}`}>
-                    <div className="logo">
+                <header 
+                className={`header ${isMenuOpen ? 'menu-open' : ''} ${!isHomePage && !isPropertiesPage && !isSellPage ? 'force-light' : ''} ${headerClassName}`}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                >
+                    {/* <div className="logo">
                         <Link to={getRoute('home')} onClick={isMenuOpen ? toggleMenu : undefined}>
                             {headerClassName === 'white-section-active' ? (
+                                <img src="/images/LOGO1 BLANCO.png" alt="InmoArtaza Logo" />
+                            ) : (
+                                <img src="/images/LOGO 1.png" alt="InmoArtaza Logo" />
+                            )}
+                        </Link>
+                    </div> */}
+                    <div className="logo">
+                        <Link to={getRoute('home')} onClick={isMenuOpen ? toggleMenu : undefined}>
+                            {/* Lógica para mostrar el logo correcto */}
+                            {isMenuOpen || isHovering ? (
+                                <img src="/images/LOGO 1.png" alt="InmoArtaza Logo" />
+                            ) : headerClassName === 'white-section-active' ? (
                                 <img src="/images/LOGO1 BLANCO.png" alt="InmoArtaza Logo" />
                             ) : (
                                 <img src="/images/LOGO 1.png" alt="InmoArtaza Logo" />
