@@ -3,7 +3,6 @@ import { useLocation, Link } from "react-router-dom";
 import { useLanguage } from "../../contexts/LanguageContext";
 import './HeaderPhone.css'
 
-// Clave para almacenar y recuperar la posición de scroll
 const SCROLL_POSITION_KEY = 'artaza_scroll_position';
 
 function HeaderPhone() {
@@ -15,16 +14,12 @@ function HeaderPhone() {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    // Función para cambiar idioma sin parpadeo
     const handleLanguageChange = () => {
-        // Guardar la posición actual del scroll en localStorage
         const scrollPosition = window.scrollY;
         localStorage.setItem(SCROLL_POSITION_KEY, scrollPosition.toString());
 
-        // Indicar que este es un cambio de idioma y no un cambio de página
         localStorage.setItem('is_language_change', 'true');
 
-        // Cambiar el idioma (esto causará navegación)
         toggleLanguage();
     };
 
@@ -33,7 +28,7 @@ function HeaderPhone() {
             <div className="header-phone-container">
                 <header className="header-phone">
                     <div className="logo-phone">
-                        <Link to={getRoute('home')}>
+                        <Link to={getRoute('home')} onClick={isMenuOpen ? toggleMenu : undefined}>
                             <img src="/images/LOGO1 BLANCO.png" alt="InmoArtaza Logo" />
                         </Link>
                     </div>

@@ -40,16 +40,16 @@ function Footer() {
                 </div>
 
                 <div className="footer-four">
-                    <Link to={getRoute('')}>
+                    <Link to={getRoute('home')}>
                         <h3>{t('cookies')}</h3>
                     </Link>
-                    <Link to={getRoute('')}>
+                    <Link to={getRoute('home')}>
                         <h3>{t('privacy')}</h3>
                     </Link>
-                    <Link to={getRoute('')}>
+                    <Link to={getRoute('home')}>
                         <h3>{t('terms')}</h3>
                     </Link>
-                    <Link to={getRoute('')}>
+                    <Link to={getRoute('home')}>
                         <h3>{t('legal')}</h3>
                     </Link>
                 </div>

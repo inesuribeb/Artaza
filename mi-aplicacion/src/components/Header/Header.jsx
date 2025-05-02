@@ -47,7 +47,7 @@ function Header() {
                 <header className={`header ${isMenuOpen ? 'menu-open' : ''} ${!isHomePage && !isPropertiesPage && !isSellPage ? 'force-light' : ''}`}>
 
                     <div className="logo">
-                        <Link to={getRoute('home')}>
+                        <Link to={getRoute('home')} onClick={isMenuOpen ? toggleMenu : undefined}>
                             <img src="/images/LOGO1 BLANCO.png" alt="InmoArtaza Logo" />
                         </Link>
                     </div>
