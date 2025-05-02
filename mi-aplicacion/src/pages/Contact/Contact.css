@@ -140,3 +140,129 @@
     object-fit: cover;
     object-position: center;
 }
+
+
+/* Media queries para tablets */
+@media screen and (max-width: 768px) {
+    .contact-wrapper {
+      padding-top: 6rem;
+    }
+    
+    .welcome-contact {
+      padding: 0 1.5rem;
+    }
+    
+    .line-1 {
+      font-size: 2.2rem;
+      width: 90%;
+    }
+    
+    .line-2 {
+      font-size: 0.9rem;
+      width: 70%;
+    }
+    
+    .line-3 {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .picture-and-text {
+      flex-direction: column;
+      margin-bottom: 2rem;
+      /* margin-top: 2rem; */
+    }
+    
+    .contact-info {
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .contact-info::before {
+      left: 1.5rem;
+      right: 1.5rem;
+    }
+    
+    .contact-picture {
+      padding: 0 1.5rem;
+    }
+    
+    .contact-picture img {
+      max-width: 100%;
+      aspect-ratio: 3/4;
+      border-radius: 50%;
+    }
+  }
+  
+  /* Para teléfonos móviles */
+  @media screen and (max-width: 480px) {
+    .contact-wrapper {
+      padding-top: 5.5rem;
+    }
+    
+    .welcome-contact {
+      padding: 0 1.1rem;
+    }
+    
+    .line-1 {
+      font-size: 1.8rem;
+      width: 100%;
+    }
+    
+    .line-2 {
+      font-size: 0.85rem;
+      width: 90%;
+    }
+    
+    .line-3 {
+      font-size: 0.85rem;
+      margin-bottom: 1.2rem;
+    }
+    
+    .contact-info {
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+    }
+    
+    .contact-info::before {
+      left: 1rem;
+      right: 1rem;
+      border-radius: 50% 50% 50% 50% / 40% 40% 40% 40%;
+    }
+    
+    .contact-picture {
+      padding: 0 1rem;
+    }
+    
+    .contact-picture img {
+        border-radius: 50% 50% 50% 50% / 40% 40% 40% 40%;
+    }
+    
+    .contact-info h4 {
+      font-size: 0.9rem;
+      padding-top: 0.7rem;
+    }
+    
+    .contact-info h5 {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Para teléfonos muy pequeños */
+  @media screen and (max-width: 360px) {
+    .line-1 {
+      font-size: 1.5rem;
+    }
+    
+    .line-2, .line-3 {
+      font-size: 0.8rem;
+    }
+    
+    .contact-info::before {
+      border-radius: 30% 30% 30% 30% / 20% 20% 20% 20%;
+    }
+    
+    .contact-picture img {
+      border-radius: 30% 30% 30% 30% / 20% 20% 20% 20%;
+    }
+  }
