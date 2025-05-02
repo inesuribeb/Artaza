@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '../../../contexts/LanguageContext';
+import { useHeaderStyle } from '../../../components/Header/HeaderStyleContext';
 import './FilterProperty.css';
 
 const SearchForm = ({ onSearch }) => {
     const { t, currentLanguage } = useLanguage();
+    // const { setHeaderClassName } = useHeaderStyle();
 
     // Estados para los valores seleccionados
     const [propertyCount, setPropertyCount] = useState(t('anyNumber'));
@@ -29,6 +31,13 @@ const SearchForm = ({ onSearch }) => {
 
         setHasActiveFilters(isFiltered);
     }, [propertyCount, neighborhood, budget, t]);
+    
+    // clase
+    // useEffect(() => {
+    //     setHeaderClassName('white-section-active');
+        
+    //     return () => setHeaderClassName('');
+    //   }, [setHeaderClassName]);
 
     // Estado para controlar qué dropdown está abierto
     const [openDropdown, setOpenDropdown] = useState(null);
