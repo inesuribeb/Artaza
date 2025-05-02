@@ -12,7 +12,7 @@ function Header({ className }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const location = useLocation();
     const { headerClassName } = useHeaderStyle();
-    const [isHovering, setIsHovering] = useState(false); // Estado para controlar el hover
+    const [isHovering, setIsHovering] = useState(false);
 
 
     const isHomePage = location.pathname === '/inicio' || location.pathname === '/home' || location.pathname === '/';
@@ -53,18 +53,8 @@ function Header({ className }) {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 >
-                    {/* <div className="logo">
-                        <Link to={getRoute('home')} onClick={isMenuOpen ? toggleMenu : undefined}>
-                            {headerClassName === 'white-section-active' ? (
-                                <img src="/images/LOGO1 BLANCO.png" alt="InmoArtaza Logo" />
-                            ) : (
-                                <img src="/images/LOGO 1.png" alt="InmoArtaza Logo" />
-                            )}
-                        </Link>
-                    </div> */}
                     <div className="logo">
                         <Link to={getRoute('home')} onClick={isMenuOpen ? toggleMenu : undefined}>
-                            {/* Lógica para mostrar el logo correcto */}
                             {isMenuOpen || isHovering ? (
                                 <img src="/images/LOGO 1.png" alt="InmoArtaza Logo" />
                             ) : headerClassName === 'white-section-active' ? (

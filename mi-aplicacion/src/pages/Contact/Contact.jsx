@@ -18,13 +18,6 @@ function Contact() {
                     <img src="/images/elipse.jpg" alt="inmobiliaria-artaza-por-dentro" />
                 </div>
                 <div className='contact-info'>
-
-                    {/* <h1>{t('contactus')}</h1> */}
-                    {/* <div className='contact-location'>
-                        <p>{t('direccion')}</p>
-                        <p>{t('localidad')}</p>
-                    </div> */}
-
                     <div>
                         <h4>{t('horario')}</h4>
                         <h5>{t('lunesajueves')}</h5>

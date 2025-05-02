@@ -97,8 +97,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-
 }
 
 .nav-phone-menu.show {
@@ -144,7 +142,6 @@
 
 .nav-phone-link {
     text-decoration: none;
-    /* text-transform: uppercase; */
     color: var(--light-color);
     font-size: 1rem;
     font-weight: 100;

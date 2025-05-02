@@ -120,7 +120,6 @@
     }
 }
 
-/* Para teléfonos muy pequeños */
 @media screen and (max-width: 360px) {
     .custom-button {
         padding: 0.6rem 1rem;

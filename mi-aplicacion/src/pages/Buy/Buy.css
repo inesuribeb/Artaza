@@ -2,14 +2,12 @@
     padding-top: 10rem;
 }
 
-/* Media queries para tablets */
 @media screen and (max-width: 768px) {
     .buy-wrapper {
       padding-top: 8rem;
     }
   }
   
-  /* Para teléfonos móviles */
   @media screen and (max-width: 480px) {
     .buy-wrapper {
       /* padding-top: 6.5rem; */
@@ -17,7 +15,6 @@
     }
   }
   
-  /* Para teléfonos muy pequeños */
   @media screen and (max-width: 360px) {
     .buy-wrapper {
       padding-top: 4rem;

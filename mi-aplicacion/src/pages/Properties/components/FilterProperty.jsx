@@ -1,28 +1,22 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '../../../contexts/LanguageContext';
-import { useHeaderStyle } from '../../../components/Header/HeaderStyleContext';
 import './FilterProperty.css';
 
 const SearchForm = ({ onSearch }) => {
     const { t, currentLanguage } = useLanguage();
-    // const { setHeaderClassName } = useHeaderStyle();
 
-    // Estados para los valores seleccionados
     const [propertyCount, setPropertyCount] = useState(t('anyNumber'));
     const [neighborhood, setNeighborhood] = useState(t('anyNeighbourhood'));
     const [budget, setBudget] = useState(t('anyBudget'));
 
-    // Estado para determinar si hay filtros activos
     const [hasActiveFilters, setHasActiveFilters] = useState(false);
 
-    // Actualizar los estados cuando cambie el idioma
     useEffect(() => {
         setPropertyCount(t('anyNumber'));
         setNeighborhood(t('anyNeighbourhood'));
         setBudget(t('anyBudget'));
     }, [currentLanguage, t]);
 
-    // Verificar si hay filtros activos
     useEffect(() => {
         const isFiltered =
             propertyCount !== t('anyNumber') ||
@@ -32,22 +26,12 @@ const SearchForm = ({ onSearch }) => {
         setHasActiveFilters(isFiltered);
     }, [propertyCount, neighborhood, budget, t]);
     
-    // clase
-    // useEffect(() => {
-    //     setHeaderClassName('white-section-active');
-        
-    //     return () => setHeaderClassName('');
-    //   }, [setHeaderClassName]);
-
-    // Estado para controlar qué dropdown está abierto
     const [openDropdown, setOpenDropdown] = useState(null);
 
-    // Referencias para los dropdowns
     const propertyCountRef = useRef(null);
     const neighborhoodRef = useRef(null);
     const budgetRef = useRef(null);
 
-    // Datos para los dropdowns (usando t para traducción)
     const propertyOptions = [
         t('anyNumber'),
         t('onePlusBedroom'),
@@ -73,7 +57,6 @@ const SearchForm = ({ onSearch }) => {
         t('budget1MPlus')
     ];
 
-    // Cerrar dropdown cuando se hace clic fuera
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (
@@ -103,7 +86,6 @@ const SearchForm = ({ onSearch }) => {
         };
     }, [openDropdown]);
 
-    // Manejador para abrir/cerrar dropdown
     const toggleDropdown = (dropdown) => {
         if (openDropdown === dropdown) {
             setOpenDropdown(null);
@@ -112,7 +94,6 @@ const SearchForm = ({ onSearch }) => {
         }
     };
 
-    // Manejador para seleccionar una opción
     const handleSelect = (option, type) => {
         if (type === 'property') {
             setPropertyCount(option);
@@ -124,14 +105,12 @@ const SearchForm = ({ onSearch }) => {
         setOpenDropdown(null);
     };
 
-    // Obtener resultados
     const handleViewResults = () => {
         if (onSearch) {
             onSearch(propertyCount, neighborhood, budget);
         }
     };
 
-    // Resetear filtros
     const handleReset = () => {
         setPropertyCount(t('anyNumber'));
         setNeighborhood(t('anyNeighbourhood'));
@@ -142,7 +121,6 @@ const SearchForm = ({ onSearch }) => {
         }
     };
 
-    // Renderizado condicional según el idioma
     const renderSearchText = () => {
         if (currentLanguage === 'es') {
             return (

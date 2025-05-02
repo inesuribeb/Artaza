@@ -1,4 +1,3 @@
-// src/hooks/useVisibilityAnimation.js
 import { useMemo } from 'react';
 
 /**
@@ -11,7 +10,7 @@ import { useMemo } from 'react';
 export function useVisibilityAnimation(componentId, visibleSections, options = {}) {
   const {
     baseClass = 'fade-in-active',
-    position = null, // 'left', 'right', 'center', 'bottom', etc.
+    position = null, 
     customClasses = [],
     delayMultiplier = 1
   } = options;
@@ -19,28 +18,22 @@ export function useVisibilityAnimation(componentId, visibleSections, options = {
   return useMemo(() => {
     const isVisible = visibleSections[componentId] || false;
     
-    // Construir la lista de clases CSS basadas en las opciones
     const classList = [];
     
     if (isVisible) {
-      // Añadir la clase base de animación
       classList.push(baseClass);
       
-      // Añadir clase de posición si está especificada
       if (position) {
         classList.push(`${position}-content`);
       }
       
-      // Añadir clases personalizadas
       if (customClasses.length > 0) {
         classList.push(...customClasses);
       }
     }
     
-    // Generar el string de clases
     const className = classList.join(' ');
     
-    // Generar un estilo para el delay si el multiplicador es diferente de 1
     const style = delayMultiplier !== 1 
       ? { animationDelay: `${0.2 * delayMultiplier}s` } 
       : {};
@@ -49,7 +42,6 @@ export function useVisibilityAnimation(componentId, visibleSections, options = {
       isVisible,
       className,
       style,
-      // Método de utilidad para combinar con clases existentes
       getClassNames: (existingClasses) => `${existingClasses} ${className}`.trim()
     };
   }, [visibleSections, componentId, baseClass, position, customClasses, delayMultiplier]);

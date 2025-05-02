@@ -5,13 +5,12 @@ import './BuyForm.css';
 function BuyForm() {
     const { t, getRoute, language } = useLanguage();
 
-    // Estado para manejar los valores del formulario
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
         telephone: '',
         email: '',
-        propertyType: 'flat', // Valor por defecto
+        propertyType: 'flat',
         minSize: '',
         bedrooms: '',
         maxBudget: '',
@@ -20,10 +19,8 @@ function BuyForm() {
         acceptTerms: false
     });
 
-    // Estado para errores de validación
     const [errors, setErrors] = useState({});
 
-    // Manejar cambios en los campos del formulario
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
         setFormData({
@@ -32,7 +29,6 @@ function BuyForm() {
         });
     };
 
-    // Validar el formulario
     const validateForm = () => {
         let tempErrors = {};
         if (!formData.firstName.trim()) tempErrors.firstName = t('firstNameRequired');

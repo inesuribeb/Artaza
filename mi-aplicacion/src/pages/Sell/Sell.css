@@ -27,7 +27,6 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   color: var(--light-color);
 }
 
-/* Media queries para tablets */
 @media screen and (max-width: 768px) {
   .sell-page-background {
     height: 60vh;
@@ -40,7 +39,6 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   }
 }
 
-/* Para teléfonos móviles */
 @media screen and (max-width: 480px) {
   .sell-page-background {
     height: 50vh;
@@ -53,7 +51,6 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   }
 }
 
-/* Para teléfonos muy pequeños */
 @media screen and (max-width: 360px) {
   .sell-page-background h1 {
     font-size: 1.8rem;

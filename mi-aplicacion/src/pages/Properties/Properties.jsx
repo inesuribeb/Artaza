@@ -12,8 +12,8 @@ import './Properties.css';
 function Properties() {
     const { t } = useLanguage();
     const gridRef = useRef(null);
-    const searchFormRef = useRef(null); // Referencia para el SearchForm
-    const { setHeaderClassName } = useHeaderStyle(); // Obtener la función del contexto
+    const searchFormRef = useRef(null);
+    const { setHeaderClassName } = useHeaderStyle();
     
     const [currentPage, setCurrentPage] = useState(1);
     const propertiesPerPage = 9;
@@ -31,15 +31,12 @@ function Properties() {
         return parseFloat(withDecimal);
     };
 
-    // Efecto para gestionar el estilo del header según la posición de scroll
     useEffect(() => {
         const handleScroll = () => {
-            // Verificar si searchFormRef existe y tiene un current
             if (searchFormRef.current) {
                 const searchFormRect = searchFormRef.current.getBoundingClientRect();
-                const headerHeight = 80; // Altura aproximada del header, ajusta según tu diseño
+                const headerHeight = 80; 
 
-                // Si la parte inferior del header está por encima de la parte inferior del SearchForm
                 if (headerHeight < searchFormRect.bottom) {
                     setHeaderClassName('white-section-active');
                 } else {
@@ -48,14 +45,11 @@ function Properties() {
             }
         };
         
-        // Establecer el estilo inicial
         handleScroll();
         
-        // Añadir listener de scroll
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleScroll);
         
-        // Limpiar al desmontar
         return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleScroll);

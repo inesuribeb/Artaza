@@ -11,7 +11,7 @@ import './Landing.css';
 function Landing() {
     const [scrollProgress, setScrollProgress] = useState(0);
     const contentRef = useRef(null);
-    const welcomeRef = useRef(null); // Añadir ref para la sección Welcome
+    const welcomeRef = useRef(null); 
     const { setHeaderClassName } = useHeaderStyle(); // Usar el contexto
 
     const inmoLocationRef = useRef(null);
@@ -21,7 +21,7 @@ function Landing() {
     const valuationRef = useRef(null);
 
     const [visibleSections, setVisibleSections] = useState({
-        welcome: true, // Inicialmente la sección welcome está visible
+        welcome: true,
         inmoLocation: false,
         carouselLocation: false,
         buyHomes: false,
@@ -29,7 +29,6 @@ function Landing() {
         valuation: false
     });
 
-    // Efecto para manejar el scroll y determinar qué sección está visible
     useEffect(() => {
         let rafId = null;
 
@@ -62,18 +61,15 @@ function Landing() {
         };
 
         window.addEventListener('scroll', handleScroll);
-        // Asegurarnos de establecer el estado inicial
         handleScroll();
         
         return () => {
             window.removeEventListener('scroll', handleScroll);
             if (rafId) cancelAnimationFrame(rafId);
-            // Limpiar la clase al desmontar
             setHeaderClassName('');
         };
     }, [setHeaderClassName]);
 
-    // Tu código existente para el IntersectionObserver...
     useEffect(() => {
         const observerOptions = {
             threshold: 0.3,  

@@ -36,12 +36,6 @@
     transition: filter 0.3s ease;
 }
 
-/*ESTO*/
-/* .header:hover .logo img,
-.header.menu-open .logo img {
-    filter: brightness(0);
-} */
-
 .header-controls {
     display: flex;
     align-items: center;
@@ -68,17 +62,15 @@
 .header:not(:hover):not(.menu-open) .language-selector span {
     color: var(--dark-color);
 }
-/* .header:hover .language-selector span,
-.header.menu-open .language-selector span {
-    color: var(--dark-color);
-} */
+
 .language-selector .active {
     font-weight: 700;
 }
+
 .language-selector .divider {
     color: var(--dark-color);
 }
-/*cambiado defecto*/
+
 .hamburger-button {
     background: none;
     border: none;
@@ -93,16 +85,18 @@
     position: relative;
     z-index: 1100;
 }
+
 .hamburger-line {
     width: 18px;
     height: 1px;
     position: absolute;
     transition: transform 0.3s ease-in-out;
 }
-/*cambiar por defecto*/
+
 .header:not(:hover):not(.menu-open) .hamburger-line {
     background-color: var(--dark-color);
 }
+
 .header:hover .hamburger-line,
 .header.menu-open .hamburger-line {
     background-color: var(--dark-color);
@@ -296,10 +290,6 @@
     background-color: var(--light-color);
     color: var(--dark-color);
 }
-/*force light deberia ser logo azul*/
-/* .header.force-light .logo img {
-    filter: brightness(0);
-} */
 
 .header.force-light .language-selector span,
 .header.force-light:hover .language-selector span {
