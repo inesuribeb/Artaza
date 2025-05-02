@@ -5,11 +5,15 @@ import { useLanguage } from '../../contexts/LanguageContext';
 import PropertyCart from './components/PropertyCart';
 import SearchForm from './components/FilterProperty'; 
 import { homes } from '../../utils/Homes';
+import { useHeaderStyle } from '../../components/Header/HeaderStyleContext';
 import './Properties.css';
+
 
 function Properties() {
     const { t } = useLanguage();
-    const gridRef = useRef(null); 
+    const gridRef = useRef(null);
+    const searchFormRef = useRef(null); // Referencia para el SearchForm
+    const { setHeaderClassName } = useHeaderStyle(); // Obtener la función del contexto
     
     const [currentPage, setCurrentPage] = useState(1);
     const propertiesPerPage = 9;
@@ -26,6 +30,38 @@ function Properties() {
         const withDecimal = withoutDots.replace(/,/g, '.');
         return parseFloat(withDecimal);
     };
+
+    // Efecto para gestionar el estilo del header según la posición de scroll
+    useEffect(() => {
+        const handleScroll = () => {
+            // Verificar si searchFormRef existe y tiene un current
+            if (searchFormRef.current) {
+                const searchFormRect = searchFormRef.current.getBoundingClientRect();
+                const headerHeight = 80; // Altura aproximada del header, ajusta según tu diseño
+
+                // Si la parte inferior del header está por encima de la parte inferior del SearchForm
+                if (headerHeight < searchFormRect.bottom) {
+                    setHeaderClassName('white-section-active');
+                } else {
+                    setHeaderClassName('');
+                }
+            }
+        };
+        
+        // Establecer el estilo inicial
+        handleScroll();
+        
+        // Añadir listener de scroll
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleScroll);
+        
+        // Limpiar al desmontar
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleScroll);
+            setHeaderClassName('');
+        };
+    }, [setHeaderClassName]);
 
     useEffect(() => {
         if (!propertyCount && !neighborhood && !budget) {
@@ -99,7 +135,7 @@ function Properties() {
 
     return (
         <div className="properties-container">
-            <div className='filter-properties'>
+            <div className='filter-properties' ref={searchFormRef}>
                 <SearchForm onSearch={handleSearchResults} />
             </div>
             
