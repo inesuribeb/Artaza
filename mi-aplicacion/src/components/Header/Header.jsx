@@ -14,7 +14,6 @@ function Header({ className }) {
     const { headerClassName } = useHeaderStyle();
     const [isHovering, setIsHovering] = useState(false);
 
-
     const isHomePage = location.pathname === '/inicio' || location.pathname === '/home' || location.pathname === '/';
     const isPropertiesPage = location.pathname === '/properties' || location.pathname === '/propiedades';
     const isSellPage = location.pathname === '/sell' || location.pathname === '/vender';
@@ -48,10 +47,10 @@ function Header({ className }) {
     return (
         <>
             <div className="header-container">
-                <header 
-                className={`header ${isMenuOpen ? 'menu-open' : ''} ${!isHomePage && !isPropertiesPage && !isSellPage ? 'force-light' : ''} ${headerClassName}`}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
+                <header
+                    className={`header ${isMenuOpen ? 'menu-open' : ''} ${!isHomePage && !isPropertiesPage && !isSellPage ? 'force-light' : ''} ${headerClassName}`}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                 >
                     <div className="logo">
                         <Link to={getRoute('home')} onClick={isMenuOpen ? toggleMenu : undefined}>
@@ -100,7 +99,11 @@ function Header({ className }) {
             <nav className={`nav-menu ${isMenuOpen ? 'show' : ''}`}>
                 <ul>
                     <li>
-                        <Link to={getRoute('properties')} onClick={toggleMenu}>
+                        <Link
+                            to={getRoute('properties')}
+                            onClick={toggleMenu}
+                            className={location.pathname === getRoute('properties') ? 'active-link' : ''}
+                            >
                             <div className="nav-link-container">
                                 <KeyboardArrowLeftIcon className="nav-arrow" />
                                 <span className="nav-text">{t('properties')}</span>
@@ -108,7 +111,11 @@ function Header({ className }) {
                         </Link>
                     </li>
                     <li>
-                        <Link to={getRoute('buy')} onClick={toggleMenu}>
+                        <Link
+                            to={getRoute('buy')}
+                            onClick={toggleMenu}
+                            className={location.pathname === getRoute('buy') ? 'active-link' : ''}
+                        >
                             <div className="nav-link-container">
                                 <KeyboardArrowLeftIcon className="nav-arrow" />
                                 <span className="nav-text">{t('buy')}</span>
@@ -116,7 +123,11 @@ function Header({ className }) {
                         </Link>
                     </li>
                     <li>
-                        <Link to={getRoute('sell')} onClick={toggleMenu}>
+                        <Link
+                            to={getRoute('sell')}
+                            onClick={toggleMenu}
+                            className={location.pathname === getRoute('sell') ? 'active-link' : ''}
+                        >
                             <div className="nav-link-container">
                                 <KeyboardArrowLeftIcon className="nav-arrow" />
                                 <span className="nav-text">{t('sell')}</span>
@@ -124,7 +135,11 @@ function Header({ className }) {
                         </Link>
                     </li>
                     <li>
-                        <Link to={getRoute('contact')} onClick={toggleMenu}>
+                        <Link
+                            to={getRoute('contact')}
+                            onClick={toggleMenu}
+                            className={location.pathname === getRoute('contact') ? 'active-link' : ''}
+                        >
                             <div className="nav-link-container">
                                 <KeyboardArrowLeftIcon className="nav-arrow" />
                                 <span className="nav-text">{t('contact')}</span>

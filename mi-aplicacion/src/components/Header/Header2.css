@@ -60,7 +60,12 @@
 
 /*cambiado*/
 .header:not(:hover):not(.menu-open) .language-selector span {
-    color: var(--dark-color);
+    color: var(--corporative-color);
+}
+
+.header:hover .language-selector span,
+.header.menu-open .language-selector span {
+    color: var(--corporative-color);
 }
 
 .language-selector .active {
@@ -68,7 +73,7 @@
 }
 
 .language-selector .divider {
-    color: var(--dark-color);
+    color: var(--corporative-color);
 }
 
 .hamburger-button {
@@ -94,12 +99,12 @@
 }
 
 .header:not(:hover):not(.menu-open) .hamburger-line {
-    background-color: var(--dark-color);
+    background-color: var(--corporative-color);
 }
 
 .header:hover .hamburger-line,
 .header.menu-open .hamburger-line {
-    background-color: var(--dark-color);
+    background-color: var(--corporative-color);
 }
 
 .hamburger-line.top {
@@ -208,6 +213,16 @@
     padding: 0.5rem;
 }
 
+.nav-menu a.active-link {
+    color: var(--corporative-color);
+    font-weight: 400;
+}
+
+/* Si quieres también aplicar el estilo al ícono */
+.nav-menu a.active-link .nav-arrow {
+    color: var(--corporative-color);
+}
+
 .nav-link-container {
     display: flex;
     justify-content: space-between;
@@ -293,12 +308,12 @@
 
 .header.force-light .language-selector span,
 .header.force-light:hover .language-selector span {
-    color: var(--dark-color) !important;
+    color: var(--corporative-color) !important;
 }
 
 .header.force-light .hamburger-line,
 .header.force-light:hover .hamburger-line {
-    background-color: var(--dark-color) !important;
+    background-color: var(--corporative-color) !important;
 }
 
 
