@@ -294,7 +294,7 @@
 /* Para teléfonos móviles */
 @media screen and (max-width: 480px) {
   .search-form {
-    height: 50vh;
+    height: 75vh;
   }
 
   .search-form h2 {
@@ -306,7 +306,7 @@
     font-size: 1rem;
     min-height: 80px;
     line-height: 1.4;
-    padding-top: 8rem;
+    padding-top: 7rem;
   }
 
   .view-results-button {

@@ -15,7 +15,6 @@ export const homes = [
         balcony: true,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Sur", "Este"],
         orientation: {
             es: ["Sur", "Este"],
             en: ["South", "East"]
@@ -73,7 +72,6 @@ export const homes = [
         balcony: true,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Sur", "Este"],
         orientation: {
             es: ["Sur", "Este"],
             en: ["South", "East"]
@@ -127,7 +125,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: true,
         storage_room: false,
-        // orientation: ["Norte", "Este"],
         orientation: {
             es: ["Sur", "Este"],
             en: ["North", "East"]
@@ -235,7 +232,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Sur", "Este", "Oeste"],
         orientation: {
             es: ["Sur", "Este", "Oeste"],
             en: ["South", "East", "West"]
@@ -289,7 +285,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Sur"],
         orientation: {
             es: ["Sur"],
             en: ["South"]
@@ -343,7 +338,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Sur", "Oeste"],
         orientation: {
             es: ["Sur", "Oeste"],
             en: ["South", "West"]
@@ -397,7 +391,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: false,
         storage_room: true,
-        // orientation: ["Sur", "Este"],
         orientation: {
             es: ["Sur", "Este"],
             en: ["South", "East"]
@@ -451,7 +444,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Este", "Oeste"],
         orientation: {
             es: ["Este", "Oeste"],
             en: ["East", "West"]
@@ -505,7 +497,6 @@ export const homes = [
         balcony: true,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Sur"],
         orientation: {
             es: ["Sur"],
             en: ["South"]
@@ -559,7 +550,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Sur", "Este"],
         orientation: {
             es: ["Sur", "Este"],
             en: ["South", "East"]
@@ -613,7 +603,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Este", "Oeste"],
         orientation: {
             es: ["Este", "Oeste"],
             en: ["East", "West"]
@@ -667,7 +656,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Sur", "Oeste"],
         orientation: {
             es: ["Sur", "Oeste"],
             en: ["South", "West"]
@@ -721,7 +709,6 @@ export const homes = [
         balcony: true,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Sur", "Este", "Oeste"],
         orientation: {
             es: ["Sur", "Este", "Oeste"],
             en: ["South", "East", "West"]
@@ -775,7 +762,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Sur", "Este"],
         orientation: {
             es: ["Sur", "Este"],
             en: ["South", "East"]
@@ -828,7 +814,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Norte", "Sur"],
         orientation: {
             es: ["Norte", "Sur"],
             en: ["North", "South"]
@@ -881,7 +866,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Norte", "Este"],
         orientation: {
             es: ["Norte", "Este"],
             en: ["North", "East"]
@@ -934,7 +918,6 @@ export const homes = [
         balcony: false,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Oeste"],
         orientation: {
             es: ["Oeste"],
             en: ["West"]
