@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useHeaderStyle } from "./HeaderStyleContext";
@@ -6,37 +6,83 @@ import './HeaderPhone2.css'
 
 const SCROLL_POSITION_KEY = 'artaza_scroll_position';
 
+// function HeaderPhone() {
+//     const { language, toggleLanguage, t, getRoute } = useLanguage();
+//     const [isMenuOpen, setIsMenuOpen] = useState(false);
+//     const location = useLocation();
+//     const { headerClassName } = useHeaderStyle();
+
+//     const toggleMenu = () => {
+//         setIsMenuOpen(!isMenuOpen);
+//     };
+
+//     const handleLanguageChange = () => {
+//         const scrollPosition = window.scrollY;
+//         localStorage.setItem(SCROLL_POSITION_KEY, scrollPosition.toString());
+//         localStorage.setItem('is_language_change', 'true');
+        
+//         if (isMenuOpen) {
+//             toggleMenu();
+//         }
+        
+//         toggleLanguage();
+//     };
+
 function HeaderPhone() {
     const { language, toggleLanguage, t, getRoute } = useLanguage();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
     const location = useLocation();
     const { headerClassName } = useHeaderStyle();
 
     const toggleMenu = () => {
+        if (!isMenuOpen) {
+            const currentScrollPos = window.pageYOffset;
+            setScrollPosition(currentScrollPos);
+            
+            document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
+            document.body.style.top = `-${currentScrollPos}px`;
+            document.body.style.width = '100%';
+        } else {
+            document.body.style.removeProperty('overflow');
+            document.body.style.removeProperty('position');
+            document.body.style.removeProperty('top');
+            document.body.style.removeProperty('width');
+            window.scrollTo(0, scrollPosition);
+        }
+        
         setIsMenuOpen(!isMenuOpen);
     };
 
-    // const handleLanguageChange = () => {
-    //     const scrollPosition = window.scrollY;
-    //     localStorage.setItem(SCROLL_POSITION_KEY, scrollPosition.toString());
-
-    //     localStorage.setItem('is_language_change', 'true');
-
-    //     toggleLanguage();
-    // };
-
     const handleLanguageChange = () => {
-        const scrollPosition = window.scrollY;
-        localStorage.setItem(SCROLL_POSITION_KEY, scrollPosition.toString());
+        const currentScrollPos = window.scrollY;
+        localStorage.setItem(SCROLL_POSITION_KEY, currentScrollPos.toString());
         localStorage.setItem('is_language_change', 'true');
         
-        // Cerrar el menú si está abierto
         if (isMenuOpen) {
-            toggleMenu();
+            document.body.style.removeProperty('overflow');
+            document.body.style.removeProperty('position');
+            document.body.style.removeProperty('top');
+            document.body.style.removeProperty('width');
+            
+            setIsMenuOpen(false);
         }
         
         toggleLanguage();
     };
+
+    useEffect(() => {
+        return () => {
+            if (isMenuOpen) {
+                document.body.style.removeProperty('overflow');
+                document.body.style.removeProperty('position');
+                document.body.style.removeProperty('top');
+                document.body.style.removeProperty('width');
+            }
+        };
+    }, [isMenuOpen]);
+
 
     return (
         <>
