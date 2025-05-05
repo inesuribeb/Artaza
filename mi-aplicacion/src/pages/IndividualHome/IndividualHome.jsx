@@ -2,12 +2,14 @@ import { useParams } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { homes } from '../../utils/Homes';
 import { useState } from 'react';
+import useMediaQuery from '../../hooks/useMediaQuery';
 import './IndividualHome.css';
 
 function IndividualHome() {
     const { id } = useParams();
     const { language, t } = useLanguage();
     const [selectedImage, setSelectedImage] = useState(0);
+    const isMobile = useMediaQuery('(max-width: 480px)');
 
     const property = homes.find(home => home.id === id);
 
@@ -22,6 +24,14 @@ function IndividualHome() {
 
     const propertyImages = property.images || [property.main_image];
 
+    const nextImage = () => {
+        setSelectedImage((prev) => (prev === propertyImages.length - 1 ? 0 : prev + 1));
+    };
+    
+    const prevImage = () => {
+        setSelectedImage((prev) => (prev === 0 ? propertyImages.length - 1 : prev - 1));
+    };
+
     return (
         <div className="individual-home-wrapper">
             <div className='individual-home-maininfo'>
@@ -30,30 +40,48 @@ function IndividualHome() {
                 <p>{property.location}</p>
             </div>
 
-            <div className='individual-home-carousel'>
-                <div className="carousel-main-image">
-                    <img
-                        src={propertyImages[selectedImage]}
-                        alt={`${property.title[language]} - ${selectedImage + 1}`}
-                    />
-                </div>
-
-                <div className="carousel-thumbnails">
-                    {propertyImages.map((image, index) => (
-                        <div
-                            key={index}
-                            className={`thumbnail-wrapper ${selectedImage === index ? 'active' : ''}`}
-                            onClick={() => setSelectedImage(index)}
-                        >
-                            <img
-                                src={image}
-                                alt={`Thumbnail ${index + 1}`}
-                            />
-                            {selectedImage !== index && <div className="thumbnail-overlay" />}
+            {isMobile ? (
+                <div className='mobile-carousel'>
+                    <div className="mobile-carousel-image">
+                        <img
+                            src={propertyImages[selectedImage]}
+                            alt={`${property.title[language]} - ${selectedImage + 1}`}
+                        />
+                    </div>
+                    <div className="mobile-carousel-controls">
+                        <button className="mobile-prev-btn" onClick={prevImage}>←</button>
+                        <div className="mobile-pagination">
+                            {selectedImage + 1} / {propertyImages.length}
                         </div>
-                    ))}
+                        <button className="mobile-next-btn" onClick={nextImage}>→</button>
+                    </div>
                 </div>
-            </div>
+            ) : (
+                <div className='individual-home-carousel'>
+                    <div className="carousel-main-image">
+                        <img
+                            src={propertyImages[selectedImage]}
+                            alt={`${property.title[language]} - ${selectedImage + 1}`}
+                        />
+                    </div>
+
+                    <div className="carousel-thumbnails">
+                        {propertyImages.map((image, index) => (
+                            <div
+                                key={index}
+                                className={`thumbnail-wrapper ${selectedImage === index ? 'active' : ''}`}
+                                onClick={() => setSelectedImage(index)}
+                            >
+                                <img
+                                    src={image}
+                                    alt={`Thumbnail ${index + 1}`}
+                                />
+                                {selectedImage !== index && <div className="thumbnail-overlay" />}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
 
 
 
@@ -139,7 +167,7 @@ function IndividualHome() {
 
 
                             {property.year_built && (
-                                <div>
+                                <div className='list-1-c'>
                                     <h5>{t('yearBuilt')}</h5>
                                     <p>{property.year_built}</p>
                                 </div>
