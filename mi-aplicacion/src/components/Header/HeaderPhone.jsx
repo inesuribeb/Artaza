@@ -16,12 +16,25 @@ function HeaderPhone() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    // const handleLanguageChange = () => {
+    //     const scrollPosition = window.scrollY;
+    //     localStorage.setItem(SCROLL_POSITION_KEY, scrollPosition.toString());
+
+    //     localStorage.setItem('is_language_change', 'true');
+
+    //     toggleLanguage();
+    // };
+
     const handleLanguageChange = () => {
         const scrollPosition = window.scrollY;
         localStorage.setItem(SCROLL_POSITION_KEY, scrollPosition.toString());
-
         localStorage.setItem('is_language_change', 'true');
-
+        
+        // Cerrar el menú si está abierto
+        if (isMenuOpen) {
+            toggleMenu();
+        }
+        
         toggleLanguage();
     };
 
