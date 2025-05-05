@@ -80,7 +80,7 @@
   font-size: 0.9rem;
 }
 
-input[type="text"],
+/* input[type="text"],
 input[type="tel"],
 input[type="email"],
 input[type="number"],
@@ -100,8 +100,38 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border: 1.5px solid var(--corporative-color);
+  border: 1px solid var(--corporative-color);
+} */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem 0;
+  border: none;
+  border-bottom: 1px solid #333;
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--dark-color);
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  box-shadow: none;
 }
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--corporative-color);
+  box-shadow: none;
+}
+
+
 
 .radio-group {
   display: flex;
