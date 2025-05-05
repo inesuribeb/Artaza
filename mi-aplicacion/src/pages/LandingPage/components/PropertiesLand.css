@@ -1,3 +1,180 @@
+/* .section-propertiesland {
+    width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-color);
+}
+
+.propertiesland-inner {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    border-top: 2px solid var(--dark-color);
+    padding-bottom: 5rem;
+}
+
+.propertiesland-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.propertiesland-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 580px;
+    opacity: 0;
+}
+
+.section-propertiesland.visible .propertiesland-left img {
+    animation: revealFromTop 1s ease forwards;
+}
+
+@keyframes revealFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+        filter: blur(2px);
+    }
+
+    30% {
+        opacity: 0.3;
+        transform: translateY(-3px);
+        filter: blur(1px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+
+.propertiesland-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.propertiesland-right h1,
+.propertiesland-right h3,
+.propertiesland-right button {
+    opacity: 0;
+}
+
+.section-propertiesland.visible .propertiesland-right h1 {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.section-propertiesland.visible .propertiesland-right h3 {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.section-propertiesland.visible .propertiesland-right button {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.propertiesland-right h1 {
+    font-size: 3.5rem;
+    font-weight: 100;
+    color: var(--dark-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+.propertiesland-right h3 {
+    font-size: 1.1rem;
+    font-weight: 100;
+    width: 80%;
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+
+
+@media screen and (max-width: 820px) {
+    .section-propertiesland {
+        padding-top: 4rem;
+    }
+
+    .propertiesland-inner {
+        flex-direction: column;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        gap: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .propertiesland-right {
+        order: -1;
+    }
+
+    .propertiesland-right h1 {
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+
+    .propertiesland-right h3 {
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .propertiesland-left img {
+        max-width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .propertiesland-inner {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 4rem;
+        gap: 1rem;
+    }
+
+    .propertiesland-right h1 {
+        font-size: 2.5rem;
+        width: 70%;
+    }
+
+    .propertiesland-right h3 {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        border-top: 1px solid var(--corporative-color);
+        padding-top: 3rem;
+    }
+
+    .propertiesland-left img {
+        max-width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        margin-top: 3rem;
+    }
+} */
+
 .section-propertiesland {
     width: 100%;
     height: auto;
@@ -25,10 +202,6 @@
 .propertiesland-left {
     flex: 1;
     display: flex;
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; */
-
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -72,10 +245,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start;
-    align-items: flex-end; 
-    text-align: right;*/
-
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -108,8 +277,6 @@
     color: var(--dark-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
-
-    /* align-self: flex-end !important; */
 }
 
 .propertiesland-right h3 {
@@ -160,6 +327,58 @@
         object-fit: cover;
         margin-top: 1rem;
     }
+    
+    /* Animaciones modificadas para tablets/móviles */
+    @keyframes fadeInMobile {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes revealFromTopMobile {
+        0% {
+            opacity: 0;
+            transform: translateY(-3px);
+            filter: blur(1px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+        }
+    }
+
+    /* Secuencia de animaciones para tablet/móvil */
+    .section-propertiesland.visible .propertiesland-right h1 {
+        animation: fadeInMobile 0.8s ease forwards;
+        animation-delay: 0.1s;
+        /* Primera en aparecer */
+    }
+
+    .section-propertiesland.visible .propertiesland-right h3 {
+        animation: fadeInMobile 0.8s ease forwards;
+        animation-delay: 0.9s;
+        /* Después del título */
+    }
+
+    .section-propertiesland.visible .propertiesland-left img {
+        animation: revealFromTopMobile 0.8s ease forwards;
+        animation-delay: 1.7s;
+        /* Después del texto */
+    }
+
+    .section-propertiesland.visible .propertiesland-right button {
+        animation: fadeInMobile 0.8s ease forwards;
+        animation-delay: 2.5s;
+        /* Al final */
+    }
 }
 
 /* Para teléfonos muy pequeños */
@@ -189,5 +408,43 @@
         /* Proporción 4:3 para la imagen */
         object-fit: cover;
         margin-top: 3rem;
+    }
+    
+    /* Animaciones más rápidas para teléfonos muy pequeños */
+    @keyframes fadeInMobileSmall {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .section-propertiesland.visible .propertiesland-right h1 {
+        animation: fadeInMobileSmall 0.8s ease forwards;
+        animation-delay: 0.2s;
+        /* Primera en aparecer */
+    }
+
+    .section-propertiesland.visible .propertiesland-right h3 {
+        animation: fadeInMobileSmall 0.8s ease forwards;
+        animation-delay: 0.9s;
+        /* Después del título */
+    }
+
+
+    .section-propertiesland.visible .propertiesland-right button {
+        animation: fadeInMobileSmall 0.8s ease forwards;
+        animation-delay: 1.5s;
+        /* Al final */
+    }
+
+    .section-propertiesland.visible .propertiesland-left img {
+        animation: revealFromTopMobile 0.6s ease forwards;
+        animation-delay: 2.2s;
+        /* Después del texto */
     }
 }
