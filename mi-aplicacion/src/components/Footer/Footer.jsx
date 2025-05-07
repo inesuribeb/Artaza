@@ -32,9 +32,9 @@ function Footer() {
                         <div className='interior-divs'>
                             <p>{t('lunesajueves')}</p>
                             <p>{t('mananas')}</p>
-                            <p>{t('tardes')}</p>
                             <p>{t('viernes')}</p>
-                            <p>{t('mananas')}</p>
+                            <p>{t('tardes')}</p>
+                            <p>{t('viernesTarde')}</p>
                         </div>
                     </div>
 

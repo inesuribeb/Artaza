@@ -1,0 +1,173 @@
+.contact-two-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+}
+
+.first-line-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-line-contact h1 {
+    width: 100%;
+    text-align: center;
+    font-family: var(--serif-one-font);
+    font-weight: 100;
+    font-size: 6rem;
+    color: var(--corporative-color);
+}
+
+.second-line-contact {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.contact-two-info {
+    flex: 0.45;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 0 6rem;
+    padding-right: 2.5rem;
+    font-weight: 100;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-two-info h4 {
+    padding-top: 1rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--corporative-color);
+}
+
+.contact-two-info h5 {
+    margin-bottom: 0;
+    font-weight: 200;
+    color: var(--dark-color);
+
+}
+
+.contact-two-info p {
+    font-weight: 200;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+
+}
+
+.contact-two-picture {
+    flex: 0.55;
+    display: flex;
+    padding: 0 6rem;
+    padding-left: 2.5rem;
+    justify-content: center;
+}
+
+.contact-two-picture img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50% 50% 50% 50% / 35% 35% 35% 35%;
+}
+
+
+@media screen and (max-width: 991px) {
+    .contact-two-wrapper {
+        padding-top: 4rem;
+        padding-bottom: 7rem;
+    }
+    
+    .first-line-contact h1 {
+        font-size: 4rem;
+    }
+    
+    .contact-two-info {
+        padding: 0 2rem;
+        padding-right: 1.5rem;
+    }
+    
+    .contact-two-picture {
+        padding: 0 2rem;
+        padding-left: 1.5rem;
+    }
+    
+    .contact-two-picture img {
+        width: 90%;
+    }
+}
+
+/* Móviles grandes (576px - 767px) */
+@media screen and (max-width: 767px) {
+    .contact-two-wrapper {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+    
+    .first-line-contact h1 {
+        font-size: 3rem;
+    }
+    
+    .second-line-contact {
+        flex-direction: column-reverse; /* Imagen arriba, información abajo */
+        margin-top: 2rem;
+    }
+    
+    .contact-two-info {
+        flex: 1;
+        padding: 0 2rem;
+        text-align: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    .contact-two-picture {
+        flex: 1;
+        padding: 0 2rem;
+    }
+    
+    .contact-two-picture img {
+        width: 70%;
+        max-width: 300px;
+    }
+}
+
+/* Móviles pequeños (hasta 575px) */
+@media screen and (max-width: 575px) {
+    .contact-two-wrapper {
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+    }
+    
+    .first-line-contact h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-two-info {
+        padding: 0 1rem;
+    }
+    
+    .contact-two-picture {
+        padding: 0 1rem;
+    }
+    
+    .contact-two-picture img {
+        width: 85%;
+    }
+    
+    .contact-two-info h4 {
+        font-size: 1rem;
+    }
+    
+    .contact-two-info h5,
+    .contact-two-info p {
+        font-size: 0.9rem;
+    }
+}

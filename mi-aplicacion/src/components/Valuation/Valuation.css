@@ -19,8 +19,9 @@
   font-size: 2.2rem;
   margin-bottom: 2.2rem;
   font-weight: 100;
-  color: var(--dark-color);
+  color: var(--corporative-color);
   opacity: 0;
+  font-family: var(--serif-one-font);
 }
 
 .valuation-container p {
