@@ -1,7 +1,6 @@
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useLanguage } from "../../contexts/LanguageContext";
-import Button from '../Button/Button';
-// import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+// import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import './Footer.css';
 
 function Footer() {
@@ -9,11 +8,25 @@ function Footer() {
     const navigate = useNavigate();
     const location = useLocation();
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <div className='footer-all'>
             <div className='footer-image'>
                 <div className="logo-icon">
                     <img src="/images/ISOTIPO BLANCO.png" alt="WhatsApp" />
+                </div>
+
+                {/* <div className="scroll-to-top-button" onClick={scrollToTop}>
+                    <ArrowUpwardIcon />
+                </div> */}
+                <div className="scroll-to-top-button" onClick={scrollToTop}>
+                    
                 </div>
             </div>
             <div className="footer-wrapper">
@@ -46,13 +59,6 @@ function Footer() {
                         </div>
                     </div>
 
-                    {/* <div className="footer-five">
-                        <h3>{t('menu')}</h3>
-                        <div className='interior-divs'>
-                            <p>{t('telefono')}</p>
-                            <p>{t('emailaddress')}</p>
-                        </div>
-                    </div> */}
                     <div className="footer-five">
                         <h3>{t('menu')}</h3>
                         <div className='interior-divs'>
@@ -106,15 +112,8 @@ function Footer() {
                         </Link>
                     </div>
                 </div>
-
-
-
-                {/* <div className='footer-image'>
-                    <div className="logo-icon">
-                        <img src="/images/ISOTIPO BLANCO.png" alt="WhatsApp" />
-                    </div>
-                </div> */}
             </div>
+
             <div className='footer-foot'>
                 <h3>{t('madeBy')} <a href="https://inesuribe.es/" target="_blank" rel="noopener noreferrer">Estudio Ines Uribe</a></h3>
                 <h3>{t('c')}</h3>
