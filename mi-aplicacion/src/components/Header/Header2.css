@@ -31,7 +31,7 @@
 }
 
 .logo img {
-    height: 55px;
+    height: 68px;
     width: auto;
     transition: filter 0.3s ease;
 }
@@ -52,7 +52,7 @@
 }
 
 .language-selector span {
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: font-weight 0.3s;
     transition: color 0.3;
     font-weight: 300;
@@ -92,8 +92,8 @@
 }
 
 .hamburger-line {
-    width: 18px;
-    height: 1px;
+    width: 24px;
+    height: 1.5px;
     position: absolute;
     transition: transform 0.3s ease-in-out;
 }

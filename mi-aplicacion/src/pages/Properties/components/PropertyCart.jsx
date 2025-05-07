@@ -48,18 +48,30 @@ function PropertyCart({ property }) {
             </div>
 
             <div className="property-card__info" >
-                <div className="property-card__location-container">
+                {/* <div className="property-card__location-container">
                     <p className="property-card__location">{location}</p>
                     {sold && (
                         <span className="property-card__sold-indicator">
                             {t('sold')}
                         </span>
                     )}
+                </div> */}
+                <div className="property-card__location-container">
+                    <p className="property-card__location">{location}</p>
+                    {sold ? (
+                        <span className="property-card__sold-indicator">
+                            {t('sold')}
+                        </span>
+                    ) : (
+                        <span className="property-card__price-indicator">
+                            {price}
+                        </span>
+                    )}
                 </div>
 
                 <div className="property-card__features">
-                    <span>{price}</span>
-                    <span className='separator-features'>|</span>
+                    {/* <span>{price}</span>
+                    <span className='separator-features'>|</span> */}
                     <span>{type[language]}</span>
                     <span className='separator-features'>|</span>
                     <span>{built_m2} m²</span>

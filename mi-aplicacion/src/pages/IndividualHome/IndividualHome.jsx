@@ -27,7 +27,7 @@ function IndividualHome() {
     const nextImage = () => {
         setSelectedImage((prev) => (prev === propertyImages.length - 1 ? 0 : prev + 1));
     };
-    
+
     const prevImage = () => {
         setSelectedImage((prev) => (prev === 0 ? propertyImages.length - 1 : prev - 1));
     };
@@ -158,10 +158,21 @@ function IndividualHome() {
                                 </div>
                             )}
 
-                            {property.orientation && (
+                            {/* {property.orientation && (
                                 <div className='list-1-c'>
                                     <h5>{t('orientation')}</h5>
                                     <p>{property.orientation[language]}</p>
+                                </div>
+                            )} */}
+                            {property.orientation && (
+                                <div className='list-1-c'>
+                                    <h5>{t('orientation')}</h5>
+                                    <p>
+                                        {Array.isArray(property.orientation[language])
+                                            ? property.orientation[language].join(" - ")
+                                            : property.orientation[language]
+                                        }
+                                    </p>
                                 </div>
                             )}
 

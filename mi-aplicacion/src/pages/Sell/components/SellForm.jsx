@@ -147,7 +147,7 @@ function SellForm() {
                         {errors.addressLine1 && <span className="error-message">{errors.addressLine1}</span>}
                     </div>
                     
-                    <div className="form-group">
+                    {/* <div className="form-group">
                         <label>{t('addressLine2')}</label>
                         <input
                             type="text"
@@ -155,7 +155,7 @@ function SellForm() {
                             value={formData.addressLine2}
                             onChange={handleChange}
                         />
-                    </div>
+                    </div> */}
                     
                     <div className="form-group">
                         <label>{t('cityTown')}<span className="required">*</span></label>

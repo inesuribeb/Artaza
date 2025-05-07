@@ -20,7 +20,7 @@ function PropertiesLand({ visibleSections }) {
                     <h3 dangerouslySetInnerHTML={{ __html: t('textopropiedadesLand') }}></h3>
                     <Button 
                         translationKey="botonproperties2" 
-                        routeName="buy" 
+                        routeName="sell" 
                     />
                 </div>
             </div>

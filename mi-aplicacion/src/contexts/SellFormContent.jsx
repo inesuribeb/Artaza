@@ -1,8 +1,8 @@
 export const sellFormContent = {
     en: {
         // Títulos y encabezados
-        "formTitle": "Sell with us",
-        "formDescription": "The first step to moving home is a free-market appraisal. Fill in the form below and if your home meets our criteria we will contact you about organising one.",
+        "formTitle": "Sell with Artaza Real Estate",
+        "formDescription": "The first step to moving is getting a free market valuation. Fill out the form below, and if your home meets our criteria, we will contact you to arrange the valuation.",
         
         // Secciones del formulario
         "name": "Name",
@@ -40,8 +40,8 @@ export const sellFormContent = {
     },
     es: {
         // Títulos y encabezados
-        "formTitle": "Vende con nosotros",
-        "formDescription": "El primer paso para mudarse es una valoración gratuita del mercado. Complete el formulario a continuación y si su hogar cumple con nuestros criterios, nos pondremos en contacto con usted para organizar una.",
+        "formTitle": "Vende con Artaza Inmobiliaria",
+        "formDescription": "El primer paso para mudarse es obtener una valoración gratuita del mercado. Complete el formulario a continuación y, si su hogar cumple con nuestros criterios, nos pondremos en contacto con usted para organizar la valoración.",
         
         // Secciones del formulario
         "name": "Nombre",

@@ -1,8 +1,8 @@
 export const buyFormContent = {
     en: {
         // Títulos y encabezados
-        "formTitleBuy": "Buy with Artaza Real State.",
-        "formDescriptionBuy": "If you would like us to inform you about new properties that fit your specifications, please fill out the form below.",
+        "formTitleBuy": "Take the next step toward your new home.",
+        "formDescriptionBuy": "If you would like to receive information about new properties that match your specifications, please fill out the form below.",
         
         // Secciones del formulario
         "name": "Name",
@@ -46,8 +46,8 @@ export const buyFormContent = {
     },
     es: {
         // Títulos y encabezados
-        "formTitleBuy": "Compra con Artaza Inmobiliria",
-        "formDescriptionBuy": "Si desea que le informemos sobre nuevas propiedades que se ajusten a sus especificaciones, por favor complete el formulario a continuación.",
+        "formTitleBuy": "Da el siguiente paso hacia tu nuevo hogar",
+        "formDescriptionBuy": "Si desea recibir información sobre nuevas propiedades que se ajusten a sus especificaciones, por favor complete el formulario a continuación.",
         
         // Secciones del formulario
         "name": "Nombre",
