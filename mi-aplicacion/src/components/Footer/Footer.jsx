@@ -1,6 +1,7 @@
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useLanguage } from "../../contexts/LanguageContext";
 import Button from '../Button/Button';
+// import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import './Footer.css';
 
 function Footer() {
@@ -9,59 +10,114 @@ function Footer() {
     const location = useLocation();
 
     return (
-        <div className="footer-wrapper">
-            <div className='footer-content'>
-
-                <div className="footer-one">
-                    <h3>{t('visit')}</h3>
-                    <div className='interior-divs'>
-                        <p>{t('direccion')}</p>
-                        <p>{t('localidad')}</p>
-                    </div>
-                </div>
-
-                <div className="footer-two">
-                    <h3>{t('horario')}</h3>
-                    <div className='interior-divs'>
-                        <p>{t('lunesajueves')}</p>
-                        <p>{t('mananas')}</p>
-                        <p>{t('tardes')}</p>
-                        <p>{t('viernes')}</p>
-                        <p>{t('mananas')}</p>
-                    </div>
-                </div>
-
-                <div className="footer-three">
-                    <h3>{t('contactus')}</h3>
-                    <div className='interior-divs'>
-                        <p>{t('telefono')}</p>
-                        <p>{t('emailaddress')}</p>
-                    </div>
-                </div>
-
-                <div className="footer-four">
-                    <Link to={getRoute('home')}>
-                        <h3>{t('cookies')}</h3>
-                    </Link>
-                    <Link to={getRoute('home')}>
-                        <h3>{t('privacy')}</h3>
-                    </Link>
-                    <Link to={getRoute('home')}>
-                        <h3>{t('terms')}</h3>
-                    </Link>
-                    <Link to={getRoute('home')}>
-                        <h3>{t('legal')}</h3>
-                    </Link>
+        <div className='footer-all'>
+            <div className='footer-image'>
+                <div className="logo-icon">
+                    <img src="/images/ISOTIPO BLANCO.png" alt="WhatsApp" />
                 </div>
             </div>
+            <div className="footer-wrapper">
+                <div className='footer-content'>
 
+                    <div className="footer-one">
+                        <h3>{t('visit')}</h3>
+                        <div className='interior-divs'>
+                            <p>{t('direccion')}</p>
+                            <p>{t('localidad')}</p>
+                        </div>
+                    </div>
 
+                    <div className="footer-two">
+                        <h3>{t('horario')}</h3>
+                        <div className='interior-divs'>
+                            <p>{t('lunesajueves')}</p>
+                            <p>{t('mananas')}</p>
+                            <p>{t('tardes')}</p>
+                            <p>{t('viernes')}</p>
+                            <p>{t('mananas')}</p>
+                        </div>
+                    </div>
 
-            <div className='footer-image'>
-                <h3>{t('c')}</h3>
-                <div className="whatsapp-icon">
-                    <img src="/images/LOGO1 BLANCO.png" alt="WhatsApp" />
+                    <div className="footer-three">
+                        <h3>{t('contactus')}</h3>
+                        <div className='interior-divs'>
+                            <p>{t('telefono')}</p>
+                            <p>{t('emailaddress')}</p>
+                        </div>
+                    </div>
+
+                    {/* <div className="footer-five">
+                        <h3>{t('menu')}</h3>
+                        <div className='interior-divs'>
+                            <p>{t('telefono')}</p>
+                            <p>{t('emailaddress')}</p>
+                        </div>
+                    </div> */}
+                    <div className="footer-five">
+                        <h3>{t('menu')}</h3>
+                        <div className='interior-divs'>
+                            <p>
+                                <Link
+                                    to={getRoute('properties')}
+                                    className={location.pathname === getRoute('properties') ? 'footer-active-link' : 'footer-link'}
+                                >
+                                    <span className="footer-link-text">{t('properties')}</span>
+                                </Link>
+                            </p>
+                            <p>
+                                <Link
+                                    to={getRoute('buy')}
+                                    className={location.pathname === getRoute('buy') ? 'footer-active-link' : 'footer-link'}
+                                >
+                                    <span className="footer-link-text">{t('buy')}</span>
+                                </Link>
+                            </p>
+                            <p>
+                                <Link
+                                    to={getRoute('sell')}
+                                    className={location.pathname === getRoute('sell') ? 'footer-active-link' : 'footer-link'}
+                                >
+                                    <span className="footer-link-text">{t('sell')}</span>
+                                </Link>
+                            </p>
+                            <p>
+                                <Link
+                                    to={getRoute('contact')}
+                                    className={location.pathname === getRoute('contact') ? 'footer-active-link' : 'footer-link'}
+                                >
+                                    <span className="footer-link-text">{t('contact')}</span>
+                                </Link>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="footer-four">
+                        <Link to={getRoute('home')}>
+                            <h3 className='first-child'>{t('cookies')}</h3>
+                        </Link>
+                        <Link to={getRoute('home')}>
+                            <h3>{t('privacy')}</h3>
+                        </Link>
+                        <Link to={getRoute('home')}>
+                            <h3>{t('terms')}</h3>
+                        </Link>
+                        <Link to={getRoute('home')}>
+                            <h3>{t('legal')}</h3>
+                        </Link>
+                    </div>
                 </div>
+
+
+
+                {/* <div className='footer-image'>
+                    <div className="logo-icon">
+                        <img src="/images/ISOTIPO BLANCO.png" alt="WhatsApp" />
+                    </div>
+                </div> */}
+            </div>
+            <div className='footer-foot'>
+                <h3>{t('madeBy')} <a href="https://inesuribe.es/" target="_blank" rel="noopener noreferrer">Estudio Ines Uribe</a></h3>
+                <h3>{t('c')}</h3>
             </div>
         </div>
     );

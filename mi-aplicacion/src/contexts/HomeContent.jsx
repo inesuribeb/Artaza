@@ -20,7 +20,7 @@ export const homeTranslations = {
       textosubtitulo2: "Artaza Inmobiliaria es una agencia especializada en el mercado inmobiliario de Artaza</em> y Getxo. Con más de 10 años de experiencia y sede en la zona, contamos con un profundo conocimiento de la comunidad local.<br/><br/>Esto nos permite ayudar a los vendedores a cerrar operaciones de manera rápida y eficaz, y ofrecer a los compradores acceso a algunas de las mejores propiedades de la zona.",
       artaza: "Un paseo por la zona",
       botonquienessomos: "Conócenos",
-      propiedadesLand: "El valor de lo local",
+      propiedadesLand: "El valor<br/>de lo local",
       textopropiedadesLand: "En Artaza Inmobiliaria nos enorgullece ser una inmobiliaria profundamente local, especializada en el entorno de Artaza, Getxo y el norte de España.<br />Conocemos el mercado, sus ritmos y su gente como nadie más.<br />Esto nos permite ofrecer un asesoramiento riguroso, honesto y totalmente adaptado a cada persona.<br />Nuestro enfoque es cercano, discreto y comprometido: escuchamos con atención, cuidamos cada detalle y acompañamos a nuestros clientes con la máxima confidencialidad.<br />Valoramos las relaciones basadas en la confianza y actuamos siempre con integridad, poniendo nuestra experiencia al servicio de quienes confían en nosotros.<br />Más que gestionar propiedades, creamos experiencias a medida.",
       botonproperties: "Propiedades",
       botonproperties2: "Vende con nosotros",

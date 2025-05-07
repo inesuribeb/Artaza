@@ -5,7 +5,8 @@ import Properties from "./pages/Properties/Properties";
 import IndividualHome from "./pages/IndividualHome/IndividualHome";
 import Buy from "./pages/Buy/Buy";
 import Sell from "./pages/Sell/Sell";
-import Contact from "./pages/Contact/Contact";
+// import Contact from "./pages/Contact/Contact";
+import ContactTwo from "./pages/Contact/Contact2";
 
 const router = createBrowserRouter([
     {
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/contacto",
-                element: <Contact />
+                element: <ContactTwo />
             },
 
             // Rutas en inglés (mismos componentes, diferentes URLs)
@@ -65,7 +66,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/contact",
-                element: <Contact />
+                element: <ContactTwo />
             },
         ]
     },

@@ -21,6 +21,8 @@ export const translations = {
     terms: "Terms",
     legal: "Legal",
     c: "© 2025 Artaza Real Estate.",
+    madeBy: "Made by",
+    menu: "Menu",
   },
   es: {
     horario: "Horario",
@@ -44,5 +46,7 @@ export const translations = {
     terms: "Términos",
     legal: "Legal",
     c: "© 2025 Inmobiliaria Artaza.",
+    madeBy: "Hecho por",
+    menu: "Menú",
   }
 };
