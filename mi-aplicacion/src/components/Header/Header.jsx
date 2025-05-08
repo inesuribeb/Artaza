@@ -18,6 +18,8 @@ function Header({ className }) {
     const isPropertiesPage = location.pathname === '/properties' || location.pathname === '/propiedades';
     const isSellPage = location.pathname === '/sell' || location.pathname === '/vender';
     const isContactPage = location.pathname === '/contact' || location.pathname === '/contacto'; // Añade esta línea
+    const isIndividualPage = location.pathname.startsWith('/property/') || location.pathname.startsWith('/propiedad/');
+
 
 
 
@@ -54,7 +56,8 @@ function Header({ className }) {
                         ${isMenuOpen ? 'menu-open' : ''} 
                         ${!isHomePage && !isPropertiesPage && !isSellPage ? 'force-light' : ''} 
                         ${headerClassName}
-                        ${isContactPage ? 'contact-page-header' : ''}` // Añade esta clase condicional
+                        ${isContactPage ? 'contact-page-header' : ''} // Añade esta clase condicional
+                        ${isIndividualPage ? 'individual-page-header' : ''}`
                     }
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}

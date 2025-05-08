@@ -41,20 +41,17 @@ function Landing() {
                 const progress = Math.min(scrollY / windowHeight, 1);
                 setScrollProgress(progress);
                 
-                // Actualizar el estado de visibilidad de Welcome basado en scroll
                 if (scrollY < windowHeight * 0.8) {
                     setVisibleSections(prev => ({
                         ...prev,
                         welcome: true
                     }));
-                    // Aplicar la clase white-section-active cuando Welcome está visible
                     setHeaderClassName('white-section-active');
                 } else {
                     setVisibleSections(prev => ({
                         ...prev,
                         welcome: false
                     }));
-                    // Quitar la clase cuando Welcome no está visible
                     setHeaderClassName('');
                 }
             });
