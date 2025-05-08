@@ -35,6 +35,9 @@ export const IndividualHome = {
         location: "Location",
         sold: "Sold",
 
+        previousProperty: "Previous Property",
+        nextProperty: "Next Property",
+
     },
     es: {
         propertyNotFound: "Propiedad no encontrada",
@@ -72,5 +75,8 @@ export const IndividualHome = {
         price: "Precio",
         location: "Ubicación",
         sold: "Vendido",
+
+        previousProperty: "Propiedad Anterior",
+        nextProperty: "Siguiente Propiedad",
     }
 };

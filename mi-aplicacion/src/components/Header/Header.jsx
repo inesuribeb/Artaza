@@ -17,6 +17,7 @@ function Header({ className }) {
     const isHomePage = location.pathname === '/inicio' || location.pathname === '/home' || location.pathname === '/';
     const isPropertiesPage = location.pathname === '/properties' || location.pathname === '/propiedades';
     const isSellPage = location.pathname === '/sell' || location.pathname === '/vender';
+    const isContactPage = location.pathname === '/contact' || location.pathname === '/contacto'; // Añade esta línea
 
 
 
@@ -48,7 +49,13 @@ function Header({ className }) {
         <>
             <div className="header-container">
                 <header
-                    className={`header ${isMenuOpen ? 'menu-open' : ''} ${!isHomePage && !isPropertiesPage && !isSellPage ? 'force-light' : ''} ${headerClassName}`}
+                    // className={`header ${isMenuOpen ? 'menu-open' : ''} ${!isHomePage && !isPropertiesPage && !isSellPage ? 'force-light' : ''} ${headerClassName}`}
+                    className={`header 
+                        ${isMenuOpen ? 'menu-open' : ''} 
+                        ${!isHomePage && !isPropertiesPage && !isSellPage ? 'force-light' : ''} 
+                        ${headerClassName}
+                        ${isContactPage ? 'contact-page-header' : ''}` // Añade esta clase condicional
+                    }
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >

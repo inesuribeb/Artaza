@@ -100,6 +100,7 @@ function BuyForm() {
         <div className='buy-form-wrapper'>
             <div className='picture-form' ref={pictureFormRef}>
                 <img src="/images/pruebaform.png" alt="" />
+                {/* <img src="/images/ISOTIPO.png" alt="" /> */}
             </div>
             <div className="buy-form-container">
                 <h2 className="form-title">{t('formTitleBuy')}.</h2>
@@ -210,7 +211,7 @@ function BuyForm() {
                         </div>
 
                         {/* Número de Dormitorios */}
-                        <div className="form-group">
+                        {/* <div className="form-group">
                             <label>{t('bedrooms')}</label>
                             <select
                                 name="bedrooms"
@@ -218,6 +219,23 @@ function BuyForm() {
                                 onChange={handleChange}
                             >
                                 <option value="">{t('selectBedrooms')}</option>
+                                <option value="1">{t('bedroom1')}</option>
+                                <option value="2">{t('bedroom2')}</option>
+                                <option value="3">{t('bedroom3')}</option>
+                                <option value="4">{t('bedroom4')}</option>
+                                <option value="5+">{t('bedroom5Plus')}</option>
+                            </select>
+                        </div> */}
+                        {/* Número de Dormitorios */}
+                        <div className="form-group">
+                            <label>{t('bedrooms')}</label>
+                            <select
+                                name="bedrooms"
+                                value={formData.bedrooms}
+                                onChange={handleChange}
+                                className={formData.bedrooms === "" ? "select-placeholder" : ""}
+                            >
+                                <option value="" disabled>{t('selectBedrooms')}</option>
                                 <option value="1">{t('bedroom1')}</option>
                                 <option value="2">{t('bedroom2')}</option>
                                 <option value="3">{t('bedroom3')}</option>
@@ -296,7 +314,7 @@ function BuyForm() {
                                 onChange={handleChange}
                                 className={errors.acceptTerms ? "error" : ""}
                             />
-                            <span>{t('acceptTerms')}</span>
+                            <span className='acceptTerms'>{t('acceptTerms')}</span>
                         </label>
                         {errors.acceptTerms && <span className="error-message">{errors.acceptTerms}</span>}
                     </div>

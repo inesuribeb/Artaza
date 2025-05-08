@@ -274,7 +274,7 @@ function SellForm() {
                             onChange={handleChange}
                             className={errors.acceptTerms ? "error" : ""}
                         />
-                        <span>{t('acceptTerms')}</span>
+                        <span className='acceptTerms'>{t('acceptTerms')}</span>
                     </label>
                     {errors.acceptTerms && <span className="error-message">{errors.acceptTerms}</span>}
                 </div>

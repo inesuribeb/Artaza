@@ -47,7 +47,7 @@ export const buyFormContent = {
     es: {
         // Títulos y encabezados
         "formTitleBuy": "Da el siguiente paso hacia tu nuevo hogar",
-        "formDescriptionBuy": "Si desea recibir información sobre nuevas propiedades que se ajusten a sus especificaciones, por favor complete el formulario a continuación.",
+        "formDescriptionBuy": "Si deseas recibir información sobre nuevas propiedades que se ajusten a tus especificaciones, por favor completa el formulario a continuación.",
         
         // Secciones del formulario
         "name": "Nombre",
@@ -64,7 +64,7 @@ export const buyFormContent = {
         "selectBedrooms": "Seleccionar",
         "maxBudget": "Presupuesto máximo",
         "selling": "¿Vendiendo?",
-        "sellingDescription": "¿Está buscando vender una propiedad también?",
+        "sellingDescription": "¿Estás buscando vender una propiedad también?",
         "yes": "Sí",
         "no": "No",
         "otherCriteria": "Otros criterios",
@@ -79,8 +79,8 @@ export const buyFormContent = {
         "emailRequired": "El correo electrónico es obligatorio",
         "emailInvalid": "El correo electrónico no es válido",
         "maxBudgetRequired": "El presupuesto máximo es obligatorio",
-        "sellingRequired": "Por favor seleccione una opción",
-        "termsRequired": "Debe aceptar los términos",
+        "sellingRequired": "Por favor selecciona una opción",
+        "termsRequired": "Debes aceptar los términos",
         
         // Opciones de dormitorios
         "bedroom1": "1",

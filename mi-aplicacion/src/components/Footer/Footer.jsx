@@ -55,6 +55,7 @@ function Footer() {
                         <h3>{t('contactus')}</h3>
                         <div className='interior-divs'>
                             <p>{t('telefono')}</p>
+                            <p>{t('telefono2')}</p>
                             <p>{t('emailaddress')}</p>
                         </div>
                     </div>

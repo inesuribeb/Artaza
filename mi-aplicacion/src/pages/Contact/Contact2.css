@@ -3,6 +3,12 @@
     flex-direction: column;
     padding-top: 6rem;
     padding-bottom: 10rem;
+    /* background-color: var(--nude-color); */
+    background-color: #E4DFD4;
+}
+
+.header.contact-page-header {
+    background-color: transparent; /* O el color que desees */
 }
 
 .first-line-contact {
@@ -17,6 +23,7 @@
     font-weight: 100;
     font-size: 6rem;
     color: var(--corporative-color);
+    margin-bottom: 0rem;
 }
 
 .second-line-contact {
@@ -26,7 +33,7 @@
 }
 
 .contact-two-info {
-    flex: 0.45;
+    flex: 0.3;
     display: flex;
     flex-direction: column;
     align-items: right;
@@ -64,7 +71,7 @@
 }
 
 .contact-two-picture {
-    flex: 0.55;
+    flex: 0.7;
     display: flex;
     padding: 0 6rem;
     padding-left: 2.5rem;
@@ -72,12 +79,36 @@
 }
 
 .contact-two-picture img {
-    width: 80%;
+    width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 50% 50% 50% 50% / 35% 35% 35% 35%;
 }
 
+
+
+
+
+.contact-section {
+    margin-bottom: 2rem;
+}
+
+.contact-icon {
+    font-size: 1.1rem;
+    margin-right: 8px;
+    vertical-align: middle;
+    color: var(--corporative-color);
+}
+
+.contact-two-info h4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea a la derecha */
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--corporative-color);
+}
 
 @media screen and (max-width: 991px) {
     .contact-two-wrapper {
@@ -104,7 +135,6 @@
     }
 }
 
-/* Móviles grandes (576px - 767px) */
 @media screen and (max-width: 767px) {
     .contact-two-wrapper {
         padding-top: 3rem;
@@ -116,7 +146,7 @@
     }
     
     .second-line-contact {
-        flex-direction: column-reverse; /* Imagen arriba, información abajo */
+        flex-direction: column-reverse; 
         margin-top: 2rem;
     }
     
@@ -139,7 +169,6 @@
     }
 }
 
-/* Móviles pequeños (hasta 575px) */
 @media screen and (max-width: 575px) {
     .contact-two-wrapper {
         padding-top: 5rem;

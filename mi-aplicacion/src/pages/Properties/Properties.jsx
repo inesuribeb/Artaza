@@ -102,6 +102,19 @@ function Properties() {
         setCurrentPage(1); 
     }, [propertyCount, neighborhood, budget, t]);
 
+    useEffect(() => {
+        // Guarda los filtros actuales en localStorage
+        localStorage.setItem('propertyFilters', JSON.stringify({
+            propertyCount,
+            neighborhood,
+            budget
+        }));
+        // También guardar las propiedades filtradas (IDs solamente)
+        localStorage.setItem('filteredPropertyIds', JSON.stringify(
+            filteredProperties.map(prop => prop.id)
+        ));
+    }, [propertyCount, neighborhood, budget, filteredProperties]);
+
     const indexOfLastProperty = currentPage * propertiesPerPage;
     const indexOfFirstProperty = indexOfLastProperty - propertiesPerPage;
     const currentProperties = filteredProperties.slice(indexOfFirstProperty, indexOfLastProperty);

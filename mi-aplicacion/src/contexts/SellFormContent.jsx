@@ -41,7 +41,7 @@ export const sellFormContent = {
     es: {
         // Títulos y encabezados
         "formTitle": "Vende con Artaza Inmobiliaria",
-        "formDescription": "El primer paso para mudarse es obtener una valoración gratuita del mercado. Complete el formulario a continuación y, si su hogar cumple con nuestros criterios, nos pondremos en contacto con usted para organizar la valoración.",
+        "formDescription": "El primer paso para mudarse es obtener una valoración gratuita del mercado. Completa el formulario a continuación y, si su hogar cumple con nuestros criterios, nos pondremos en contacto contigo para organizar la valoración.",
         
         // Secciones del formulario
         "name": "Nombre",
@@ -55,12 +55,12 @@ export const sellFormContent = {
         "cityTown": "Ciudad / Población",
         "postcode": "Código Postal",
         "approximateSize": "Tamaño aproximado (m²)",
-        "hopePrice": "¿Tiene un precio por el que espera vender?",
-        "lookingToBuy": "¿También está buscando comprar en la zona?",
+        "hopePrice": "¿Tienes un precio por el que esperas vender?",
+        "lookingToBuy": "¿También estás buscando comprar en la zona?",
         "yes": "Sí",
         "no": "No",
         "maybe": "Quizás",
-        "hearAboutUs": "¿Cómo supo de nosotros?",
+        "hearAboutUs": "¿Cómo supiste de nosotros?",
         "acceptTerms": "Acepto la Política de Privacidad y Cookies y los Términos y Condiciones",
         "send": "Enviar",
         
@@ -73,8 +73,8 @@ export const sellFormContent = {
         "addressLine1Required": "La línea 1 de dirección es obligatoria",
         "cityRequired": "La ciudad/población es obligatoria",
         "postcodeRequired": "El código postal es obligatorio",
-        "lookingToBuyRequired": "Por favor seleccione una opción",
+        "lookingToBuyRequired": "Por favor selecciona una opción",
         "hearAboutUsRequired": "Este campo es obligatorio",
-        "termsRequired": "Debe aceptar los términos"
+        "termsRequired": "Debes aceptar los términos"
     }
 }

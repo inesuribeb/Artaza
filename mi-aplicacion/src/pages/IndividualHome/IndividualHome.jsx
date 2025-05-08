@@ -1,17 +1,51 @@
 import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { homes } from '../../utils/Homes';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import WestIcon from '@mui/icons-material/West';
+import EastIcon from '@mui/icons-material/East';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import './IndividualHome.css';
 
 function IndividualHome() {
     const { id } = useParams();
-    const { language, t } = useLanguage();
+    const { language, t, getRoute } = useLanguage();
     const [selectedImage, setSelectedImage] = useState(0);
     const isMobile = useMediaQuery('(max-width: 480px)');
+    const navigate = useNavigate();
 
     const property = homes.find(home => home.id === id);
+    const [filteredIds, setFilteredIds] = useState([]);
+
+    useEffect(() => {
+        // Recuperar los IDs filtrados del localStorage
+        const storedIds = localStorage.getItem('filteredPropertyIds');
+        if (storedIds) {
+            setFilteredIds(JSON.parse(storedIds));
+        } else {
+            // Si no hay filtros, usar todos los IDs
+            setFilteredIds(homes.map(home => home.id));
+        }
+    }, []);
+
+    // Encontrar los índices de propiedades anterior y siguiente
+    const currentIndex = filteredIds.indexOf(id);
+    const previousIndex = currentIndex > 0 ? currentIndex - 1 : filteredIds.length - 1;
+    const nextIndex = currentIndex < filteredIds.length - 1 ? currentIndex + 1 : 0;
+
+    const previousPropertyId = filteredIds[previousIndex];
+    const nextPropertyId = filteredIds[nextIndex];
+
+    // Funciones para navegar utilizando getRoute
+    const goToPreviousProperty = () => {
+        navigate(getRoute('property', { id: previousPropertyId }));
+    };
+
+    const goToNextProperty = () => {
+        navigate(getRoute('property', { id: nextPropertyId }));
+    };
+
 
     if (!property) {
         return (
@@ -38,6 +72,24 @@ function IndividualHome() {
                 <h1 dangerouslySetInnerHTML={{ __html: property.title[language] }}></h1>
                 <h3>{property.price}</h3>
                 <p>{property.location}</p>
+                {/* botonesAnteriorySiguiente */}
+                {/* botonesAnteriorySiguiente */}
+                <div className="navigation-buttons">
+                    <button 
+                        className="navigation-button prev" 
+                        onClick={goToPreviousProperty}
+                        aria-label={t('previousProperty')}
+                    >
+                        <WestIcon /> {t('previousProperty')}
+                    </button>
+                    <button 
+                        className="navigation-button next" 
+                        onClick={goToNextProperty}
+                        aria-label={t('nextProperty')}
+                    >
+                        {t('nextProperty')} <EastIcon />
+                    </button>
+                </div>
             </div>
 
             {isMobile ? (
@@ -158,12 +210,7 @@ function IndividualHome() {
                                 </div>
                             )}
 
-                            {/* {property.orientation && (
-                                <div className='list-1-c'>
-                                    <h5>{t('orientation')}</h5>
-                                    <p>{property.orientation[language]}</p>
-                                </div>
-                            )} */}
+
                             {property.orientation && (
                                 <div className='list-1-c'>
                                     <h5>{t('orientation')}</h5>
@@ -214,7 +261,7 @@ function IndividualHome() {
 
             </div>
 
-            <div className='contact-suggestion'></div>
+            <div className='google-maps-location'></div>
         </div>
     );
 }

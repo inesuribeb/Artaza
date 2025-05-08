@@ -5,7 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--nude-color);
+  background-color: var(--taupe-color);
+  /* background-color: #A89378; */
 }
 
 .valuation-container {
