@@ -310,13 +310,19 @@ textarea:focus {
   font-weight: 100;
 }
 
-/* Media queries para responsive */
-/* @media screen and (max-width: 1200px) {
+/* Media queries actualizados */
+/* Para pantallas grandes y medianas (hasta 1200px) */
+@media screen and (max-width: 1200px) {
   .buy-form-container {
-    padding: 3rem 3rem;
+    padding: 4rem 3rem;
+  }
+  
+  .buy-form-container .form-description {
+    width: 90%;
   }
 }
 
+/* Para tablets grandes (hasta 991px) */
 @media screen and (max-width: 991px) {
   .buy-form-wrapper {
     flex-direction: column;
@@ -324,31 +330,28 @@ textarea:focus {
   
   .picture-form {
     flex: 1;
-    padding: 0;
+    padding: 0 2rem;
+    align-items: center;
+  }
+  
+  .picture-form img {
+    margin-bottom: 2rem;
+    max-width: 600px;
   }
   
   .buy-form-container {
     flex: 1;
-    padding: 3rem 2rem;
+    padding: 2rem 3rem;
+    margin-bottom: 3rem;
+    max-width: 100%;
+  }
+  
+  .buy-form-container .form-description {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .name-fields {
-    flex-direction: column;
-    gap: 0;
-  }
-  
-  .form-title {
-    font-size: 2rem;
-  }
-  
-  .buy-form-container {
-    padding: 2rem 1.5rem;
-  }
-} */
-
-/* Media queries para tablets medianas y pequeñas */
+/* Para tablets medianas y pequeñas (hasta 768px) */
 @media screen and (max-width: 768px) {
   .buy-form-wrapper {
     flex-direction: column;
@@ -380,22 +383,57 @@ textarea:focus {
     margin-bottom: 3rem;
   }
 
-  .form-title {
+  .buy-form-container .form-title {
     font-size: 2rem;
     margin-top: 1rem;
   }
 
-  .form-description {
+  .buy-form-container .form-description {
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
 
-  .form-section h3 {
-    font-size: 1.2rem;
+  .buy-form-container .form-section h3 {
+    font-size: 0.85rem;
+  }
+  
+  .name-fields {
+    flex-direction: column;
+    gap: 0;
   }
 }
 
-/* Para teléfonos móviles */
+/* Para teléfonos móviles (hasta 576px) */
+@media screen and (max-width: 576px) {
+  .picture-form {
+    padding: 0 1rem 1.5rem 1rem;
+  }
+
+  .picture-form img {
+    border-radius: 20% 20% 20% 20% / 15% 15% 15% 15%;
+  }
+
+  .buy-form-container {
+    padding: 0 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .buy-form-container .form-title {
+    font-size: 1.8rem;
+  }
+
+  .buy-form-container .form-description {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .submit-button {
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+  }
+}
+
+/* Para teléfonos móviles pequeños (hasta 480px) */
 @media screen and (max-width: 480px) {
   .picture-form {
     padding: 0rem;
@@ -411,17 +449,16 @@ textarea:focus {
     display: none;
   }
 
-
   .buy-form-container {
     padding: 0 1rem;
     margin-bottom: 2rem;
   }
 
-  .form-title {
+  .buy-form-container .form-title {
     font-size: 1.8rem;
   }
 
-  .form-description {
+  .buy-form-container .form-description {
     font-size: 0.9rem;
   }
 
@@ -430,8 +467,8 @@ textarea:focus {
     gap: 0;
   }
 
-  .form-section h3 {
-    font-size: 1.1rem;
+  .buy-form-container .form-section h3 {
+    font-size: 0.8rem;
   }
 
   input[type="text"],
@@ -445,24 +482,39 @@ textarea:focus {
   }
 
   .submit-button {
-    width: 30%;
+    width: 100%;
     padding: 0.9rem;
     font-size: 1rem;
   }
 }
 
-/* Para teléfonos muy pequeños */
+/* Para teléfonos muy pequeños (hasta 360px) */
 @media screen and (max-width: 360px) {
-  .form-title {
+  .buy-form-container .form-title {
     font-size: 1.6rem;
   }
 
-  .form-section h3 {
-    font-size: 1rem;
+  .buy-form-container .form-section h3 {
+    font-size: 0.75rem;
   }
 
   .picture-form img {
-    border-radius: 20% 20% 20% 20% / 10% 10% 10% 10%;
-    /* Bordes mínimos */
+    border-radius: 0;
+    height: 40vh;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+  
+  .radio-label, 
+  .checkbox-label {
+    font-size: 0.8rem;
   }
 }

@@ -86,7 +86,6 @@ select:focus,
 textarea:focus {
   outline: none;
   border-bottom: 1px solid var(--corporative-color);
-
 }
 
 /* input[type="text"],
@@ -204,62 +203,119 @@ textarea:focus {
   margin-top: 1rem;
 }
 
+/* Media queries actualizados */
+/* Para pantallas grandes y medianas */
+@media screen and (max-width: 992px) {
+  .sell-form-container {
+    max-width: 85%;
+    padding: 0 2rem;
+  }
+  
+  .sell-form-container .form-title-sell {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .sell-form-container .form-description-sell {
+    margin-bottom: 2.5rem;
+  }
+}
 
+/* Para tablets (hasta 768px) */
 @media screen and (max-width: 768px) {
   .sell-form-container {
     max-width: 90%;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 
-  .form-title-sell {
+  .sell-form-container .form-title-sell {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
-  .form-description-sell {
+  .sell-form-container .form-description-sell {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 
-  .form-section h3 {
-    font-size: 1.2rem;
+  .sell-form-container .form-section h3 {
+    font-size: 0.75rem;
+  }
+  
+  .sell-form-container .name-fields {
+    gap: 1rem;
+  }
+  
+  .sell-form-container .radio-group {
+    gap: 1rem;
   }
 }
 
+/* Para móviles grandes (hasta 576px) */
+@media screen and (max-width: 576px) {
+  .sell-form-container {
+    max-width: 100%;
+    padding: 0 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .sell-form-container .form-title-sell {
+    font-size: 1.9rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  .sell-form-container .form-description-sell {
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
+    text-align: left;
+  }
+
+  .sell-form-container .name-fields {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .sell-form-container .submit-button {
+    width: 100%;
+  }
+}
+
+/* Para móviles (hasta 480px) */
 @media screen and (max-width: 480px) {
   .sell-form-container {
     max-width: 100%;
     padding: 0 1rem;
-    margin-top: 0rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
   }
 
-  .form-title-sell {
+  .sell-form-container .form-title-sell {
     font-size: 1.8rem;
     text-align: left;
+    margin-bottom: 1.2rem;
   }
 
-
-  .form-description-sell {
+  .sell-form-container .form-description-sell {
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
     text-align: left;
-
   }
 
-  .name-fields {
+  .sell-form-container .form-section h3 {
+    font-size: 0.75rem;
+  }
+
+  .sell-form-container .radio-group {
     flex-direction: column;
-    gap: 0;
+    gap: 0.5rem;
   }
 
-  .form-section h3 {
-    font-size: 1.1rem;
-  }
-
-  .radio-group {
-    flex-direction: column;
-    gap: 0.8rem;
+  .sell-form-container .radio-label {
+    font-size: 0.8rem;
   }
 
   input[type="text"],
@@ -272,19 +328,53 @@ textarea:focus {
     font-size: 0.9rem;
   }
 
-  .submit-button {
+  .sell-form-container .submit-button {
     width: 100%;
     padding: 0.9rem;
     font-size: 1rem;
   }
+  
+  .sell-form-container .form-group label {
+    font-size: 0.8rem;
+  }
 }
 
+/* Para móviles pequeños (hasta 360px) */
 @media screen and (max-width: 360px) {
-  .form-title-sell {
+  .sell-form-container {
+    padding: 0 0.8rem;
+  }
+  
+  .sell-form-container .form-title-sell {
     font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
 
-  .form-section h3 {
-    font-size: 1rem;
+  .sell-form-container .form-description-sell {
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .sell-form-container .form-section h3 {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+  
+  .sell-form-container .radio-label {
+    font-size: 0.75rem;
+  }
+  
+  .sell-form-container .checkbox-label {
+    font-size: 0.75rem;
   }
 }

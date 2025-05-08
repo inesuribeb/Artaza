@@ -1,15 +1,18 @@
+/* Estilos base sin cambios */
 .contact-two-wrapper {
     display: flex;
     flex-direction: column;
     padding-top: 6rem;
     padding-bottom: 10rem;
-    /* background-color: var(--nude-color); */
     background-color: #E4DFD4;
 }
 
 .header.contact-page-header {
-    background-color: transparent; /* O el color que desees */
+    background-color: transparent;
 }
+/* .header.contact-page-header:hover {
+    background-color: var(--light-transparent-color);
+} */
 
 .first-line-contact {
     display: flex;
@@ -49,8 +52,11 @@
 }
 
 .contact-two-info h4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     padding-top: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
     font-weight: 400;
     color: var(--corporative-color);
@@ -60,14 +66,12 @@
     margin-bottom: 0;
     font-weight: 200;
     color: var(--dark-color);
-
 }
 
 .contact-two-info p {
     font-weight: 200;
     color: var(--dark-color);
     margin-bottom: 1rem;
-
 }
 
 .contact-two-picture {
@@ -84,10 +88,6 @@
     object-fit: cover;
 }
 
-
-
-
-
 .contact-section {
     margin-bottom: 2rem;
 }
@@ -99,17 +99,7 @@
     color: var(--corporative-color);
 }
 
-.contact-two-info h4 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Alinea a la derecha */
-    padding-top: 1rem;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: var(--corporative-color);
-}
-
+/* Media queries actualizados */
 @media screen and (max-width: 991px) {
     .contact-two-wrapper {
         padding-top: 4rem;
@@ -123,6 +113,11 @@
     .contact-two-info {
         padding: 0 2rem;
         padding-right: 1.5rem;
+    }
+    
+    .contact-icon {
+        font-size: 1rem;
+        margin-right: 6px;
     }
     
     .contact-two-picture {
@@ -158,6 +153,14 @@
         margin-top: 2rem;
     }
     
+    .contact-two-info h4 {
+        justify-content: center; /* Centra los iconos con el texto en móviles */
+    }
+    
+    .contact-section {
+        margin-bottom: 1.5rem;
+    }
+    
     .contact-two-picture {
         flex: 1;
         padding: 0 2rem;
@@ -183,12 +186,21 @@
         padding: 0 1rem;
     }
     
+    .contact-icon {
+        font-size: 0.9rem;
+        margin-right: 5px;
+    }
+    
+    .contact-section {
+        margin-bottom: 1.2rem;
+    }
+    
     .contact-two-picture {
         padding: 0 1rem;
     }
     
     .contact-two-picture img {
-        width: 85%;
+        width: 100%;
     }
     
     .contact-two-info h4 {
@@ -198,5 +210,22 @@
     .contact-two-info h5,
     .contact-two-info p {
         font-size: 0.9rem;
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media screen and (max-width: 375px) {
+    .contact-icon {
+        font-size: 0.8rem;
+        margin-right: 4px;
+    }
+    
+    .contact-two-info h4 {
+        font-size: 0.9rem;
+    }
+    
+    .contact-two-info h5,
+    .contact-two-info p {
+        font-size: 0.85rem;
     }
 }

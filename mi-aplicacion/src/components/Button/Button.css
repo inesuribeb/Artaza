@@ -1,4 +1,4 @@
-.custom-button {
+/* .custom-button {
     position: relative;
     margin-top: 3rem;
     padding: 1rem 2rem;
@@ -126,6 +126,145 @@
         font-size: 0.55rem;
         width: max-content;
 
+    }
+
+    .button-separator {
+        height: 0.8rem;
+        margin: 0 0.25rem;
+    }
+} */
+
+.custom-button {
+    position: relative;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    width: max-content;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    font: inherit;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.custom-button::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border: 1px solid var(--dark-color);
+    pointer-events: none;
+}
+
+/* Uso del atributo data para el color del borde del pseudo-elemento */
+.custom-button[data-before-border-color]::before {
+    border-color: attr(data-before-border-color);
+}
+
+.custom-button span {
+    position: relative;
+    z-index: 1;
+}
+
+.custom-button:hover {
+    cursor: pointer;
+    background-color: var(--corporative-color);
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
+}
+
+.custom-button:hover::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border: 1px solid var(--light-color);
+    pointer-events: none;
+}
+
+.button-separator {
+    margin: 0 0.6rem;
+    display: inline-block;
+    width: 1px;
+    height: 1.2rem;
+    background-color: currentColor;
+    vertical-align: middle;
+}
+
+.button-icon {
+    font-size: 16px !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .custom-button {
+        width: max-content;
+        margin-top: 2rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 0.65rem;
+    }
+
+    .custom-button::before {
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+    }
+
+    .button-separator {
+        height: 1rem;
+        margin: 0 0.4rem;
+    }
+
+    .button-icon {
+        font-size: 14px !important;
+        width: 14px !important;
+        height: 14px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .custom-button {
+        width: max-content;
+        margin-top: 1.5rem;
+        padding: 0.7rem 1.2rem;
+        font-size: 0.6rem;
+        justify-content: center;
+    }
+
+    .custom-button::before {
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+    }
+
+    .button-separator {
+        height: 0.9rem;
+        margin: 0 0.3rem;
+    }
+
+    .button-icon {
+        font-size: 12px !important;
+        width: 12px !important;
+        height: 12px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .custom-button {
+        padding: 0.6rem 1rem;
+        font-size: 0.55rem;
+        width: max-content;
     }
 
     .button-separator {

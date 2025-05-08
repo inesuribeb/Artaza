@@ -12,9 +12,15 @@ function Valuation({ visibleSections }) {
             <div className="valuation-container">
                 <h2 dangerouslySetInnerHTML={{ __html: t('tasaciontitulo') }} />
                 {/* <p>{t('tasaciontexto')}</p> */}
+                {/* <Button
+                    translationKey="registrate"
+                    routeName="sell"
+                /> */}
+
                 <Button
                     translationKey="registrate"
                     routeName="sell"
+                    backgroundColor="transparent"
                 />
             </div>
         </div>
