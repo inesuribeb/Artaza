@@ -20,7 +20,7 @@ function Valuation({ visibleSections }) {
                     <Button
                         translationKey="registrate"
                         routeName="sell"
-                        backgroundColor="transparent"
+                        // backgroundColor="transparent"
                     />
                 
             </div>

@@ -5,9 +5,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--nude-color);
+  justify-content: center;
+  /* background-color: var(--nude-color); */
   /* background-color: #A89378; */
   margin-top: 3rem;
+  background-color: var(--sand-color);
+  min-height: 80vh;
 }
 
 .valuation-container {
@@ -47,6 +50,7 @@
   color: var(--corporative-color);
   opacity: 0;
   font-family: var(--serif-one-font);
+  width: 90%;
 }
 
 .valuation-container p {
@@ -112,6 +116,8 @@
   .valuation-wrapper {
     padding: 2rem 1rem;
     padding-bottom: 2.5rem;
+    min-height: 70vh;
+
   }
   
   .valuation-container h2 {

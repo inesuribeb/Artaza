@@ -38,6 +38,9 @@ export const IndividualHome = {
         previousProperty: "Previous Property",
         nextProperty: "Next Property",
 
+        aboutThisPropertyFirstLine: "About this",
+        aboutThisPropertySecondLine: "Property",
+
     },
     es: {
         propertyNotFound: "Propiedad no encontrada",
@@ -78,5 +81,8 @@ export const IndividualHome = {
 
         previousProperty: "Propiedad Anterior",
         nextProperty: "Siguiente Propiedad",
+
+        aboutThisPropertyFirstLine: "Sobre esta",
+        aboutThisPropertySecondLine: "Propiedad",
     }
 };

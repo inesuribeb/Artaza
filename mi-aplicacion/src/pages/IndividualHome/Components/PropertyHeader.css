@@ -1,0 +1,139 @@
+.individual-home-maininfo {
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8.5rem;
+    margin-right: 8.5rem;
+    border-bottom: 1px solid var(--dark-color);
+  }
+  
+  .individual-home-maininfo h1 {
+    color: var(--dark-color);
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: var(--serif-one-font);
+    font-size: 2.2rem;
+    /* font-weight: 400; */
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 3rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    width: 80%;
+  }
+  
+  .individual-home-maininfo h3 {
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    margin: 0;
+  }
+  
+  .individual-home-maininfo p {
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    color: var(--corporative-color);
+    font-weight: 200;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    /* Esto colocará los elementos en los extremos */
+    width: 100%;
+    /* Asegura que el contenedor ocupe todo el ancho disponible */
+    margin-top: 15px;
+  }
+  
+  .navigation-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 18px;
+    border: 1px solid var(--dark-color);
+    border-radius: 30px;
+    background-color: transparent;
+    color: var(--dark-color);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+  
+  .navigation-button:hover {
+    background-color: transparent;
+  }
+  
+  .navigation-buttons svg {
+    width: 18px;
+    height: 18px;
+    /* stroke-width: 0.5; */
+  }
+  
+  /* Para tabletas y pantallas medianas */
+@media screen and (max-width: 768px) {
+    .individual-home-maininfo {
+      margin-top: 8rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+  
+    .individual-home-maininfo h1 {
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+    }
+  
+    .individual-home-maininfo h3 {
+      font-size: 1.2rem;
+    }
+  
+    .navigation-button {
+      width: 150px;
+      padding: 6px 14px;
+      font-size: 12px;
+    }
+  }
+  
+  /* Para teléfonos móviles */
+  @media screen and (max-width: 480px) {
+    .individual-home-maininfo {
+      margin-top: 6rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  
+    .individual-home-maininfo h1 {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+    }
+  
+    .individual-home-maininfo h3 {
+      font-size: 1.1rem;
+    }
+    
+    /* 
+    .navigation-buttons {
+      font-size: 0.6rem;
+    }
+  
+    .navigation-button {
+      width: 100%;
+      max-width: 200px;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+    */
+  }
+  
+  /* Para teléfonos muy pequeños */
+  @media screen and (max-width: 360px) {
+    .individual-home-maininfo h1 {
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+    }
+  
+    .individual-home-maininfo h3 {
+      font-size: 1rem;
+    }
+  }
