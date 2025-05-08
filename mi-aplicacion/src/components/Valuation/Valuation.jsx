@@ -10,18 +10,19 @@ function Valuation({ visibleSections }) {
     return (
         <div className={`valuation-wrapper ${visibleSections.valuation ? 'visible' : ''}`}>
             <div className="valuation-container">
-                <h2 dangerouslySetInnerHTML={{ __html: t('tasaciontitulo') }} />
-                {/* <p>{t('tasaciontexto')}</p> */}
-                {/* <Button
+                
+                    <h2 dangerouslySetInnerHTML={{ __html: t('tasaciontitulo') }} />
+                    {/* <Button
                     translationKey="registrate"
                     routeName="sell"
                 /> */}
 
-                <Button
-                    translationKey="registrate"
-                    routeName="sell"
-                    backgroundColor="transparent"
-                />
+                    <Button
+                        translationKey="registrate"
+                        routeName="sell"
+                        backgroundColor="transparent"
+                    />
+                
             </div>
         </div>
     );
