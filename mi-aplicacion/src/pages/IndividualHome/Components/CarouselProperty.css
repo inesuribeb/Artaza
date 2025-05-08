@@ -5,15 +5,23 @@
     padding: 0 1rem;
     /* background-color: #E3E1D9; */
     /* border: 1px solid var(--dark-color); */
+    /* background-color: #A59E8C; */
+
 }
 
 .carousel-main-image {
+    /* max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem; */
+
     width: 100%;
     margin-bottom: 1rem;
     overflow: hidden;
 }
 
 .carousel-main-image img {
+
+
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
@@ -49,6 +57,7 @@
     cursor: pointer;
     position: relative;
     transition: all 0.3s ease;
+
 }
 
 .thumbnail-wrapper img {

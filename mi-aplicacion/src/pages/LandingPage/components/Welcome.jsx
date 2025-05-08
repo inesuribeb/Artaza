@@ -15,7 +15,7 @@ function Welcome({ scrollProgress = 0 }) {
         opacity: 1,
         backgroundImage: `linear-gradient(rgba(0, 0, 0, ${Math.max(0, 0.2 - scrollProgress * 0.3)}), 
                           rgba(0, 0, 0, ${Math.max(0, 0.2 - scrollProgress * 0.3)})), 
-                          url('/images/patrimoine.avif')`,
+                          url('/images/salon.jpg')`,
         backgroundColor: '#F3F1E9',
         backgroundBlendMode: 'multiply',
         backgroundSize: `cover`,

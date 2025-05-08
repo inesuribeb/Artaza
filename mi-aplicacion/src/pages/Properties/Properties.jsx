@@ -3,7 +3,8 @@ import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
 import { useLanguage } from '../../contexts/LanguageContext';
 import PropertyCart from './components/PropertyCart';
-import SearchForm from './components/FilterProperty'; 
+import SearchForm from './components/FilterProperty';
+import Valuation from '../../components/Valuation/Valuation';
 import { homes } from '../../utils/Homes';
 import { useHeaderStyle } from '../../components/Header/HeaderStyleContext';
 import './Properties.css';
@@ -14,14 +15,14 @@ function Properties() {
     const gridRef = useRef(null);
     const searchFormRef = useRef(null);
     const { setHeaderClassName } = useHeaderStyle();
-    
+
     const [currentPage, setCurrentPage] = useState(1);
     const propertiesPerPage = 9;
-    
+
     const [propertyCount, setPropertyCount] = useState(null);
     const [neighborhood, setNeighborhood] = useState(null);
     const [budget, setBudget] = useState(null);
-    
+
     const [filteredProperties, setFilteredProperties] = useState(homes);
 
     const extractPriceValue = (priceString) => {
@@ -35,7 +36,7 @@ function Properties() {
         const handleScroll = () => {
             if (searchFormRef.current) {
                 const searchFormRect = searchFormRef.current.getBoundingClientRect();
-                const headerHeight = 80; 
+                const headerHeight = 80;
 
                 if (headerHeight < searchFormRect.bottom) {
                     setHeaderClassName('white-section-active');
@@ -44,12 +45,12 @@ function Properties() {
                 }
             }
         };
-        
+
         handleScroll();
-        
+
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleScroll);
-        
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleScroll);
@@ -62,9 +63,9 @@ function Properties() {
             setFilteredProperties(homes);
             return;
         }
-        
+
         let filtered = [...homes];
-        
+
         if (propertyCount && propertyCount !== t('anyNumber')) {
             const bedroomMatch = propertyCount.match(/(\d+)/);
             if (bedroomMatch && bedroomMatch[1]) {
@@ -74,17 +75,17 @@ function Properties() {
                 }
             }
         }
-        
+
         if (neighborhood && neighborhood !== t('anyNeighbourhood')) {
             filtered = filtered.filter(home => {
                 return home.location && home.location.toLowerCase().includes(neighborhood.toLowerCase());
             });
         }
-        
+
         if (budget && budget !== t('anyBudget')) {
             filtered = filtered.filter(home => {
                 const priceValue = extractPriceValue(home.price);
-                
+
                 if (budget === t('budget400to600')) {
                     return priceValue >= 400000 && priceValue <= 600000;
                 } else if (budget === t('budget600to800')) {
@@ -97,9 +98,9 @@ function Properties() {
                 return true;
             });
         }
-        
+
         setFilteredProperties(filtered);
-        setCurrentPage(1); 
+        setCurrentPage(1);
     }, [propertyCount, neighborhood, budget, t]);
 
     useEffect(() => {
@@ -122,11 +123,11 @@ function Properties() {
 
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber);
-        
+
         if (gridRef.current) {
             const offsetTop = gridRef.current.offsetTop;
-            const scrollPosition = offsetTop - 20; 
-            
+            const scrollPosition = offsetTop - 20;
+
             window.scrollTo({
                 top: scrollPosition,
                 behavior: 'smooth'
@@ -145,15 +146,15 @@ function Properties() {
             <div className='filter-properties' ref={searchFormRef}>
                 <SearchForm onSearch={handleSearchResults} />
             </div>
-            
+
             {filteredProperties.length > 0 ? (
-                <>  
+                <>
                     <div className="properties-grid" ref={gridRef}>
                         {currentProperties.map((home) => (
                             <PropertyCart key={home.id} property={home} />
                         ))}
                     </div>
-                    
+
                     {totalPages > 1 && (
                         <div className="pagination">
                             {Array.from({ length: totalPages }, (_, i) => i + 1).map((number) => (
@@ -173,6 +174,9 @@ function Properties() {
                     <p>{t('noResults')}</p>
                 </div>
             )}
+            <div>
+                <Valuation />
+            </div>
         </div>
     );
 }

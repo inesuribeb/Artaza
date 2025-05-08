@@ -3,7 +3,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 import Button from '../Button/Button';
 import './Valuation.css';
 
-function Valuation({ visibleSections }) {
+function Valuation({ visibleSections = { valuation: true } })  {
     const { t, getRoute } = useLanguage();
     const navigate = useNavigate();
 
