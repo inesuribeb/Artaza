@@ -137,6 +137,10 @@
     .individual-home-maininfo h3 {
       font-size: 1.1rem;
     }
+
+    .individual-home-maininfo .sold-indicator {
+      font-size: 1.1rem;
+    }
     
     /* 
     .navigation-buttons {
