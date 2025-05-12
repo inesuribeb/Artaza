@@ -566,12 +566,18 @@
     .list-1 p {
         font-size: 1rem;
     }
+
+    .general-info {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
     
     .column-description h1 {
         font-size: 1rem;
         line-height: 1.6rem;
         column-count: 1;
         padding-left: 0;
+        /* border-top: none; */
     }
     
     .individual-home-totalinfo {
