@@ -6,27 +6,6 @@ import './HeaderPhone2.css'
 
 const SCROLL_POSITION_KEY = 'artaza_scroll_position';
 
-// function HeaderPhone() {
-//     const { language, toggleLanguage, t, getRoute } = useLanguage();
-//     const [isMenuOpen, setIsMenuOpen] = useState(false);
-//     const location = useLocation();
-//     const { headerClassName } = useHeaderStyle();
-
-//     const toggleMenu = () => {
-//         setIsMenuOpen(!isMenuOpen);
-//     };
-
-//     const handleLanguageChange = () => {
-//         const scrollPosition = window.scrollY;
-//         localStorage.setItem(SCROLL_POSITION_KEY, scrollPosition.toString());
-//         localStorage.setItem('is_language_change', 'true');
-        
-//         if (isMenuOpen) {
-//             toggleMenu();
-//         }
-        
-//         toggleLanguage();
-//     };
 
 function HeaderPhone() {
     const { language, toggleLanguage, t, getRoute } = useLanguage();
@@ -87,7 +66,8 @@ function HeaderPhone() {
     return (
         <>
             <div className="header-phone-container">
-                <header className={`header-phone ${headerClassName}`}>
+                {/* <header className={`header-phone ${headerClassName}`}> */}
+                <header className={`header-phone ${headerClassName} ${isMenuOpen ? 'menu-open' : ''}`}>    
                     <div className="logo-phone">
                         <Link to={getRoute('home')} onClick={isMenuOpen ? toggleMenu : undefined}>
                             {isMenuOpen ? (

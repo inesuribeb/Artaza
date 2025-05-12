@@ -8,7 +8,7 @@
     align-items: center;
     padding: 1.5rem 1rem;
     background-color: transparent;
-    /* background-color: var(--light-color); */
+    background-color: var(--light-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -16,6 +16,13 @@
     width: 100%;
     z-index: 1200;
     transition: background-color 0.5s ease;
+}
+
+/* Cuando el menú está abierto, hacer el fondo transparente */
+.header-phone-button.active + .header-phone,
+.header-phone.menu-open {
+    background-color: transparent;
+    box-shadow: none; /* Quitar la sombra cuando el fondo es transparente */
 }
 
 .logo-phone {
