@@ -32,7 +32,27 @@
     font-weight: 200;
     margin: 0;
   }
-  
+  .individual-home-maininfo .sold-indicator {
+    color: #AD4B3E;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400; /* Hecho un poco más grueso para destacar */
+    margin: 0;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.8px;
+  }
+/*  
+  .individual-home-maininfo .sold-indicator::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #AD4B3E;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+  } */
+
   .individual-home-maininfo p {
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     color: var(--corporative-color);

@@ -108,12 +108,28 @@ function Header({ className }) {
 
             <nav className={`nav-menu ${isMenuOpen ? 'show' : ''}`}>
                 <ul>
-                    <li>
+                    {/* <li>
                         <Link
                             to={getRoute('properties')}
                             onClick={toggleMenu}
                             className={location.pathname === getRoute('properties') ? 'active-link' : ''}
                             >
+                            <div className="nav-link-container">
+                                <KeyboardArrowLeftIcon className="nav-arrow" />
+                                <span className="nav-text">{t('properties')}</span>
+                            </div>
+                        </Link>
+                    </li> */}
+                    <li>
+                        <Link
+                            to={getRoute('properties')}
+                            onClick={toggleMenu}
+                            className={
+                                location.pathname === getRoute('properties') ||
+                                    location.pathname.startsWith(getRoute('property').replace(':id', '')) ?
+                                    'active-link' : ''
+                            }
+                        >
                             <div className="nav-link-container">
                                 <KeyboardArrowLeftIcon className="nav-arrow" />
                                 <span className="nav-text">{t('properties')}</span>

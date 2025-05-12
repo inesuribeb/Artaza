@@ -263,9 +263,11 @@
 }
 
 .list-1 p {
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1.3rem;
+    font-weight: 100;
     color: var(--dark-color);
+    /* font-family: var(--serif-one-font); */
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .column-description {

@@ -215,7 +215,7 @@
 
 .nav-menu a.active-link {
     color: var(--corporative-color);
-    font-weight: 400;
+    font-weight: 100;
     font-style: italic;
 
 }

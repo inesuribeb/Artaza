@@ -19,10 +19,6 @@ function CarouselLocation({ visibleSections }) {
         '/images/carousel/Carousel3.png',
         '/images/carousel/Carousel6.png',
         '/images/carousel/Carousel7.png',
-        '/images/elipse.jpg',
-        '/images/elipse.jpg',
-        '/images/elipse.jpg',
-        '/images/elipse.jpg',
     ];
     
     const checkScrollPosition = () => {
