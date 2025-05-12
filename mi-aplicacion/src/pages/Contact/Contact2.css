@@ -1,9 +1,13 @@
 /* Estilos base sin cambios */
+.contact-with-valuation {
+    display: flex;
+    flex-direction: column;
+}
 .contact-two-wrapper {
     display: flex;
     flex-direction: column;
     padding-top: 6rem;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
     /* background-color: var(--sand-color); */
     background-color: var(--light-color);
 
