@@ -131,6 +131,7 @@
     .individual-home-maininfo h1 {
       font-size: 1.4rem;
       line-height: 1.8rem;
+      width: 90%;
     }
   
     .individual-home-maininfo h3 {

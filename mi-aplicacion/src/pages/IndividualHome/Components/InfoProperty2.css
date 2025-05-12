@@ -432,6 +432,7 @@
 
 /* Para tabletas y pantallas medianas */
 /* Para tabletas y pantallas medianas */
+/* Para tabletas y pantallas medianas */
 @media screen and (max-width: 768px) {
     .total-info-wrapper {
         padding-top: 1.5rem;
@@ -472,8 +473,23 @@
         padding-top: 1rem;
     }
     
-    .caracteristicas-info h3 {
+    .caracteristicas-info h3,
+    .column-extras h3 {
         margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+    }
+    
+    .section-header {
+        padding-top: 0.8rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .section-header.expanded {
+        padding-bottom: 0.8rem;
+    }
+    
+    .icon-wrapper {
+        margin-left: 0.5rem;
     }
     
     .caracteristicas-list {
@@ -482,6 +498,11 @@
         grid-template-rows: repeat(2, auto);
         gap: 1rem;
         width: 100%;
+    }
+    
+    .caracteristicas-list.expanded,
+    .extras-list.expanded {
+        padding-bottom: 1.5rem;
     }
     
     .caracteristicas-list>div {
@@ -558,8 +579,53 @@
         padding-top: 1rem;
     }
     
-    .caracteristicas-info h3 {
+    .caracteristicas-info h3,
+    .column-extras h3 {
         margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    /* .section-header {
+        padding-top: 0.7rem;
+        padding-bottom: 1.2rem;
+    } */
+    .section-header {
+        display: flex;
+        justify-content: space-between; /* Cambia a espacio entre elementos */
+        align-items: center;
+        width: 100%;
+    }
+    
+    .section-header h3 {
+        margin: 0; /* Elimina márgenes para mejor alineación */
+    }
+    
+    .icon-wrapper {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section-header.expanded {
+        padding-bottom: 0.6rem;
+    }
+    
+    .icon-wrapper {
+        transform-origin: center;
+        margin-left: 0.3rem;
+    }
+    
+    .icon-wrapper svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .caracteristicas-list.expanded,
+    .extras-list.expanded {
+        max-height: 1500px; /* Aumentado para dispositivos móviles */
+        margin-top: 0.5rem;
+        padding-bottom: 1.5rem;
     }
     
     .caracteristicas-list {
@@ -585,7 +651,7 @@
     
     .column-extras {
         padding: 0;
-        padding-top: 1rem;
+        padding-top: 0rem;
         gap: 1rem;
     }
     
@@ -606,12 +672,57 @@
         padding: 0.8rem;
     }
     
+    .title-info h1 .first-line {
+        font-size: 1.3rem;
+    }
+    
+    .title-info h1 .second-line {
+        font-size: 1.5rem;
+    }
+    
+    .caracteristicas-info h3,
+    .column-extras h3 {
+        font-size: 1.1rem;
+        letter-spacing: 0.8px;
+    }
+    
+    .section-header {
+        padding-top: 0.6rem;
+        padding-bottom: 1rem;
+    }
+    
+    .section-header.expanded {
+        padding-bottom: 0.5rem;
+    }
+    
+    .icon-wrapper svg {
+        width: 18px;
+        height: 18px;
+    }
+    
     .caracteristicas-list {
         grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .caracteristicas-list.expanded,
+    .extras-list.expanded {
+        padding-bottom: 1.2rem;
+    }
+    
+    .caracteristicas-list h5 {
+        font-size: 0.8rem;
+    }
+    
+    .list-1-c p {
+        font-size: 0.9rem;
     }
     
     .extras-list {
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
+    }
+    
+    .extras-list li {
+        font-size: 0.8rem;
     }
 }
