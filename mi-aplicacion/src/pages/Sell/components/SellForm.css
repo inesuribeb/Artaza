@@ -220,6 +220,76 @@ textarea:focus {
   margin-top: 1rem;
 }
 
+/* Estilos para el indicador de progreso tipo fracción */
+.form-progress-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.form-progress-fraction {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.form-progress-bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--sand-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--corporative-color);
+  transition: width 0.3s ease;
+}
+
+/* Navegación del formulario */
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.back-button {
+  background-color: var(--sand-color);
+  color: var(--dark-color);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 100;
+  border-radius: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #f0e6d8;
+}
+
+/* Media queries para adaptabilidad */
+@media screen and (max-width: 576px) {
+  .form-navigation {
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+  .back-button, 
+  .submit-button {
+      width: 100%;
+  }
+}
+
 /* Media queries actualizados */
 /* Para pantallas grandes y medianas */
 @media screen and (max-width: 992px) {

@@ -8,8 +8,8 @@
     flex-direction: column;
     padding-top: 6rem;
     padding-bottom: 8rem;
-    /* background-color: var(--sand-color); */
     background-color: var(--light-color);
+    /* background-color: var(--darksand-color); */
 
 }
 
@@ -32,6 +32,7 @@
     font-weight: 100;
     font-size: 6rem;
     color: var(--corporative-color);
+    /* color: var(--light-color); */
     margin-bottom: 0rem;
 }
 
@@ -66,17 +67,20 @@
     text-transform: uppercase;
     font-weight: 400;
     color: var(--corporative-color);
+    /* color: var(--light-color); */
 }
 
 .contact-two-info h5 {
     margin-bottom: 0;
     font-weight: 200;
     color: var(--dark-color);
+    /* color: var(--light-color); */
 }
 
 .contact-two-info p {
     font-weight: 200;
     color: var(--dark-color);
+    /* color: var(--light-color); */
     margin-bottom: 1rem;
 }
 
@@ -103,6 +107,7 @@
     margin-right: 8px;
     vertical-align: middle;
     color: var(--corporative-color);
+    /* color: var(--light-color); */
 }
 
 /* Media queries actualizados */
