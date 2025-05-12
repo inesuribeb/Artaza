@@ -23,7 +23,7 @@ export const IndividualHome = {
 
         builtM2: "Built Area",
         usableM2: "Usable Area",
-        bedrooms: "Bedrooms",
+        bedroomsP: "Bedrooms",
         bathrooms: "Bathrooms",
         orientation: "Orientation",
         privateUrbanization: "Private urbanization",
@@ -73,7 +73,7 @@ export const IndividualHome = {
 
         builtM2: "m2 construidos",
         usableM2: "m2 usables",
-        bedrooms: "Habitaciones",
+        bedroomsP: "Dormitorios",
         bathrooms: "Baños",
         orientation: "Orientación",
         privateUrbanization: "Urbanización privada",
