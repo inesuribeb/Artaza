@@ -133,7 +133,7 @@ function SellForm() {
 
                 {/* Dirección */}
                 <div className="form-section">
-                    <h3>{t('address')}</h3>
+                    {/* <h3>{t('address')}</h3> */}
                     
                     <div className="form-group">
                         <label>{t('addressLine1')}<span className="required">*</span></label>

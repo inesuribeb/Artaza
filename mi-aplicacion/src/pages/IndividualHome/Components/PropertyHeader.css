@@ -11,7 +11,7 @@
   }
   
   .individual-home-maininfo h1 {
-    color: var(--dark-color);
+    color: var(--corporative-color);
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-family: var(--serif-one-font);
     font-size: 2.2rem;

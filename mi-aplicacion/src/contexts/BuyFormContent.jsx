@@ -42,7 +42,10 @@ export const buyFormContent = {
         "bedroom2": "2",
         "bedroom3": "3",
         "bedroom4": "4",
-        "bedroom5Plus": "5+"
+        "bedroom5Plus": "5+",
+
+        "back": "Back",
+
     },
     es: {
         // Títulos y encabezados
@@ -87,6 +90,8 @@ export const buyFormContent = {
         "bedroom2": "2",
         "bedroom3": "3",
         "bedroom4": "4",
-        "bedroom5Plus": "5+"
+        "bedroom5Plus": "5+",
+
+        "back": "Anterior",
     }
 }

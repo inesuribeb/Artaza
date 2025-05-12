@@ -313,7 +313,7 @@ export const homes = [
             en: "Spacious and bright 125 m² apartment in the center of Artaza, in a gated community with pool. <br/>It consists of a living room with terrace, a large kitchen with dining area and two terraces. It has three bedrooms with built-in wardrobes, including a master bedroom with en-suite bathroom.<br/> Includes two parking spaces, a storage room, and a communal swimming pool."
         },
         sold: true,
-        main_image: "/images/detalleCocina.jpg",
+        main_image: "/images/casamain.jpg",
         images: [
             "/images/salon.jpg",
             "/images/salon2.jpg",

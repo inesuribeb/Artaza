@@ -139,6 +139,16 @@ textarea:focus {
   font-size: 0.85rem;
 }
 
+.radio-group label {
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
 .sell-form-container .radio-label input[type="radio"] {
   accent-color: var(--corporative-color);
   background-color: transparent;
