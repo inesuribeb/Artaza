@@ -58,6 +58,7 @@
     font-weight: 100;
     color: var(--dark-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: 'Baskerville'; */
     text-transform: uppercase;
 }
 

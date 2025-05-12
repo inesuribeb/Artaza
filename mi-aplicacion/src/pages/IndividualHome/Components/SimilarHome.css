@@ -1,0 +1,247 @@
+.similar-home-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sand-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--corporative-color);
+    align-items: center;
+}
+
+.similar-home-wrapper .title-info-sim {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    width: 100%;
+    text-align: center; 
+}
+
+.title-info-sim .title-info h1 {
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+}
+.title-info-sim h1 .first-line {
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+.title-info-sim h1 .second-line {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--serif-one-font);
+}
+
+.similar-carousel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.similar-carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 3rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    overflow: hidden;
+    width: calc(100% - 6rem);
+}
+
+.carousel-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Exactamente 2 columnas */
+    gap: 2rem;
+    width: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.carousel-control {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.prev-button {
+    left: 0px;
+}
+
+.next-button {
+    right: -10px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--prueba-color);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background-color: var(--corporative-color);
+    transform: scale(1.2);
+}
+
+/* Asegurar que las tarjetas de propiedades mantengan sus proporciones */
+.carousel-item .property-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-item .property-card__image-container {
+    width: 100%;
+}
+
+.carousel-item .property-card__image-frame {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/* Estilos específicos para móvil */
+.similar-carousel.mobile {
+    overflow: hidden;
+}
+
+.similar-carousel-container.mobile {
+    padding: 0 1rem;
+    margin: 0;
+    width: 100%;
+    overflow: visible;
+}
+
+.carousel-inner.mobile {
+    display: flex;
+    width: auto;
+    gap: 0;
+    padding: 0.5rem 0;
+}
+
+.carousel-item.mobile {
+    flex: 0 0 85%; /* Toma el 85% del ancho para mostrar parte del siguiente */
+    margin-right: 0.5rem;
+}
+
+/* Pantallas grandes (1440px y menos) */
+@media (max-width: 1440px) {
+    .similar-home-wrapper .title-info {
+        padding-left: 5rem;
+    }
+    
+    .similar-carousel-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+/* Pantallas medianas (1200px y menos) */
+@media (max-width: 1200px) {
+    .similar-home-wrapper .title-info {
+        padding-left: 3rem;
+    }
+    
+    .similar-carousel-container {
+        margin: 0 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: calc(100% - 4rem);
+    }
+    
+    .carousel-inner {
+        gap: 1.5rem;
+    }
+}
+
+/* Tablets (992px y menos) */
+@media (max-width: 992px) {
+    .similar-home-wrapper {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .similar-home-wrapper .title-info {
+        padding-left: 2rem;
+    }
+    
+    .title-info h1 {
+        font-size: 1.5rem;
+    }
+    
+    .similar-carousel-container {
+        margin: 0 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        width: calc(100% - 3rem);
+    }
+    
+    .carousel-inner {
+        gap: 1rem;
+        grid-template-columns: 1fr; /* 1 columna en tablet */
+    }
+}
+
+/* Tablets pequeñas y móviles (768px y menos) */
+@media (max-width: 768px) {
+    .similar-home-wrapper .title-info {
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .title-info h1 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Móviles (576px y menos) */
+@media (max-width: 576px) {
+    .similar-home-wrapper {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .similar-home-wrapper .title-info {
+        padding-left: 1rem;
+    }
+    
+    .carousel-indicators {
+        margin-top: 1rem;
+    }
+    
+    .indicator {
+        width: 6px;
+        height: 6px;
+    }
+    
+    .carousel-item.mobile {
+        flex: 0 0 80%; /* Un poco más estrecho en móviles pequeños */
+    }
+}

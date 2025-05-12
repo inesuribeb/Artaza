@@ -7,3 +7,8 @@
     font-family: 'Artaza-italic';
     src: url('/fonts/SortsMillGoudy-Italic.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Baskerville';
+    src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
+}

@@ -41,6 +41,12 @@ export const IndividualHome = {
         aboutThisPropertyFirstLine: "About this",
         aboutThisPropertySecondLine: "Property",
 
+        aboutItsLocationFirstLine: "Location and",
+        aboutItsLocationSecondLine: "Surroundings",
+
+        similarPropertiesFirstLine: "Similar",
+        similarPropertiesSecondLine: "Options",
+
     },
     es: {
         propertyNotFound: "Propiedad no encontrada",
@@ -84,5 +90,11 @@ export const IndividualHome = {
 
         aboutThisPropertyFirstLine: "Sobre esta",
         aboutThisPropertySecondLine: "Propiedad",
+
+        aboutItsLocationFirstLine: "Entorno y",
+        aboutItsLocationSecondLine: "Ubicación",
+
+        similarPropertiesFirstLine: "Opciones",
+        similarPropertiesSecondLine: "Similares",
     }
 };

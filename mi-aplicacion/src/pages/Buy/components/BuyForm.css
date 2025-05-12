@@ -7,7 +7,6 @@
   flex: 0.52;
   display: flex;
   padding: 0rem 3rem;
-  /* padding-right: 2rem; */
   box-sizing: border-box;
   flex-direction: column;
   align-items: flex-end;
@@ -18,12 +17,8 @@
   height: auto;
   object-fit: contain;
   margin-bottom: 23rem;
-  /* border-radius: 50% 50% 50% 50% / 35% 35% 35% 35%; */
 }
 
-/* .picture-form img:nth-child(2) {
-  width: 50%;
-} */
 
 .buy-form-container {
   flex: 0.48;
@@ -41,6 +36,8 @@
   font-weight: 400;
   margin-bottom: 2rem;
   margin-top: 0;
+  color: var(--dark-color);
+
 }
 
 .buy-form-container .form-description {
@@ -49,6 +46,7 @@
   line-height: 1.6;
   font-weight: 200;
   width: 80%;
+  color: var(--dark-color);
 }
 
 .buy-form-container .buy-form {
@@ -62,17 +60,13 @@
   padding-bottom: 1rem;
 }
 
-/* Sección 1: Agrupa nombre, teléfono y email con una separación más fuerte */
 .buy-form-container .form-section:nth-child(3) {
-  /* Email es la tercera sección */
   border-bottom: 1px solid #ccc;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
 }
 
-/* Sección 2: Agrupa todas las especificaciones */
 .buy-form-container .form-section:nth-child(4) {
-  /* Especificaciones es la cuarta sección */
   padding-top: 1rem;
 }
 
@@ -86,50 +80,39 @@
   margin-bottom: 2rem;
 }
 
-/* Sección 3: Desde "Vendiendo" hasta el final */
-/* .form-section:nth-child(5) { 
-  padding-top: 1rem;
-} */
-/* Sección 3: Vendiendo? */
 .buy-form-container .form-section:nth-child(5) {
-  /* Vendiendo es la quinta sección */
   padding-top: 1rem;
   border-bottom: 1px solid #ccc;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
 }
 
-/* Sección 4: Otros criterios */
 .buy-form-container .form-section:nth-child(6) {
-  /* Otros criterios es la sexta sección */
   padding-top: 1rem;
 }
 
 .buy-form-container .form-section h3 {
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-size: 0.8rem;
   font-weight: 100;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 1.1px;
+  color: var(--dark-color);
 }
 
-/* Destacamos los encabezados de las secciones principales */
-/* .form-section:nth-child(1) h3,   */
+
 .buy-form-container .form-section:nth-child(4) h3,
-/* Especificaciones */
 .buy-form-container .form-section:nth-child(5) h3,
 .buy-form-container .form-section:nth-child(6) h3 {
-  /* Vendiendo */
   font-size: 0.9rem;
   letter-spacing: 1.2px;
   color: var(--corporative-color);
 }
 
-/* Estilo para el placeholder en selects */
 .select-placeholder {
   color: #999;
+  /* color: var(--dark-color); */
   font-style: italic;
   font-weight: 100;
   font-size: 0.9rem;
@@ -137,6 +120,7 @@
 
 select option {
   color: var(--dark-color);
+  /* color: var(--or-color); */
   font-style: normal;
 }
 
@@ -146,7 +130,6 @@ select option:first-child {
 }
 
 .form-section p {
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   margin-bottom: 0.5rem;
   font-size: 0.8rem;
 }
@@ -171,28 +154,19 @@ select option:first-child {
   font-size: 0.8rem;
 }
 
-/* Estilo para placeholders */
 input::placeholder,
 textarea::placeholder {
   color: #999;
-  /* Color del texto */
   font-style: italic;
-  /* Estilo de fuente */
   font-size: 0.9rem;
-  /* Tamaño de fuente */
   font-weight: 300;
-  /* Peso de fuente */
   opacity: 0.7;
-  /* Opacidad */
   transition: opacity 0.2s;
-  /* Transición al enfocar */
 }
 
-/* Cambiar estilo al enfocar */
 input:focus::placeholder,
 textarea:focus::placeholder {
   opacity: 0.4;
-  /* Se vuelve más transparente al enfocar */
 }
 
 input[type="text"],
@@ -203,12 +177,17 @@ select,
 textarea {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid var(--dark-color);
+  /* border: 1px solid var(--dark-color); */
+  border: 1px solid transparent;
   border-radius: 0px;
   font-size: 1rem;
   transition: border-color 0.2s;
-  background-color: transparent;
+  /* background-color: transparent; */
+  transition: border-color 0.2s;
+  background-color: var(--nude-color); 
+  opacity: 0.6;
   color: var(--dark-color);
+  font-weight: 100;
 }
 
 input:focus,
@@ -234,8 +213,6 @@ textarea:focus {
   gap: 0.5rem;
   cursor: pointer;
   margin-bottom: 1rem;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
-  /* display: block; */
   margin-bottom: 0.5rem;
   font-size: 0.85rem;
 }
@@ -257,7 +234,6 @@ textarea:focus {
 }
 
 .required {
-  /* color: var(--corporative-color); */
   color: #AD4B3E;
   margin-left: 0.25rem;
 }
@@ -285,20 +261,22 @@ textarea:focus {
 }
 
 .submit-button {
-  background-color: var(--corporative-color);
+  background-color: var(--prueba-color);
   color: white;
   border: none;
   padding: 1rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 500;
-  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 100;
+  /* border-radius: 30px; */
+  border-radius: 0;
+  text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.2s;
   margin-top: 1rem;
 }
 
 .submit-button:hover {
-  background-color: var(--dark-color);
+  background-color: var(--corporative-color);
 }
 
 .terms-section {
@@ -310,8 +288,7 @@ textarea:focus {
   font-weight: 100;
 }
 
-/* Media queries actualizados */
-/* Para pantallas grandes y medianas (hasta 1200px) */
+
 @media screen and (max-width: 1200px) {
   .buy-form-container {
     padding: 4rem 3rem;
@@ -322,7 +299,6 @@ textarea:focus {
   }
 }
 
-/* Para tablets grandes (hasta 991px) */
 @media screen and (max-width: 991px) {
   .buy-form-wrapper {
     flex-direction: column;
@@ -351,7 +327,6 @@ textarea:focus {
   }
 }
 
-/* Para tablets medianas y pequeñas (hasta 768px) */
 @media screen and (max-width: 768px) {
   .buy-form-wrapper {
     flex-direction: column;
@@ -403,7 +378,6 @@ textarea:focus {
   }
 }
 
-/* Para teléfonos móviles (hasta 576px) */
 @media screen and (max-width: 576px) {
   .picture-form {
     padding: 0 1rem 1.5rem 1rem;
@@ -433,14 +407,12 @@ textarea:focus {
   }
 }
 
-/* Para teléfonos móviles pequeños (hasta 480px) */
 @media screen and (max-width: 480px) {
   .picture-form {
     padding: 0rem;
   }
 
   .picture-form img {
-    /* border-radius: 30% 30% 30% 30% / 50% 50% 50% 50%;  */
     border-radius: 0%;
     height: 50vh;
   }

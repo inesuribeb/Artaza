@@ -1,5 +1,5 @@
 .individual-home-maininfo {
-    margin-top: 12rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +22,7 @@
     text-transform: uppercase;
     font-weight: 100;
     width: 80%;
+    margin-bottom: 0;
   }
   
   .individual-home-maininfo h3 {
@@ -52,10 +53,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 8px 18px;
-    border: 1px solid var(--dark-color);
+    border: 1px solid var(--prueba-color);
     border-radius: 30px;
+    font-weight: 100;
     background-color: transparent;
-    color: var(--dark-color);
+    color: var(--prueba-color);
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -64,13 +66,14 @@
   }
   
   .navigation-button:hover {
-    background-color: transparent;
+    border: 1px solid var(--corporative-color);
+    color: var(--corporative-color);
+
   }
   
   .navigation-buttons svg {
     width: 18px;
     height: 18px;
-    /* stroke-width: 0.5; */
   }
   
   /* Para tabletas y pantallas medianas */
