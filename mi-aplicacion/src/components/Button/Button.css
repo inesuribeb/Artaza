@@ -139,9 +139,9 @@
     margin-top: 3rem;
     padding: 1rem 2rem;
     width: max-content;
-    background-color: var(--light-color);
-    color: var(--dark-color);
-    border: 1px solid var(--dark-color);
+    background-color: var(--corporative-color);
+    color: var(--light-color);
+    border: 1px solid transparent;
     font: inherit;
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -149,6 +149,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    border-radius: 25px;
 }
 
 .custom-button::before {
@@ -158,8 +159,9 @@
     left: 3px;
     right: 3px;
     bottom: 3px;
-    border: 1px solid var(--dark-color);
+    border: 1px solid var(--light-color);
     pointer-events: none;
+    border-radius: 20px;
 }
 
 /* Uso del atributo data para el color del borde del pseudo-elemento */

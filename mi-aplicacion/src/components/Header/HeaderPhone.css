@@ -78,7 +78,6 @@
     transform: rotate(-45deg);
 }
 
-/* Menú de navegación */
 .nav-phone-menu {
     position: fixed;
     top: 0;
@@ -194,7 +193,6 @@
     color: var(--light-color);
 }
 
-/* Logo miniatura en la parte inferior */
 .mini-phone-logo {
     position: absolute;
     bottom: 30px;
@@ -215,7 +213,6 @@
     height: auto;
 }
 
-/* Overlay para cerrar el menú */
 .menu-phone-overlay {
     position: fixed;
     top: 0;

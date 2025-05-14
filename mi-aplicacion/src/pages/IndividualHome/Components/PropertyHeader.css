@@ -22,13 +22,14 @@
     text-transform: uppercase;
     font-weight: 100;
     width: 80%;
-    margin-bottom: 0;
+    margin-bottom: 0.8rem;
   }
   
   .individual-home-maininfo h3 {
     color: var(--dark-color);
     font-size: 1.5rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: var(--sans-serif-2);   
     font-weight: 200;
     margin: 0;
   }
@@ -57,6 +58,7 @@
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     color: var(--corporative-color);
     font-weight: 200;
+    margin-top: 0.2rem;
   }
   
   .navigation-buttons {

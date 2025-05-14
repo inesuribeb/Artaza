@@ -31,7 +31,8 @@
 }
 
 .buy-form-container .form-title {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: var(--serif-one-font);
   font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 2rem;

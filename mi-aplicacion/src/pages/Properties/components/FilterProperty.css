@@ -21,7 +21,8 @@
   line-height: 1.6;
   color: var(--light-color);
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: var(--serif-one-font);
   text-transform: uppercase;
 }
 
@@ -44,12 +45,13 @@
 
 .search-form h1 {
   width: 55%;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 400;
   line-height: 1.6;
   color: var(--light-color);
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: var(--serif-one-font);
   min-height: 139px;
 }
 
@@ -88,7 +90,8 @@
 
 .search-form i {
   font-style: italic;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: var(--serif-one-font);
   color: var(--light-color);
   cursor: pointer;
   position: relative;
@@ -116,7 +119,7 @@
   user-select: none;
   line-height: 0;
   padding-bottom: 2px;
-  font-family: Artaza-regular;
+  font-family: var(--serif-one-font);
   position: relative;
   top: -4px;
 
@@ -188,7 +191,8 @@
   border: none;
   padding: 10px 24px;
   border-radius: 6px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: var(--serif-one-font);
   font-size: 1.4rem;
   font-weight: 500;
   cursor: pointer;

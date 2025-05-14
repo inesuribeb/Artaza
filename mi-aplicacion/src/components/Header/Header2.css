@@ -147,6 +147,7 @@
     bottom: 0;
     width: 350px;
     background-color: var(--light-color);
+    /* font-family: 'Playfair', serif !important; */
     padding-top: 100px;
     z-index: 1050;
     overflow-y: auto;
@@ -173,6 +174,8 @@
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
+    /* font-family: var(--serif-one-font); */
+
 }
 
 .nav-menu.show li:nth-child(1) {
@@ -203,6 +206,8 @@
 .nav-menu a {
     text-decoration: none;
     color: var(--dark-color);
+    font-family: var(--sans-serif-2);
+    /* font-family: 'Playfair', serif !important; */
     font-size: 1.2rem;
     font-weight: 300;
     transition: color 0.3s;
@@ -217,6 +222,7 @@
     color: var(--corporative-color);
     font-weight: 100;
     font-style: italic;
+    /* font-family: var(--sans-serif-2); */
 
 }
 

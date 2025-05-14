@@ -8,7 +8,8 @@
 }
 
 .sell-form-container .form-title-sell {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: var(--serif-one-font);
   font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 3rem;

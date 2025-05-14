@@ -12,3 +12,28 @@
     font-family: 'Baskerville';
     src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Teodor';
+    src: url('/fonts/TeodorTRIALVF-Uprights-BF72198fbb0fb8.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TeodorThin';
+    src: url('/fonts/TeodorTRIAL-Thin-BF672198fb9fdb1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('/fonts/WorkSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'WorkSansEL';
+    src: url('/fonts/WorkSans-ExtraLight.ttf') format('truetype');
+}

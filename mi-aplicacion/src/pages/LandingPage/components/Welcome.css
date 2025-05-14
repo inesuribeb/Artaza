@@ -24,7 +24,8 @@
 }
 
 .landing-container h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: var(--serif-one-font);
   font-weight: 100;
   font-size: 3.5rem;
   text-align: center;

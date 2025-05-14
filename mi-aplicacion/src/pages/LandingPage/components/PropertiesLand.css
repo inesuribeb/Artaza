@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    border-top: 2px solid var(--dark-color);
+    border-top: 1px solid var(--grey-color);
     padding-bottom: 5rem;
 }
 
@@ -95,11 +95,16 @@
 }
 
 .propertiesland-right h1 {
-    font-size: 3.5rem;
+    /* font-size: 3.5rem;
     font-weight: 100;
     color: var(--dark-color);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif; */
     text-transform: uppercase;
+
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: var(--corporative-color);
+    font-family: var(--serif-one-font);
 }
 
 .propertiesland-right h3 {
@@ -108,6 +113,7 @@
     width: 70%;
     line-height: 1.5rem;
     margin-bottom: 3rem;
+    color: var(--corporative-color);
 }
 
 

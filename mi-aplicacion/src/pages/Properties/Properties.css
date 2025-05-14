@@ -12,7 +12,13 @@
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 40px;
     grid-auto-rows: 1fr;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
+
+/* .properties-grid > * {
+    border-bottom: 1px solid red;
+} */
 
 .pagination {
     display: flex;
