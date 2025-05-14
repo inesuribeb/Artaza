@@ -51,7 +51,8 @@ body {
 }
 
 :root {
-  --corporative-color: #113247;
+  --corporative-color: #18243A;
+  --corporative-transparent-color: #18243ace;
   --light-color: #F1F1ED;
   --light-transparent-color: #f1f1edc7;
   --light-transparent-gradient: linear-gradient(to top, rgba(243, 241, 233, 0.8), rgba(243, 241, 233, 0));

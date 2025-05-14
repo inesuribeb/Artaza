@@ -149,7 +149,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 
 .custom-button::before {
@@ -161,7 +161,7 @@
     bottom: 3px;
     border: 1px solid var(--light-color);
     pointer-events: none;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 /* Uso del atributo data para el color del borde del pseudo-elemento */

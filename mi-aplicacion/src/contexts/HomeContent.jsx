@@ -21,7 +21,7 @@ export const homeTranslations = {
       artaza: "Un paseo por la zona",
       botonquienessomos: "Conócenos",
       propiedadesLand: "El valor<br/>de lo local",
-      textopropiedadesLand: "Somos una agencia profundamente local, con un conocimiento excepcional de cada zona en la que operamos. Nos distingue la capacidad de entender a fondo el entorno, el mercado y la comunidad antes de cada venta. Décadas de experiencia nos avalan uniendo propietarios exigentes con los compradores adecuados.<br/><br/>Esto nos permite ofrecer un asesoramiento honesto, personalizado y eficaz. Más que vender propiedades, creamos experiencias únicas ancladas en el auténtico valor de lo local.",
+      textopropiedadesLand: "Somos una agencia profundamente local, con un conocimiento excepcional de cada zona en la que operamos. Nos distingue la capacidad de entender a fondo el entorno, el mercado y la comunidad antes de cada venta.<br/><br/>Décadas de experiencia nos avalan uniendo propietarios exigentes con los compradores adecuados. Más que vender propiedades, creamos experiencias únicas ancladas en el auténtico valor de lo local.",
       botonproperties: "Propiedades",
       botonproperties2: "Vende con nosotros",
       compratitulo: "Tu <em>hogar soñado</em><br/>está a un solo paso",

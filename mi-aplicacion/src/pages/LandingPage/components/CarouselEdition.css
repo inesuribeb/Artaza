@@ -1,0 +1,102 @@
+.section-carousel-edition {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-color);
+
+}
+
+.section-carousel-inner {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+    border-top: 1px solid var(--grey-color);
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--grey-color);
+
+}
+
+.section-carousel-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-carousel-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* aspect-ratio: 1 / 1; */
+}
+
+.section-carousel-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+.photo-little {
+    flex: 1;
+    display: flex;
+    /* align-items: right; */
+    align-items: flex-start;
+    justify-content: right;
+
+    position: relative; /* Agregamos posición relativa */
+    overflow: visible; 
+}
+
+.photo-little img {
+    width: 50%;
+    height: auto;
+    margin-top: -50px; 
+}
+.texts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: left;
+    text-align: left;
+    padding-left: 3rem;
+
+}
+.texts h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: var(--corporative-color);
+    font-family: var(--serif-one-font);
+    text-transform: uppercase;
+}
+
+.texts h3 {
+    font-size: 1rem;
+    font-weight: 100;
+    width: 60%;
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+    color: var(--corporative-color);
+}
+
+.texts h4 {
+    font-size: 1rem;
+    font-weight: 100;
+    width: 60%;
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+    font-family: var(--serif-one-font);
+    color: var(--corporative-color);
+    margin-bottom: 0;
+}

@@ -1,23 +1,31 @@
 .valuation-wrapper {
   text-align: center;
-  padding: 3rem 3rem;
-  padding-bottom: 4rem;
+  padding: 1rem 3rem;
+  /* padding-bottom: 4rem; */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: top;
   /* background-color: var(--nude-color); */
   /* background-color: #A89378; */
   margin-top: 0rem;
-  background-color: var(--taupe-color);
-  min-height: 80vh;
+  /* background-color: var(--taupe-color); */
+  min-height: 90vh;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('/images/valuation.WEBP'); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('/images/valuation2.webp');
+  overflow: hidden;
+  background-size: cover;
+  background-position: center 50%;
 }
 
 .valuation-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  justify-content: center;
+  width: 35%;
+  height: 70vh;
+  background-color: var(--light-color);
 }
 /* .two {
   display: flex;
@@ -44,7 +52,7 @@
 } */
 
 .valuation-container h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 2.2rem;
   font-weight: 100;
   color: var(--corporative-color);

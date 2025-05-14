@@ -6,6 +6,7 @@ import PropertiesLand from "./components/PropertiesLand";
 import BuyHomes from "./components/BuyHomes";
 import Valuation from '../../components/Valuation/Valuation';
 import Glimpse from './components/Glimpse';
+import CarouselEdition from './components/CarouselEdition';
 import { useHeaderStyle } from '../../components/Header/HeaderStyleContext';
 import './Landing.css';
 
@@ -20,6 +21,9 @@ function Landing() {
     const buyHomesRef = useRef(null);
     const propertiesLandRef = useRef(null);
     const valuationRef = useRef(null);
+    const glimpseRef= useRef(null);
+    const carouselEditionRef = useRef(null);
+
 
     const [visibleSections, setVisibleSections] = useState({
         welcome: true,
@@ -124,13 +128,16 @@ function Landing() {
                 <div ref={inmoLocationRef} data-section-id="inmoLocation">
                     <InmoLocation visibleSections={visibleSections} />
                 </div>
-                <div ref={carouselLocationRef} data-section-id="carouselLocation">
+                <div ref={carouselEditionRef} data-section-id="carousel-edition">
+                    <CarouselEdition visibleSections={visibleSections} />
+                </div>
+                {/* <div ref={carouselLocationRef} data-section-id="carouselLocation">
                     <CarouselLocation visibleSections={visibleSections} />
-                </div>
-                <div ref={buyHomesRef} data-section-id="buyHomes">
+                </div> */}
+                {/* <div ref={buyHomesRef} data-section-id="buyHomes">
                     <BuyHomes visibleSections={visibleSections} />
-                </div>
-                <div ref={valuationRef} data-section-id="glimpse">
+                </div> */}
+                <div ref={glimpseRef} data-section-id="glimpse">
                     <Glimpse visibleSections={visibleSections} />
                 </div>
                 <div ref={propertiesLandRef} data-section-id="propertiesLand">

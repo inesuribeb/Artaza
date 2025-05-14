@@ -16,9 +16,9 @@
     padding-bottom: 2.5rem;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 0rem;
     border-top: 1px solid var(--grey-color);
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
 }
 
 
@@ -64,11 +64,11 @@
 }
 
 .inmolocation-left h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 100;
-    width: 70%;
+    width: 60%;
     line-height: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
     color: var(--corporative-color);
 }
 
@@ -96,8 +96,9 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    max-width: 580px;
+    /* max-width: 580px; */
     opacity: 0;
+    aspect-ratio: 1 / 1;
 }
 
 .section-inmolocation.visible .inmolocation-right img {

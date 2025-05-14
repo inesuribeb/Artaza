@@ -73,7 +73,7 @@
 //                         &#8592;
 //                     </button>
 //                 </div>
-                
+
 //                 <div 
 //                     className='glimpse-images' 
 //                     ref={scrollContainerRef}
@@ -83,7 +83,7 @@
 //                         <img key={index} src={image} alt={`Property view ${index + 1}`} />
 //                     ))}
 //                 </div>
-                
+
 //                 <button 
 //                     className='scroll-arrow right-arrow' 
 //                     onClick={scrollRight}
@@ -91,7 +91,7 @@
 //                 >
 //                     &#8594;
 //                 </button>
-                
+
 //                 <div className='scroll-progress'>
 //                     <div 
 //                         className='progress-bar' 
@@ -108,6 +108,7 @@
 // export default Glimpse;
 
 import { useState, useRef } from 'react';
+import ArrowSvg from '../../../components/arrow/Arrow';
 import './Glimpse.css';
 
 function Glimpse() {
@@ -134,6 +135,16 @@ function Glimpse() {
         '/images/glimpse/20.webp',
         '/images/glimpse/21.webp',
     ];
+
+    // const glimpseimages = [
+    //     '/images/carousel/Carousel1.png',
+    //     '/images/carousel/Carousel2.png',
+    //     '/images/carousel/Carousel5.png',
+    //     '/images/carousel/Carousel4.png',
+    //     '/images/carousel/Carousel3.png',
+    //     '/images/carousel/Carousel6.png',
+    //     '/images/carousel/Carousel7.png',
+    // ];
 
     const scrollContainerRef = useRef(null);
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -169,53 +180,54 @@ function Glimpse() {
         <div className='glimpse-wrapper'>
             <div className='view-container'>
                 {/* Controles de navegación */}
-                <button 
-                    className='scroll-arrow left-arrow' 
+                <button
+                    className='scroll-arrow left-arrow'
                     onClick={scrollLeft}
                     aria-label="Scroll left"
                 >
                     &#8592;
                 </button>
-                
-                <button 
-                    className='scroll-arrow right-arrow' 
+
+                <button
+                    className='scroll-arrow right-arrow'
                     onClick={scrollRight}
                     aria-label="Scroll right"
                 >
                     &#8594;
                 </button>
-                
+
                 {/* Contenedor desplazable con todo el contenido */}
-                <div 
-                    className='glimpse-scrollable-content' 
+                <div
+                    className='glimpse-scrollable-content'
                     ref={scrollContainerRef}
                     onScroll={handleScroll}
                 >
                     {/* Panel de texto que se mueve */}
                     <div className='intro-content'>
-                        <h1>A glimpse into our properties</h1>
-                        <h2>A Glimpse</h2>
-                        <h3>Into</h3>
+                        <div className='intro-content-one'>
+                            <h2>A Glimpse</h2>
+                            <h2>Into</h2>
+                        </div>
                         <div className='footer-text'>Our Properties</div>
                     </div>
-                    
+
                     {/* Imágenes */}
                     {glimpseimages.map((image, index) => (
-                        <img 
-                            key={index} 
-                            src={image} 
-                            alt={`Property view ${index + 1}`} 
+                        <img
+                            key={index}
+                            src={image}
+                            alt={`Property view ${index + 1}`}
                             className='glimpse-image'
                         />
                     ))}
                 </div>
-                
+
                 {/* Barra de progreso */}
                 <div className='scroll-progress'>
-                    <div 
-                        className='progress-bar' 
-                        style={{ 
-                            width: `${maxScroll > 0 ? (scrollPosition / maxScroll) * 100 : 0}%` 
+                    <div
+                        className='progress-bar'
+                        style={{
+                            width: `${maxScroll > 0 ? (scrollPosition / maxScroll) * 100 : 0}%`
                         }}
                     ></div>
                 </div>

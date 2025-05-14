@@ -4,7 +4,7 @@
     background-color: var(--sand-color);
     padding-top: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid var(--corporative-color);
+    border-bottom: 1px solid var(--grey-color);
     align-items: center;
 }
 
@@ -16,7 +16,7 @@
     padding-left: 0rem;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
-    color: var(--dark-color);
+    color: var(--corporative-color);
     width: 100%;
     text-align: center; 
 }
