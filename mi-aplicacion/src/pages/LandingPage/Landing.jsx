@@ -5,6 +5,7 @@ import CarouselLocation from "./components/CarouselLocation";
 import PropertiesLand from "./components/PropertiesLand";
 import BuyHomes from "./components/BuyHomes";
 import Valuation from '../../components/Valuation/Valuation';
+import Glimpse from './components/Glimpse';
 import { useHeaderStyle } from '../../components/Header/HeaderStyleContext';
 import './Landing.css';
 
@@ -128,6 +129,9 @@ function Landing() {
                 </div>
                 <div ref={buyHomesRef} data-section-id="buyHomes">
                     <BuyHomes visibleSections={visibleSections} />
+                </div>
+                <div ref={valuationRef} data-section-id="glimpse">
+                    <Glimpse visibleSections={visibleSections} />
                 </div>
                 <div ref={propertiesLandRef} data-section-id="propertiesLand">
                     <PropertiesLand visibleSections={visibleSections} />

@@ -1,0 +1,210 @@
+.glimpse-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    background-color: var(--nude-color);
+    padding: 0rem;
+}
+
+/* Contenedor principal con posicionamiento relativo para los botones */
+.view-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Oculta lo que sale del contenedor */
+}
+
+/* Contenedor desplazable con disposición horizontal */
+.glimpse-scrollable-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE y Edge */
+}
+
+/* Ocultar scrollbar para Chrome, Safari y Opera */
+.glimpse-scrollable-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Panel de texto que se desplaza */
+.intro-content {
+    flex: 0 0 630px; /* Ancho fijo de 560px, no se encoge ni crece */
+    min-width: 630px; /* Asegurar el ancho mínimo */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem;
+    background-color: var(--taupe-color, #b8aa8e);
+    color: white;
+}
+
+.intro-content h1 {
+    display: none; /* Oculto porque no se muestra en la imagen de referencia */
+}
+
+.intro-content h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.intro-content h3 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin: 1rem 0 0 0;
+}
+
+.footer-text {
+    font-family: var(--serif-one-font, 'Playfair', serif);
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: auto;
+}
+
+/* Imágenes en el carrusel */
+.glimpse-image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    flex-shrink: 0; /* Evita que las imágenes se compriman */
+}
+
+/* Botones de navegación */
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(184, 170, 142, 0.8);
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scroll-arrow:hover {
+    background-color: rgba(184, 170, 142, 1);
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+/* Barra de progreso */
+.scroll-progress {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+/* Estilos responsive */
+@media (max-width: 992px) {
+    .intro-content {
+        flex: 0 0 100%;
+        min-width: 100%;
+        height: 300px;
+        padding: 2rem;
+    }
+    
+    .glimpse-scrollable-content {
+        flex-direction: column;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    
+    .glimpse-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .intro-content h2 {
+        font-size: 3rem;
+    }
+    
+    .intro-content h3 {
+        font-size: 2.5rem;
+    }
+    
+    .footer-text {
+        font-size: 2rem;
+    }
+    
+    .left-arrow, .right-arrow {
+        top: 150px; /* Ajustar posición de flechas en móvil */
+    }
+}
+
+@media (max-width: 768px) {
+    .glimpse-wrapper {
+        padding: 1.5rem;
+    }
+    
+    .intro-content {
+        height: 250px;
+    }
+    
+    .intro-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .intro-content h3 {
+        font-size: 2rem;
+    }
+    
+    .footer-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .glimpse-wrapper {
+        padding: 1rem;
+    }
+    
+    .intro-content {
+        height: 200px;
+        padding: 1.5rem;
+    }
+    
+    .intro-content h2 {
+        font-size: 2rem;
+    }
+    
+    .intro-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-text {
+        font-size: 1.2rem;
+    }
+}

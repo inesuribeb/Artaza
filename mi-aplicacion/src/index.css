@@ -56,7 +56,9 @@ body {
   --light-transparent-color: #f1f1edc7;
   --light-transparent-gradient: linear-gradient(to top, rgba(243, 241, 233, 0.8), rgba(243, 241, 233, 0));
   --nude-color: #E1D6C8;
-  --taupe-color: #A68F6D;
+  --taupe-color: #A69277;
+  --taupe-light-color: #b8aa8e;
+
   --dark-color: #3B3B3C;
   --sand-color: #E3E1D9;
   --darksand-color: #A59E8C;
