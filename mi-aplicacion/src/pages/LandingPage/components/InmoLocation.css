@@ -37,12 +37,13 @@
 
 .top-line {
     top: 0;
-    height: 120px; /* Ajusta según el espacio disponible arriba */
+    height: 80px;; /* Ajusta según el espacio disponible arriba */
 }
 
 .bottom-line {
     bottom: 0;
-    height: 120px; /* Ajusta según el espacio disponible abajo */
+    height: 60px; 
+    /* height: 120px;  */
 }
 
 .inmolocation-left {
@@ -98,9 +99,9 @@
     color: var(--corporative-color);
 }
 
-.inmolocation-left button {
+/* .inmolocation-left button {
     display: none;
-}
+} */
 
 @keyframes fadeIn {
     0% {
