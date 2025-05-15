@@ -43,7 +43,7 @@
 }
 
 .section-propertiesland.visible .propertiesland-left img {
-    animation: revealFromTop 1s ease forwards;
+    animation: revealFromTop 1.3s ease forwards;
 }
 
 @keyframes revealFromTop {
@@ -75,6 +75,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    position: relative;
+}
+
+.propertiesland-right .top-line {
+    top: 0rem;
+    height: 80px; /* Ajusta según el espacio disponible arriba */
+}
+
+.propertiesland-right .bottom-line {
+    bottom: 0rem;
+    height: 60px; /* Ajusta según el espacio disponible abajo */
 }
 
 .propertiesland-right h1,
@@ -84,7 +96,8 @@
 }
 
 .section-propertiesland.visible .propertiesland-right h1 {
-    animation: fadeIn 1s ease forwards;
+    /* animation: fadeIn 1s ease forwards; */
+    animation: fadeInClipped 1s ease-out forwards;
     animation-delay: 0.4s;
 }
 
@@ -219,21 +232,34 @@
     .propertiesland-inner {
         margin-left: 1rem;
         margin-right: 1rem;
-        padding-top: 4rem;
+        padding-top: 1rem;
         gap: 1rem;
     }
 
+    .propertiesland-right {
+        /* flex: 1;
+        display: flex;
+        flex-direction: column; */
+        /* justify-content: left; */
+        align-items: flex-start;
+        text-align: left;
+    
+        /* position: relative;  */
+    }
+
     .propertiesland-right h1 {
-        font-size: 2.5rem;
-        width: 70%;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: left;
     }
 
     .propertiesland-right h3 {
         font-size: 1rem;
-        margin-bottom: 2rem;
-        border-top: 1px solid var(--corporative-color);
-        padding-top: 3rem;
-        width: 95%;
+        margin-bottom: 1rem;
+        border-top: 1px solid var(--grey-color);
+        padding-top: 1.5rem;
+        width: 100%;
     }
 
     .propertiesland-left img {

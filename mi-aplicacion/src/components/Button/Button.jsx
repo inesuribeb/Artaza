@@ -55,6 +55,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import EastIcon from '@mui/icons-material/East';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import './Button.css';
 
 /**
@@ -120,7 +121,7 @@ function Button({
             {showIcon && (
                 <>
                     <span className="button-separator"></span>
-                    <EastIcon className="button-icon" />
+                    <ArrowForwardIcon className="button-icon" />
                 </>
             )}
         </button>

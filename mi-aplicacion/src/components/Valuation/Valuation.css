@@ -86,7 +86,9 @@
 }
 
 .valuation-wrapper.visible .valuation-container h2 {
-  animation: fadeIn 1s ease forwards;
+  /* animation: fadeIn 1s ease forwards; */
+  animation: fadeInClipped 1s ease-out forwards;
+
   animation-delay: 0.2s;
 }
 
@@ -102,7 +104,7 @@
 
 
 /* Media queries para dispositivos móviles */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .valuation-wrapper {
     padding: 2.5rem 1.5rem;
     padding-bottom: 3rem;
@@ -119,7 +121,6 @@
   }
 }
 
-/* Para teléfonos muy pequeños */
 @media screen and (max-width: 480px) {
   .valuation-wrapper {
     padding: 2rem 1rem;
@@ -136,5 +137,58 @@
   .valuation-container p {
     font-size: 0.9rem;
     margin-bottom: 1.8rem;
+  }
+} */
+
+/* Media query para móvil */
+@media (max-width: 768px) {
+  .valuation-wrapper {
+    /* Hacer el wrapper más cuadrado */
+    padding: 0rem;
+    min-height: 100vw; /* Altura igual al ancho para hacerlo cuadrado */
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    background-position: center; /* Asegurar que el fondo esté centrado */
+  }
+
+  .valuation-container {
+    /* Ajustar tamaño y posicionamiento */
+    width: 85%; /* Ancho mayor en móviles */
+    height: auto; /* Altura automática basada en contenido */
+    min-height: 70vw; /* Min-height proporcional */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 2rem 1.5rem; /* Añadir padding interno */
+    /* Eliminar cualquier posicionamiento que lo coloque a la derecha */
+    align-self: center;
+  }
+
+  .valuation-container h2 {
+    font-size: 1.6rem; /* Reducir tamaño de fuente */
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .valuation-container p {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Para dispositivos muy pequeños */
+@media (max-width: 480px) {
+  .valuation-wrapper {
+    min-height: 120vw; /* Un poco más alto que ancho en móviles muy pequeños */
+  }
+
+  .valuation-container {
+    width: 90%;
+    min-height: 90vw;
+    padding: 1.5rem 1rem;
+  }
+
+  .valuation-container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
   }
 }

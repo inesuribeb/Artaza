@@ -16,12 +16,18 @@ function PropertiesLand({ visibleSections }) {
                 </div>
 
                 <div className="propertiesland-right">
+
+                    <div className="vertical-line top-line"></div>
+
                     <h1 dangerouslySetInnerHTML={{ __html: t('propiedadesLand') }}></h1>
                     <h3 dangerouslySetInnerHTML={{ __html: t('textopropiedadesLand') }}></h3>
                     <Button 
                         translationKey="botonproperties2" 
                         routeName="sell" 
                     />
+
+                    <div className="vertical-line bottom-line"></div>
+
                 </div>
             </div>
         </div>

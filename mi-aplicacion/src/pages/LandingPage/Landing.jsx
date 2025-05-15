@@ -128,12 +128,12 @@ function Landing() {
                 <div ref={inmoLocationRef} data-section-id="inmoLocation">
                     <InmoLocation visibleSections={visibleSections} />
                 </div>
-                <div ref={carouselEditionRef} data-section-id="carousel-edition">
+                {/* <div ref={carouselEditionRef} data-section-id="carousel-edition">
                     <CarouselEdition visibleSections={visibleSections} />
-                </div>
-                {/* <div ref={carouselLocationRef} data-section-id="carouselLocation">
-                    <CarouselLocation visibleSections={visibleSections} />
                 </div> */}
+                <div ref={carouselLocationRef} data-section-id="carouselLocation">
+                    <CarouselLocation visibleSections={visibleSections} />
+                </div>
                 {/* <div ref={buyHomesRef} data-section-id="buyHomes">
                     <BuyHomes visibleSections={visibleSections} />
                 </div> */}

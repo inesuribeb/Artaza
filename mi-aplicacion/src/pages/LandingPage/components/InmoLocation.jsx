@@ -13,12 +13,18 @@ function InmoLocation({ visibleSections }) {
         {/* <div className='section-inmolocation'> */}
             <div className="inmolocation-inner">
                 <div className="inmolocation-left">
+
+                    <div className="vertical-line top-line"></div>
+
                     <h1 dangerouslySetInnerHTML={{ __html: t('subtitulo2') }}></h1>
                     <h3 dangerouslySetInnerHTML={{ __html: t('textosubtitulo2') }}></h3>
                     <Button 
                         translationKey="botonquienessomos" 
                         routeName="contact" 
                     />
+
+                    <div className="vertical-line bottom-line"></div>
+
                 </div>
 
                 <div className="inmolocation-right">

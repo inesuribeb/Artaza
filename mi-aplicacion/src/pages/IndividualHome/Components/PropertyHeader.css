@@ -75,7 +75,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 8px 18px;
-    border: 1px solid var(--prueba-color);
+    border: 1px solid transparent;
     border-radius: 30px;
     font-weight: 100;
     background-color: transparent;
@@ -85,10 +85,11 @@
     transition: all 0.3s ease;
     width: 200px;
     margin-bottom: 1rem;
+    font-family: var(--serif-one-font);
   }
   
   .navigation-button:hover {
-    border: 1px solid var(--corporative-color);
+    /* border: 1px solid var(--corporative-color); */
     color: var(--corporative-color);
 
   }

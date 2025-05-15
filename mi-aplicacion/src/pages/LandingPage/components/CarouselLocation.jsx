@@ -15,7 +15,7 @@ function CarouselLocation({ visibleSections }) {
         '/images/carousel/Carousel1.png',
         '/images/carousel/Carousel2.png',
         '/images/carousel/Carousel5.png',
-        '/images/carousel/Carousel4.png',
+        // '/images/carousel/Carousel4.png',
         '/images/carousel/Carousel3.png',
         '/images/carousel/Carousel6.png',
         '/images/carousel/Carousel7.png',

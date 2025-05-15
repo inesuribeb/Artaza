@@ -23,9 +23,8 @@ html, body {
 
 * {
   box-sizing: border-box;
-  /* font-family: 'Scto Grotesk A', Helvetica, Arial, sans-serif; */
-  font-family: 'WorkSansEL';
-  /* background-color: var(--light-color); */
+  font-family: 'Scto Grotesk A', Helvetica, Arial, sans-serif;
+  /* font-family: 'WorkSans'; */
 }
 
 html {

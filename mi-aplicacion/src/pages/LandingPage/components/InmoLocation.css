@@ -7,6 +7,7 @@
     background-color: var(--light-color);
 }
 
+
 .inmolocation-inner {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -18,11 +19,32 @@
     flex-direction: row;
     gap: 0rem;
     border-top: 1px solid var(--grey-color);
+    border-bottom: 1px solid var(--grey-color);
+
     /* padding-bottom: 5rem; */
 }
 
 
 /*left*/
+
+.vertical-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    background-color: var(--grey-color);
+}
+
+.top-line {
+    top: 0;
+    height: 120px; /* Ajusta según el espacio disponible arriba */
+}
+
+.bottom-line {
+    bottom: 0;
+    height: 120px; /* Ajusta según el espacio disponible abajo */
+}
+
 .inmolocation-left {
     flex: 1;
     display: flex;
@@ -30,6 +52,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    position: relative; 
 }
 
 .inmolocation-left h1,
@@ -39,18 +63,20 @@
 }
 
 .section-inmolocation.visible .inmolocation-left h1 {
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 0.2s;
+    /* animation: fadeIn 1s ease forwards; */
+    animation: fadeInClipped 1s ease-out forwards;
+
+    animation-delay: 0.4s;
 }
 
 .section-inmolocation.visible .inmolocation-left h3 {
     animation: fadeIn 1s ease forwards;
-    animation-delay: 0.4s;
+    animation-delay: 0.8s;
 }
 
 .section-inmolocation.visible .inmolocation-left button {
     animation: fadeIn 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 1.3s;
 }
 
 .inmolocation-left h1 {
@@ -68,8 +94,12 @@
     font-weight: 100;
     width: 60%;
     line-height: 1.5rem;
-    margin-bottom: 0rem;
+    margin-bottom: 2rem;
     color: var(--corporative-color);
+}
+
+.inmolocation-left button {
+    display: none;
 }
 
 @keyframes fadeIn {
@@ -102,7 +132,7 @@
 }
 
 .section-inmolocation.visible .inmolocation-right img {
-    animation: revealFromTop 1s ease forwards;
+    animation: revealFromTop 1.4s ease forwards;
 }
 
 @keyframes revealFromTop {
@@ -161,6 +191,10 @@
         margin-bottom: 2rem;
         border-top: 1px solid var(--dark-color);
         padding-top: 3rem;
+    }
+
+    .inmolocation-left button {
+        display: block;
     }
 
     .section-inmolocation {
@@ -227,20 +261,41 @@
         margin-right: 1rem;
         padding-top: 1rem;
         gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .inmolocation-left {
+        /* flex: 1;
+        display: flex;
+        flex-direction: column; */
+        /* justify-content: left; */
+        align-items: flex-start;
+        text-align: left;
+    
+        /* position: relative;  */
+    }
+
+    .vertical-line {
+        display: none;
     }
 
     .inmolocation-left h1 {
-        margin-top: 3rem;
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: left;
     }
 
     .inmolocation-left h3 {
-        border-top: 1px solid var(--corporative-color);
+        border-top: 1px solid var(--grey-color);
         padding-top: 1.5rem;
         font-size: 0.9rem;
         margin-bottom: 0rem;
-        width: 95%;
+        width: 100%;
+    }
+
+    .inmolocation-left button {
+        display: inline-flex; /* O el display que necesites (flex, block, etc.) */
     }
 
     /* Animaciones más rápidas para teléfonos muy pequeños */

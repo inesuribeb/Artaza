@@ -1,4 +1,6 @@
 import WestIcon from '@mui/icons-material/West';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import EastIcon from '@mui/icons-material/East';
 import './PropertyHeader.css'
 
@@ -20,14 +22,14 @@ function PropertyHeader({ property, language, t, goToPreviousProperty, goToNextP
           onClick={goToPreviousProperty}
           aria-label={t('previousProperty')}
         >
-          <WestIcon /> {t('previousProperty')}
+          <ArrowBackIcon /> {t('previousProperty')}
         </button>
         <button
           className="navigation-button next"
           onClick={goToNextProperty}
           aria-label={t('nextProperty')}
         >
-          {t('nextProperty')} <EastIcon />
+          {t('nextProperty')} <ArrowForwardIcon />
         </button>
       </div>
     </div>

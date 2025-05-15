@@ -23,6 +23,19 @@
   }
 }
 
+@keyframes fadeInClipped {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    clip-path: inset(100% 0 0 0); /* Recorta todo desde arriba */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    clip-path: inset(0); /* No recorta nada */
+  }
+}
+
 .landing-container h1 {
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: var(--serif-one-font);
@@ -33,8 +46,10 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
   will-change: transform, opacity;
   opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
+  /* animation: fadeIn 1s ease-out forwards; */
+  animation: fadeInClipped 1s ease-out forwards;
   animation-delay: 0.4s;
+  /* overflow: hidden; */
 }
 
 .landing-container h1 em {
@@ -47,8 +62,8 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
   will-change: transform, opacity;
   opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
-  animation-delay: 0.5s;
+  animation: fadeInClipped 1s ease-out forwards;
+  animation-delay: 0.4s;
 }
 
 /**/
