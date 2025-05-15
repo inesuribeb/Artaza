@@ -16,15 +16,20 @@
 
 .carousel-wrapper {
   width: 100%;
-  overflow-x: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  /* overflow-x: hidden; */
+  overflow: auto;
+  /* scrollbar-width: none;
+  -ms-overflow-style: none; */
   margin: 60px 0;
   margin-left: 3rem;
   margin-top: 0rem;
   margin-bottom: 0rem;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+
+  -webkit-overflow-scrolling: touch; /* Añadir para mejor soporte táctil */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .carousel-wrapper::-webkit-scrollbar {

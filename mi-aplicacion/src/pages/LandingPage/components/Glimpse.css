@@ -156,6 +156,15 @@
 
 .left-arrow {
     left: 20px;
+    color: var(--corporative-color);
+    background-color: transparent;
+
+}
+
+.left-arrow:hover {
+    left: 20px;
+    color: var(--light-color);
+    background-color: var(--corporative-transparent-color);
 }
 
 .right-arrow {
