@@ -1,7 +1,7 @@
 export const buyFormContent = {
     en: {
         // Títulos y encabezados
-        "formTitleBuy": "Take the next step toward your new home.",
+        "formTitleBuy": "Take the next step toward your new home",
         "formDescriptionBuy": "If you would like to receive information about new properties that match your specifications, please fill out the form below.",
         
         // Secciones del formulario

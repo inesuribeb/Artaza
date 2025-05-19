@@ -120,7 +120,7 @@ function BuyForm() {
     // Renderizar el título y descripción
     const renderHeader = () => (
         <>
-            <h2 className="form-title">{t('formTitleBuy')}.</h2>
+            <h2 className="form-title">{t('formTitleBuy')}</h2>
             <p className="form-description">
                 {t('formDescriptionBuy')}
             </p>

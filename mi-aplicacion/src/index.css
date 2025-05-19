@@ -50,11 +50,11 @@ body {
 }
 
 :root {
-  --corporative-color: #18243A;
-  --corporative-transparent-color: #18243ace;
+  /* --corporative-color: #18243A;
+  --corporative-transparent-color: #18243ace; */
 
-  /* --corporative-color: #113247;
-  --corporative-transparent-color: #113247b9; */
+  --corporative-color: #113247;
+  --corporative-transparent-color: #113247b9;
 
 
   --light-color: #F1F1ED;

@@ -653,7 +653,7 @@ function SellForm() {
 
     return (
         <div className="sell-form-container">
-            <h2 className="form-title-sell">{t('formTitle')}.</h2>
+            <h2 className="form-title-sell">{t('formTitle')}</h2>
             <p className="form-description-sell">
                 {t('formDescription')}
             </p>
