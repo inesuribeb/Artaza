@@ -65,11 +65,11 @@ function Header({ className }) {
                     <div className="logo">
                         <Link to={getRoute('home')} onClick={isMenuOpen ? toggleMenu : undefined}>
                             {isMenuOpen || isHovering ? (
-                                <img src="/images/LOGO 1.png" alt="InmoArtaza Logo" />
+                                <img src="/images/logo/LOGO AZUL.png" alt="InmoArtaza Logo" />
                             ) : headerClassName === 'white-section-active' ? (
-                                <img src="/images/LOGO1 BLANCO.png" alt="InmoArtaza Logo" />
+                                <img src="/images/logo/LOGO BLANCO.png" alt="InmoArtaza Logo" />
                             ) : (
-                                <img src="/images/LOGO 1.png" alt="InmoArtaza Logo" />
+                                <img src="/images/logo/LOGO AZUL.png" alt="InmoArtaza Logo" />
                             )}
                         </Link>
                     </div>
