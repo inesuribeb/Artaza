@@ -1,4 +1,4 @@
-.header-phone-container {
+/* .header-phone-container {
     height: 0px;
 }
 
@@ -33,7 +33,6 @@
     align-items: center;
 }
 
-/* Botón hamburguesa */
 .hamburger-phone-button {
     background: none;
     border: none;
@@ -158,7 +157,6 @@
     color: var(--corporative-color);
 }
 
-/* Selector de idioma */
 .language-phone-selector {
     display: flex;
     align-items: center;
@@ -231,4 +229,4 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}
+} */
