@@ -6,3 +6,63 @@
     margin-right: 3rem;
     padding-bottom: 2.5rem;
 }
+
+
+css.south-homes-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 23vh;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-bottom: 2.5rem;
+ }
+ 
+ /* Media Queries */
+ 
+ /* Tablet grande */
+ @media (max-width: 1024px) {
+    .south-homes-wrapper {
+        padding-top: 20vh;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+ }
+ 
+ /* Tablet */
+ @media (max-width: 768px) {
+    .south-homes-wrapper {
+        padding-top: 18vh;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-bottom: 2rem;
+    }
+ }
+ 
+ /* Mobile grande */
+ @media (max-width: 640px) {
+    .south-homes-wrapper {
+        padding-top: 15vh;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+ }
+ 
+ /* Mobile */
+ @media (max-width: 480px) {
+    .south-homes-wrapper {
+        padding-top: 14vh;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-bottom: 1.5rem;
+    }
+ }
+ 
+ /* Mobile muy pequeño */
+ @media (max-width: 360px) {
+    .south-homes-wrapper {
+        padding-top: 10vh;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding-bottom: 1rem;
+    }
+ }

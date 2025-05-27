@@ -145,6 +145,10 @@
     transition-delay: 0.4s;
 }
 
+.nav-phone-menu.show .nav-phone-item:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
 .nav-phone-menu.show .nav-phone-item {
     opacity: 1;
     transform: translateY(0);

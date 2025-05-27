@@ -194,6 +194,10 @@
     transition-delay: 0.4s;
 }
 
+.nav-menu.show li:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
 .nav-menu li:last-child {
     border-bottom: none;
 }

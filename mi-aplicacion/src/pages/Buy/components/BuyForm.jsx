@@ -431,7 +431,9 @@ function BuyForm() {
     return (
         <div className='buy-form-wrapper'>
             <div className='picture-form' ref={pictureFormRef}>
-                <img src="/images/pruebaform.png" alt="" />
+                {/* <img src="/images/pruebaform.png" alt="" /> */}
+                <img src="/images/buy.jpg" alt="" />
+
             </div>
             <div className="buy-form-container">
                 {renderHeader()}
