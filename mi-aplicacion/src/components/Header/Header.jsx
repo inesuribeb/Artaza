@@ -138,6 +138,19 @@ function Header({ className }) {
                     </li>
                     <li>
                         <Link
+                            to={getRoute('south')}
+                            onClick={toggleMenu}
+                            className={location.pathname === getRoute('south') ? 'active-link' : ''}
+
+                        >
+                            <div className="nav-link-container">
+                                <KeyboardArrowLeftIcon className="nav-arrow" />
+                                <span className="nav-text">{t('south')}</span>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
                             to={getRoute('buy')}
                             onClick={toggleMenu}
                             className={location.pathname === getRoute('buy') ? 'active-link' : ''}

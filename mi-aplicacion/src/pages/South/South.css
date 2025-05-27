@@ -1,0 +1,8 @@
+.south-homes-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 23vh;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-bottom: 2.5rem;
+}

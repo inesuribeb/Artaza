@@ -18,6 +18,7 @@ const translations = {
     buy: "Buy",
     sell: "Sell",
     contact: "Contact",
+    south: "A Nod to the South",
     ...footerTranslations.en,
     ...homeTranslations.en,
     ...PropertyCartContent.en,
@@ -35,6 +36,7 @@ const translations = {
     buy: "Comprar",
     sell: "Vender",
     contact: "Contacto",
+    south: "Un Guiño al Sur",
     ...footerTranslations.es,
     ...homeTranslations.es,
     ...PropertyCartContent.es,
@@ -55,7 +57,8 @@ const routes = {
     property: "/property",
     buy: "/buy",
     sell: "/sell",
-    contact: "/contact"
+    contact: "/contact",
+    south: "/south"
   },
   es: {
     home: "/inicio",
@@ -63,7 +66,8 @@ const routes = {
     property: "/propiedad",
     buy: "/comprar",
     sell: "/vender",
-    contact: "/contacto"
+    contact: "/contacto",
+    south: "/sur"
   }
 };
 
@@ -76,6 +80,7 @@ const routeMap = {
   "/comprar": "/buy",
   "/vender": "/sell",
   "/contacto": "/contact",
+  "/sur": "/south",
 
   // Inglés a español
   "/home": "/inicio",
@@ -83,7 +88,8 @@ const routeMap = {
   "/property": "/propiedad",
   "/buy": "/comprar",
   "/sell": "/vender",
-  "/contact": "/contacto"
+  "/contact": "/contacto",
+  "/south": "/sur",
 };
 
 // Función para detectar el idioma desde la URL

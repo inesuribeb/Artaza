@@ -8,13 +8,14 @@ function Glimpse() {
     const { t, getRoute } = useLanguage();
 
     const glimpseimages = [
+        '/images/glimpse/7.webp',
         '/images/glimpse/1.webp',
         '/images/glimpse/2.webp',
         '/images/glimpse/3.webp',
         '/images/glimpse/4.webp',
         '/images/glimpse/5.webp',
         '/images/glimpse/6.webp',
-        '/images/glimpse/7.webp',
+        // '/images/glimpse/7.webp',
         '/images/glimpse/8.webp',
         '/images/glimpse/9.webp',
         '/images/glimpse/10.webp',

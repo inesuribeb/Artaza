@@ -1,0 +1,73 @@
+.south-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: 1px solid var(--grey-color);
+    border-bottom: 0.5px solid var(--grey-color);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.south-card.image-right {
+    flex-direction: row-reverse;
+}
+
+.tarifa-img {
+    flex: 0.7;
+    display: flex;
+}
+
+.tarifa-img img {
+    width: 100%;
+}
+
+.tarifa-info {
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    color: var(--corporative-color);
+    gap: 3rem;
+}
+
+.tarifa-info h1 {
+    font-weight: 300;
+}
+
+.tarifa-info h2 {
+    font-weight: 100;
+    font-family: var(--serif-one-font);
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.info-features,
+.price {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.separator-features {
+    margin: 0 0.5rem;
+    color: var(--grey-color);
+}
+
+.tarifa-info button {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 100;
+    padding: 1rem 3rem;
+    border: none;
+    /* border-radius: 26px; */
+    cursor: pointer;
+}
+
+.tarifa-info button:hover {
+    filter: brightness(1.2);
+}

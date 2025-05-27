@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { homes } from '../../utils/Homes';
+import { TarifaHomes } from '../../utils/TarifaHomes';
 import { useState, useEffect } from 'react';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import PropertyHeader from './Components/PropertyHeader';
@@ -18,15 +19,28 @@ function IndividualHome() {
   const isMobile = useMediaQuery('(max-width: 480px)');
   const navigate = useNavigate();
 
-  const property = homes.find(home => home.id === id);
+  // const property = homes.find(home => home.id === id);
+  // Combinar ambos arrays para buscar la propiedad
+  const allProperties = [...homes, ...TarifaHomes];
+  const property = allProperties.find(home => home.id === id);
   const [filteredIds, setFilteredIds] = useState([]);
+
+
+  // useEffect(() => {
+  //   const storedIds = localStorage.getItem('filteredPropertyIds');
+  //   if (storedIds) {
+  //     setFilteredIds(JSON.parse(storedIds));
+  //   } else {
+  //     setFilteredIds(homes.map(home => home.id));
+  //   }
+  // }, []);
 
   useEffect(() => {
     const storedIds = localStorage.getItem('filteredPropertyIds');
     if (storedIds) {
       setFilteredIds(JSON.parse(storedIds));
     } else {
-      setFilteredIds(homes.map(home => home.id));
+      setFilteredIds(allProperties.map(home => home.id));
     }
   }, []);
 

@@ -104,6 +104,11 @@ function HeaderPhone() {
                         </Link>
                     </li>
                     <li className="nav-phone-item">
+                        <Link to={getRoute('south')} onClick={toggleMenu} className="nav-phone-link">
+                            <span className="nav-phone-text">{t('south')}</span>
+                        </Link>
+                    </li>
+                    <li className="nav-phone-item">
                         <Link to={getRoute('buy')} onClick={toggleMenu} className="nav-phone-link">
                             <span className="nav-phone-text">{t('buy')}</span>
                         </Link>
