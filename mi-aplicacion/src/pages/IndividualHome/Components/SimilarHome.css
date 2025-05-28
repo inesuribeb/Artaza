@@ -56,7 +56,7 @@
 
 .carousel-inner {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Exactamente 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     width: 100%;
 }
@@ -111,7 +111,6 @@
     transform: scale(1.2);
 }
 
-/* Asegurar que las tarjetas de propiedades mantengan sus proporciones */
 .carousel-item .property-card {
     height: 100%;
     display: flex;
@@ -127,7 +126,6 @@
     aspect-ratio: 16/9;
 }
 
-/* Estilos específicos para móvil */
 .similar-carousel.mobile {
     overflow: hidden;
 }
@@ -147,11 +145,10 @@
 }
 
 .carousel-item.mobile {
-    flex: 0 0 85%; /* Toma el 85% del ancho para mostrar parte del siguiente */
+    flex: 0 0 85%; 
     margin-right: 0.5rem;
 }
 
-/* Pantallas grandes (1440px y menos) */
 @media (max-width: 1440px) {
     .similar-home-wrapper .title-info {
         padding-left: 5rem;
@@ -163,7 +160,6 @@
     }
 }
 
-/* Pantallas medianas (1200px y menos) */
 @media (max-width: 1200px) {
     .similar-home-wrapper .title-info {
         padding-left: 3rem;
@@ -181,7 +177,6 @@
     }
 }
 
-/* Tablets (992px y menos) */
 @media (max-width: 992px) {
     .similar-home-wrapper {
         padding-top: 1.5rem;
@@ -205,11 +200,10 @@
     
     .carousel-inner {
         gap: 1rem;
-        grid-template-columns: 1fr; /* 1 columna en tablet */
+        grid-template-columns: 1fr; 
     }
 }
 
-/* Tablets pequeñas y móviles (768px y menos) */
 @media (max-width: 768px) {
     .similar-home-wrapper .title-info {
         padding-left: 1.5rem;
@@ -221,7 +215,6 @@
     }
 }
 
-/* Móviles (576px y menos) */
 @media (max-width: 576px) {
     .similar-home-wrapper {
         padding-top: 1rem;
@@ -242,6 +235,6 @@
     }
     
     .carousel-item.mobile {
-        flex: 0 0 80%; /* Un poco más estrecho en móviles pequeños */
+        flex: 0 0 80%; 
     }
 }
