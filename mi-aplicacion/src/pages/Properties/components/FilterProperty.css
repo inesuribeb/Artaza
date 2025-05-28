@@ -98,8 +98,8 @@
   transition: color 0.3s ease, border-color 0.3s ease;
 
   font-family: var(--serif-italic);
-    font-style: italic;
-    font-size: 1.9rem;
+  font-style: italic;
+  font-size: 1.9rem;
 }
 
 
@@ -314,6 +314,10 @@
     min-height: 80px;
     line-height: 1.4;
     padding-top: 1rem;
+  }
+
+  .search-form i {
+    font-size: 1.2rem;
   }
 
   .view-results-button {

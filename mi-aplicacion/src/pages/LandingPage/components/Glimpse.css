@@ -271,6 +271,8 @@
         min-height: 50vh;
     }
 
+
+
     .intro-content h2 {
         font-size: 2rem;
     }
@@ -282,6 +284,13 @@
     .footer-text h1 {
         font-size: 1.1rem;
     }
+
+    .intro-content h1 em {
+        font-family: inherit;
+        font-family: var(--serif-italic);
+          font-style: italic;
+          font-size: 1.3rem;
+      }
 
     .footer-text {
         font-size: 1.2rem;

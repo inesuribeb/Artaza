@@ -75,6 +75,13 @@
     font-size: 2.5rem;
     margin-bottom: 0.8rem;
   }
+
+  .landing-container h1 em {
+    font-family: inherit;
+    font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 2.7rem;
+  }
   
   .landing-container h3 {
     font-size: 1rem;
@@ -88,6 +95,12 @@
   .landing-container h1 {
     font-size: 2rem;
     margin-bottom: 0.6rem;
+  }
+  .landing-container h1 em {
+    font-family: inherit;
+    font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 2.4rem;
   }
   
   .landing-container h3 {
