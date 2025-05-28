@@ -54,6 +54,9 @@
 
 .landing-container h1 em {
   font-family: inherit;
+  font-family: var(--serif-italic);
+    font-style: italic;
+    font-size: 4rem;
 }
 
 .landing-container h3 {

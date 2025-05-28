@@ -66,6 +66,13 @@
     font-family: var(--serif-one-font);
 }
 
+.intro-content h1 em {
+    font-family: inherit;
+    font-family: var(--serif-italic);
+      font-style: italic;
+      font-size: 2rem;
+  }
+
 .footer-text h1 {
     text-transform: none;
 }
