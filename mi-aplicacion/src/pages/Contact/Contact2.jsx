@@ -22,11 +22,24 @@ function ContactTwo() {
 
                         <div className="contact-section">
                             <h4><FaClock className="contact-icon" />{t('horario')}</h4>
-                            <h5>{t('lunesajueves')}</h5>
-                            <p>{t('mananas')}</p>
-                            <h5>{t('viernes')}</h5>
-                            <p>{t('tardes')}</p>
-                            <p>{t('viernesTarde')}</p>
+                            <p>{t('fromdays')}</p>
+                            <div className='mornings'>
+                                <div className='time-label'>
+                                    <h5>{t('lunesajueves')}</h5>
+                                </div>
+                                <div className='time-hours'>
+                                    <p>{t('mananas')}</p>
+                                </div>
+                            </div>
+                            <div className='afternoons'>
+                                <div className='time-label'>
+                                    <h5>{t('viernes')}</h5>
+                                </div>
+                                <div className='time-hours'>
+                                    <p>{t('tardes')}</p>
+                                    <p>{t('viernesTarde')}</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="contact-section">

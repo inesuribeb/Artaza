@@ -1,5 +1,6 @@
 export const contactContent = {
     en: {
+        fromdays: "Monday - Friday",
         contactus: "Contact us",
         emailText: "Email",
         telephoneText: "Teléfono",
@@ -9,6 +10,7 @@ export const contactContent = {
         <div class="line-3">Welcome</div>`, 
     },
     es: {
+        fromdays: "Lunes - Viernes",
         contactus: "Contáctanos",
         emailText: "Email",
         telephoneText: "Teléfono",
