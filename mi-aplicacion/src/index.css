@@ -20,6 +20,7 @@ html, body {
   --taupe-color: #A68F6D;
   --dark-color: #2A2325;
 } */
+@import 'leaflet/dist/leaflet.css';
 
 * {
   box-sizing: border-box;

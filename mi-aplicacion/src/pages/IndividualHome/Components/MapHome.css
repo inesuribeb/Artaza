@@ -1,4 +1,4 @@
-.map-home-wrapper {
+/* .map-home-wrapper {
     display: flex;
     flex-direction: row;
     background-color: var(--sand-color);
@@ -21,13 +21,14 @@
 
 
 
+
+
 @media (max-width: 1200px) {
     .map-home-wrapper .title-info {
         padding-left: 4rem;
     }
 }
 
-/* Tablets y pantallas medianas (992px y menos) */
 @media (max-width: 992px) {
     .map-home-wrapper {
         flex-direction: column;
@@ -49,7 +50,6 @@
     }
 }
 
-/* Dispositivos móviles pequeños (576px y menos) */
 @media (max-width: 576px) {
     .map-home-wrapper {
         padding-top: 1rem;
@@ -64,4 +64,93 @@
     .map {
         padding: 0 1rem;
     }
+} */
+
+
+.map-home-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--sand-color);
+    background-color: var(--taupe-light-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--corporative-color);
+}
+
+.map-home-wrapper .title-info {
+    flex: 0.2;
+    display: flex;
+    padding-left: 8.5rem;
+}
+
+.map {
+    flex: 0.8;
+    display: flex;
+    /* border-radius: 12px; */
+    overflow: hidden;
+    /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); */
+    height: 400px;
+    margin-right: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .map-home-wrapper {
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .map-home-wrapper .title-info {
+        flex: none;
+        padding-left: 0;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .title-info h1 {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .map {
+        flex: none;
+        margin-right: 0;
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-home-wrapper {
+        padding: 1.5rem 1rem;
+    }
+
+    .title-info h1 {
+        font-size: 2rem;
+    }
+
+    .map {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .map {
+        height: 250px;
+    }
+}
+
+/* Estilos para el popup del mapa */
+.leaflet-popup-content {
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+.leaflet-popup-content strong {
+    color: var(--primary-color);
+    font-size: 1.1rem;
 }

@@ -92,11 +92,11 @@ function IndividualHome() {
         t={t} 
       />
 
-      {/* <MapHome
+      <MapHome
         property={property} 
         language={language} 
         t={t} 
-      /> */}
+      />
 
       <SimilarHome
         property={property} 
