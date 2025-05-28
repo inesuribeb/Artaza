@@ -125,6 +125,7 @@
 .nav-phone-item {
     margin: 2rem 0;
     opacity: 0;
+    text-align: center;
     transform: translateY(-20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
@@ -162,11 +163,11 @@
     transition: color 0.3s;
     display: block;
     padding: 0rem;
+    text-align: center;
 }
 
 .nav-phone-text {
-    text-align: left;
-    /* font-family: var(--serif-one-font); */
+    text-align: center;
 }
 
 .nav-phone-link:hover {
