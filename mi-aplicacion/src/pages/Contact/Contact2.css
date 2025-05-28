@@ -42,22 +42,6 @@
     margin-top: 1rem;
 }
 
-/* .contact-two-info {
-    flex: 0.3;
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    justify-content: center;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 0 6rem;
-    padding-right: 2.5rem;
-    font-weight: 100;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-} */
-
 .contact-two-info {
     flex: 0.3;
     display: flex;
@@ -166,7 +150,6 @@
     margin-bottom: 0.3rem;
 }
 
-
 /* Media queries actualizados */
 @media screen and (max-width: 991px) {
     .contact-two-wrapper {
@@ -195,6 +178,17 @@
     
     .contact-two-picture img {
         width: 90%;
+    }
+    
+    /* Horarios responsive para tablet */
+    .mornings,
+    .afternoons {
+        margin-bottom: 1.2rem;
+    }
+    
+    .time-label {
+        width: 55px;
+        margin-right: 1.5rem;
     }
 }
 
@@ -238,6 +232,26 @@
         width: 70%;
         max-width: 300px;
     }
+    
+    /* Horarios responsive para móvil */
+    .mornings,
+    .afternoons {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .time-label {
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .time-hours {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -279,6 +293,21 @@
     .contact-two-info p {
         font-size: 0.9rem;
     }
+    
+    /* Horarios responsive para móvil pequeño */
+    .mornings,
+    .afternoons {
+        margin-bottom: 0.8rem;
+    }
+    
+    .time-label h5 {
+        font-size: 0.9rem;
+    }
+    
+    .time-hours p {
+        font-size: 0.85rem;
+        margin-bottom: 0.2rem;
+    }
 }
 
 /* Para pantallas muy pequeñas */
@@ -295,5 +324,14 @@
     .contact-two-info h5,
     .contact-two-info p {
         font-size: 0.85rem;
+    }
+    
+    /* Horarios responsive para pantallas muy pequeñas */
+    .time-label h5 {
+        font-size: 0.85rem;
+    }
+    
+    .time-hours p {
+        font-size: 0.8rem;
     }
 }
