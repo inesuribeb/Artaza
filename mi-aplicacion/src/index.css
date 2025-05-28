@@ -76,6 +76,7 @@ body {
   /* --serif-one-font: 'Artaza-regular', serif; */
   /* --serif-one-font: 'Playfair', serif; */
   --serif-one-font: 'Playfair', serif;
+  --serif-italic: 'Playfair-italic';
   --serif-second-font: Georgia, 'Times New Roman', Times, serif;
   --sans-serif-2: 'WorkSans';
 
