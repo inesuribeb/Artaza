@@ -144,6 +144,53 @@
 }
 
 
+.footer-two h4 {
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+/* Modificación específica para footer-two */
+.footer-two {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+}
+
+/* Contenedor para organizar las columnas de horarios */
+.time-schedule-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.2rem;
+}
+
+.time-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+.time-label-footer {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+
+.time-hours-footer {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+
 /* Media queries para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .footer-wrapper {

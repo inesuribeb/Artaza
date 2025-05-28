@@ -26,7 +26,7 @@ function Footer() {
                     <ArrowUpwardIcon />
                 </div> */}
                 <div className="scroll-to-top-button" onClick={scrollToTop}>
-                    
+
                 </div>
             </div>
             <div className="footer-wrapper">
@@ -40,7 +40,7 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div className="footer-two">
+                    {/* <div className="footer-two">
                         <h3>{t('horario')}</h3>
                         <div className='interior-divs'>
                             <p>{t('lunesajueves')}</p>
@@ -48,6 +48,30 @@ function Footer() {
                             <p>{t('viernes')}</p>
                             <p>{t('tardes')}</p>
                             <p>{t('viernesTarde')}</p>
+                        </div>
+                    </div> */}
+                    <div className="footer-two">
+                        <h3>{t('horario')}</h3>
+                        <h4>{t('fromdays')}</h4>
+                        <div className="time-schedule-container">
+                            <div className="time-row">
+                                <div className="time-label-footer">
+                                    <p>{t('lunesajueves')}</p>
+                                </div>
+                                <div className="time-hours-footer">
+                                    <p>{t('mananas')}</p>
+                                </div>
+                            </div>
+
+                            <div className="time-row">
+                                <div className="time-label-footer">
+                                    <p>{t('viernes')}</p>
+                                </div>
+                                <div className="time-hours-footer">
+                                    <p>{t('tardes')}</p>
+                                    <p>{t('viernesTarde')}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
