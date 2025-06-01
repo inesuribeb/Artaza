@@ -6,7 +6,7 @@
   text-align: center;
   background-color: transparent;
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/detalleCocina.jpg'); */
-  background-image: url('/images/inmo2.png');
+  background-image: url('/images/filtro3.webp');
   background-size: cover;
   /* background-position: center 80%; */
   background-position: center;
@@ -23,30 +23,13 @@
   font-weight: 400;
   line-height: 1.6;
   /* color: var(--light-color); */
-  color: var(--dark-color);
+  color: var(--corporative-color);
 
   margin: 0;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: var(--serif-one-font);
   text-transform: uppercase;
 }
 
-/* .search-form h2 {
-  padding-top: 9rem;
-  width: 55%;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--light-color);
-  margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-transform: uppercase;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  will-change: transform, opacity;
-  opacity: 0;
-  animation: fadeInProperties 1s ease-out forwards;
-  animation-delay: 0.4s;
-} */
 
 .search-form h1 {
   width: 55%;
@@ -54,41 +37,13 @@
   font-weight: 400;
   line-height: 1.6;
   /* color: var(--light-color); */
-  color: var(--dark-color);
+  color: var(--corporative-color);
 
   margin: 0;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: var(--serif-one-font);
   min-height: 139px;
 }
 
-/* .search-form h1 {
-  width: 55%;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--light-color);
-  margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  min-height: 139px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  will-change: transform, opacity;
-  opacity: 0;
-  animation: fadeInProperties 1s ease-out forwards;
-  animation-delay: 0.6s;
-} */
-
-/* @keyframes fadeInProperties {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
 
 .dropdown-container {
   position: relative;
@@ -98,7 +53,7 @@
 .search-form i {
   font-family: var(--serif-one-font);
   /* color: var(--light-color); */
-  color: var(--dark-color);
+  color: var(--corporative-color);
 
   cursor: pointer;
   position: relative;
@@ -122,7 +77,7 @@
   margin-left: 8px;
   /* background-color: var(--light-color);
   color: var(--dark-color); */
-  background-color: var(--dark-color);
+  background-color: var(--corporative-color);
   color: var(--light-color);
   border-radius: 50%;
   font-size: 1.4rem;
@@ -184,49 +139,20 @@
   margin-top: 20px;
 }
 
-/* .button-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-top: 20px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  will-change: transform, opacity;
-  opacity: 0;
-  animation: fadeInProperties 1s ease-out forwards;
-  animation-delay: 0.8s;
-} */
 
 .view-results-button {
   background-color: transparent;
   /* color: var(--light-color); */
-  color: var(--dark-color);
+  color: var(--corporative-color);
   border: none;
   padding: 10px 24px;
   border-radius: 6px;
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: var(--serif-one-font);
   font-size: 1.4rem;
   font-weight: 500;
   cursor: pointer;
   position: relative;
 }
-
-/* .view-results-button {
-  background-color: transparent;
-  color: var(--light-color);
-  border: none;
-  padding: 10px 24px;
-  border-radius: 6px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.4rem;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  overflow: hidden;
-} */
 
 .view-results-button::after {
   content: '';
@@ -236,7 +162,7 @@
   width: 75%;
   height: 1.5px;
   /* background-color: var(--light-color); */
-  background-color: var(--dark-color);
+  background-color: var(--corporative-color);
 
   transform: translateX(-50%);
   transition: width 0.3s ease;
