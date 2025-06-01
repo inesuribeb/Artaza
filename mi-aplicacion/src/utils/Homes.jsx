@@ -43,17 +43,27 @@ export const homes = [
             en: "300 m² terraced house in a gated community, ideal for families. <br/>5 bedrooms, 4 bathrooms, spacious living room with fireplace, kitchen with dining area, and cozy attic. <br/>Private garage for two cars, storage room, txoko, terrace, balcony, and private garden. <br/>Security, comfort, and spaciousness in an exceptional environment."
         },
         sold: false,
-        main_image: "/images/patrimoine.avif",
+        // main_image: "/images/patrimoine.avif",
+        // images: [
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        // ], 
+        main_image: "/propiedades/1/1.jpg",
         images: [
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
+            "/propiedades/1/2.jpg",
+            "/propiedades/1/3.jpg",
+            "/propiedades/1/4.jpg",
+            "/propiedades/1/5.jpg",
+            "/propiedades/1/6.jpg",
+            "/propiedades/1/7.jpg",
+            "/propiedades/1/8.jpg",
         ], 
     },
     {
@@ -100,13 +110,23 @@ export const homes = [
             en: "600 m² detached house in one of the best areas of Berango.<br/>4 bedrooms, 4 bathrooms, kitchen with island, living-dining room with access to the garden, equipped txoko, and indoor swimming pool.<br/>Excellent orientation, lots of natural light, and prime location near beaches and services."
         },
         sold: false,
-        main_image: "/images/salon.jpg",
+        // main_image: "/images/salon.jpg",
+        // images: [
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg"
+        // ], 
+        main_image: "/propiedades/2/1.JPG",
         images: [
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg"
+            "/propiedades/2/2.JPG",
+            "/propiedades/2/3.JPG",
+            "/propiedades/2/4.JPG",
+            "/propiedades/2/5.JPG",
+            "/propiedades/2/6.JPG",
+            "/propiedades/2/7.JPG",
+            "/propiedades/2/8.JPG",
         ], 
     },
     {
@@ -153,13 +173,24 @@ export const homes = [
             en: "Magnificent renovated 128 m² ground floor in Getxo, with three bedrooms, two bathrooms, and a large private terrace. <br/>Located in a private and quiet urbanization, close to Gobela metro station and green areas.<br/> Perfect to enjoy life in Getxo."
         },
         sold: false,
-        main_image: "/images/cocina2.jpg",
+        // main_image: "/images/cocina2.jpg",
+        // images: [
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg"
+        // ],
+        main_image: "/propiedades/3/1.jpg",
         images: [
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg"
+            "/propiedades/3/2.jpg",
+            "/propiedades/3/3.jpg",
+            "/propiedades/3/4.jpg",
+            "/propiedades/3/5.jpg",
+            "/propiedades/3/6.jpg",
+            "/propiedades/3/7.jpg",
+            "/propiedades/3/8.jpg",
+            "/propiedades/3/9.jpg",
         ],
     },
     {
@@ -207,13 +238,17 @@ export const homes = [
             en: "Exclusive 160 m² penthouse with 5 bedrooms and 4 terraces, very bright and with spacious areas to customize. <br/>Living room with high ceilings, fireplace, and large windows. Flexible kitchen, laundry area, and master bedroom with en-suite bathroom and private terrace. <br/>Includes storage room and 2 parking spaces."
         },
         sold: false,
-        main_image: "/images/cocina.png",
+        // main_image: "/images/cocina.png",
+        // images: [
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg"
+        // ],
+        main_image: "/propiedades/4/1 (1).jpg",
         images: [
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg"
+            "/propiedades/4/2.png",
         ],
     },
     {
@@ -260,14 +295,24 @@ export const homes = [
             en: "Impressive 300 m² semi-detached house in Artaza, with 4 floors and a functional layout. <br/>Features a spacious living room, bright kitchen, 4 bedrooms, 3 bathrooms, and a txoko with a fully equipped kitchen in the basement. Located in a quiet area close to the beach and amenities, offering spacious rooms, built-in wardrobes, and garden views. <br/>Ideal for comfort and privacy in a unique setting."
         },
         sold: true,
-        main_image: "/images/salon5.jpg",
+        // main_image: "/images/salon5.jpg",
+        // images: [
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg"
+        // ],
+        main_image: "/propiedades/5/1.jpg",
         images: [
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg"
-        ],
+            "/propiedades/5/2.jpg",
+            "/propiedades/5/3.jpg",
+            "/propiedades/5/4.jpg",
+            "/propiedades/5/5.jpg",
+            "/propiedades/5/6.jpg",
+            "/propiedades/5/7.jpg",
+            "/propiedades/5/8.jpg",
+        ], 
     },
     {
         id: "006",
@@ -313,14 +358,27 @@ export const homes = [
             en: "Spacious and bright 125 m² apartment in the center of Artaza, in a gated community with pool. <br/>It consists of a living room with terrace, a large kitchen with dining area and two terraces. It has three bedrooms with built-in wardrobes, including a master bedroom with en-suite bathroom.<br/> Includes two parking spaces, a storage room, and a communal swimming pool."
         },
         sold: true,
-        main_image: "/images/casamain.jpg",
+        // main_image: "/images/casamain.jpg",
+        // images: [
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg"
+        // ],
+        main_image: "/propiedades/6/1.jpg",
         images: [
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg"
-        ],
+            "/propiedades/6/2.jpg",
+            "/propiedades/6/3.jpg",
+            "/propiedades/6/4.jpg",
+            "/propiedades/6/5.jpg",
+            "/propiedades/6/6.jpg",
+            "/propiedades/6/7.jpg",
+            "/propiedades/6/8.jpg",
+            "/propiedades/6/9.jpg",
+            "/propiedades/6/10.jpg",
+            "/propiedades/6/11.jpg",
+        ], 
     },
     {
         id: "007",
@@ -366,14 +424,29 @@ export const homes = [
             en: "Fantastic duplex penthouse in Artaza, with excellent southeast orientation, offering natural light all day. <br/>The main floor features a living-dining room with a fireplace, independent kitchen, one bedroom, and a full bathroom. The upper floor houses the master bedroom with a study area, built-in wardrobes, and access to a 10 m² terrace, as well as a second bathroom.<br/> Includes a parking space and storage room. <br/>Perfect for renovation and enjoying a unique home in a residential area."
         },
         sold: false,
-        main_image: "/images/horizontal.png",
+        // main_image: "/images/horizontal.png",
+        // images: [
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg"
+        // ],
+        main_image: "/propiedades/7/1.JPG",
         images: [
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg"
-        ],
+            "/propiedades/7/2.JPG",
+            "/propiedades/7/3.JPG",
+            "/propiedades/7/4.JPG",
+            "/propiedades/7/5.JPG",
+            "/propiedades/7/6.JPG",
+            "/propiedades/7/7.JPG",
+            "/propiedades/7/8.JPG",
+            "/propiedades/7/9.JPG",
+            "/propiedades/7/10.JPG",
+            "/propiedades/7/11.JPG",
+            "/propiedades/7/12.JPG",
+            "/propiedades/7/13.JPG",
+        ], 
     },
     {
         id: "008",
@@ -419,14 +492,22 @@ export const homes = [
             en: "Recently renovated flat in the center of Leioa, close to shops, bars, supermarkets, and metro station. <br/>Luxury finishes, designer furniture, three spacious bedrooms, two full bathrooms, living room with access to a private terrace, and equipped kitchen. <br/>Fully furnished and ready to move in."
         },
         sold: false,
-        main_image: "/images/salon2.jpg",
+        // main_image: "/images/salon2.jpg",
+        // images: [
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg"
+        // ],
+        main_image: "/propiedades/8/1.jpg",
         images: [
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg"
-        ],
+            "/propiedades/8/2.jpg",
+            "/propiedades/8/3.jpg",
+            "/propiedades/8/4.jpg",
+            "/propiedades/8/5.jpg",
+            "/propiedades/8/6.jpg",
+        ], 
     },
     {
         id: "009",
@@ -472,14 +553,21 @@ export const homes = [
             en: "Ground floor with private garden in a quiet residential area. 110 m² with living room and kitchen with direct access to the outside, three bedrooms, two bathrooms, and laundry area.<br/>Ideal for family life with barbecue, solarium, and garden. Includes garage and storage room."
         },
         sold: false,
-        main_image: "/images/patrimoine2.avif",
+        // main_image: "/images/patrimoine2.avif",
+        // images: [
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg"
+        // ],
+        main_image: "/propiedades/9/1.JPG",
         images: [
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg",
-            "/images/salon.jpg",
-            "/images/salon2.jpg"
-        ],
+            "/propiedades/9/2.JPG",
+            "/propiedades/9/3.JPG",
+            "/propiedades/9/4.JPG",
+            "/propiedades/9/5.JPG",
+        ], 
     },
     {
         id: "010",
