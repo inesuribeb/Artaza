@@ -8,6 +8,8 @@ import { filterContent } from './FilterContent';
 import { contactContent } from './ContactContent';
 import { buyFormContent } from './BuyFormContent';
 import { sellFormContent } from './SellFormContent';
+import { PrivacidadContent } from './PrivacidadContent';
+import { CookiesContent } from './CookiesContent';
 
 // Definimos las traducciones
 const translations = {
@@ -19,6 +21,8 @@ const translations = {
     sell: "Sell",
     contact: "Contact",
     south: "A Nod to the South",
+    privacy: "Privacy",
+    cookies: "Cookies",
     ...footerTranslations.en,
     ...homeTranslations.en,
     ...PropertyCartContent.en,
@@ -27,6 +31,8 @@ const translations = {
     ...contactContent.en,
     ...buyFormContent.en,
     ...sellFormContent.en,
+    ...PrivacidadContent.en,
+    ...CookiesContent.en,
     // Añade más traducciones según necesites
   },
   es: {
@@ -37,6 +43,8 @@ const translations = {
     sell: "Vender",
     contact: "Contacto",
     south: "Un Guiño al Sur",
+    privacy: "Privacidad",
+    cookies: "Cookies",
     ...footerTranslations.es,
     ...homeTranslations.es,
     ...PropertyCartContent.es,
@@ -45,6 +53,8 @@ const translations = {
     ...contactContent.es,
     ...buyFormContent.es,
     ...sellFormContent.es,
+    ...PrivacidadContent.es,
+    ...CookiesContent.es,
     // Añade más traducciones según necesites
   }
 };
@@ -58,7 +68,9 @@ const routes = {
     buy: "/buy",
     sell: "/sell",
     contact: "/contact",
-    south: "/south"
+    south: "/south",
+    privacy: "/privacy",
+    cookies: "/cookies-en"
   },
   es: {
     home: "/inicio",
@@ -67,7 +79,9 @@ const routes = {
     buy: "/comprar",
     sell: "/vender",
     contact: "/contacto",
-    south: "/sur"
+    south: "/sur",
+    privacy: "/privacidad",
+    cookies: "/cookies-es"
   }
 };
 
@@ -81,6 +95,8 @@ const routeMap = {
   "/vender": "/sell",
   "/contacto": "/contact",
   "/sur": "/south",
+  "/privacidad": "/privacy",
+  "/cookies-es": "/cookies-en",
 
   // Inglés a español
   "/home": "/inicio",
@@ -90,6 +106,8 @@ const routeMap = {
   "/sell": "/vender",
   "/contact": "/contacto",
   "/south": "/sur",
+  "/privacy": "/privacidad",
+  "/cookies-en": "/cookies-es",
 };
 
 // Función para detectar el idioma desde la URL

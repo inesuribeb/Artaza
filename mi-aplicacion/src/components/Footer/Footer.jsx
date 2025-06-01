@@ -123,18 +123,18 @@ function Footer() {
                     </div>
 
                     <div className="footer-four">
-                        <Link to={getRoute('home')}>
+                        <Link to={getRoute('cookies')}>
                             <h3 className='first-child'>{t('cookies')}</h3>
                         </Link>
-                        <Link to={getRoute('home')}>
+                        <Link to={getRoute('privacy')}>
                             <h3>{t('privacy')}</h3>
                         </Link>
-                        <Link to={getRoute('home')}>
+                        {/* <Link to={getRoute('home')}>
                             <h3>{t('terms')}</h3>
                         </Link>
                         <Link to={getRoute('home')}>
                             <h3>{t('legal')}</h3>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>

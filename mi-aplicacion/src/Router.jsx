@@ -8,6 +8,8 @@ import Sell from "./pages/Sell/Sell";
 // import Contact from "./pages/Contact/Contact";
 import ContactTwo from "./pages/Contact/Contact2";
 import South from "./pages/South/South";
+import Privacidad from "./pages/Privacidad/Privacidad";
+import Cookies from "./pages/Privacidad/Cookies";
 
 const router = createBrowserRouter([
     {
@@ -47,6 +49,14 @@ const router = createBrowserRouter([
                 path: "/sur",
                 element: <South />
             },
+            {
+                path: "/privacidad",
+                element: <Privacidad />
+            },
+            {
+                path: "/cookies-es",
+                element: <Cookies />
+            },
 
             // Rutas en inglés (mismos componentes, diferentes URLs)
             {
@@ -76,6 +86,14 @@ const router = createBrowserRouter([
             {
                 path: "/south",
                 element: <South />
+            },
+            {
+                path: "/privacy",
+                element: <Privacidad />
+            },
+            {
+                path: "/cookies-en",
+                element: <Cookies />
             },
         ]
     },
