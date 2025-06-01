@@ -16,7 +16,7 @@ function PropertyHeader({ property, language, t, goToPreviousProperty, goToNextP
       )}
       <p>{property.location}</p>
 
-      <div className="navigation-buttons">
+      {/* <div className="navigation-buttons">
         <button
           className="navigation-button prev"
           onClick={goToPreviousProperty}
@@ -31,7 +31,7 @@ function PropertyHeader({ property, language, t, goToPreviousProperty, goToNextP
         >
           {t('nextProperty')} <ArrowForwardIcon />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

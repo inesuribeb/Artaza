@@ -44,7 +44,7 @@ export const TarifaHomes = [
     },
     sold: false,
     main_image: "/tarifa/1/1.jpg",
-    tarifa: [
+    images: [
         "/tarifa/1/3.jpg",
         "/tarifa/1/4.jpg",
         "/tarifa/1/5.jpg",
@@ -103,7 +103,7 @@ export const TarifaHomes = [
     },
     sold: false,
     main_image: "/tarifa/2/1.jpg",
-    tarifa: [
+    images: [
         "/tarifa/2/3.jpg",
         "/tarifa/2/4.jpg",
         "/tarifa/2/5.JPG",
@@ -183,7 +183,7 @@ export const TarifaHomes = [
     },
     sold: false,
     main_image: "/tarifa/3/1.jpg",
-    tarifa: [
+    images: [
         "/tarifa/3/3.jpg",
         "/tarifa/3/4.jpg",
         "/tarifa/3/5.jpg",
@@ -240,7 +240,7 @@ export const TarifaHomes = [
     },
     sold: false,
     main_image: "/tarifa/4/1.jpg",
-    tarifa: [
+    images: [
         "/tarifa/4/2.webp",
         "/tarifa/4/3.jpeg",
         "/tarifa/4/4.webp",
