@@ -16,7 +16,7 @@ export const translations = {
     viernes: "Afternoons",
     mananas: "10:30 AM – 1:30 PM",
     tardes: "5:00 PM – 8:00 PM",
-    viernesTarde: "Friday by appointment only",
+    viernesTarde: "Friday afternoon by appointment only",
     nombreempresa: "Artaza Real Estate",
 
     visit: "Visit us",

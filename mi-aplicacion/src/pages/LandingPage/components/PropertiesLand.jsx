@@ -12,7 +12,8 @@ function PropertiesLand({ visibleSections }) {
         {/* <div className='section-propertiesland'> */}
             <div className="propertiesland-inner">
                 <div className="propertiesland-left">
-                    <img src="/images/deco.webp" alt="artaza-inmo" />
+                    {/* <img src="/images/deco.webp" alt="artaza-inmo" /> */}
+                    <img src="/images/local.jpg" alt="artaza-inmo" />
                 </div>
 
                 <div className="propertiesland-right">
