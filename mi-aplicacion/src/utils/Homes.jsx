@@ -827,14 +827,29 @@ export const homes = [
             en: "Ground floor with garden in Artaza, ideal for families and teleworking. <br/>Recently renovated with modern design, features a bright living room, equipped kitchen, three bedrooms, and two bathrooms. Low-maintenance garden, two storage rooms, and garage. <br/>Just a few minutes from Jolaseta, metro, and bus. Quiet residential area with great connections."
         },
         sold: false,
-        main_image: "/images/salon2.jpg",
+        // main_image: "/images/salon2.jpg",
+        // images: [
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg"
+        // ],
+        main_image: "/propiedades/13/1.jpg",
         images: [
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg"
-        ],
+            "/propiedades/13/1.jpg",
+            "/propiedades/13/2.jpg",
+            "/propiedades/13/3.jpg",
+            "/propiedades/13/4.jpg",
+            "/propiedades/13/5.jpg",
+            "/propiedades/13/6.jpg",
+            "/propiedades/13/7.jpg",
+            "/propiedades/13/8.jpg",
+            "/propiedades/13/9.jpg",
+            "/propiedades/13/10.jpg",
+            "/propiedades/13/11.jpg",
+            "/propiedades/13/12.jpg",
+        ]
     },
     {
         id: "014",
@@ -880,14 +895,23 @@ export const homes = [
             en: "Detached chalet 20 minutes from Bilbao, in a rural setting with access to beaches, a golf course, and nearby services. <br/>With 800 m² built over four floors and 3,000 m² of land, it features a garden, pool with spa, and its own well. The ground floor includes a garage, living room with fireplace, dining room, kitchen, two bedrooms, and two bathrooms. <br/>The first floor has two suites with dressing rooms and bathrooms, two additional bedrooms, a hydro-massage bathroom, laundry, and office with terrace. <br/>The top floor features a turret and open space. <br/>High-quality materials like sucupira wood and oil heating."
         },
         sold: true,
-        main_image: "/images/salon2.jpg",
+        // main_image: "/images/salon2.jpg",
+        // images: [
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg"
+        // ],
+        main_image: "/propiedades/14/1.jpg",
         images: [
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg"
-        ],
+            "/propiedades/14/1.jpg",
+            "/propiedades/14/2.jpg",
+            "/propiedades/14/3.jpg",
+            "/propiedades/14/4.jpg",
+            "/propiedades/14/5.jpg",
+            "/propiedades/14/6.jpg",
+        ]
     },
     {
         id: "015",
@@ -932,14 +956,30 @@ export const homes = [
             "en": "Renovated apartment in one of the best areas of Algorta, just a few minutes from the Bidezabal metro station. <br/>With southeast orientation, it features underfloor heating, sound system, and white lacquered carpentry. The living-dining room includes a terrace with sea views, a fully equipped kitchen with high-end appliances, three bedrooms with built-in wardrobes, and two renovated bathrooms. <br/>Includes a garage space, storage room with window and direct access, and a solarium with 180-degree panoramic views."
         },
         sold: true,
-        main_image: "/images/salon2.jpg",
+        // main_image: "/images/salon2.jpg",
+        // images: [
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg"
+        // ],
+        main_image: "/propiedades/15/1 Foto.JPG",
         images: [
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg"
-        ],
+            "/propiedades/15/2.JPG",
+            "/propiedades/15/3.JPG",
+            "/propiedades/15/4.JPG",
+            "/propiedades/15/5.JPG",
+            "/propiedades/15/6.JPG",
+            "/propiedades/15/7.JPG",
+            "/propiedades/15/8.JPG",
+            "/propiedades/15/9.JPG",
+            "/propiedades/15/10.JPG",
+            "/propiedades/15/11.JPG",
+            "/propiedades/15/12.JPG",
+            "/propiedades/15/13.JPG",
+            "/propiedades/15/14.JPG",
+        ]
     },
     {
         id: "016",
@@ -984,14 +1024,32 @@ export const homes = [
             "en": "Spectacular semi-detached house in Basañese (Negurigane), just minutes from Neguri with excellent access to services.<br/> With 253 m² distributed over 4 floors, it includes 5 bedrooms, 4 bathrooms, and an elevator from the basement to the attic. <br/>The house has two gardens, a basement with potential for a txoko, a garage with a mechanical gate, and outdoor terraces. <br/>The ground floor includes a living room, kitchen-dining room, and guest toilet; the second floor has 3 bedrooms and 2 bathrooms; the attic has 2 bedrooms and a full bathroom. <br/>Ideal for families."
         },
         sold: false,
-        main_image: "/images/salon2.jpg",
+        // main_image: "/images/salon2.jpg",
+        // images: [
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg"
+        // ],
+        main_image: "/propiedades/16/1 Foto.JPG",
         images: [
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg"
-        ],
+            "/propiedades/16/2.JPG",
+            "/propiedades/16/3.JPG",
+            "/propiedades/16/4.JPG",
+            "/propiedades/16/5.JPG",
+            "/propiedades/16/6.JPG",
+            "/propiedades/16/7.JPG",
+            "/propiedades/16/8.JPG",
+            "/propiedades/16/9.JPG",
+            "/propiedades/16/10.JPG",
+            "/propiedades/16/11.JPG",
+            "/propiedades/16/12.JPG",
+            "/propiedades/16/13.JPG",
+            "/propiedades/16/14.JPG",
+            "/propiedades/16/15.JPG",
+            "/propiedades/16/16.JPG",
+        ]
     },
     {
         id: "017",
@@ -1036,14 +1094,21 @@ export const homes = [
             "en": "Fantastic apartment in a quiet area, just a few minutes from the Colegio Inglés. <br/>Distributed over two floors, the main floor includes a fully equipped kitchen, spacious living-dining room, versatile room, and a full bathroom. <br/>The second floor has the master bedroom with a dressing room and en suite bathroom, two additional bedrooms, and a bathroom. <br/>It also features a 40 m² terrace, storage room, and garage space. <br/>Perfect for those who value space and functionality."
         },
         sold: false,
-        main_image: "/images/salon2.jpg",
+        // main_image: "/images/salon2.jpg",
+        // images: [
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg"
+        // ],
+        main_image: "/propiedades/17/1.jpg",
         images: [
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg"
-        ],
+            "/propiedades/17/2.jpg",
+            "/propiedades/17/3.jpg",
+            "/propiedades/17/4.jpg",
+            "/propiedades/17/5.jpg",
+        ]
     },
     {
         id: "018",
@@ -1088,13 +1153,26 @@ export const homes = [
             "en": "Design apartment, with garage and storage, just a few minutes from all essential daily services. <br/>Renovated with a spacious master bedroom and dressing room, with additional space adaptable to a gym, office, or guest bedroom. The bathroom features double sinks, a shower, and a Roca inwash toilet, while the Santos kitchen is equipped with high-end appliances. <br/>The bright living room with large windows and an elegant entrance hall complete this home, designed to maximize space."
         },
         sold: false,
-        main_image: "/images/salon2.jpg",
+        // main_image: "/images/salon2.jpg",
+        // images: [
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon2.jpg"
+        // ],
+        main_image: "/propiedades/18/1.jpg",
         images: [
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg",
-            "/images/salon2.jpg"
-        ],
+            "/propiedades/18/2.jpg",
+            "/propiedades/18/3.jpg",
+            "/propiedades/18/4.jpg",
+            "/propiedades/18/5.jpg",
+            "/propiedades/18/6.jpg",
+            "/propiedades/18/7.jpg",
+            "/propiedades/18/8.jpg",
+            "/propiedades/18/9.jpg",
+            "/propiedades/18/10.jpg",
+            "/propiedades/18/11.jpg",
+        ]
     }
 ];
