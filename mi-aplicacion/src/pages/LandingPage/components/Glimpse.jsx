@@ -1,11 +1,13 @@
 import { useState, useRef } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '../../../contexts/LanguageContext';
+import Modal from '../../../components/modal/Modal';
 import ArrowSvg from '../../../components/arrow/Arrow';
 import './Glimpse.css';
 
 function Glimpse() {
     const { t, getRoute } = useLanguage();
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const glimpseimages = [
         '/images/glimpse/7.webp',
@@ -69,6 +71,16 @@ function Glimpse() {
         }
     };
 
+    // Función para abrir el modal
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    // Función para cerrar el modal
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <div className='glimpse-wrapper'>
             <div className='view-container'>
@@ -94,12 +106,19 @@ function Glimpse() {
                     onScroll={handleScroll}
                 >
                     <div className='intro-content'>
-                        <div className='intro-content-one'>
-                        </div>
-                        <Link to={getRoute('properties')} className="footer-text properties-link">
+                        {/* <div className='intro-content-one'>
+                        </div> */}
+                        {/* <Link to={getRoute('properties')} className="footer-text properties-link">
                             <h1 dangerouslySetInnerHTML={{ __html: t('compratitulo') }}></h1>
                             {t('botonproperties')}
-                        </Link>
+                        </Link> */}
+                        <button
+                            onClick={openModal}
+                            className="footer-text properties-link"
+                        >
+                            <h1 dangerouslySetInnerHTML={{ __html: t('compratitulo') }}></h1>
+                            <h2 className='button'>{t('botonproperties')}</h2>
+                        </button>
 
                     </div>
 
@@ -123,6 +142,16 @@ function Glimpse() {
                         }}
                     ></div>
                 </div>
+
+                {/* Renderizar el modal cuando isModalOpen sea true */}
+                {isModalOpen && (
+                    <div className="modal-overlay" onClick={closeModal}>
+                        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                            <button className="modal-close" onClick={closeModal}>×</button>
+                            <Modal />
+                        </div>
+                    </div>
+                )}
             </div>
         </div>
     );

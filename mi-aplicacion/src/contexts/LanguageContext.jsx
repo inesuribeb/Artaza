@@ -10,6 +10,7 @@ import { buyFormContent } from './BuyFormContent';
 import { sellFormContent } from './SellFormContent';
 import { PrivacidadContent } from './PrivacidadContent';
 import { CookiesContent } from './CookiesContent';
+import { ModalTranslations } from './ModalContent';
 
 // Definimos las traducciones
 const translations = {
@@ -32,7 +33,7 @@ const translations = {
     ...buyFormContent.en,
     ...sellFormContent.en,
     ...PrivacidadContent.en,
-    ...CookiesContent.en,
+    ...ModalTranslations.en,
     // Añade más traducciones según necesites
   },
   es: {
@@ -55,6 +56,8 @@ const translations = {
     ...sellFormContent.es,
     ...PrivacidadContent.es,
     ...CookiesContent.es,
+    ...CookiesContent.es,
+    ...ModalTranslations.es,
     // Añade más traducciones según necesites
   }
 };

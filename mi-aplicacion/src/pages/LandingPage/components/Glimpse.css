@@ -47,7 +47,7 @@
     justify-content: space-between;
 }
 
-.intro-content-one h2 {
+/* .intro-content-one h2 {
     font-size: 2rem;
     font-weight: 300;
     margin: 0;
@@ -57,13 +57,15 @@
     font-size: 3rem;
     font-weight: 300;
     margin: 1rem 0 0 0;
-}
+} */
 
 .intro-content h1 {
     font-size: 1.8rem;
     font-weight: 100;
     color: var(--light-color);
     font-family: var(--serif-one-font);
+    text-align: right;
+
 }
 
 .intro-content h1 em {
@@ -71,6 +73,20 @@
     font-family: var(--serif-italic);
       font-style: italic;
       font-size: 2rem;
+  }
+
+  .intro-content h2 {
+    margin-top: auto;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-family: var(--serif-one-font);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+    padding-bottom: 5px;
   }
 
 .footer-text h1 {
@@ -91,7 +107,7 @@
     padding-bottom: 5px;
 }
 
-.footer-text::after {
+/* .footer-text::after {
     content: '';
     position: absolute;
     right: 0;
@@ -101,7 +117,7 @@
     background-color: var(--light-color);
     margin: 0 auto;
     transition: all 0.3s ease;
-}
+} */
 
 .footer-text:hover::after {
     width: 40%;
