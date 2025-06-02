@@ -41,7 +41,7 @@ export const sellFormContent = {
     es: {
         // Títulos y encabezados
         "formTitle": "Vende con Artaza Inmobiliaria",
-        "formDescription": "El primer paso para mudarse es obtener una valoración gratuita del mercado. Completa el formulario a continuación y, si su hogar cumple con nuestros criterios, nos pondremos en contacto contigo para organizar la valoración.",
+        "formDescription": "El primer paso para mudarte es obtener una valoración gratuita del mercado. Completa el formulario a continuación y, si tu hogar cumple con nuestros criterios, nos pondremos en contacto contigo para organizar la valoración.",
         
         // Secciones del formulario
         "name": "Nombre",
@@ -55,12 +55,12 @@ export const sellFormContent = {
         "cityTown": "Ciudad / Población",
         "postcode": "Código Postal",
         "approximateSize": "Tamaño aproximado (m²)",
-        "hopePrice": "¿Tienes un precio por el que esperas vender?",
-        "lookingToBuy": "¿También estás buscando comprar en la zona?",
+        "hopePrice": "¿Qué precio esperas obtener al vender tu vivienda?",
+        "lookingToBuy": "¿Te interesaría comprar también en la zona? (quitarla",
         "yes": "Sí",
         "no": "No",
         "maybe": "Quizás",
-        "hearAboutUs": "¿Cómo supiste de nosotros?",
+        "hearAboutUs": "¿Cómo nos conociste?",
         "acceptTerms": "Acepto la Política de Privacidad y Cookies y los Términos y Condiciones",
         "send": "Enviar",
         
