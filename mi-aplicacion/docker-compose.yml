@@ -4,8 +4,8 @@ services:
     expose:
       - "80"
     environment:
-      - VIRTUAL_HOST=artaza.inesuribe.es
-      - LETSENCRYPT_HOST=artaza.inesuribe.es
+      - VIRTUAL_HOST=inmoartaza.es
+      - LETSENCRYPT_HOST=inmoartaza.es
       - LETSENCRYPT_EMAIL=email@inesuribe.es.es
     volumes:
       - ./web:/usr/share/nginx/html:ro
