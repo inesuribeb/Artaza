@@ -571,7 +571,8 @@ export const homes = [
     // },
     {
         id: "010",
-        price: "1.250.000 €",
+        // price: "1.250.000 €",
+        price: "- €",
         location: "Sarriena, Leioa",
         type: {
             es: "Chalet",
@@ -612,7 +613,7 @@ export const homes = [
             es: "Chalet exclusivo de 500 m² diseñado por Iñigo Basáñez, ubicado en una colina con vistas panorámicas y orientación sur. <br/>Cuenta con 7 dormitorios (3 en suite), 4 baños, aseo, salón a diferentes alturas con chimenea, porche cerrado, txoko, garaje doble, piscina y jardín de 2.170 m².",
             en: "Exclusive 500 m² detached house designed by Iñigo Basáñez, located on a hill with panoramic views and south orientation. <br/>Features 7 bedrooms (3 en suite), 4 bathrooms, a guest toilet, multi-level living room with fireplace, enclosed porch, txoko, double garage, swimming pool, and a 2,170 m² garden."
         },
-        sold: false,
+        sold: true,
         // main_image: "/images/salon2.jpg",
         // images: [
         //     "/images/salon.jpg",
