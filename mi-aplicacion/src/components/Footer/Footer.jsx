@@ -140,7 +140,7 @@ function Footer() {
             </div>
 
             <div className='footer-foot'>
-                <h3>{t('madeBy')} <a href="https://inesuribe.es/" target="_blank" rel="noopener noreferrer">Estudio Ines Uribe</a></h3>
+                <h3>{t('madeBy')} <a href="https://estudio.inesuribe.es/" target="_blank" rel="noopener noreferrer">Estudio Ines Uribe</a></h3>
                 <h3>{t('c')}</h3>
             </div>
         </div>
