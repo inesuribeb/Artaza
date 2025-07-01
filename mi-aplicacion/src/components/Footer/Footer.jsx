@@ -97,6 +97,14 @@ function Footer() {
                             </p>
                             <p>
                                 <Link
+                                    to={getRoute('south')}
+                                    className={location.pathname === getRoute('south') ? 'footer-active-link' : 'footer-link'}
+                                >
+                                    <span className="footer-link-text">{t('south')}</span>
+                                </Link>
+                            </p>
+                            <p>
+                                <Link
                                     to={getRoute('buy')}
                                     className={location.pathname === getRoute('buy') ? 'footer-active-link' : 'footer-link'}
                                 >

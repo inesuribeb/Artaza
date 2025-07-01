@@ -33,6 +33,7 @@ const translations = {
     ...buyFormContent.en,
     ...sellFormContent.en,
     ...PrivacidadContent.en,
+    ...CookiesContent.en,
     ...ModalTranslations.en,
     // Añade más traducciones según necesites
   },
@@ -56,7 +57,7 @@ const translations = {
     ...sellFormContent.es,
     ...PrivacidadContent.es,
     ...CookiesContent.es,
-    ...CookiesContent.es,
+    // ...CookiesContent.es,
     ...ModalTranslations.es,
     // Añade más traducciones según necesites
   }
