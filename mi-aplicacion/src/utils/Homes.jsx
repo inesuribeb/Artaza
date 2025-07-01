@@ -297,11 +297,12 @@ export const homes = [
         sold: true,
         // main_image: "/images/salon5.jpg",
         // images: [
-        //     "/images/salon2.jpg",
+        //     "/images/cocina.png.jpg",
         //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg"
+        //     "/images/cocina2.jpg",
+        //     "/images/casamain.jpg",
+        //     "/images/horizontal.png",
+        //     "/images/patrimoine2.avif"
         // ],
         main_image: "/propiedades/5/1.jpg",
         images: [
@@ -434,9 +435,9 @@ export const homes = [
         // ],
         main_image: "/propiedades/7/1.JPG",
         images: [
-            "/propiedades/7/2.JPG",
+            "/propiedades/7/2.jpg",
             "/propiedades/7/3.JPG",
-            "/propiedades/7/4.JPG",
+            "/propiedades/7/4.jpg",
             "/propiedades/7/5.JPG",
             "/propiedades/7/6.JPG",
             "/propiedades/7/7.JPG",
@@ -622,6 +623,14 @@ export const homes = [
         //     "/images/salon2.jpg",
         //     "/images/salon.jpg"
         // ],
+        // main_image: "/images/patrimoine2.avif",
+        // images: [
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg",
+        //     "/images/salon.jpg",
+        //     "/images/salon2.jpg"
+        // ],
         main_image: "/propiedades/10/1.jpg",
         images: [
             "/propiedades/10/2.jpg",
@@ -702,18 +711,18 @@ export const homes = [
             "/propiedades/11/7.jpg",
             "/propiedades/11/8.jpg",
             "/propiedades/11/9.jpg",
-            "/propiedades/11/10.jpg",
+            // "/propiedades/11/10.jpg",
             "/propiedades/11/11.jpg",
             "/propiedades/11/12.jpg",
             "/propiedades/11/13.jpg",
             "/propiedades/11/14.jpg",
-            "/propiedades/11/15.jpg",
-            "/propiedades/11/16.jpg",
+            // "/propiedades/11/15.jpg",
+            // "/propiedades/11/16.jpg",
             "/propiedades/11/17.jpg",
             "/propiedades/11/18.jpg",
-            "/propiedades/11/19.jpg",
+            // "/propiedades/11/19.jpg",
             "/propiedades/11/20.jpg",
-            "/propiedades/11/21.jpg",
+            // "/propiedades/11/21.jpg",
             "/propiedades/11/22.jpg",
             "/propiedades/11/23.jpg",
         ], 
