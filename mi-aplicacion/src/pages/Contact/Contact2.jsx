@@ -55,7 +55,7 @@ function ContactTwo() {
                     </div>
 
                     <div className='contact-two-picture'>
-                        <img src="/images/martaContacto.png" alt="inmobiliaria-artaza-por-dentro" />
+                        <img src="/images/martaContactoOpt.jpg" alt="inmobiliaria-artaza-por-dentro" />
                     </div>
                 </div>
             </div>
