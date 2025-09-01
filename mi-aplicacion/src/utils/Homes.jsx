@@ -43,18 +43,6 @@ export const homes = [
             en: "300 m² terraced house in a gated community, ideal for families. <br/>5 bedrooms, 4 bathrooms, spacious living room with fireplace, kitchen with dining area, and cozy attic. <br/>Private garage for two cars, storage room, txoko, terrace, balcony, and private garden. <br/>Security, comfort, and spaciousness in an exceptional environment."
         },
         sold: false,
-        // main_image: "/images/patrimoine.avif",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        // ], 
         main_image: "/propiedades/1/1.jpg",
         images: [
             "/propiedades/1/2.jpg",
@@ -110,14 +98,6 @@ export const homes = [
             en: "600 m² detached house in one of the best areas of Berango.<br/>4 bedrooms, 4 bathrooms, kitchen with island, living-dining room with access to the garden, equipped txoko, and indoor swimming pool.<br/>Excellent orientation, lots of natural light, and prime location near beaches and services."
         },
         sold: false,
-        // main_image: "/images/salon.jpg",
-        // images: [
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg"
-        // ], 
         main_image: "/propiedades/2/1.JPG",
         images: [
             "/propiedades/2/2.JPG",
@@ -131,6 +111,63 @@ export const homes = [
     },
     {
         id: "003",
+        price: "475.000 €",
+        location: "Artaza, Leioa",
+        type: {
+            "es": "Piso",
+            "en": "Apartment"
+        },
+        built_m2: 79,
+        usable_m2: 79,
+        bedrooms: 1,
+        bathrooms: 1,
+        terrace: false,
+        balcony: false,
+        built_in_wardrobes: true,
+        storage_room: true,
+        orientation: {
+            es: ["Oeste"],
+            en: ["West"]
+        },
+        garage: true,
+        pool: false,
+        garden: false,
+        private_urbanization: false,
+        chimney: false,
+        txoko: false,
+        laundry: false,
+        attic: false,
+        elevator: true,
+        year_built: null,
+        exact_location: {
+            "es": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa",
+            "en": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa"
+        },
+        title: {
+            "es": "Moderno Piso en Leioa con Garaje, Trastero y Diseño Exclusivo",
+            "en": "Modern Apartment in Leioa with Garage, Storage, and Exclusive Design"
+        },
+        description: {
+            "es": "Piso de diseño, con garaje y trastero, a pocos minutos de todos los servicios esenciales del día a día. <br/>Reformado con un amplio dormitorio principal y vestidor, con espacio adicional adaptable a gimnasio, oficina o dormitorio de invitados. El baño cuenta con doble lavabo, ducha y sanitario inwash de Roca, mientras que la cocina Santos está equipada con electrodomésticos de alta gama. <br/>El salón luminoso con grandes ventanales y un elegante hall de entrada completan esta vivienda, diseñada para maximizar el espacio.",
+            "en": "Design apartment, with garage and storage, just a few minutes from all essential daily services. <br/>Renovated with a spacious master bedroom and dressing room, with additional space adaptable to a gym, office, or guest bedroom. The bathroom features double sinks, a shower, and a Roca inwash toilet, while the Santos kitchen is equipped with high-end appliances. <br/>The bright living room with large windows and an elegant entrance hall complete this home, designed to maximize space."
+        },
+        sold: false,
+        main_image: "/propiedades/18/1.jpg",
+        images: [
+            "/propiedades/18/2.jpg",
+            "/propiedades/18/3.jpg",
+            "/propiedades/18/4.jpg",
+            "/propiedades/18/5.jpg",
+            "/propiedades/18/6.jpg",
+            "/propiedades/18/7.jpg",
+            "/propiedades/18/8.jpg",
+            "/propiedades/18/9.jpg",
+            "/propiedades/18/10.jpg",
+            "/propiedades/18/11.jpg",
+        ]
+    },
+    {
+        id: "004",
         price: "550.000 €",
         location: "Las Arenas, Getxo",
         type: {
@@ -172,15 +209,7 @@ export const homes = [
             es: "Magnífico bajo reformado de 128 m² en Getxo, con tres habitaciones, dos baños y amplia terraza privada. <br/>Ubicado en urbanización privada y tranquila, cerca del metro de Gobela y zonas verdes. <br/>Ideal para disfrutar de la vida en Getxo.",
             en: "Magnificent renovated 128 m² ground floor in Getxo, with three bedrooms, two bathrooms, and a large private terrace. <br/>Located in a private and quiet urbanization, close to Gobela metro station and green areas.<br/> Perfect to enjoy life in Getxo."
         },
-        sold: false,
-        // main_image: "/images/cocina2.jpg",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg"
-        // ],
+        sold: true,
         main_image: "/propiedades/3/1.jpg",
         images: [
             "/propiedades/3/2.jpg",
@@ -194,7 +223,7 @@ export const homes = [
         ],
     },
     {
-        id: "004",
+        id: "005",
         price: "690.000 €",
         location: "Artaza, Leioa",
         type: {
@@ -209,7 +238,6 @@ export const homes = [
         balcony: true,
         built_in_wardrobes: true,
         storage_room: true,
-        // orientation: ["Sur"],
         orientation: {
             es: ["Sur"],
             en: ["South"]
@@ -237,22 +265,14 @@ export const homes = [
             es: "Exclusivo ático de 160 m² con 5 dormitorios y 4 terrazas, muy luminoso y con amplios espacios para personalizar. <br/>Salón con techos altos, chimenea y grandes ventanales. Cocina flexible, zona de lavandería y dormitorio principal con baño en suite y terraza privada. <br/>Incluye trastero y 2 plazas de garaje.",
             en: "Exclusive 160 m² penthouse with 5 bedrooms and 4 terraces, very bright and with spacious areas to customize. <br/>Living room with high ceilings, fireplace, and large windows. Flexible kitchen, laundry area, and master bedroom with en-suite bathroom and private terrace. <br/>Includes storage room and 2 parking spaces."
         },
-        sold: false,
-        // main_image: "/images/cocina.png",
-        // images: [
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg"
-        // ],
+        sold: true,
         main_image: "/propiedades/4/1 (1).jpg",
         images: [
             "/propiedades/4/2.png",
         ],
     },
     {
-        id: "005",
+        id: "006",
         price: "- €",
         location: "Negurigane, Leioa",
         type: {
@@ -295,14 +315,6 @@ export const homes = [
             en: "Impressive 300 m² semi-detached house in Artaza, with 4 floors and a functional layout. <br/>Features a spacious living room, bright kitchen, 4 bedrooms, 3 bathrooms, and a txoko with a fully equipped kitchen in the basement. Located in a quiet area close to the beach and amenities, offering spacious rooms, built-in wardrobes, and garden views. <br/>Ideal for comfort and privacy in a unique setting."
         },
         sold: true,
-        // main_image: "/images/salon5.jpg",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg"
-        // ],
         main_image: "/propiedades/5/1.jpg",
         images: [
             "/propiedades/5/2.jpg",
@@ -315,7 +327,7 @@ export const homes = [
         ], 
     },
     {
-        id: "006",
+        id: "007",
         price: "- €",
         location: "Artaza, Leioa",
         type: {
@@ -358,14 +370,6 @@ export const homes = [
             en: "Spacious and bright 125 m² apartment in the center of Artaza, in a gated community with pool. <br/>It consists of a living room with terrace, a large kitchen with dining area and two terraces. It has three bedrooms with built-in wardrobes, including a master bedroom with en-suite bathroom.<br/> Includes two parking spaces, a storage room, and a communal swimming pool."
         },
         sold: true,
-        // main_image: "/images/casamain.jpg",
-        // images: [
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg"
-        // ],
         main_image: "/propiedades/6/1.jpg",
         images: [
             "/propiedades/6/2.jpg",
@@ -381,7 +385,7 @@ export const homes = [
         ], 
     },
     {
-        id: "007",
+        id: "008",
         price: "460.000 €",
         location: "Artaza, Leioa",
         type: {
@@ -424,14 +428,6 @@ export const homes = [
             en: "Fantastic duplex penthouse in Artaza, with excellent southeast orientation, offering natural light all day. <br/>The main floor features a living-dining room with a fireplace, independent kitchen, one bedroom, and a full bathroom. The upper floor houses the master bedroom with a study area, built-in wardrobes, and access to a 10 m² terrace, as well as a second bathroom.<br/> Includes a parking space and storage room. <br/>Perfect for renovation and enjoying a unique home in a residential area."
         },
         sold: false,
-        // main_image: "/images/horizontal.png",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg"
-        // ],
         main_image: "/propiedades/7/1.JPG",
         images: [
             "/propiedades/7/2.JPG",
@@ -449,7 +445,7 @@ export const homes = [
         ], 
     },
     {
-        id: "008",
+        id: "009",
         price: "495.000 €",
         location: "Centro Leioa",
         type: {
@@ -491,15 +487,7 @@ export const homes = [
             es: "Piso recién reformado en el centro de Leioa, cerca de tiendas, bares, supermercados y metro. <br/>Acabados de lujo, muebles de diseño, tres habitaciones amplias, dos baños completos, salón con acceso a terraza privada y cocina equipada. <br/>Totalmente amueblado y listo para entrar a vivir.",
             en: "Recently renovated flat in the center of Leioa, close to shops, bars, supermarkets, and metro station. <br/>Luxury finishes, designer furniture, three spacious bedrooms, two full bathrooms, living room with access to a private terrace, and equipped kitchen. <br/>Fully furnished and ready to move in."
         },
-        sold: false,
-        // main_image: "/images/salon2.jpg",
-        // images: [
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg"
-        // ],
+        sold: true,
         main_image: "/propiedades/8/1.jpg",
         images: [
             "/propiedades/8/2.jpg",
@@ -614,14 +602,6 @@ export const homes = [
             en: "Exclusive 500 m² detached house designed by Iñigo Basáñez, located on a hill with panoramic views and south orientation. <br/>Features 7 bedrooms (3 en suite), 4 bathrooms, a guest toilet, multi-level living room with fireplace, enclosed porch, txoko, double garage, swimming pool, and a 2,170 m² garden."
         },
         sold: true,
-        // main_image: "/images/salon2.jpg",
-        // images: [
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg"
-        // ],
         main_image: "/propiedades/10/1.jpg",
         images: [
             "/propiedades/10/2.jpg",
@@ -684,14 +664,6 @@ export const homes = [
             en: "300 m² terraced house in Negurigane, with 5 bedrooms, 2 private gardens, and 4 floors. <br/>Located in a quiet and well-connected area, near Jolaseta. <br/>The property has been recently renovated and is ready to move in, featuring a functional layout and spacious areas. <br/>Ideal for those seeking comfort and quality of life."
         },
         sold: true,
-        // main_image: "/images/salon2.jpg",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg"
-        // ],
         main_image: "/propiedades/11/3.jpg",
         images: [
             "/propiedades/11/1.jpg",
@@ -762,14 +734,6 @@ export const homes = [
             en: "Spacious and bright flat in the exclusive area of Antiguo Golf, Getxo, just minutes from the Gobela metro. <br/>With 3 bedrooms, 2 bathrooms (one en suite), living-dining room with fireplace, and equipped kitchen. The building features elevators, barrier-free access, and night surveillance. <br/>Additionally, it has an east-west orientation, garage space, storage room, double-glazed windows, and central heating with individual meters. <br/>Ideal for those seeking comfort and quality of life."
         },
         sold: true,
-        // main_image: "/images/salon2.jpg",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg"
-        // ],
         main_image: "/propiedades/12/1 Foto.JPG",
         images: [
             "/propiedades/12/2.JPG",
@@ -827,15 +791,7 @@ export const homes = [
             es: "Se vende bajo con jardín en Artaza, ideal para familias y teletrabajo. <br/>Reformado con diseño moderno, cuenta con salón luminoso, cocina equipada, tres dormitorios y dos baños. Jardín de bajo mantenimiento, dos trasteros y garaje. <br/>A pocos minutos de Jolaseta, metro y bus. Zona residencial tranquila y bien conectada.",
             en: "Ground floor with garden in Artaza, ideal for families and teleworking. <br/>Recently renovated with modern design, features a bright living room, equipped kitchen, three bedrooms, and two bathrooms. Low-maintenance garden, two storage rooms, and garage. <br/>Just a few minutes from Jolaseta, metro, and bus. Quiet residential area with great connections."
         },
-        sold: false,
-        // main_image: "/images/salon2.jpg",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg"
-        // ],
+        sold: true,
         main_image: "/propiedades/13/1.jpg",
         images: [
             "/propiedades/13/1.jpg",
@@ -896,14 +852,6 @@ export const homes = [
             en: "Detached chalet 20 minutes from Bilbao, in a rural setting with access to beaches, a golf course, and nearby services. <br/>With 800 m² built over four floors and 3,000 m² of land, it features a garden, pool with spa, and its own well. The ground floor includes a garage, living room with fireplace, dining room, kitchen, two bedrooms, and two bathrooms. <br/>The first floor has two suites with dressing rooms and bathrooms, two additional bedrooms, a hydro-massage bathroom, laundry, and office with terrace. <br/>The top floor features a turret and open space. <br/>High-quality materials like sucupira wood and oil heating."
         },
         sold: true,
-        // main_image: "/images/salon2.jpg",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg"
-        // ],
         main_image: "/propiedades/14/1.jpg",
         images: [
             "/propiedades/14/1.jpg",
@@ -957,14 +905,6 @@ export const homes = [
             "en": "Renovated apartment in one of the best areas of Algorta, just a few minutes from the Bidezabal metro station. <br/>With southeast orientation, it features underfloor heating, sound system, and white lacquered carpentry. The living-dining room includes a terrace with sea views, a fully equipped kitchen with high-end appliances, three bedrooms with built-in wardrobes, and two renovated bathrooms. <br/>Includes a garage space, storage room with window and direct access, and a solarium with 180-degree panoramic views."
         },
         sold: true,
-        // main_image: "/images/salon2.jpg",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg"
-        // ],
         main_image: "/propiedades/15/1 Foto.JPG",
         images: [
             "/propiedades/15/2.JPG",
@@ -1024,15 +964,7 @@ export const homes = [
             "es": "Espectacular chalet adosado en Basañese (Negurigane), a pocos minutos de Neguri y con excelente conexión a servicios. <br/>Con 253 m² distribuidos en 4 plantas, cuenta con 5 habitaciones, 4 baños y ascensor desde el sótano hasta el ático. <br/>Dispone de dos jardines, sótano con posibilidad de txoko, garaje con portón mecánico y terrazas exteriores. <br/>La planta baja incluye salón, cocina-comedor y aseo; la segunda planta tiene 3 habitaciones y 2 baños; el ático cuenta con 2 habitaciones y un baño completo. <br/>Ideal para familias.",
             "en": "Spectacular semi-detached house in Basañese (Negurigane), just minutes from Neguri with excellent access to services.<br/> With 253 m² distributed over 4 floors, it includes 5 bedrooms, 4 bathrooms, and an elevator from the basement to the attic. <br/>The house has two gardens, a basement with potential for a txoko, a garage with a mechanical gate, and outdoor terraces. <br/>The ground floor includes a living room, kitchen-dining room, and guest toilet; the second floor has 3 bedrooms and 2 bathrooms; the attic has 2 bedrooms and a full bathroom. <br/>Ideal for families."
         },
-        sold: false,
-        // main_image: "/images/salon2.jpg",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg"
-        // ],
+        sold: true,
         main_image: "/propiedades/16/1 Foto.JPG",
         images: [
             "/propiedades/16/2.JPG",
@@ -1094,15 +1026,7 @@ export const homes = [
             "es": "Fantástico piso en zona tranquila, a pocos minutos del Colegio Inglés. <br/>Distribuido en dos plantas, la principal cuenta con cocina equipada, amplio salón-comedor, habitación versátil y baño completo. <br/>En la segunda planta se encuentra la habitación principal con vestidor y baño en suite, dos habitaciones adicionales y baño. <br/>Además, ofrece una terraza de 40 m², trastero y plaza de garaje. <br/>Perfecto para quienes valoran el espacio y la funcionalidad.",
             "en": "Fantastic apartment in a quiet area, just a few minutes from the Colegio Inglés. <br/>Distributed over two floors, the main floor includes a fully equipped kitchen, spacious living-dining room, versatile room, and a full bathroom. <br/>The second floor has the master bedroom with a dressing room and en suite bathroom, two additional bedrooms, and a bathroom. <br/>It also features a 40 m² terrace, storage room, and garage space. <br/>Perfect for those who value space and functionality."
         },
-        sold: false,
-        // main_image: "/images/salon2.jpg",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg"
-        // ],
+        sold: true,
         main_image: "/propiedades/17/1.jpg",
         images: [
             "/propiedades/17/2.jpg",
@@ -1111,69 +1035,61 @@ export const homes = [
             "/propiedades/17/5.jpg",
         ]
     },
-    {
-        id: "018",
-        price: "440.000 €",
-        location: "Artaza, Leioa",
-        type: {
-            "es": "Piso",
-            "en": "Apartment"
-        },
-        built_m2: 79,
-        usable_m2: 79,
-        bedrooms: 1,
-        bathrooms: 1,
-        terrace: false,
-        balcony: false,
-        built_in_wardrobes: true,
-        storage_room: true,
-        orientation: {
-            es: ["Oeste"],
-            en: ["West"]
-        },
-        garage: true,
-        pool: false,
-        garden: false,
-        private_urbanization: false,
-        chimney: false,
-        txoko: false,
-        laundry: false,
-        attic: false,
-        elevator: true,
-        year_built: null,
-        exact_location: {
-            "es": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa",
-            "en": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa"
-        },
-        title: {
-            "es": "Moderno Piso en Leioa con Garaje, Trastero y Diseño Exclusivo",
-            "en": "Modern Apartment in Leioa with Garage, Storage, and Exclusive Design"
-        },
-        description: {
-            "es": "Piso de diseño, con garaje y trastero, a pocos minutos de todos los servicios esenciales del día a día. <br/>Reformado con un amplio dormitorio principal y vestidor, con espacio adicional adaptable a gimnasio, oficina o dormitorio de invitados. El baño cuenta con doble lavabo, ducha y sanitario inwash de Roca, mientras que la cocina Santos está equipada con electrodomésticos de alta gama. <br/>El salón luminoso con grandes ventanales y un elegante hall de entrada completan esta vivienda, diseñada para maximizar el espacio.",
-            "en": "Design apartment, with garage and storage, just a few minutes from all essential daily services. <br/>Renovated with a spacious master bedroom and dressing room, with additional space adaptable to a gym, office, or guest bedroom. The bathroom features double sinks, a shower, and a Roca inwash toilet, while the Santos kitchen is equipped with high-end appliances. <br/>The bright living room with large windows and an elegant entrance hall complete this home, designed to maximize space."
-        },
-        sold: false,
-        // main_image: "/images/salon2.jpg",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon2.jpg"
-        // ],
-        main_image: "/propiedades/18/1.jpg",
-        images: [
-            "/propiedades/18/2.jpg",
-            "/propiedades/18/3.jpg",
-            "/propiedades/18/4.jpg",
-            "/propiedades/18/5.jpg",
-            "/propiedades/18/6.jpg",
-            "/propiedades/18/7.jpg",
-            "/propiedades/18/8.jpg",
-            "/propiedades/18/9.jpg",
-            "/propiedades/18/10.jpg",
-            "/propiedades/18/11.jpg",
-        ]
-    }
+    // {
+    //     id: "018",
+    //     price: "475.000 €",
+    //     location: "Artaza, Leioa",
+    //     type: {
+    //         "es": "Piso",
+    //         "en": "Apartment"
+    //     },
+    //     built_m2: 79,
+    //     usable_m2: 79,
+    //     bedrooms: 1,
+    //     bathrooms: 1,
+    //     terrace: false,
+    //     balcony: false,
+    //     built_in_wardrobes: true,
+    //     storage_room: true,
+    //     orientation: {
+    //         es: ["Oeste"],
+    //         en: ["West"]
+    //     },
+    //     garage: true,
+    //     pool: false,
+    //     garden: false,
+    //     private_urbanization: false,
+    //     chimney: false,
+    //     txoko: false,
+    //     laundry: false,
+    //     attic: false,
+    //     elevator: true,
+    //     year_built: null,
+    //     exact_location: {
+    //         "es": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa",
+    //         "en": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa"
+    //     },
+    //     title: {
+    //         "es": "Moderno Piso en Leioa con Garaje, Trastero y Diseño Exclusivo",
+    //         "en": "Modern Apartment in Leioa with Garage, Storage, and Exclusive Design"
+    //     },
+    //     description: {
+    //         "es": "Piso de diseño, con garaje y trastero, a pocos minutos de todos los servicios esenciales del día a día. <br/>Reformado con un amplio dormitorio principal y vestidor, con espacio adicional adaptable a gimnasio, oficina o dormitorio de invitados. El baño cuenta con doble lavabo, ducha y sanitario inwash de Roca, mientras que la cocina Santos está equipada con electrodomésticos de alta gama. <br/>El salón luminoso con grandes ventanales y un elegante hall de entrada completan esta vivienda, diseñada para maximizar el espacio.",
+    //         "en": "Design apartment, with garage and storage, just a few minutes from all essential daily services. <br/>Renovated with a spacious master bedroom and dressing room, with additional space adaptable to a gym, office, or guest bedroom. The bathroom features double sinks, a shower, and a Roca inwash toilet, while the Santos kitchen is equipped with high-end appliances. <br/>The bright living room with large windows and an elegant entrance hall complete this home, designed to maximize space."
+    //     },
+    //     sold: false,
+    //     main_image: "/propiedades/18/1.jpg",
+    //     images: [
+    //         "/propiedades/18/2.jpg",
+    //         "/propiedades/18/3.jpg",
+    //         "/propiedades/18/4.jpg",
+    //         "/propiedades/18/5.jpg",
+    //         "/propiedades/18/6.jpg",
+    //         "/propiedades/18/7.jpg",
+    //         "/propiedades/18/8.jpg",
+    //         "/propiedades/18/9.jpg",
+    //         "/propiedades/18/10.jpg",
+    //         "/propiedades/18/11.jpg",
+    //     ]
+    // }
 ];
