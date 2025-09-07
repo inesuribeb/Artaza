@@ -52,7 +52,7 @@ export const homes = [
             "/propiedades/1/6.jpg",
             "/propiedades/1/7.jpg",
             "/propiedades/1/8.jpg",
-        ], 
+        ],
     },
     {
         id: "002",
@@ -107,11 +107,12 @@ export const homes = [
             "/propiedades/2/6.JPG",
             "/propiedades/2/7.JPG",
             "/propiedades/2/8.JPG",
-        ], 
+        ],
     },
     {
         id: "003",
-        price: "475.000 €",
+        // price: "475.000 €",
+        price: "Precio a consultar",
         location: "Artaza, Leioa",
         type: {
             "es": "Piso",
@@ -315,14 +316,6 @@ export const homes = [
             en: "Impressive 300 m² semi-detached house in Artaza, with 4 floors and a functional layout. <br/>Features a spacious living room, bright kitchen, 4 bedrooms, 3 bathrooms, and a txoko with a fully equipped kitchen in the basement. Located in a quiet area close to the beach and amenities, offering spacious rooms, built-in wardrobes, and garden views. <br/>Ideal for comfort and privacy in a unique setting."
         },
         sold: true,
-        // main_image: "/images/salon5.jpg",
-        // images: [
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg"
-        // ],
         main_image: "/propiedades/5/1.jpg",
         images: [
             "/propiedades/5/2.jpg",
@@ -332,7 +325,7 @@ export const homes = [
             "/propiedades/5/6.jpg",
             "/propiedades/5/7.jpg",
             "/propiedades/5/8.jpg",
-        ], 
+        ],
     },
     {
         id: "007",
@@ -390,7 +383,7 @@ export const homes = [
             "/propiedades/6/9.jpg",
             "/propiedades/6/10.jpg",
             "/propiedades/6/11.jpg",
-        ], 
+        ],
     },
     {
         id: "008",
@@ -436,21 +429,25 @@ export const homes = [
             en: "Fantastic duplex penthouse in Artaza, with excellent southeast orientation, offering natural light all day. <br/>The main floor features a living-dining room with a fireplace, independent kitchen, one bedroom, and a full bathroom. The upper floor houses the master bedroom with a study area, built-in wardrobes, and access to a 10 m² terrace, as well as a second bathroom.<br/> Includes a parking space and storage room. <br/>Perfect for renovation and enjoying a unique home in a residential area."
         },
         sold: false,
-        main_image: "/propiedades/7/1.JPG",
+        main_image: "/propiedades/7/1-1.jpg",
         images: [
-            "/propiedades/7/2.jpg",
-            "/propiedades/7/3.JPG",
-            "/propiedades/7/4.jpg",
-            "/propiedades/7/5.JPG",
-            "/propiedades/7/6.JPG",
-            "/propiedades/7/7.JPG",
-            "/propiedades/7/8.JPG",
-            "/propiedades/7/9.JPG",
-            "/propiedades/7/10.JPG",
-            "/propiedades/7/11.JPG",
-            "/propiedades/7/12.JPG",
-            "/propiedades/7/13.JPG",
-        ], 
+            "/propiedades/7/1-1.jpg",
+            "/propiedades/7/2-1.jpg",
+            "/propiedades/7/3-1.jpg",
+            "/propiedades/7/4-1.jpg",
+            // "/propiedades/7/2.jpg",
+            // "/propiedades/7/3.JPG",
+            // "/propiedades/7/4.jpg",
+            // "/propiedades/7/5.JPG",
+            // "/propiedades/7/6.JPG",
+            // "/propiedades/7/7.JPG",
+            // "/propiedades/7/8.JPG",
+            // "/propiedades/7/9.JPG",
+            // "/propiedades/7/10.JPG",
+            // "/propiedades/7/11.JPG",
+            // "/propiedades/7/12.JPG",
+            // "/propiedades/7/13.JPG",
+        ],
     },
     {
         id: "009",
@@ -503,68 +500,8 @@ export const homes = [
             "/propiedades/8/4.jpg",
             "/propiedades/8/5.jpg",
             "/propiedades/8/6.jpg",
-        ], 
+        ],
     },
-    // {
-    //     id: "009",
-    //     price: "625.000 €",
-    //     location: "Negurigane, Leioa",
-    //     type: {
-    //         es: "Bajo",
-    //         en: "Ground Floor"
-    //     },
-    //     built_m2: 110,
-    //     usable_m2: 100,
-    //     bedrooms: 3,
-    //     bathrooms: 2,
-    //     terrace: true,
-    //     balcony: false,
-    //     built_in_wardrobes: true,
-    //     storage_room: true,
-    //     orientation: {
-    //         es: ["Este", "Oeste"],
-    //         en: ["East", "West"]
-    //     },
-    //     garage: true,
-    //     pool: false,
-    //     garden: true,
-    //     private_urbanization: false,
-    //     chimney: false,
-    //     txoko: false,
-    //     laundry: true,
-    //     attic: false,
-    //     elevator: true,
-    //     year_built: 2014,
-    //     parcel_m2: null,
-    //     exact_location: {
-    //         es: "San Bartolomé 19, Negurigane-Peruri, Leioa",
-    //         en: "San Bartolomé 19, Negurigane-Peruri, Leioa"
-    //     },
-    //     title: {
-    //         es: "Amplia Vivienda con Espacios Exteriores Privados en Artaza",
-    //         en: "Spacious Home with Private Outdoor Areas in Artaza"
-    //     },
-    //     description: {
-    //         es: "Bajo con jardín privado en zona residencial tranquila. 110 m² con salón y cocina con acceso directo al exterior, tres habitaciones, dos baños y tendedero.<br/> Ideal para disfrutar en familia con barbacoa, solárium y huerto. Incluye garaje y trastero.",
-    //         en: "Ground floor with private garden in a quiet residential area. 110 m² with living room and kitchen with direct access to the outside, three bedrooms, two bathrooms, and laundry area.<br/>Ideal for family life with barbecue, solarium, and garden. Includes garage and storage room."
-    //     },
-    //     sold: false,
-    //     main_image: "/images/patrimoine2.avif",
-    //     images: [
-    //         "/images/salon2.jpg",
-    //         "/images/salon.jpg",
-    //         "/images/salon2.jpg",
-    //         "/images/salon.jpg",
-    //         "/images/salon2.jpg"
-    //     ],
-    //     main_image: "/propiedades/9/1.JPG",
-    //     images: [
-    //         "/propiedades/9/2.JPG",
-    //         "/propiedades/9/3.JPG",
-    //         "/propiedades/9/4.JPG",
-    //         "/propiedades/9/5.JPG",
-    //     ], 
-    // },
     {
         id: "010",
         // price: "1.250.000 €",
@@ -610,14 +547,6 @@ export const homes = [
             en: "Exclusive 500 m² detached house designed by Iñigo Basáñez, located on a hill with panoramic views and south orientation. <br/>Features 7 bedrooms (3 en suite), 4 bathrooms, a guest toilet, multi-level living room with fireplace, enclosed porch, txoko, double garage, swimming pool, and a 2,170 m² garden."
         },
         sold: true,
-        // main_image: "/images/salon2.jpg",
-        // images: [
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg",
-        //     "/images/salon2.jpg",
-        //     "/images/salon.jpg"
-        // ],
         main_image: "/propiedades/10/1.jpg",
         images: [
             "/propiedades/10/2.jpg",
@@ -634,7 +563,7 @@ export const homes = [
             "/propiedades/10/13.jpg",
             "/propiedades/10/14.jpg",
             "/propiedades/10/15.jpg",
-        ], 
+        ],
     },
     {
         id: "011",
@@ -699,7 +628,7 @@ export const homes = [
             "/propiedades/11/20.jpg",
             "/propiedades/11/22.jpg",
             "/propiedades/11/23.jpg",
-        ], 
+        ],
     },
     {
         id: "012",
@@ -1046,61 +975,189 @@ export const homes = [
             "/propiedades/17/5.jpg",
         ]
     },
-    // {
-    //     id: "018",
-    //     price: "475.000 €",
-    //     location: "Artaza, Leioa",
-    //     type: {
-    //         "es": "Piso",
-    //         "en": "Apartment"
-    //     },
-    //     built_m2: 79,
-    //     usable_m2: 79,
-    //     bedrooms: 1,
-    //     bathrooms: 1,
-    //     terrace: false,
-    //     balcony: false,
-    //     built_in_wardrobes: true,
-    //     storage_room: true,
-    //     orientation: {
-    //         es: ["Oeste"],
-    //         en: ["West"]
-    //     },
-    //     garage: true,
-    //     pool: false,
-    //     garden: false,
-    //     private_urbanization: false,
-    //     chimney: false,
-    //     txoko: false,
-    //     laundry: false,
-    //     attic: false,
-    //     elevator: true,
-    //     year_built: null,
-    //     exact_location: {
-    //         "es": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa",
-    //         "en": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa"
-    //     },
-    //     title: {
-    //         "es": "Moderno Piso en Leioa con Garaje, Trastero y Diseño Exclusivo",
-    //         "en": "Modern Apartment in Leioa with Garage, Storage, and Exclusive Design"
-    //     },
-    //     description: {
-    //         "es": "Piso de diseño, con garaje y trastero, a pocos minutos de todos los servicios esenciales del día a día. <br/>Reformado con un amplio dormitorio principal y vestidor, con espacio adicional adaptable a gimnasio, oficina o dormitorio de invitados. El baño cuenta con doble lavabo, ducha y sanitario inwash de Roca, mientras que la cocina Santos está equipada con electrodomésticos de alta gama. <br/>El salón luminoso con grandes ventanales y un elegante hall de entrada completan esta vivienda, diseñada para maximizar el espacio.",
-    //         "en": "Design apartment, with garage and storage, just a few minutes from all essential daily services. <br/>Renovated with a spacious master bedroom and dressing room, with additional space adaptable to a gym, office, or guest bedroom. The bathroom features double sinks, a shower, and a Roca inwash toilet, while the Santos kitchen is equipped with high-end appliances. <br/>The bright living room with large windows and an elegant entrance hall complete this home, designed to maximize space."
-    //     },
-    //     sold: false,
-    //     main_image: "/propiedades/18/1.jpg",
-    //     images: [
-    //         "/propiedades/18/2.jpg",
-    //         "/propiedades/18/3.jpg",
-    //         "/propiedades/18/4.jpg",
-    //         "/propiedades/18/5.jpg",
-    //         "/propiedades/18/6.jpg",
-    //         "/propiedades/18/7.jpg",
-    //         "/propiedades/18/8.jpg",
-    //         "/propiedades/18/9.jpg",
-    //         "/propiedades/18/10.jpg",
-    //         "/propiedades/18/11.jpg",
-    //     ]
-    // }
+    {
+        id: "018",
+        price: "2.700.000 €",
+        location: "Santa Maria de Getxo",
+        type: {
+            es: "Chalet",
+            en: "Detached House"
+        },
+        built_m2: 440,
+        usable_m2: 440,
+        bedrooms: 5,
+        bathrooms: 5,
+        terrace: true,
+        balcony: false,
+        built_in_wardrobes: true,
+        storage_room: false,
+        orientation: {
+            es: ["Este"],
+            en: ["East"]
+        },
+        garage: true,
+        pool: false,
+        garden: true,
+        private_urbanization: false,
+        chimney: false,
+        txoko: false,
+        laundry: false,
+        attic: false,
+        elevator: false,
+        year_built: null,
+        parcel_m2: 1900,
+        exact_location: {
+            es: "Zientoetxe Errepidea, 11, Getxo",
+            en: "Zientoetxe Errepidea, 11, Getxo"
+        },
+        title: {
+            es: "Caserío Arteaga Osteikoa a la venta en Getxo",
+            en: "Arteaga Osteikoa Estate for Sale in Getxo"
+        },
+        description: {
+            es: "El Caserío Arteaga Osteikoa es una joya arquitectónica del siglo XVI con protección patrimonial, totalmente restaurada para combinar la tradición vasca con un diseño moderno y exclusivo. Ubicado junto al Campo de Golf de La Galea, cerca de la playa de Azkorri y a pocos minutos de Getxo y Bilbao, ofrece una localización privilegiada. La planta baja destaca por un espectacular salón de invierno con chimenea de mármol, un luminoso salón acristalado de verano y una cocina de 45 m² concebida como espacio social, además de una habitación de servicio y zona preparada para suite. En la primera planta dispone de cuatro dormitorios, dos en suite, y un dormitorio principal de gran tamaño con vestidor, biblioteca y baño de lujo con hidromasaje frente a chimenea. El jardín, cuidado durante años, es un entorno vivo con buganvillas, un olivo milenario, cipreses y terrazas de más de 200 m², complementado con proyecto de piscina y parking para seis coches. En conjunto, se trata de una propiedad exclusiva que une historia, carácter y confort en el corazón de Getxo.",
+            en: "The Arteaga Osteikoa farmhouse is a 16th-century architectural gem with heritage protection, fully restored to combine Basque tradition with modern and exclusive design. Located next to La Galea Golf Course, near Azkorri beach and just minutes from Getxo and Bilbao, it offers a privileged setting. The ground floor features a spectacular winter living room with a marble fireplace, a bright glass-enclosed summer lounge, and a 45 m² kitchen conceived as a social space, as well as a service room and an area prepared for a suite. On the first floor, there are four bedrooms, two of them en suite, and a spacious master bedroom with a walk-in closet, library, and a luxurious bathroom with a whirlpool tub facing the fireplace. The garden, cared for over the years, is a living environment with bougainvillea, a thousand-year-old olive tree, cypresses, and terraces of more than 200 m², complemented by a pool project and parking for six cars. Overall, this is an exclusive property that brings together history, character, and comfort in the heart of Getxo."
+        },
+        sold: false,
+        main_image: "/propiedades/19/19-1.jpg",
+        images: [
+            "/propiedades/19/19-1.jpg",
+            "/propiedades/19/19-2.jpg",
+            "/propiedades/19/19-3.jpg",
+            "/propiedades/19/19-4.jpg",
+            "/propiedades/19/19-5.jpg",
+            "/propiedades/19/19-6.jpg",
+            "/propiedades/19/19-7.jpg",
+            "/propiedades/19/19-8.jpg",
+            "/propiedades/19/19-9.jpg",
+            "/propiedades/19/19-10.jpg",
+            "/propiedades/19/19-11.jpg",
+            "/propiedades/19/19-12.jpg",
+            "/propiedades/19/19-13.jpg",
+            "/propiedades/19/19-14.jpg",
+            "/propiedades/19/19-15.jpg",
+            "/propiedades/19/19-16.jpg",
+            "/propiedades/19/19-17.jpg",
+            "/propiedades/19/19-18.jpg",
+            "/propiedades/19/19-19.jpg",
+            "/propiedades/19/19-20.jpg",
+            "/propiedades/19/19-21.jpg",
+            "/propiedades/19/19-22.jpg",
+            "/propiedades/19/19-23.jpg",
+        ],
+    },
+    {
+        id: "019",
+        price: "895.000 €",
+        location: "Centro Urbano, Leioa",
+        type: {
+            es: "Chalet Pareado",
+            en: "Semi-detached House"
+        },
+        built_m2: 390,
+        usable_m2: 390,
+        bedrooms: 5,
+        bathrooms: 4,
+        terrace: true,
+        balcony: true,
+        built_in_wardrobes: true,
+        storage_room: false,
+        orientation: {
+            es: ["Sur", "Este"],
+            en: ["South", "East"]
+        },
+        garage: true,
+        pool: false,
+        garden: true,
+        private_urbanization: false,
+        chimney: false,
+        txoko: false,
+        laundry: false,
+        attic: false,
+        elevator: false,
+        year_built: null,
+        parcel_m2: 500,
+        exact_location: {
+            es: "Centro Urbano, Leioa",
+            en: "City center, Leioa"
+        },
+        title: {
+            es: "Chalet de Lujo con Jardín en Leioa",
+            en: "Luxury Villa with Garden in Leioa"
+        },
+        description: {
+            es: "Se venden dos chalets pareados de lujo en Leioa, en una zona residencial tranquila, familiar y bien comunicada, a solo 10 minutos de Bilbao. Cada vivienda cuenta con 390 m² construidos (350 útiles) en parcelas de 250 m², con jardín privado, garaje y txoko. Ofrecen 5 habitaciones luminosas, 3-4 baños, salón amplio con ventanales, cocina equipada y terrazas privadas. Están construidos con materiales de alta gama, con gran eficiencia térmica y acústica, y menos de 15 años de antigüedad.Se pueden adquirir de forma individual o conjunta, con posibilidad de descuento por la compra de ambas.",
+            en: "For sale: two luxury semi-detached villas in Leioa, located in a quiet, family-friendly residential area, just 10 minutes from Bilbao. Each property offers 390 m² built (350 m² usable) on 250 m² plots, with a private garden, garage, and txoko (traditional Basque dining/entertainment room). They feature 5 bright bedrooms, 3–4 bathrooms, a spacious living room with large windows, a fully equipped kitchen, and private terraces. Built with high-end materials, they provide excellent thermal and acoustic insulation and are less than 15 years old. They can be purchased individually or together, with a possible discount for buying both."
+        },
+        sold: false,
+        main_image: "/propiedades/20/20-1.jpg",
+        images: [
+            "/propiedades/20/20-1.jpg",
+            "/propiedades/20/20-2.jpg",
+            "/propiedades/20/20-3.jpg",
+            "/propiedades/20/20-4.jpg",
+            "/propiedades/20/20-5.jpg",
+            "/propiedades/20/20-6.jpg",
+            "/propiedades/20/20-7.jpg",
+            "/propiedades/20/20-8.jpg",
+            "/propiedades/20/20-9.jpg",
+        ],
+    },
+    {
+        id: "020",
+        price: "-",
+        location: "Santa Maria de Getxo",
+        type: {
+            es: "Dúplex",
+            en: "Duplex"
+        },
+        built_m2: 100,
+        usable_m2: 100,
+        bedrooms: 3,
+        bathrooms: 2,
+        terrace: true,
+        balcony: false,
+        built_in_wardrobes: true,
+        storage_room: false,
+        orientation: {
+            es: ["Sur", "Oeste"],
+            en: ["South", "West"]
+        },
+        garage: true,
+        pool: false,
+        garden: true,
+        private_urbanization: false,
+        chimney: false,
+        txoko: false,
+        laundry: false,
+        attic: false,
+        elevator: false,
+        year_built: null,
+        parcel_m2: null,
+        exact_location: {
+            es: "Santa Maria de Getxo",
+            en: "Santa Maria de Getxo"
+        },
+        title: {
+            es: "Dúplex familiar con jardín",
+            en: "Family Duplex with Garden"
+        },
+        description: {
+            es: "Vivienda dúplex de 100 m² con jardín de 189 m² en urbanización familiar de Santa María de Getxo. En la planta principal dispone de salón-comedor luminoso con salida al jardín, porche acristalado, cocina equipada y dormitorio principal con baño. La planta baja cuenta con dos dormitorios amplios, baño completo, distribuidor con armarios, terraza y jardín privado adicional. Incluye garaje con acceso directo a la vivienda. Ideal para familias que buscan amplitud, tranquilidad y espacios exteriores para disfrutar todo el año.",
+            en: "100 m² duplex home with a 189 m² garden in a family-friendly residential area of Santa María de Getxo. The main floor features a bright living-dining room with access to the garden, a glazed porch, a fully equipped kitchen, and a master bedroom with en-suite bathroom. The lower floor includes two spacious bedrooms, a full bathroom, a hallway with closets, a terrace, and an additional private garden. Comes with a garage with direct access to the home. Ideal for families seeking space, tranquility, and outdoor areas to enjoy all year round.",
+        },
+        sold: true,
+        main_image: "/propiedades/21/21-1.jpg",
+        images: [
+            "/propiedades/21/21-1.jpg",
+            "/propiedades/21/21-2.jpg",
+            "/propiedades/21/21-3.jpg",
+            "/propiedades/21/21-4.jpg",
+            "/propiedades/21/21-5.jpg",
+            "/propiedades/21/21-6.jpg",
+            "/propiedades/21/21-7.jpg",
+            "/propiedades/21/21-8.jpg",
+            "/propiedades/21/21-9.jpg",
+        ],
+    },
 ];
