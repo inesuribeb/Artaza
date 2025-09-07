@@ -1,6 +1,7 @@
 export const homes = [
     {
         id: "001",
+        houseRef: 1,
         price: "870.000 €",
         location: "Negurigane, Leioa",
         type: {
@@ -56,6 +57,7 @@ export const homes = [
     },
     {
         id: "002",
+        houseRef: 2,
         price: "1.300.000 €",
         location: "Berango",
         type: {
@@ -111,6 +113,7 @@ export const homes = [
     },
     {
         id: "003",
+        houseRef: 18,
         // price: "475.000 €",
         price: "Precio a consultar",
         location: "Artaza, Leioa",
@@ -169,6 +172,7 @@ export const homes = [
     },
     {
         id: "004",
+        houseRef: 3,
         price: "550.000 €",
         location: "Las Arenas, Getxo",
         type: {
@@ -225,6 +229,7 @@ export const homes = [
     },
     {
         id: "005",
+        houseRef: 4,
         price: "690.000 €",
         location: "Artaza, Leioa",
         type: {
@@ -274,6 +279,7 @@ export const homes = [
     },
     {
         id: "006",
+        houseRef: 5,
         price: "- €",
         location: "Negurigane, Leioa",
         type: {
@@ -329,6 +335,7 @@ export const homes = [
     },
     {
         id: "007",
+        houseRef: 6,
         price: "- €",
         location: "Artaza, Leioa",
         type: {
@@ -387,6 +394,7 @@ export const homes = [
     },
     {
         id: "008",
+        houseRef: 7,
         price: "460.000 €",
         location: "Artaza, Leioa",
         type: {
@@ -451,6 +459,7 @@ export const homes = [
     },
     {
         id: "009",
+        houseRef: 8,
         price: "495.000 €",
         location: "Centro Leioa",
         type: {
@@ -504,6 +513,7 @@ export const homes = [
     },
     {
         id: "010",
+        houseRef: 9,
         // price: "1.250.000 €",
         price: "- €",
         location: "Sarriena, Leioa",
@@ -567,6 +577,7 @@ export const homes = [
     },
     {
         id: "011",
+        houseRef: 11,
         price: "- €",
         location: "Negurigane, Leioa",
         type: {
@@ -632,6 +643,7 @@ export const homes = [
     },
     {
         id: "012",
+        houseRef: 12,
         price: "- €",
         location: "Las Arenas, Getxo",
         type: {
@@ -690,6 +702,7 @@ export const homes = [
     },
     {
         id: "013",
+        houseRef: 13,
         price: "510.000 €",
         location: "Negurigane, Leioa",
         type: {
@@ -750,6 +763,7 @@ export const homes = [
     },
     {
         id: "014",
+        houseRef: 14,
         price: "- €",
         location: "Mungia",
         type: {
@@ -804,6 +818,7 @@ export const homes = [
     },
     {
         id: "015",
+        houseRef: 15,
         price: "- €",
         location: "Algorta, Getxo",
         type: {
@@ -864,6 +879,7 @@ export const homes = [
     },
     {
         id: "016",
+        houseRef: 16,
         price: "770.000 €",
         location: "Negurigane, Leioa",
         type: {
@@ -926,6 +942,7 @@ export const homes = [
     },
     {
         id: "017",
+        houseRef: 17,
         price: "545.000 €",
         location: "Centro Leioa",
         type: {
@@ -977,6 +994,7 @@ export const homes = [
     },
     {
         id: "018",
+        houseRef: 19,
         price: "2.700.000 €",
         location: "Santa Maria de Getxo",
         type: {
@@ -1048,6 +1066,7 @@ export const homes = [
     },
     {
         id: "019",
+        houseRef: 20,
         price: "895.000 €",
         location: "Centro Urbano, Leioa",
         type: {
@@ -1105,6 +1124,7 @@ export const homes = [
     },
     {
         id: "020",
+        houseRef: 21,
         price: "-",
         location: "Santa Maria de Getxo",
         type: {
