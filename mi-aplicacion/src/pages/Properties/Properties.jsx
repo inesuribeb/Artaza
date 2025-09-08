@@ -58,14 +58,61 @@ function Properties() {
         };
     }, [setHeaderClassName]);
 
+    // useEffect(() => {
+    //     if (!propertyCount && !neighborhood && !budget) {
+    //         setFilteredProperties(homes);
+    //         return;
+    //     }
+
+    //     let filtered = [...homes];
+
+    //     if (propertyCount && propertyCount !== t('anyNumber')) {
+    //         const bedroomMatch = propertyCount.match(/(\d+)/);
+    //         if (bedroomMatch && bedroomMatch[1]) {
+    //             const bedroomCount = parseInt(bedroomMatch[1]);
+    //             if (!isNaN(bedroomCount)) {
+    //                 filtered = filtered.filter(home => home.bedrooms >= bedroomCount);
+    //             }
+    //         }
+    //     }
+
+    //     if (neighborhood && neighborhood !== t('anyNeighbourhood')) {
+    //         filtered = filtered.filter(home => {
+    //             return home.location && home.location.toLowerCase().includes(neighborhood.toLowerCase());
+    //         });
+    //     }
+
+    //     if (budget && budget !== t('anyBudget')) {
+    //         filtered = filtered.filter(home => {
+    //             const priceValue = extractPriceValue(home.price);
+
+    //             if (budget === t('budget400to600')) {
+    //                 return priceValue >= 400000 && priceValue <= 600000;
+    //             } else if (budget === t('budget600to800')) {
+    //                 return priceValue >= 600000 && priceValue <= 800000;
+    //             } else if (budget === t('budget800to1M')) {
+    //                 return priceValue >= 800000 && priceValue <= 1000000;
+    //             } else if (budget === t('budget1MPlus')) {
+    //                 return priceValue > 1000000;
+    //             }
+    //             return true;
+    //         });
+    //     }
+
+    //     setFilteredProperties(filtered);
+    //     setCurrentPage(1);
+    // }, [propertyCount, neighborhood, budget, t]);
+
     useEffect(() => {
         if (!propertyCount && !neighborhood && !budget) {
-            setFilteredProperties(homes);
+            // Ordenar también cuando no hay filtros
+            const sortedHomes = [...homes].sort((a, b) => a.order - b.order);
+            setFilteredProperties(sortedHomes);
             return;
         }
-
+    
         let filtered = [...homes];
-
+    
         if (propertyCount && propertyCount !== t('anyNumber')) {
             const bedroomMatch = propertyCount.match(/(\d+)/);
             if (bedroomMatch && bedroomMatch[1]) {
@@ -75,17 +122,17 @@ function Properties() {
                 }
             }
         }
-
+    
         if (neighborhood && neighborhood !== t('anyNeighbourhood')) {
             filtered = filtered.filter(home => {
                 return home.location && home.location.toLowerCase().includes(neighborhood.toLowerCase());
             });
         }
-
+    
         if (budget && budget !== t('anyBudget')) {
             filtered = filtered.filter(home => {
                 const priceValue = extractPriceValue(home.price);
-
+    
                 if (budget === t('budget400to600')) {
                     return priceValue >= 400000 && priceValue <= 600000;
                 } else if (budget === t('budget600to800')) {
@@ -98,7 +145,10 @@ function Properties() {
                 return true;
             });
         }
-
+    
+        // Ordenar por el campo 'order' después de aplicar todos los filtros
+        filtered.sort((a, b) => a.order - b.order);
+    
         setFilteredProperties(filtered);
         setCurrentPage(1);
     }, [propertyCount, neighborhood, budget, t]);

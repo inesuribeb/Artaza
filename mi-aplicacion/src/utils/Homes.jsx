@@ -1,6 +1,7 @@
 export const homes = [
     {
         id: "001",
+        order: 16,
         houseRef: 1,
         price: "870.000 €",
         location: "Negurigane, Leioa",
@@ -57,6 +58,7 @@ export const homes = [
     },
     {
         id: "002",
+        order: 3,
         houseRef: 2,
         price: "1.300.000 €",
         location: "Berango",
@@ -113,65 +115,7 @@ export const homes = [
     },
     {
         id: "003",
-        houseRef: 18,
-        // price: "475.000 €",
-        price: "Precio a consultar",
-        location: "Artaza, Leioa",
-        type: {
-            "es": "Piso",
-            "en": "Apartment"
-        },
-        built_m2: 79,
-        usable_m2: 79,
-        bedrooms: 1,
-        bathrooms: 1,
-        terrace: false,
-        balcony: false,
-        built_in_wardrobes: true,
-        storage_room: true,
-        orientation: {
-            es: ["Oeste"],
-            en: ["West"]
-        },
-        garage: true,
-        pool: false,
-        garden: false,
-        private_urbanization: false,
-        chimney: false,
-        txoko: false,
-        laundry: false,
-        attic: false,
-        elevator: true,
-        year_built: null,
-        exact_location: {
-            "es": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa",
-            "en": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa"
-        },
-        title: {
-            "es": "Moderno Piso en Leioa con Garaje, Trastero y Diseño Exclusivo",
-            "en": "Modern Apartment in Leioa with Garage, Storage, and Exclusive Design"
-        },
-        description: {
-            "es": "Piso de diseño, con garaje y trastero, a pocos minutos de todos los servicios esenciales del día a día. <br/>Reformado con un amplio dormitorio principal y vestidor, con espacio adicional adaptable a gimnasio, oficina o dormitorio de invitados. El baño cuenta con doble lavabo, ducha y sanitario inwash de Roca, mientras que la cocina Santos está equipada con electrodomésticos de alta gama. <br/>El salón luminoso con grandes ventanales y un elegante hall de entrada completan esta vivienda, diseñada para maximizar el espacio.",
-            "en": "Design apartment, with garage and storage, just a few minutes from all essential daily services. <br/>Renovated with a spacious master bedroom and dressing room, with additional space adaptable to a gym, office, or guest bedroom. The bathroom features double sinks, a shower, and a Roca inwash toilet, while the Santos kitchen is equipped with high-end appliances. <br/>The bright living room with large windows and an elegant entrance hall complete this home, designed to maximize space."
-        },
-        sold: false,
-        main_image: "/propiedades/18/1.jpg",
-        images: [
-            "/propiedades/18/2.jpg",
-            "/propiedades/18/3.jpg",
-            "/propiedades/18/4.jpg",
-            "/propiedades/18/5.jpg",
-            "/propiedades/18/6.jpg",
-            "/propiedades/18/7.jpg",
-            "/propiedades/18/8.jpg",
-            "/propiedades/18/9.jpg",
-            "/propiedades/18/10.jpg",
-            "/propiedades/18/11.jpg",
-        ]
-    },
-    {
-        id: "004",
+        order: 6,
         houseRef: 3,
         price: "550.000 €",
         location: "Las Arenas, Getxo",
@@ -228,7 +172,8 @@ export const homes = [
         ],
     },
     {
-        id: "005",
+        id: "004",
+        order: 17,
         houseRef: 4,
         price: "690.000 €",
         location: "Artaza, Leioa",
@@ -278,7 +223,8 @@ export const homes = [
         ],
     },
     {
-        id: "006",
+        id: "005",
+        order: 18,
         houseRef: 5,
         price: "- €",
         location: "Negurigane, Leioa",
@@ -334,7 +280,8 @@ export const homes = [
         ],
     },
     {
-        id: "007",
+        id: "006",
+        order: 19,
         houseRef: 6,
         price: "- €",
         location: "Artaza, Leioa",
@@ -393,7 +340,8 @@ export const homes = [
         ],
     },
     {
-        id: "008",
+        id: "007",
+        order: 9,
         houseRef: 7,
         price: "460.000 €",
         location: "Artaza, Leioa",
@@ -458,7 +406,8 @@ export const homes = [
         ],
     },
     {
-        id: "009",
+        id: "008",
+        order: 20,
         houseRef: 8,
         price: "495.000 €",
         location: "Centro Leioa",
@@ -512,7 +461,8 @@ export const homes = [
         ],
     },
     {
-        id: "010",
+        id: "009",
+        order: 10,
         houseRef: 9,
         // price: "1.250.000 €",
         price: "- €",
@@ -577,6 +527,7 @@ export const homes = [
     },
     {
         id: "011",
+        order: 7,
         houseRef: 11,
         price: "- €",
         location: "Negurigane, Leioa",
@@ -643,6 +594,7 @@ export const homes = [
     },
     {
         id: "012",
+        order: 8,
         houseRef: 12,
         price: "- €",
         location: "Las Arenas, Getxo",
@@ -702,6 +654,7 @@ export const homes = [
     },
     {
         id: "013",
+        order: 11,
         houseRef: 13,
         price: "510.000 €",
         location: "Negurigane, Leioa",
@@ -763,6 +716,7 @@ export const homes = [
     },
     {
         id: "014",
+        order: 15,
         houseRef: 14,
         price: "- €",
         location: "Mungia",
@@ -818,6 +772,7 @@ export const homes = [
     },
     {
         id: "015",
+        order: 12,
         houseRef: 15,
         price: "- €",
         location: "Algorta, Getxo",
@@ -879,6 +834,7 @@ export const homes = [
     },
     {
         id: "016",
+        order: 14,
         houseRef: 16,
         price: "770.000 €",
         location: "Negurigane, Leioa",
@@ -942,6 +898,7 @@ export const homes = [
     },
     {
         id: "017",
+        order: 13,
         houseRef: 17,
         price: "545.000 €",
         location: "Centro Leioa",
@@ -994,6 +951,67 @@ export const homes = [
     },
     {
         id: "018",
+        order: 4,
+        houseRef: 18,
+        // price: "475.000 €",
+        price: "Precio a consultar",
+        location: "Artaza, Leioa",
+        type: {
+            "es": "Piso",
+            "en": "Apartment"
+        },
+        built_m2: 79,
+        usable_m2: 79,
+        bedrooms: 1,
+        bathrooms: 1,
+        terrace: false,
+        balcony: false,
+        built_in_wardrobes: true,
+        storage_room: true,
+        orientation: {
+            es: ["Oeste"],
+            en: ["West"]
+        },
+        garage: true,
+        pool: false,
+        garden: false,
+        private_urbanization: false,
+        chimney: false,
+        txoko: false,
+        laundry: false,
+        attic: false,
+        elevator: true,
+        year_built: null,
+        exact_location: {
+            "es": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa",
+            "en": "Lekueder s/n, Artatza-Pinueta-Pinosolo, Leioa"
+        },
+        title: {
+            "es": "Moderno Piso en Leioa con Garaje, Trastero y Diseño Exclusivo",
+            "en": "Modern Apartment in Leioa with Garage, Storage, and Exclusive Design"
+        },
+        description: {
+            "es": "Piso de diseño, con garaje y trastero, a pocos minutos de todos los servicios esenciales del día a día. <br/>Reformado con un amplio dormitorio principal y vestidor, con espacio adicional adaptable a gimnasio, oficina o dormitorio de invitados. El baño cuenta con doble lavabo, ducha y sanitario inwash de Roca, mientras que la cocina Santos está equipada con electrodomésticos de alta gama. <br/>El salón luminoso con grandes ventanales y un elegante hall de entrada completan esta vivienda, diseñada para maximizar el espacio.",
+            "en": "Design apartment, with garage and storage, just a few minutes from all essential daily services. <br/>Renovated with a spacious master bedroom and dressing room, with additional space adaptable to a gym, office, or guest bedroom. The bathroom features double sinks, a shower, and a Roca inwash toilet, while the Santos kitchen is equipped with high-end appliances. <br/>The bright living room with large windows and an elegant entrance hall complete this home, designed to maximize space."
+        },
+        sold: false,
+        main_image: "/propiedades/18/1.jpg",
+        images: [
+            "/propiedades/18/2.jpg",
+            "/propiedades/18/3.jpg",
+            "/propiedades/18/4.jpg",
+            "/propiedades/18/5.jpg",
+            "/propiedades/18/6.jpg",
+            "/propiedades/18/7.jpg",
+            "/propiedades/18/8.jpg",
+            "/propiedades/18/9.jpg",
+            "/propiedades/18/10.jpg",
+            "/propiedades/18/11.jpg",
+        ]
+    },
+    {
+        id: "019",
+        order: 1,
         houseRef: 19,
         price: "2.700.000 €",
         location: "Santa Maria de Getxo",
@@ -1065,7 +1083,8 @@ export const homes = [
         ],
     },
     {
-        id: "019",
+        id: "020",
+        order: 2,
         houseRef: 20,
         price: "895.000 €",
         location: "Centro Urbano, Leioa",
@@ -1123,7 +1142,8 @@ export const homes = [
         ],
     },
     {
-        id: "020",
+        id: "021",
+        order: 5,
         houseRef: 21,
         price: "-",
         location: "Santa Maria de Getxo",
