@@ -52,7 +52,7 @@ export const CookiesContent = {
     },
     contactCookies:
       "Si tiene dudas sobre el uso de cookies, puede escribirnos mediante el formulario de contacto o al correo electrónico indicado.",
-    emailaddress: "contacto@tudominio.com",
+    emailaddress: "info@inmoartaza.es",
   },
   en: {
     titleCookies: "Cookies Policy",
@@ -107,6 +107,6 @@ export const CookiesContent = {
     },
     contactCookies:
       "If you have questions about how cookies are used on this website, please reach out via the contact form or email address provided.",
-    emailaddress: "contact@yourdomain.com",
+    emailaddress: "info@inmoartaza.es",
   },
 };

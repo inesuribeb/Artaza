@@ -994,7 +994,7 @@ export const homes = [
             "es": "Piso de diseño, con garaje y trastero, a pocos minutos de todos los servicios esenciales del día a día. <br/>Reformado con un amplio dormitorio principal y vestidor, con espacio adicional adaptable a gimnasio, oficina o dormitorio de invitados. El baño cuenta con doble lavabo, ducha y sanitario inwash de Roca, mientras que la cocina Santos está equipada con electrodomésticos de alta gama. <br/>El salón luminoso con grandes ventanales y un elegante hall de entrada completan esta vivienda, diseñada para maximizar el espacio.",
             "en": "Design apartment, with garage and storage, just a few minutes from all essential daily services. <br/>Renovated with a spacious master bedroom and dressing room, with additional space adaptable to a gym, office, or guest bedroom. The bathroom features double sinks, a shower, and a Roca inwash toilet, while the Santos kitchen is equipped with high-end appliances. <br/>The bright living room with large windows and an elegant entrance hall complete this home, designed to maximize space."
         },
-        sold: false,
+        sold: true,
         main_image: "/propiedades/18/1.jpg",
         images: [
             "/propiedades/18/2.jpg",
@@ -1198,6 +1198,184 @@ export const homes = [
             "/propiedades/21/21-7.jpg",
             "/propiedades/21/21-8.jpg",
             "/propiedades/21/21-9.jpg",
+        ],
+    },
+
+
+
+
+    {
+        id: "022",
+        order: 22,
+        houseRef: 22,
+        price: "793.000 €",
+        location: "Sabino Arana, Bilbao",
+        type: {
+            es: "Piso",
+            en: "Flat"
+        },
+        built_m2: 187,
+        usable_m2: 187,
+        bedrooms: 4,
+        bathrooms: 3,
+        terrace: false,
+        balcony: true,
+        built_in_wardrobes: true,
+        storage_room: false,
+        orientation: {
+            es: ["Este"],
+            en: ["East"]
+        },
+        garage: true,
+        pool: false,
+        garden: false,
+        private_urbanization: false,
+        chimney: true,
+        txoko: false,
+        laundry: true,
+        attic: false,
+        elevator: true,
+        year_built: null,
+        parcel_m2: null,
+        exact_location: {
+            es: "Sabino Arana Etorbidea, 5, 48013, Bilbao",
+            en: "Sabino Arana Etorbidea, 5, 48013, Bilbao"
+        },
+        title: {
+            es: "Piso Señorial en el centro de Bilbao ",
+            en: "Stately flat in the center of Bilbao"
+        },
+        description: {
+            es: "Vivienda amplia y luminosa situada en un edificio de hormigón. Cuenta con un gran salón con chimenea y biblioteca, suelos de madera en espiga y ventanas nuevas.<br/><br/>Dispone de cuatro habitaciones, una de ellas con baño en suite, además de dos baños completos. La cocina es espaciosa y práctica, con zona de office y habitación de servicio con baño.<br/><br/>Un pasillo con armarios empotrados conecta la zona de descanso, orientada a un patio interior tranquilo. La vivienda tiene dos accesos, principal y de servicio, e incluye garaje en el mismo edificio.",
+            en: "Spacious and bright apartment located in a concrete building. It features a large living room with fireplace and library, herringbone wood floors, and new windows.<br/><br/>It has four bedrooms, one with an en-suite bathroom, plus two additional full bathrooms. The kitchen is large and practical, with an office area and a service room with its own bathroom.<br/><br/>A corridor with built in wardrobes connects the sleeping area, facing a quiet interior courtyard. The apartment has two entrances, main and service, and includes a garage in the same building.",
+        },
+        sold: false,
+        main_image: "/propiedades/22/22-1.jpg",
+        images: [
+            "/propiedades/22/22-2.jpg",
+            "/propiedades/22/22-3.jpg",
+            "/propiedades/22/22-4.jpg",
+            "/propiedades/22/22-5.jpg",
+            "/propiedades/22/22-6.jpg",
+            "/propiedades/22/22-7.jpg",
+            "/propiedades/22/22-8.jpg",
+            "/propiedades/22/22-9.jpg",
+            "/propiedades/22/22-10.jpg",
+        ],
+    },
+    {
+        id: "023",
+        order: 23,
+        houseRef: 23,
+        price: "597.000 €",
+        location: "Algorta, Getxo",
+        type: {
+            es: "Piso",
+            en: "Flat"
+        },
+        built_m2: 110,
+        usable_m2: 110,
+        bedrooms: 3,
+        bathrooms: 2,
+        terrace: true,
+        balcony: false,
+        built_in_wardrobes: true,
+        storage_room: true,
+        orientation: {
+            es: ["Este"],
+            en: ["East"]
+        },
+        garage: true,
+        pool: false,
+        garden: false,
+        private_urbanization: false,
+        chimney: false,
+        txoko: false,
+        laundry: true,
+        attic: false,
+        elevator: true,
+        year_built: null,
+        parcel_m2: null,
+        exact_location: {
+            es: "Calle San Martin 20, Zona Usategui, Algorta, Getxo",
+            en: "Calle San Martin 20, Zona Usategui, Algorta, Getxo"
+        },
+        title: {
+            es: "Piso listo para entrar a vivir en Algorta",
+            en: "Ready-to-move-in flat in Algorta"
+        },
+        description: {
+            es: "Vivienda de 110 m², completamente exterior y muy luminosa, distribuida en 3 habitaciones y 2 baños. Se encuentra a solo 3 minutos a pie del metro de Bidezabal y cerca de la playa de Arrigunaga, con todos los servicios al alcance. El edificio ha sido recientemente reformado, cuenta con ITE pasada, acceso a cota 0 y un solárium comunitario con vistas al Abra. La propiedad incluye además una plaza de garaje. <br/><br>Distribución:<br>Hall de entrada que conduce a un salón-comedor luminoso con cocina abierta y equipada.<br>Cocina con tendedero/cuarto de lavado independiente.<br>Terraza accesible desde el salón.<br>Dos habitaciones y un baño completo con ducha.<br>Habitación principal con baño en suite. <br>Una vivienda práctica, cómoda y bien ubicada, ideal para quienes buscan amplios espacios amplios y cercanía al metro, la playa y todos los servicios.",
+            en: "110 m² apartment, fully exterior and very bright, with 3 bedrooms and 2 bathrooms. It is just a 3-minute walk from Bidezabal metro station and close to Arrigunaga beach, with all services within easy reach.<br/><br/>The building has been recently renovated, has a passed ITE inspection, level-access entrance, and a communal solarium with views of the Abra. The property also includes a parking space.<br/>Layout:<br/>Entrance hall leading to a bright living-dining room with an open, fully equipped kitchen.<br/>Kitchen with a separate laundry room.<br/>Terrace accessible from the living room.<br/>Two bedrooms and a full bathroom with shower.<br/>Master bedroom with en-suite bathroom.<br/>A practical, comfortable, and well-located home, perfect for those looking for spacious living areas and close proximity to the metro, the beach, and all services."
+        },
+        sold: false,
+        main_image: "/propiedades/23/23-1.jpg",
+        images: [
+            "/propiedades/23/23-1.jpg",
+            "/propiedades/23/23-2.jpg",
+            "/propiedades/23/23-3.jpg",
+            "/propiedades/23/23-4.jpg",
+            "/propiedades/23/23-5.jpg",
+            "/propiedades/23/23-6.jpg",
+            "/propiedades/23/23-7.jpg",
+            "/propiedades/23/23-8.jpg",
+        ],
+    },
+    {
+        id: "024",
+        order: 24,
+        houseRef: 24,
+        price: "-",
+        location: "Artaza, Leioa",
+        type: {
+            es: "Ático Dúplex",
+            en: "Duplex penthouse"
+        },
+        built_m2: 120,
+        usable_m2: 120,
+        bedrooms: 3,
+        bathrooms: 2,
+        terrace: true,
+        balcony: false,
+        built_in_wardrobes: true,
+        storage_room: true,
+        orientation: {
+            es: ["Sur", "Norte"],
+            en: ["South", "North"]
+        },
+        garage: true,
+        pool: false,
+        garden: false,
+        private_urbanization: false,
+        chimney: false,
+        txoko: false,
+        laundry: false,
+        attic: true,
+        elevator: true,
+        year_built: null,
+        parcel_m2: null,
+        exact_location: {
+            es: "Calle Artaza 2, 48940, Leioa",
+            en: "Calle Artaza 2, 48940, Leioa"
+        },
+        title: {
+            es: "Estupendo ático-dúplex con terraza en Artaza",
+            en: "Wonderful duplex penthouse with terrace in Artaza"
+        },
+        description: {
+            es: "Estupendo atico-duplex con terraza. Listo para entrar a vivir. Situado en una ubicación excepcional, perfectamente comunicada con varias líneas de autobús, a tan solo 10 minutos andando del metro y rodeado de todos los servicios esenciales (farmacias, colegios, tiendas de alimentación, bares, etc. ). La vivienda se distribuye en dos plantas dentro de un edificio de solo 4 alturas y cuenta con garaje de acceso directo y trastero. PLANTA PRINCIPAL: - Amplio salón comedor muy luminoso. - Cocina totalmente equipada. - 2 dormitorios con armarios empotrados. - Baño completo. PLANTA SUPERIOR: - Dormitorio principal con armarios empotrados. - Baño completo. - Acceso a una terraza privada de 20 m², perfecta para disfrutar del buen tiempo, reuniones familiares o momentos de relax. La vivienda se encuentra perfectamente acondicionada y lista para entrar a vivir.",
+            en: "Located in an exceptional area, well connected with several bus lines, just a 10-minute walk from the metro, and surrounded by all essential services (pharmacies, schools, grocery stores, bars, etc.). The apartment is spread over two floors in a building with only 4 levels and includes a garage with direct access and a storage room.<br/>Main floor:<br/>Spacious and bright living-dining room.<br/>Fully equipped kitchen.<br/>2 bedrooms with built-in wardrobes.<br/>Full bathroom.<br/>Upper floor:<br/>Master bedroom with built-in wardrobes.<br/>Full bathroom.<br/>Access to a private 20 m² terrace, perfect for enjoying good weather, family gatherings, or relaxing moments.<br/>The apartment is in excellent condition and ready to move in."
+        },
+        sold: true,
+        main_image: "/propiedades/24/24-2.jpg",
+        images: [
+            "/propiedades/24/24-1.jpg",
+            "/propiedades/24/24-2.jpg",
+            "/propiedades/24/24-3.jpg",
+            "/propiedades/24/24-4.jpg",
+            "/propiedades/24/24-5.jpg",
+            "/propiedades/24/24-6.jpg",
+            "/propiedades/24/24-7.jpg",
         ],
     },
 ];

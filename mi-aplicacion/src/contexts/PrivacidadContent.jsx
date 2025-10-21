@@ -5,7 +5,7 @@ export const PrivacidadContent = {
         {
           heading: "1. Información del Responsable del Tratamiento",
           content:
-            "El responsable del tratamiento de los datos personales recogidos a través de este sitio web es MADOC EUMAR S.L., con CIF B56373012, una sociedad dedicada a la prestación de servicios inmobiliarios y con sede en Leioa (Bizkaia). Gestionamos tu información de forma responsable y conforme a la normativa vigente en materia de protección de datos. Para cualquier consulta relacionada con tus datos personales o el ejercicio de tus derechos, puedes escribirnos a info@inmoartaza.es.",
+            "El responsable del tratamiento de los datos personales recogidos a través de este sitio web es Artaza Inmobiliaria, una sociedad dedicada a la prestación de servicios inmobiliarios y con sede en Leioa (Bizkaia). Gestionamos tu información de forma responsable y conforme a la normativa vigente en materia de protección de datos. Para cualquier consulta relacionada con tus datos personales o el ejercicio de tus derechos, puedes escribirnos a info@inmoartaza.es.",
         },
         {
           heading: "2. Finalidades del Tratamiento",
@@ -15,7 +15,7 @@ export const PrivacidadContent = {
         {
           heading: "3. Legitimación para el Tratamiento de sus Datos",
           content:
-            "La base legal para el tratamiento de sus datos personales es:\n- Consentimiento del interesado, otorgado al rellenar y enviar formularios en nuestra web.\n- Ejecución de un contrato o precontrato, en caso de que solicite nuestros servicios.\n- Cumplimiento de obligaciones legales aplicables a MADOC EUMAR S.L.",
+            "La base legal para el tratamiento de sus datos personales es:\n- Consentimiento del interesado, otorgado al rellenar y enviar formularios en nuestra web.\n- Ejecución de un contrato o precontrato, en caso de que solicite nuestros servicios.\n- Cumplimiento de obligaciones legales aplicables a Artaza Inmobiliaria",
         },
         {
           heading: "4. Plazo de Conservación de los Datos",
@@ -35,7 +35,7 @@ export const PrivacidadContent = {
         {
           heading: "7. Medidas de Seguridad",
           content:
-            "MADOC EUMAR S.L. adopta las medidas técnicas y organizativas necesarias para garantizar la seguridad, integridad y confidencialidad de los datos personales y evitar su pérdida, alteración o acceso no autorizado.",
+            "Artaza Inmobiliaria adopta las medidas técnicas y organizativas necesarias para garantizar la seguridad, integridad y confidencialidad de los datos personales y evitar su pérdida, alteración o acceso no autorizado.",
         },
         {
           heading: "8. Modificaciones de la Política de Privacidad",
@@ -50,7 +50,7 @@ export const PrivacidadContent = {
         {
           heading: "1. Data Controller Information",
           content:
-            "The data controller responsible for the processing of personal data collected through this website is MADOC EUMAR S.L., with tax ID B56373012, a company dedicated to providing real estate services and based in Leioa (Bizkaia), Spain. We manage your information responsibly and in accordance with current data protection regulations. For any inquiries related to your personal data or to exercise your rights, you can contact us at info@inmoartaza.es.",
+            "The data controller responsible for the processing of personal data collected through this website is Artaza Inmobiliaria, a company dedicated to providing real estate services and based in Leioa (Bizkaia), Spain. We manage your information responsibly and in accordance with current data protection regulations. For any inquiries related to your personal data or to exercise your rights, you can contact us at info@inmoartaza.es.",
         },
         {
           heading: "2. Purposes of Data Processing",
@@ -60,7 +60,7 @@ export const PrivacidadContent = {
         {
           heading: "3. Legal Basis for Processing Your Data",
           content:
-            "The legal basis for processing your personal data is:\n- Consent of the data subject, granted by completing and submitting forms on our website.\n- Execution of a contract or pre-contract if you request our services.\n- Compliance with legal obligations applicable to MADOC EUMAR S.L.",
+            "The legal basis for processing your personal data is:\n- Consent of the data subject, granted by completing and submitting forms on our website.\n- Execution of a contract or pre-contract if you request our services.\n- Compliance with legal obligations applicable to Artaza Inmobiliaria",
         },
         {
           heading: "4. Data Retention Period",
@@ -80,7 +80,7 @@ export const PrivacidadContent = {
         {
           heading: "7. Security Measures",
           content:
-            "MADOC EUMAR S.L. adopts the necessary technical and organizational measures to ensure the security, integrity, and confidentiality of personal data and to prevent their loss, alteration, or unauthorized access.",
+            "Artaza Inmobiliaria adopts the necessary technical and organizational measures to ensure the security, integrity, and confidentiality of personal data and to prevent their loss, alteration, or unauthorized access.",
         },
         {
           heading: "8. Changes to the Privacy Policy",
