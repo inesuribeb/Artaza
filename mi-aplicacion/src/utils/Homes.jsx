@@ -1,7 +1,7 @@
 export const homes = [
     {
         id: "001",
-        order: 16,
+        order: 7,
         houseRef: 1,
         price: "870.000 €",
         location: "Negurigane, Leioa",
@@ -58,7 +58,7 @@ export const homes = [
     },
     {
         id: "002",
-        order: 3,
+        order: 5,
         houseRef: 2,
         price: "1.300.000 €",
         location: "Berango",
@@ -115,7 +115,7 @@ export const homes = [
     },
     {
         id: "003",
-        order: 6,
+        order: 8,
         houseRef: 3,
         price: "550.000 €",
         location: "Las Arenas, Getxo",
@@ -173,7 +173,7 @@ export const homes = [
     },
     {
         id: "004",
-        order: 17,
+        order: 19,
         houseRef: 4,
         price: "690.000 €",
         location: "Artaza, Leioa",
@@ -224,7 +224,7 @@ export const homes = [
     },
     {
         id: "005",
-        order: 18,
+        order: 20,
         houseRef: 5,
         price: "- €",
         location: "Negurigane, Leioa",
@@ -281,7 +281,7 @@ export const homes = [
     },
     {
         id: "006",
-        order: 19,
+        order: 21,
         houseRef: 6,
         price: "- €",
         location: "Artaza, Leioa",
@@ -341,7 +341,7 @@ export const homes = [
     },
     {
         id: "007",
-        order: 9,
+        order: 6,
         houseRef: 7,
         price: "460.000 €",
         location: "Artaza, Leioa",
@@ -407,7 +407,7 @@ export const homes = [
     },
     {
         id: "008",
-        order: 20,
+        order: 22,
         houseRef: 8,
         price: "495.000 €",
         location: "Centro Leioa",
@@ -462,7 +462,7 @@ export const homes = [
     },
     {
         id: "009",
-        order: 10,
+        order: 12,
         houseRef: 9,
         // price: "1.250.000 €",
         price: "- €",
@@ -527,7 +527,7 @@ export const homes = [
     },
     {
         id: "011",
-        order: 7,
+        order: 9,
         houseRef: 11,
         price: "- €",
         location: "Negurigane, Leioa",
@@ -594,7 +594,7 @@ export const homes = [
     },
     {
         id: "012",
-        order: 8,
+        order: 10,
         houseRef: 12,
         price: "- €",
         location: "Las Arenas, Getxo",
@@ -654,7 +654,7 @@ export const homes = [
     },
     {
         id: "013",
-        order: 11,
+        order: 13,
         houseRef: 13,
         price: "510.000 €",
         location: "Negurigane, Leioa",
@@ -716,7 +716,7 @@ export const homes = [
     },
     {
         id: "014",
-        order: 15,
+        order: 17,
         houseRef: 14,
         price: "- €",
         location: "Mungia",
@@ -772,7 +772,7 @@ export const homes = [
     },
     {
         id: "015",
-        order: 12,
+        order: 14,
         houseRef: 15,
         price: "- €",
         location: "Algorta, Getxo",
@@ -834,7 +834,7 @@ export const homes = [
     },
     {
         id: "016",
-        order: 14,
+        order: 16,
         houseRef: 16,
         price: "770.000 €",
         location: "Negurigane, Leioa",
@@ -898,7 +898,7 @@ export const homes = [
     },
     {
         id: "017",
-        order: 13,
+        order: 15,
         houseRef: 17,
         price: "545.000 €",
         location: "Centro Leioa",
@@ -951,7 +951,7 @@ export const homes = [
     },
     {
         id: "018",
-        order: 4,
+        order: 11,
         houseRef: 18,
         // price: "475.000 €",
         price: "Precio a consultar",
@@ -1011,7 +1011,7 @@ export const homes = [
     },
     {
         id: "019",
-        order: 1,
+        order: 3,
         houseRef: 19,
         price: "2.700.000 €",
         location: "Santa Maria de Getxo",
@@ -1084,7 +1084,7 @@ export const homes = [
     },
     {
         id: "020",
-        order: 2,
+        order: 4,
         houseRef: 20,
         price: "895.000 €",
         location: "Centro Urbano, Leioa",
@@ -1143,7 +1143,7 @@ export const homes = [
     },
     {
         id: "021",
-        order: 5,
+        order: 18,
         houseRef: 21,
         price: "-",
         location: "Santa Maria de Getxo",
@@ -1206,7 +1206,7 @@ export const homes = [
 
     {
         id: "022",
-        order: 22,
+        order: 2,
         houseRef: 22,
         price: "793.000 €",
         location: "Sabino Arana, Bilbao",
@@ -1265,7 +1265,7 @@ export const homes = [
     },
     {
         id: "023",
-        order: 23,
+        order: 1,
         houseRef: 23,
         price: "597.000 €",
         location: "Algorta, Getxo",
