@@ -64,7 +64,7 @@
   font-weight: 300;
   color: var(--dark-color);
 }
-
+/* 
 .column-description {
   flex: 0.7;
   display: flex;
@@ -85,7 +85,7 @@
   column-count: 2;
   column-gap: 4rem;
   column-rule: 0.5px solid #eee;
-}
+} */
 
 /* 4a fila */
 .individual-home-totalinfo {

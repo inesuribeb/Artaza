@@ -46,7 +46,8 @@ const SearchForm = ({ onSearch }) => {
         t('getxo'),
         t('leioa'),
         t('berango'),
-        t('mungia')
+        t('mungia'),
+        t('bilbao')
     ];
 
     const budgetOptions = [

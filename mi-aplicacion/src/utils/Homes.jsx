@@ -1297,8 +1297,8 @@ export const homes = [
         year_built: null,
         parcel_m2: null,
         exact_location: {
-            es: "Calle San Martin 20, Zona Usategui, Algorta, Getxo",
-            en: "Calle San Martin 20, Zona Usategui, Algorta, Getxo"
+            es: "Calle San Martin 20, Algorta, Getxo",
+            en: "Calle San Martin 20, Algorta, Getxo"
         },
         title: {
             es: "Piso listo para entrar a vivir en Algorta",

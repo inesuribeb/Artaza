@@ -94,8 +94,8 @@
     width: 100%;
     line-height: 2rem;
     color: var(--corporative-color);
-    column-count: 2;
-    column-gap: 4rem;
+    /* column-count: 2;
+    column-gap: 4rem; */
 }
 
 .individual-home-totalinfo {

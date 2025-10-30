@@ -23,6 +23,7 @@ export const filterContent = {
         leioa: "Leioa",
         berango: "Berango",
         mungia: "Mungia",
+        bilbao: "Bilbao",
         
         // Presupuestos
         budget400to600: "€400,000–€600,000",
@@ -62,6 +63,7 @@ export const filterContent = {
         leioa: "Leioa",
         berango: "Berango",
         mungia: "Mungia",
+        bilbao: "Bilbao",
         
         // Presupuestos
         budget400to600: "€400.000–€600.000",
