@@ -82,6 +82,7 @@
 
 .inmolocation-left h1 {
     font-size: 2.5rem;
+    line-height: 2.8rem;
     font-weight: 100;
     color: var(--corporative-color);
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
@@ -94,7 +95,8 @@
     font-size: 1rem;
     font-weight: 100;
     width: 60%;
-    line-height: 1.5rem;
+    /* line-height: 2.8rem; */
+    line-height: 1.4rem;
     margin-bottom: 0.5rem;
     color: var(--corporative-color);
 }
@@ -290,7 +292,7 @@
     .inmolocation-left h3 {
         border-top: 1px solid var(--grey-color);
         padding-top: 1.5rem;
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-bottom: 0rem;
         width: 100%;
     }

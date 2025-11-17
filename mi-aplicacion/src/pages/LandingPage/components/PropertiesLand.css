@@ -119,6 +119,7 @@
     text-transform: uppercase;
 
     font-size: 2.5rem;
+    line-height: 2.8rem;
     font-weight: 100;
     color: var(--corporative-color);
     font-family: var(--serif-one-font);
@@ -126,9 +127,11 @@
 
 .propertiesland-right h3 {
     font-size: 1rem;
+    line-height: 1.4rem;
+
     font-weight: 100;
     width: 60%;
-    line-height: 1.5rem;
+    /* line-height: 1.5rem; */
     margin-bottom: 0rem;
     color: var(--corporative-color);
 }

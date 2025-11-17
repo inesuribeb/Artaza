@@ -2,7 +2,7 @@ export const translations = {
   en: {
     horario: "Hours",
     delunesaviernes: "From Monday to Friday",
-    direccion: "Paseo Landabarri, 48",
+    direccion: "Paseo Landabarri, 50",
     localidad: "Leioa | Biscay, 48940",
     telefono: "+34 944 33 17 36",
     telefono2: "+ 34 650 56 77 12",
@@ -34,7 +34,7 @@ export const translations = {
   es: {
     horario: "Horario",
     delunesaviernes: "De Lunes a Viernes",
-    direccion: "Paseo Landabarri, 48",
+    direccion: "Paseo Landabarri, 50",
     localidad: "Leioa | Vizcaya, 48940",
     telefono: "+34 944 33 17 36",
     telefono2: "+34 650 56 77 12",
@@ -57,7 +57,7 @@ export const translations = {
     terms: "Términos",
     legal: "Legal",
     c: "© 2025 Inmobiliaria Artaza.",
-    madeBy: "Hecho por",
+    madeBy: "Creada por",
     menu: "Menú",
     writeus: "Escríbenos",
     callus: "LLámanos",
