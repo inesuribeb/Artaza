@@ -3,6 +3,7 @@ export const homes = [
         id: "001",
         order: 7,
         houseRef: 1,
+        coordinates: [43.33410214667712, -2.997745563470011],
         price: "870.000 €",
         location: "Negurigane, Leioa",
         type: {
@@ -60,6 +61,7 @@ export const homes = [
         id: "002",
         order: 5,
         houseRef: 2,
+        coordinates: [43.364568104525134, -2.9959272234504386 ],
         price: "1.300.000 €",
         location: "Berango",
         type: {
@@ -117,6 +119,7 @@ export const homes = [
         id: "003",
         order: 8,
         houseRef: 3,
+        coordinates: [43.33357206736102, -3.0047208616193655],
         price: "550.000 €",
         location: "Las Arenas, Getxo",
         type: {
@@ -175,6 +178,7 @@ export const homes = [
         id: "004",
         order: 19,
         houseRef: 4,
+        coordinates: [43.333089757128654, -2.9958438327835673],
         price: "690.000 €",
         location: "Artaza, Leioa",
         type: {
@@ -226,6 +230,7 @@ export const homes = [
         id: "005",
         order: 20,
         houseRef: 5,
+        coordinates: [43.333089757128654, -2.9958438327835673],
         price: "- €",
         location: "Negurigane, Leioa",
         type: {
@@ -283,6 +288,7 @@ export const homes = [
         id: "006",
         order: 21,
         houseRef: 6,
+        coordinates: [43.33568495773744, -2.99859486770933],
         price: "- €",
         location: "Artaza, Leioa",
         type: {
@@ -343,6 +349,7 @@ export const homes = [
         id: "007",
         order: 6,
         houseRef: 7,
+        coordinates: [43.33113495847843, -2.9924278039478613],
         price: "460.000 €",
         location: "Artaza, Leioa",
         type: {
@@ -409,6 +416,7 @@ export const homes = [
         id: "008",
         order: 22,
         houseRef: 8,
+        coordinates: [43.32325522775049, -2.9876039039513125],
         price: "495.000 €",
         location: "Centro Leioa",
         type: {
@@ -464,6 +472,7 @@ export const homes = [
         id: "009",
         order: 12,
         houseRef: 9,
+        coordinates: [43.334454581983785, -2.9857378690742005],
         // price: "1.250.000 €",
         price: "- €",
         location: "Sarriena, Leioa",
@@ -529,6 +538,7 @@ export const homes = [
         id: "011",
         order: 9,
         houseRef: 11,
+        coordinates: [43.33291957340833, -2.994788859768744],
         price: "- €",
         location: "Negurigane, Leioa",
         type: {
@@ -596,6 +606,7 @@ export const homes = [
         id: "012",
         order: 10,
         houseRef: 12,
+        coordinates: [43.33357206736102, -3.0047208616193655],
         price: "- €",
         location: "Las Arenas, Getxo",
         type: {
@@ -656,6 +667,7 @@ export const homes = [
         id: "013",
         order: 13,
         houseRef: 13,
+        coordinates: [43.33755964941952, -2.998101347469808],
         price: "510.000 €",
         location: "Negurigane, Leioa",
         type: {
@@ -718,6 +730,7 @@ export const homes = [
         id: "014",
         order: 17,
         houseRef: 14,
+        coordinates: [43.33428806128653, -2.841957717440275],
         price: "- €",
         location: "Mungia",
         type: {
@@ -774,6 +787,7 @@ export const homes = [
         id: "015",
         order: 14,
         houseRef: 15,
+        coordinates: [43.35541603423981, -3.012125532119306],
         price: "- €",
         location: "Algorta, Getxo",
         type: {
@@ -836,6 +850,7 @@ export const homes = [
         id: "016",
         order: 16,
         houseRef: 16,
+        coordinates: [43.33389176250871, -2.9959228462761067],
         price: "770.000 €",
         location: "Negurigane, Leioa",
         type: {
@@ -900,6 +915,7 @@ export const homes = [
         id: "017",
         order: 15,
         houseRef: 17,
+        coordinates: [43.32757478662679, -2.9891635751123027],
         price: "545.000 €",
         location: "Centro Leioa",
         type: {
@@ -953,6 +969,7 @@ export const homes = [
         id: "018",
         order: 11,
         houseRef: 18,
+        coordinates: [43.33047914747193, -2.9943695751121124],
         // price: "475.000 €",
         price: "Precio a consultar",
         location: "Artaza, Leioa",
@@ -1013,6 +1030,7 @@ export const homes = [
         id: "019",
         order: 3,
         houseRef: 19,
+        coordinates: [43.36484036992396, -3.018027317619921],
         price: "2.700.000 €",
         location: "Santa Maria de Getxo",
         type: {
@@ -1086,6 +1104,7 @@ export const homes = [
         id: "020",
         order: 4,
         houseRef: 20,
+        coordinates: [43.32544210926349, -2.989685829780046],
         price: "895.000 €",
         location: "Centro Urbano, Leioa",
         type: {
@@ -1145,6 +1164,7 @@ export const homes = [
         id: "021",
         order: 18,
         houseRef: 21,
+        coordinates: [43.36484036992396, -3.018027317619921],
         price: "-",
         location: "Santa Maria de Getxo",
         type: {
@@ -1208,6 +1228,7 @@ export const homes = [
         id: "022",
         order: 2,
         houseRef: 22,
+        coordinates: [43.26439907878399, -2.945305551175777],
         price: "793.000 €",
         location: "Sabino Arana, Bilbao",
         type: {
@@ -1267,6 +1288,7 @@ export const homes = [
         id: "023",
         order: 1,
         houseRef: 23,
+        coordinates: [43.35562609856214, -3.012116046274845],
         price: "597.000 €",
         location: "Algorta, Getxo",
         type: {
@@ -1308,7 +1330,7 @@ export const homes = [
             es: "Vivienda de 110 m², completamente exterior y muy luminosa, distribuida en 3 habitaciones y 2 baños. Se encuentra a solo 3 minutos a pie del metro de Bidezabal y cerca de la playa de Arrigunaga, con todos los servicios al alcance. El edificio ha sido recientemente reformado, cuenta con ITE pasada, acceso a cota 0 y un solárium comunitario con vistas al Abra. La propiedad incluye además una plaza de garaje. <br/><br>Distribución:<br>Hall de entrada que conduce a un salón-comedor luminoso con cocina abierta y equipada.<br>Cocina con tendedero/cuarto de lavado independiente.<br>Terraza accesible desde el salón.<br>Dos habitaciones y un baño completo con ducha.<br>Habitación principal con baño en suite. <br>Una vivienda práctica, cómoda y bien ubicada, ideal para quienes buscan amplios espacios amplios y cercanía al metro, la playa y todos los servicios.",
             en: "110 m² apartment, fully exterior and very bright, with 3 bedrooms and 2 bathrooms. It is just a 3-minute walk from Bidezabal metro station and close to Arrigunaga beach, with all services within easy reach.<br/><br/>The building has been recently renovated, has a passed ITE inspection, level-access entrance, and a communal solarium with views of the Abra. The property also includes a parking space.<br/>Layout:<br/>Entrance hall leading to a bright living-dining room with an open, fully equipped kitchen.<br/>Kitchen with a separate laundry room.<br/>Terrace accessible from the living room.<br/>Two bedrooms and a full bathroom with shower.<br/>Master bedroom with en-suite bathroom.<br/>A practical, comfortable, and well-located home, perfect for those looking for spacious living areas and close proximity to the metro, the beach, and all services."
         },
-        sold: false,
+        sold: true,
         main_image: "/propiedades/23/23-1.jpg",
         images: [
             "/propiedades/23/23-1.jpg",
@@ -1325,6 +1347,7 @@ export const homes = [
         id: "024",
         order: 24,
         houseRef: 24,
+        coordinates: [43.332501628968245, -2.996753339529884],
         price: "-",
         location: "Artaza, Leioa",
         type: {
