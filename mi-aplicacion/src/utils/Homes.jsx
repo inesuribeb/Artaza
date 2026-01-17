@@ -4,7 +4,8 @@ export const homes = [
         order: 7,
         houseRef: 1,
         coordinates: [43.33410214667712, -2.997745563470011],
-        price: "870.000 €",
+        // price: "870.000 €",
+        price: "- €",
         location: "Negurigane, Leioa",
         type: {
             es: "Adosado",
@@ -45,7 +46,7 @@ export const homes = [
             es: "Chalet de 300 m² en urbanización cerrada, ideal para familias. <br/>5 habitaciones, 4 baños, amplio salón con chimenea, cocina con zona de comedor y acogedor ático. <br/>Garaje cerrado para dos coches, trastero, txoko, terraza, balcón y jardín privado. <br/>Seguridad, comodidad y amplitud en un entorno excepcional.",
             en: "300 m² terraced house in a gated community, ideal for families. <br/>5 bedrooms, 4 bathrooms, spacious living room with fireplace, kitchen with dining area, and cozy attic. <br/>Private garage for two cars, storage room, txoko, terrace, balcony, and private garden. <br/>Security, comfort, and spaciousness in an exceptional environment."
         },
-        sold: false,
+        sold: true,
         main_image: "/propiedades/1/1.jpg",
         images: [
             "/propiedades/1/2.jpg",
