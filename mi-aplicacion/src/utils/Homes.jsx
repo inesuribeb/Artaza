@@ -1447,7 +1447,7 @@ export const homes = [
         },
         description: {
             es: "Vivienda totalmente exterior de 110 m², reformada íntegramente, ubicada en el centro de Algorta (Getxo), a pocos minutos andando del metro de Bidezabal, de la playa de Arrigunaga y de todos los servicios del día a día, con hall de entrada, cocina totalmente equipada con zona de lavado, amplio salón-comedor, dormitorio principal con vestidor y baño en suite, dos habitaciones adicionales (una actualmente comedor) y segundo baño, con buena distribución y funcionalidad.",
-            es: "Bright, fully renovated 110 m² apartment in the centre of Algorta (Getxo), just a few minutes’ walk from Bidezabal metro station, Arrigunaga beach, and all daily amenities, with an entrance hall, fully equipped kitchen with laundry area, spacious living-dining room, master bedroom with dressing room and en-suite bathroom, two additional rooms (one currently used as a dining room), and a second bathroom, offering a practical and functional layout.",
+            en: "Bright, fully renovated 110 m² apartment in the centre of Algorta (Getxo), just a few minutes’ walk from Bidezabal metro station, Arrigunaga beach, and all daily amenities, with an entrance hall, fully equipped kitchen with laundry area, spacious living-dining room, master bedroom with dressing room and en-suite bathroom, two additional rooms (one currently used as a dining room), and a second bathroom, offering a practical and functional layout.",
         },
         sold: false,
         main_image: "/propiedades/25/25-1.jpeg",
@@ -1515,7 +1515,7 @@ export const homes = [
         },
         description: {
             es: "Piso de 60 m² en Las Arenas (Getxo), completamente reformado y amueblado a estrenar. Dispone de ventanas nuevas de alta eficiencia, suelos laminados modernos y cocina renovada. El edificio no tiene derramas pendientes. Situado en una ubicación céntrica, con todos los servicios del día a día a mano, buena conexión de transporte público y a pocos minutos a pie del paseo marítimo y la playa. Ideal tanto para entrar a vivir sin preocuparse por reformas como para inversores que busquen una propiedad con potencial de alquiler residencial o vacacional.",
-            es: "60 m² apartment in Las Arenas (Getxo), fully renovated and furnished as new. It features energy-efficient windows, modern laminate flooring, and a renovated kitchen. The building has no pending maintenance fees. Centrally located, with all daily amenities nearby, good public transport connections, and just a few minutes’ walk from the seafront and the beach. Ideal for those looking to move in without worry or for investors seeking a property with strong rental potential, either long-term or holiday rental.",
+            en: "60 m² apartment in Las Arenas (Getxo), fully renovated and furnished as new. It features energy-efficient windows, modern laminate flooring, and a renovated kitchen. The building has no pending maintenance fees. Centrally located, with all daily amenities nearby, good public transport connections, and just a few minutes’ walk from the seafront and the beach. Ideal for those looking to move in without worry or for investors seeking a property with strong rental potential, either long-term or holiday rental.",
         },
         sold: false,
         main_image: "/propiedades/26/26-1.JPG",
