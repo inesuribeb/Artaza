@@ -1,7 +1,7 @@
 export const homes = [
     {
         id: "001",
-        order: 7,
+        order: 9,
         houseRef: 1,
         coordinates: [43.33410214667712, -2.997745563470011],
         // price: "870.000 €",
@@ -60,7 +60,7 @@ export const homes = [
     },
     {
         id: "002",
-        order: 5,
+        order: 7,
         houseRef: 2,
         coordinates: [43.364568104525134, -2.9959272234504386],
         price: "1.300.000 €",
@@ -118,7 +118,7 @@ export const homes = [
     },
     {
         id: "003",
-        order: 8,
+        order: 10,
         houseRef: 3,
         coordinates: [43.33357206736102, -3.0047208616193655],
         price: "550.000 €",
@@ -177,7 +177,7 @@ export const homes = [
     },
     {
         id: "004",
-        order: 19,
+        order: 21,
         houseRef: 4,
         coordinates: [43.333089757128654, -2.9958438327835673],
         price: "690.000 €",
@@ -229,7 +229,7 @@ export const homes = [
     },
     {
         id: "005",
-        order: 20,
+        order: 22,
         houseRef: 5,
         coordinates: [43.333089757128654, -2.9958438327835673],
         price: "- €",
@@ -287,7 +287,7 @@ export const homes = [
     },
     {
         id: "006",
-        order: 21,
+        order: 23,
         houseRef: 6,
         coordinates: [43.33568495773744, -2.99859486770933],
         price: "- €",
@@ -348,7 +348,7 @@ export const homes = [
     },
     {
         id: "007",
-        order: 26,
+        order: 28,
         houseRef: 7,
         coordinates: [43.33113495847843, -2.9924278039478613],
         price: "460.000 €",
@@ -415,7 +415,7 @@ export const homes = [
     },
     {
         id: "008",
-        order: 22,
+        order: 24,
         houseRef: 8,
         coordinates: [43.32325522775049, -2.9876039039513125],
         price: "495.000 €",
@@ -471,7 +471,7 @@ export const homes = [
     },
     {
         id: "009",
-        order: 12,
+        order: 14,
         houseRef: 9,
         coordinates: [43.334454581983785, -2.9857378690742005],
         // price: "1.250.000 €",
@@ -538,7 +538,7 @@ export const homes = [
     {
         id: "011",
         order: 9,
-        houseRef: 11,
+        houseRef: 13,
         coordinates: [43.33291957340833, -2.994788859768744],
         price: "- €",
         location: "Negurigane, Leioa",
@@ -605,7 +605,7 @@ export const homes = [
     },
     {
         id: "012",
-        order: 10,
+        order: 12,
         houseRef: 12,
         coordinates: [43.33357206736102, -3.0047208616193655],
         price: "- €",
@@ -666,7 +666,7 @@ export const homes = [
     },
     {
         id: "013",
-        order: 13,
+        order: 15,
         houseRef: 13,
         coordinates: [43.33755964941952, -2.998101347469808],
         price: "510.000 €",
@@ -729,7 +729,7 @@ export const homes = [
     },
     {
         id: "014",
-        order: 17,
+        order: 19,
         houseRef: 14,
         coordinates: [43.33428806128653, -2.841957717440275],
         price: "- €",
@@ -786,7 +786,7 @@ export const homes = [
     },
     {
         id: "015",
-        order: 14,
+        order: 16,
         houseRef: 15,
         coordinates: [43.35541603423981, -3.012125532119306],
         price: "- €",
@@ -849,7 +849,7 @@ export const homes = [
     },
     {
         id: "016",
-        order: 16,
+        order: 18,
         houseRef: 16,
         coordinates: [43.33389176250871, -2.9959228462761067],
         price: "770.000 €",
@@ -914,7 +914,7 @@ export const homes = [
     },
     {
         id: "017",
-        order: 15,
+        order: 17,
         houseRef: 17,
         coordinates: [43.32757478662679, -2.9891635751123027],
         price: "545.000 €",
@@ -968,7 +968,7 @@ export const homes = [
     },
     {
         id: "018",
-        order: 11,
+        order: 13,
         houseRef: 18,
         coordinates: [43.33047914747193, -2.9943695751121124],
         // price: "475.000 €",
@@ -1103,7 +1103,7 @@ export const homes = [
     // },
     {
         id: "020",
-        order: 4,
+        order: 6,
         houseRef: 20,
         coordinates: [43.32544210926349, -2.989685829780046],
         price: "895.000 €",
@@ -1163,7 +1163,7 @@ export const homes = [
     },
     {
         id: "021",
-        order: 18,
+        order: 20,
         houseRef: 21,
         coordinates: [43.36484036992396, -3.018027317619921],
         price: "-",
@@ -1227,10 +1227,10 @@ export const homes = [
 
     {
         id: "022",
-        order: 2,
+        order: 4,
         houseRef: 22,
         coordinates: [43.26439907878399, -2.945305551175777],
-        price: "793.000 €",
+        price: "760.000 €",
         location: "Sabino Arana, Bilbao",
         type: {
             es: "Piso",
@@ -1287,7 +1287,7 @@ export const homes = [
     },
     {
         id: "023",
-        order: 25,
+        order: 27,
         houseRef: 23,
         coordinates: [43.35562609856214, -3.012116046274845],
         price: "597.000 €",
@@ -1346,7 +1346,7 @@ export const homes = [
     },
     {
         id: "024",
-        order: 24,
+        order: 26,
         houseRef: 24,
         coordinates: [43.332501628968245, -2.996753339529884],
         price: "-",
@@ -1473,10 +1473,10 @@ export const homes = [
     // },
     {
         id: "26",
-        order: 5,
+        order: 7,
         houseRef: 26,
         coordinates: [43.32733106976769, -3.0137619153435726 ],
-        price: "335.000 €",
+        price: "330.000 €",
         location: "Las Arenas, Getxo",
         type: {
             es: "Piso",
@@ -1516,6 +1516,122 @@ export const homes = [
         description: {
             es: "Piso de 60 m² en Las Arenas (Getxo), completamente reformado y amueblado a estrenar. Dispone de ventanas nuevas de alta eficiencia, suelos laminados modernos y cocina renovada. El edificio no tiene derramas pendientes. Situado en una ubicación céntrica, con todos los servicios del día a día a mano, buena conexión de transporte público y a pocos minutos a pie del paseo marítimo y la playa. Ideal tanto para entrar a vivir sin preocuparse por reformas como para inversores que busquen una propiedad con potencial de alquiler residencial o vacacional.",
             en: "60 m² apartment in Las Arenas (Getxo), fully renovated and furnished as new. It features energy-efficient windows, modern laminate flooring, and a renovated kitchen. The building has no pending maintenance fees. Centrally located, with all daily amenities nearby, good public transport connections, and just a few minutes’ walk from the seafront and the beach. Ideal for those looking to move in without worry or for investors seeking a property with strong rental potential, either long-term or holiday rental.",
+        },
+        sold: false,
+        main_image: "/propiedades/26/26-1.JPG",
+        images: [
+            "/propiedades/26/26-2.JPG",
+            "/propiedades/26/26-3.JPG",
+            "/propiedades/26/26-4.JPG",
+            "/propiedades/26/26-5.JPG",
+            "/propiedades/26/26-6.JPG",
+            "/propiedades/26/26-7.JPG",
+            "/propiedades/26/26-8.png",
+        ],
+    },
+    {
+        id: "27",
+        order: 1,
+        houseRef: 27,
+        coordinates: [43.32362830970893, -2.981869790249912 ],
+        price: "639.000 €",
+        location: "Centro Urbano, Leioa",
+        type: {
+            es: "Bajo",
+            en: "Ground floor"
+        },
+        built_m2: 149,
+        usable_m2: 149,
+        bedrooms: 3,
+        bathrooms: 2,
+        terrace: true,
+        balcony: false,
+        built_in_wardrobes: true,
+        storage_room: false,
+        orientation: {
+            es: ["Sur", "Este"],
+            en: ["South", "East"]
+        },
+        garage: true,
+        pool: false,
+        garden: true,
+        private_urbanization: false,
+        chimney: false,
+        txoko: true,
+        laundry: true,
+        attic: false,
+        elevator: true ,
+        year_built: null,
+        parcel_m2: null,
+        exact_location: {
+            es: "Calle Mendibilbarri, 48940, Leioa, Vizcaya, España",
+            en: "Calle Mendibilbarri, 48940, Leioa, Vizcaya, España"
+        },
+        title: {
+            es: "Bajo con jardin en Leioa",
+            en: "Ground floor apartment in Leioa"
+        },
+        description: {
+            es: "Bajo con jardín orientado al sur, amplio y luminoso, con una distribución cómoda y funcional. Dispone de un salón con salida directa al jardín, cocina totalmente equipada con acceso a una amplia terraza con barbacoa y buen espacio exterior.<br/><br/>La vivienda cuenta con 3 habitaciones, incluyendo un dormitorio principal en suite, además de un segundo baño completo. En la planta inferior ofrece un txoko o zona de ocio, lavandería independiente y acceso directo a un garaje cerrado con capacidad para dos vehículos.<br/><br/>Una vivienda completa, con buenos espacios interiores y exteriores, ideal para el día a día y para disfrutar en familia o con amigos.",
+            en: "South-facing ground floor apartment with garden, spacious and bright, featuring a comfortable and functional layout. It includes a living room with direct access to the garden, a fully equipped kitchen with access to a large terrace with barbecue and ample outdoor space.<br/><br/>The property offers 3 bedrooms, including a master bedroom with en-suite bathroom, as well as a second full bathroom. On the lower floor, there is a txoko (traditional Basque leisure space) or entertainment area, an independent laundry room, and direct access to a closed garage with capacity for two vehicles.<br/><br/>A complete home with well-designed indoor and outdoor spaces, ideal for everyday living and enjoying time with family or friends.",
+        },
+        sold: false,
+        main_image: "/propiedades/26/26-1.JPG",
+        images: [
+            "/propiedades/26/26-2.JPG",
+            "/propiedades/26/26-3.JPG",
+            "/propiedades/26/26-4.JPG",
+            "/propiedades/26/26-5.JPG",
+            "/propiedades/26/26-6.JPG",
+            "/propiedades/26/26-7.JPG",
+            "/propiedades/26/26-8.png",
+        ],
+    },
+    {
+        id: "28",
+        order: 2,
+        houseRef: 28,
+        coordinates: [43.321968906724464, -3.0092754577135947],
+        price: "428.000 €",
+        location: "Santa Ana, Leioa",
+        type: {
+            es: "Piso",
+            en: "Flat"
+        },
+        built_m2: 80,
+        usable_m2: 80,
+        bedrooms: 3,
+        bathrooms: 2,
+        terrace: false,
+        balcony: true,
+        built_in_wardrobes: true,
+        storage_room: false,
+        orientation: {
+            es: ["Sur", "Este"],
+            en: ["South", "East"]
+        },
+        garage: false,
+        pool: false,
+        garden: true,
+        private_urbanization: true,
+        chimney: false,
+        txoko: false,
+        laundry: false,
+        attic: false,
+        elevator: true ,
+        year_built: null,
+        parcel_m2: null,
+        exact_location: {
+            es: "Calle Santa Ana, Leioa",
+            en: "Calle Santa Ana, Leioa"
+        },
+        title: {
+            es: "Piso recien reformado en Santa Ana",
+            en: "Recently renovated apartment in Santa Ana"
+        },
+        description: {
+            es: "Se vende en EXCLUSIVA este piso recién reformado.<br/><br/>La vivienda está ubicada en una zona tranquila, a tan solo 5 minutos andando del metro de Las Arenas, y perfectamente conectada con paradas de autobús que comunican con Bilbao. Además, se encuentra a escasos minutos a pie de todos los servicios necesarios para el día a día: supermercados, farmacias, panaderías, etc.<br/><br/>También está muy cerca del nuevo paseo peatonal y ciclista junto a la ría, que conecta Bilbao con Getxo, ideal para pasear o practicar deporte.<br/><br/>Al acceder a la vivienda nos recibe un pequeño hall que da paso al salón, conectado con la cocina. La cocina está totalmente equipada con electrodomésticos nuevos.<br/><br/>El salón es amplio y muy luminoso, y desde él se accede a un aseo de cortesía que da servicio a la zona de día.<br/><br/>La zona de descanso se distribuye a través de un pasillo, donde encontramos tres habitaciones y un baño completo. La habitación principal tiene acceso a una terraza, siendo uno de los espacios más luminosos de la vivienda gracias a su buena orientación, también puede ser una salita.<br/><br/>La vivienda ha sido reformada recientemente de forma integral, incluyendo fontanería, electricidad, instalación de calefacción de gas y ventanas nuevas, dejando un lienzo en blanco para se distribuya como las necesidades requieran.<br/><br/>El edificio cuenta con fachada ventilada, acceso a cota 0 y actualmente no tiene derramas pendientes.",
+            en: "Recently renovated apartment in a quiet area, just 5 minutes from Las Arenas metro and well connected by bus. Close to shops, services, and the pedestrian/cycling promenade along the estuary.<br/><br/>The apartment features a small hall, spacious and bright living room with guest toilet, fully equipped kitchen, three bedrooms, a full bathroom, and a main bedroom with terrace. Recently updated with new plumbing, electricity, gas heating, and windows.<br/><br/>The building has a ventilated facade, ground-level access, and no pending fees.",
         },
         sold: false,
         main_image: "/propiedades/26/26-1.JPG",
