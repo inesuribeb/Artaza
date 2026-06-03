@@ -1,7 +1,7 @@
 export const homes = [
     {
         id: "001",
-        order: 9,
+        order: 13,
         houseRef: 1,
         coordinates: [43.33410214667712, -2.997745563470011],
         // price: "870.000 €",
@@ -60,7 +60,7 @@ export const homes = [
     },
     {
         id: "002",
-        order: 7,
+        order: 11,
         houseRef: 2,
         coordinates: [43.364568104525134, -2.9959272234504386],
         price: "1.300.000 €",
@@ -118,7 +118,7 @@ export const homes = [
     },
     {
         id: "003",
-        order: 10,
+        order: 14,
         houseRef: 3,
         coordinates: [43.33357206736102, -3.0047208616193655],
         price: "550.000 €",
@@ -177,7 +177,7 @@ export const homes = [
     },
     {
         id: "004",
-        order: 21,
+        order: 25,
         houseRef: 4,
         coordinates: [43.333089757128654, -2.9958438327835673],
         price: "690.000 €",
@@ -229,7 +229,7 @@ export const homes = [
     },
     {
         id: "005",
-        order: 22,
+        order: 26,
         houseRef: 5,
         coordinates: [43.333089757128654, -2.9958438327835673],
         price: "- €",
@@ -287,7 +287,7 @@ export const homes = [
     },
     {
         id: "006",
-        order: 23,
+        order: 27,
         houseRef: 6,
         coordinates: [43.33568495773744, -2.99859486770933],
         price: "- €",
@@ -348,7 +348,7 @@ export const homes = [
     },
     {
         id: "007",
-        order: 28,
+        order: 32,
         houseRef: 7,
         coordinates: [43.33113495847843, -2.9924278039478613],
         price: "460.000 €",
@@ -415,7 +415,7 @@ export const homes = [
     },
     {
         id: "008",
-        order: 24,
+        order: 28,
         houseRef: 8,
         coordinates: [43.32325522775049, -2.9876039039513125],
         price: "495.000 €",
@@ -471,7 +471,7 @@ export const homes = [
     },
     {
         id: "009",
-        order: 14,
+        order: 18,
         houseRef: 9,
         coordinates: [43.334454581983785, -2.9857378690742005],
         // price: "1.250.000 €",
@@ -537,7 +537,7 @@ export const homes = [
     },
     {
         id: "011",
-        order: 9,
+        order: 13,
         houseRef: 13,
         coordinates: [43.33291957340833, -2.994788859768744],
         price: "- €",
@@ -605,7 +605,7 @@ export const homes = [
     },
     {
         id: "012",
-        order: 12,
+        order: 16,
         houseRef: 12,
         coordinates: [43.33357206736102, -3.0047208616193655],
         price: "- €",
@@ -666,7 +666,7 @@ export const homes = [
     },
     {
         id: "013",
-        order: 15,
+        order: 19,
         houseRef: 13,
         coordinates: [43.33755964941952, -2.998101347469808],
         price: "510.000 €",
@@ -729,7 +729,7 @@ export const homes = [
     },
     {
         id: "014",
-        order: 19,
+        order: 23,
         houseRef: 14,
         coordinates: [43.33428806128653, -2.841957717440275],
         price: "- €",
@@ -786,7 +786,7 @@ export const homes = [
     },
     {
         id: "015",
-        order: 16,
+        order: 20,
         houseRef: 15,
         coordinates: [43.35541603423981, -3.012125532119306],
         price: "- €",
@@ -849,7 +849,7 @@ export const homes = [
     },
     {
         id: "016",
-        order: 18,
+        order: 22,
         houseRef: 16,
         coordinates: [43.33389176250871, -2.9959228462761067],
         price: "770.000 €",
@@ -914,7 +914,7 @@ export const homes = [
     },
     {
         id: "017",
-        order: 17,
+        order: 21,
         houseRef: 17,
         coordinates: [43.32757478662679, -2.9891635751123027],
         price: "545.000 €",
@@ -968,7 +968,7 @@ export const homes = [
     },
     {
         id: "018",
-        order: 13,
+        order: 17,
         houseRef: 18,
         coordinates: [43.33047914747193, -2.9943695751121124],
         // price: "475.000 €",
@@ -1103,7 +1103,7 @@ export const homes = [
     // },
     {
         id: "020",
-        order: 6,
+        order: 10,
         houseRef: 20,
         coordinates: [43.32544210926349, -2.989685829780046],
         price: "895.000 €",
@@ -1163,7 +1163,7 @@ export const homes = [
     },
     {
         id: "021",
-        order: 20,
+        order: 24,
         houseRef: 21,
         coordinates: [43.36484036992396, -3.018027317619921],
         price: "-",
@@ -1227,10 +1227,11 @@ export const homes = [
 
     {
         id: "022",
-        order: 4,
+        order: 8,
         houseRef: 22,
         coordinates: [43.26439907878399, -2.945305551175777],
-        price: "760.000 €",
+        // price: "760.000 €",
+        price: "- €",
         location: "Sabino Arana, Bilbao",
         type: {
             es: "Piso",
@@ -1271,7 +1272,7 @@ export const homes = [
             es: "Vivienda amplia y luminosa situada en un edificio de hormigón. Cuenta con un gran salón con chimenea y biblioteca, suelos de madera en espiga y ventanas nuevas.<br/><br/>Dispone de cuatro habitaciones, una de ellas con baño en suite, además de dos baños completos. La cocina es espaciosa y práctica, con zona de office y habitación de servicio con baño.<br/><br/>Un pasillo con armarios empotrados conecta la zona de descanso, orientada a un patio interior tranquilo. La vivienda tiene dos accesos, principal y de servicio, e incluye garaje en el mismo edificio.",
             en: "Spacious and bright apartment located in a concrete building. It features a large living room with fireplace and library, herringbone wood floors, and new windows.<br/><br/>It has four bedrooms, one with an en-suite bathroom, plus two additional full bathrooms. The kitchen is large and practical, with an office area and a service room with its own bathroom.<br/><br/>A corridor with built in wardrobes connects the sleeping area, facing a quiet interior courtyard. The apartment has two entrances, main and service, and includes a garage in the same building.",
         },
-        sold: false,
+        sold: true,
         main_image: "/propiedades/22/22-1.jpg",
         images: [
             "/propiedades/22/22-2.jpg",
@@ -1287,7 +1288,7 @@ export const homes = [
     },
     {
         id: "023",
-        order: 27,
+        order: 31,
         houseRef: 23,
         coordinates: [43.35562609856214, -3.012116046274845],
         price: "597.000 €",
@@ -1346,7 +1347,7 @@ export const homes = [
     },
     {
         id: "024",
-        order: 26,
+        order: 30,
         houseRef: 24,
         coordinates: [43.332501628968245, -2.996753339529884],
         price: "-",
@@ -1473,10 +1474,11 @@ export const homes = [
     // },
     {
         id: "26",
-        order: 2,
+        order: 6,
         houseRef: 26,
         coordinates: [43.32733106976769, -3.0137619153435726 ],
-        price: "260.000 €",
+        // price: "260.000 €",
+        price: "- €",
         location: "Las Arenas, Getxo",
         type: {
             es: "Piso",
@@ -1517,7 +1519,7 @@ export const homes = [
             es: "Piso de 60 m² en Las Arenas (Getxo), completamente reformado y amueblado a estrenar. Dispone de ventanas nuevas de alta eficiencia, suelos laminados modernos y cocina renovada. El edificio no tiene derramas pendientes. Situado en una ubicación céntrica, con todos los servicios del día a día a mano, buena conexión de transporte público y a pocos minutos a pie del paseo marítimo y la playa. Ideal tanto para entrar a vivir sin preocuparse por reformas como para inversores que busquen una propiedad con potencial de alquiler residencial o vacacional.",
             en: "60 m² apartment in Las Arenas (Getxo), fully renovated and furnished as new. It features energy-efficient windows, modern laminate flooring, and a renovated kitchen. The building has no pending maintenance fees. Centrally located, with all daily amenities nearby, good public transport connections, and just a few minutes’ walk from the seafront and the beach. Ideal for those looking to move in without worry or for investors seeking a property with strong rental potential, either long-term or holiday rental.",
         },
-        sold: false,
+        sold: true,
         main_image: "/propiedades/26/Foto 1.png",
         images: [
             "/propiedades/26/26-2.JPG",
@@ -1531,7 +1533,7 @@ export const homes = [
     },
     {
         id: "27",
-        order: 1,
+        order: 5,
         houseRef: 27,
         coordinates: [43.32362830970893, -2.981869790249912 ],
         price: "598.000 €",
@@ -1592,7 +1594,7 @@ export const homes = [
     },
     {
         id: "28",
-        order: 7,
+        order: 11,
         houseRef: 29,
         coordinates: [43.321968906724464, -3.0092754577135947],
         price: "428.000 €",
@@ -1656,10 +1658,11 @@ export const homes = [
     },
     {
         id: "29",
-        order: 2,
+        order: 6,
         houseRef: 29,
         coordinates: [43.325402, -2.997563 ],
-        price: "798.000 €",
+        // price: "798.000 €",
+        price: "- €",
         location: "Centro Urbano, Leioa",
         type: {
             es: "Chalet",
@@ -1700,7 +1703,7 @@ export const homes = [
             es: "Chalet independiente en urbanización privada, en una zona tranquila y rodeada de naturaleza. La vivienda, en excelente estado, se distribuye en tres plantas: en la principal cuenta con cocina equipada, aseo y un amplio salón-comedor con chimenea y salida a terraza y jardín; en la planta superior hay cuatro dormitorios (uno en suite con terraza) y otro baño completo; y en la inferior dispone de garaje, trastero, lavandería, baño y una sala polivalente con luz natural.",
             en: "A detached home in a private residential community, set in a quiet area surrounded by nature. The property is in excellent condition and laid out over three floors. On the main level, you’ll find a fully equipped kitchen, a guest toilet, and a bright, spacious living and dining area with a fireplace, all opening onto a terrace and the garden.<br/> <br/>Upstairs, there are four bedrooms (including a main bedroom with an en-suite bathroom and private terrace) as well as an additional full bathroom. The lower level offers a garage, storage room, laundry area, another full bathroom, and a versatile multipurpose room with natural light, ideal as a gym, office, or playroom.<br/> <br/>Outside, the home features a well kept private garden with green areas and fruit trees. It stands out for its natural light, open views, and great location, with easy access to public transport and Bilbao.",
         },
-        sold: false,
+        sold: true,
         main_image: "/propiedades/29/1.jpg",
         images: [
             "/propiedades/29/1.jpg",
@@ -1720,6 +1723,261 @@ export const homes = [
             "/propiedades/29/15.jpg",
             "/propiedades/29/16.jpg",
             "/propiedades/29/17.jpg",
+        ],
+    },
+
+    {
+        id: "30",
+        order: 1,
+        houseRef: 30,
+        coordinates: [43.327792573478135, -2.989555742328214  ],
+        price: "532.000 €",
+        location: "Estartetxe, Leioa",
+        type: {
+            es: "Piso",
+            en: "Flat"
+        },
+        built_m2: 105,
+        usable_m2: 102,
+        bedrooms: 3,
+        bathrooms: 2,
+        terrace: false,
+        balcony: false,
+        built_in_wardrobes: true,
+        storage_room: false,
+        orientation: {
+            es: ["Sur"],
+            en: ["South"]
+        },
+        garage: true,
+        pool: false,
+        garden: false,
+        private_urbanization: false,
+        chimney: false,
+        txoko: false,
+        laundry: false,
+        attic: false,
+        elevator: true ,
+        year_built: null,
+        parcel_m2: null,
+        exact_location: {
+            es:"Calle Estartetxe, 12, 48940, Leioa",
+            en: "Calle Estartetxe, 12, 48940, Leioa"},
+        title: {
+            es:"Vivienda en Exclusiva totalmente reformada lista para entrar a vivir",
+            en: "Exclusive Fully Renovated Home Ready to Move Into"
+        },
+        description: {
+            es:"Vivienda en EXCLUSIVA totalmente reformada y lista para entrar a vivir en Centro Nuevo, una de las zonas más demandadas de Artaza. Cuenta con 105 m² distribuidos en 3 habitaciones, 2 baños completos y un amplio salón comedor muy luminoso. La cocina, hecha a medida, está totalmente equipada con electrodomésticos de alta gama y dispone de tendedero independiente.",
+            en: "EXCLUSIVE listing: fully renovated home ready to move into, located in Centro Nuevo, one of the most sought-after areas of Artaza."
+     },
+        sold: false,
+        main_image: "/propiedades/30/Foto 1.jpg",
+        images: [
+            "/propiedades/30/Foto 1.jpg",
+            "/propiedades/30/IMG_6016.jpg",
+            "/propiedades/30/IMG_6029.jpg",
+            "/propiedades/30/IMG_6033.jpg",
+            "/propiedades/30/IMG_6036.jpg",
+            "/propiedades/30/IMG_6039.jpg",
+            "/propiedades/30/IMG_6043.jpg",
+            "/propiedades/30/IMG_6045.jpg",
+            "/propiedades/30/IMG_6048.jpg",
+            "/propiedades/30/IMG_6052.jpg",
+        ],
+    },
+
+    {
+        id: "31",
+        order: 2,
+        houseRef: 31,
+        coordinates: [43.332795471109804, -2.9985877288354836  ],
+        price: "590.000 €",
+        location: "Artaza, Leioa",
+        type: {
+            es: "Piso",
+            en: "Flat"
+        },
+        built_m2: 112,
+        usable_m2: 112,
+        bedrooms: 3,
+        bathrooms: 2,
+        terrace: true,
+        balcony: false,
+        built_in_wardrobes: true,
+        storage_room: false,
+        orientation: {
+            es: ["", ""],
+            en: ["", ""]
+        },
+        garage: true,
+        pool: false,
+        garden: false,
+        private_urbanization: false,
+        chimney: false,
+        txoko: false,
+        laundry: false,
+        attic: false,
+        elevator: true ,
+        year_built: null,
+        parcel_m2: null,
+        exact_location: {
+            es:"Paseo Landabarri, 48940, Leioa",
+            en: "Paseo Landabarri, 48940, Leioa"},
+        title: {
+            es:"Piso amplio y luminoso con terraza en Artaza ",
+            en: "Spacious and Bright Apartment with Terrace in Artaza"
+        },
+        description: {
+            es:"Se vende vivienda amplia y muy luminosa en Artaza, ubicada en una zona residencial muy valorada por su tranquilidad y calidad de vida.",
+            en: "A spacious and very bright property is for sale in Artaza, located in a highly sought-after residential area known for its peaceful environment and quality of life."
+     },
+        sold: false,
+        main_image: "/propiedades/31/1.jpg",
+        images: [
+            "/propiedades/31/1.jpg",
+            "/propiedades/31/2.jpg",
+            "/propiedades/31/3.jpg",
+            "/propiedades/31/4.jpg",
+            "/propiedades/31/5.jpg",
+            "/propiedades/31/6.jpg",
+            "/propiedades/31/7.jpg",
+            "/propiedades/31/8.jpg",
+        ],
+    },
+
+    {
+        id: "32",
+        order: 3,
+        houseRef: 32,
+        coordinates: [43.3334770772792, -2.9936298711641585],
+        price: "498.000 €",
+        location: "Artaza, Leioa",
+        type: {
+            es: "Piso",
+            en: "Flat"
+        },
+        built_m2: 127,
+        usable_m2: 119,
+        bedrooms: 4,
+        bathrooms: 3,
+        terrace: false,
+        balcony: false,
+        built_in_wardrobes: true,
+        storage_room: false,
+        orientation: {
+            es: ["Este"],
+            en: ["East"]
+        },
+        garage: true,
+        pool: false,
+        garden: true,
+        private_urbanization: true,
+        chimney: false,
+        txoko: false,
+        laundry: false,
+        attic: false,
+        elevator: true ,
+        year_built: 1974,
+        parcel_m2: null,
+        exact_location: {
+            es:"Calle Basañese, 97, 48940, Leioa, Vizcaya, España",
+            en: "Calle Basañese, 97, 48940, Leioa, Vizcaya, España"},
+        title: {
+            es:"Vivienda exterior en EXCLUSIVA de 4 habitaciones en Artaza",
+            en: "Exclusive exterior 4 bedroom property in Artaza"
+        },
+        description: {
+            es:"Se vende en exclusiva vivienda exterior en primera planta con ascensor, de 127 m² construidos, con 4 habitaciones, 3 baños y amplia plaza de garaje. Destaca por su distribución funcional, con salón-comedor amplio y luminoso, cocina independiente con múltiples estancias auxiliares y zona de descanso bien diferenciada.",
+            en: "Exclusive listing: exterior apartment on the first floor with lift, offering 127 sqm built, 4 bedrooms, 3 bathrooms, and a large garage space. The property stands out for its functional layout, featuring a spacious and bright living-dining room, an independent kitchen with multiple auxiliary areas, and a well-separated sleeping area. Located in a quiet residential area of Artaza, the property is close to public transport, shops, and all daily services. The building also offers a lift and a communal garden for residents."
+     },
+        sold: false,
+        main_image: "/propiedades/32/1.jpg",
+        images: [
+            "/propiedades/32/1.jpg",
+            "/propiedades/32/2.jpg",
+            "/propiedades/32/3.jpg",
+            "/propiedades/32/4.jpg",
+            "/propiedades/32/5.jpg",
+            "/propiedades/32/6.jpg",
+            "/propiedades/32/7.jpg",
+            "/propiedades/32/8.jpg",
+            "/propiedades/32/9.jpg",
+            "/propiedades/32/10.jpg",
+            "/propiedades/32/11.jpg",
+            "/propiedades/32/12.jpg",
+            "/propiedades/32/13.jpg",
+            "/propiedades/32/14.jpg",
+            "/propiedades/32/15.jpg",
+        ],
+    },
+
+    {
+        id: "33",
+        order: 4,
+        houseRef: 33,
+        coordinates: [43.3341708906434, -2.994454971164158],
+        price: "1.900.000 €",
+        location: "Negurigane, Artaza",
+        type: {
+            es: "Chalet",
+            en: "Detached house"
+        },
+        built_m2: 490,
+        usable_m2: 490,
+        bedrooms: 6,
+        bathrooms: 4,
+        terrace: true,
+        balcony: false,
+        built_in_wardrobes: true,
+        storage_room: true,
+        orientation: {
+            es: ["Sur", "Este", "Oste"],
+            en: ["South", "East", "West"]
+        },
+        garage: true,
+        pool: false,
+        garden: true,
+        private_urbanization: true,
+        chimney: false,
+        txoko: true,
+        laundry: true,
+        attic: false,
+        elevator: true ,
+        year_built: 2000,
+        parcel_m2: 600,
+        exact_location: {
+            es:"Calle negurigane 21, 48940, Leioa",
+            en: "Calle negurigane 21, 48940, Leioa"},
+        title: {
+            es:"Chalet independiente en Negurigane",
+            en: "Detached house in Negurigane"
+        },
+        description: {
+            es:"Chalet unifamiliar de aproximadamente 490 m² construidos sobre parcela de 600 m² en Artaza - Negurigane, distribuido en tres plantas comunicadas por ascensor interior. Dispone de salón comedor con grandes ventanales y vistas al jardín, cocina office, dormitorio en planta principal y varias habitaciones con armarios empotrados, incluyendo dormitorio principal con vestidor y baño en suite. Planta baja con espacios polivalentes, txoko con cocina equipada y salida directa al jardín.<br/><br/>La vivienda cuenta con jardín privado que rodea la casa, garaje cerrado para dos coches, calefacción de gas natural y caldera reciente. Ubicada en zona residencial bien comunicada, a pocos minutos de transporte público, colegios, comercios y servicios.",
+            en: "Detached house of approximately 490 m² built on a 600 m² plot in Artaza - Negurigane, distributed over three floors connected by an internal lift. The property features a spacious living-dining room with large windows overlooking the garden, a kitchen with breakfast area, a bedroom on the main floor, and several bedrooms with fitted wardrobes, including a principal bedroom with dressing room and en-suite bathroom.<br/><br/>The lower ground floor offers versatile spaces, including a traditional txoko with a fully equipped kitchen and direct access to the garden, making it ideal for leisure, gym, or additional living areas.<br/><br/>The property is completed by a private garden surrounding the house, a closed garage for two cars, gas central heating, and a recently updated boiler. It is located in a residential area with good transport links, just a few minutes from public transport, schools, shops, and other local amenities."
+     },
+        sold: false,
+        main_image: "/propiedades/33/1.jpg",
+        images: [
+            "/propiedades/33/1.jpg",
+            "/propiedades/33/3.jpg",
+            "/propiedades/33/4.jpg",
+            "/propiedades/33/5.jpg",
+            "/propiedades/33/7.jpg",
+            "/propiedades/33/9.jpg",
+            "/propiedades/33/11.jpg",
+            "/propiedades/33/12.jpg",
+            "/propiedades/33/13.jpg",
+            "/propiedades/33/14.jpg",
+            "/propiedades/33/15.jpg",
+            "/propiedades/33/16.jpg",
+            "/propiedades/33/18.jpg",
+            "/propiedades/33/19.jpg",
+            "/propiedades/33/20.jpg",
+            "/propiedades/33/21.jpg",
+            "/propiedades/33/22.jpg",
+            "/propiedades/33/23.jpg",
         ],
     },
 ];
